@@ -29,9 +29,9 @@
 
 - ### 4.2. Dinámica ###
 
-+ _Objetivo_
++ _Objetivo:_ El objetivo del juego consiste en descubrir quien es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el avatar del jugador) 
 
-+ _Dificultad_
++ _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, además de ser capaz de mantener un nivel de sospecha bajo para no ser acusado por el resto de pasajeros y de interrogar de forma efectiva a los sospechosos, quienes podrán ocultar información crucial en el caso de realizar las preguntas incorrectas.   
 
 - ### 4.3. Estética ###
 
@@ -41,13 +41,20 @@
 
 - ### 5.2. Personajes ###
 
+- **Robert Anthony:** El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios, como por ejemplo el alcohol. 
+
+- **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Robert Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Robert.
+
+- **Ava Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas.    
+
 - ### 5.3 Lugares ###
 
 - ### 5.4 Objetos ###
+
 ## 6. Arquitectura UML ##
 
 ## 7. Plataformas de gestión ##
-Pivotal y GitHub
+Pivotal, Google Drive y GitHub
 
 ## 8. Plataformas de comunicación ##
 Discord y WhatsApp
