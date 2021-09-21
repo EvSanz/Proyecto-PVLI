@@ -43,7 +43,9 @@ Cada sala se muestra de forma completa en la pantalla , la camara permanece esta
 - ### 5.1. Historia ###
 
 - ### 5.2. Personajes ###
-
+-**Larry Shepard:** Un humilde pastor de cabras al que encontraremos en uno de lso vagones de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
+-**Victor Collins:** Un profesor de matematicas de Delaware tuvo una noche sin duda muy larga y se encuentra completamente borracho cantando sobre un hombre con una cabra en uno de los vagones  de clase baja.
+-**Mery y Molly Morton:** Dos hermanas, artista arruinadas tras firmar sus obras como M&M y perder todo su copyright frente una marca de chocolatinas.
 - **Robert Anthony:** El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios, como por ejemplo el alcohol. 
 
 - **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Robert Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Robert.
