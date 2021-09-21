@@ -18,6 +18,7 @@
 ## 2. Aspectos generales ##
 
 - ### 2.1. Relato breve y parcial de una partida típica ###
+La partida comenzará con el jugador familiarizandose con el entorno , los controles y algunos personajes antes de que se desvele el suceso que desencadena toda la aventura, un asesinato.El jugador debe reunir todas las pistas posibles e interrogar a los pasajeros sin levantar sospecha antes de que el tren llegue a la proxima parada.Si el jugador a identificado al asesino este será detenido por la policia.Las acciones del jugador pueden hacer que el resto de personajes sospechen de él y si este nivel de sospecha supera cierto limite seran lso pasajeros los que le acusen de cometer el crimen.
 
 ## 3. Menús y modos de juego ##
 
@@ -34,6 +35,8 @@
 + _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, además de ser capaz de mantener un nivel de sospecha bajo para no ser acusado por el resto de pasajeros y de interrogar de forma efectiva a los sospechosos, quienes podrán ocultar información crucial en el caso de realizar las preguntas incorrectas.   
 
 - ### 4.3. Estética ###
+- El juego estará compuesto de sprites realizados en pisxelart con una resolucion 32x32.El juego toma inspiracion de peliculas  de la primera mitad del ciglo xx asi que se replicara el aspecto de las peliculas en blanco y negro realizando lso sprites con una  escala de  grises que  se usara para todos los  elementos sean escenario o personajes.Ya que se trata de un juego de  misterio los NPCs deben ser identificables y aunque todos tenga un estilo similar las ropas los peinados y los  accesorios seran unicos para cada uno de ellos y ayuadaran a qeu sean faciles de identificar.Lo mismos sucede con los cagones que compartiran ciertos elementos estructurales pero tendran moviliario distintivo.
+Cada sala se muestra de forma completa en la pantalla , la camara permanece estatica y el jugador puede ver todo el vagon desde el momento en el que entra en él. 
 
 ## 5. Contenido ##
 
