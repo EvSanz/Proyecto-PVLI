@@ -44,22 +44,23 @@
 - ### 5.3 Lugares ###
 
 - ### 5.4 Objetos ###
-
 ## 6. Arquitectura UML ##
 
 ## 7. Plataformas de gestión ##
+Pivotal y GitHub
 
 ## 8. Plataformas de comunicación ##
+Discord y WhatsApp
 
-## 9. QA y testing ##
+## 9. Referencias ##
 
-## 10. Referencias ##
+
 
 * **Estéticas**: 
-
+Extraños en un tren Alfred Hitchcock
 * **Mecánicas**:
-
+Los 3 Investigadores  Alfred Hitchcock
 * **Dinámicas**:
-
+Psicosis Alfred Hitchcock
 
 ###### DEVELOPED BY: GRUPO 6
