@@ -18,7 +18,8 @@
 ## 2. Aspectos generales ##
 
 - ### 2.1. Relato breve y parcial de una partida típica ###
-La partida comenzará con el jugador familiarizandose con el entorno , los controles y algunos personajes antes de que se desvele el suceso que desencadena toda la aventura, un asesinato.El jugador debe reunir todas las pistas posibles e interrogar a los pasajeros sin levantar sospecha antes de que el tren llegue a la proxima parada.Si el jugador a identificado al asesino este será detenido por la policia.Las acciones del jugador pueden hacer que el resto de personajes sospechen de él y si este nivel de sospecha supera cierto limite seran lso pasajeros los que le acusen de cometer el crimen.
+
+La partida comenzará con el jugador familiarizándose con el entorno, los controles y algunos personajes antes de que se revele el suceso que desencadenará toda la historia: un asesinato. El jugador deberá reunir todas las pistas posibles e interrogar a los pasajeros sin levantar sospechas, antes de que el tren llegue a la próxima parada. Si el jugador consigue identificar al asesino, este será detenido por la policia; por otro lado, si las acciones del jugador levantan sospechas en el resto de personajes superando un límite establecido, será acusado por los pasajeros y perderá la partida.
 
 ## 3. Menús y modos de juego ##
 
@@ -35,24 +36,38 @@ La partida comenzará con el jugador familiarizandose con el entorno , los contr
 + _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, además de ser capaz de mantener un nivel de sospecha bajo para no ser acusado por el resto de pasajeros y de interrogar de forma efectiva a los sospechosos, quienes podrán ocultar información crucial en el caso de realizar las preguntas incorrectas.   
 
 - ### 4.3. Estética ###
-- El juego estará compuesto de sprites realizados en pisxelart con una resolucion 32x32.El juego toma inspiracion de peliculas  de la primera mitad del ciglo xx asi que se replicara el aspecto de las peliculas en blanco y negro realizando lso sprites con una  escala de  grises que  se usara para todos los  elementos sean escenario o personajes.Ya que se trata de un juego de  misterio los NPCs deben ser identificables y aunque todos tenga un estilo similar las ropas los peinados y los  accesorios seran unicos para cada uno de ellos y ayuadaran a qeu sean faciles de identificar.Lo mismos sucede con los cagones que compartiran ciertos elementos estructurales pero tendran moviliario distintivo.
-Cada sala se muestra de forma completa en la pantalla , la camara permanece estatica y el jugador puede ver todo el vagon desde el momento en el que entra en él. 
+
+El juego estará compuesto de sprites realizados en pixelart con una resolucion 32x32 y tomará inspiracion de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises que se usarán para todos los elementos del juego. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos, al igual que los objetos con los que podremos interactuar o el aspecto propio de cada vagón. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo ver el jugador a todos los personajes u objetos que haya en él nada más entrar en el vagón.
 
 ## 5. Contenido ##
 
 - ### 5.1. Historia ###
 
 - ### 5.2. Personajes ###
--**Larry Shepard:** Un humilde pastor de cabras al que encontraremos en uno de lso vagones de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
--**Victor Collins:** Un profesor de matematicas de Delaware tuvo una noche sin duda muy larga y se encuentra completamente borracho cantando sobre un hombre con una cabra en uno de los vagones  de clase baja.
--**Mery y Molly Morton:** Dos hermanas, artista arruinadas tras firmar sus obras como M&M y perder todo su copyright frente una marca de chocolatinas.
+
+- **Larry Shepard:** Un humilde pastor de cabras que viaja en el vagón de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
+
+- **Victor Collins:** Un profesor de matemáticas de Delaware con un carácter extrafalario y una severa adicción a la bebida. Viaja en el vagón de clase media, aunque suele pasar su tiempo libre en el vagón de clase baja charlando con Larry Shepard. 
+
+- **Mery y Molly Morton:** Dos hermanas que intentaron triunfar en el mundo del arte pero acabaron arruinadas en el proceso. Viajan en el vagón de clase baja, con intención de regresar a la gran ciudad con sus padres y buscar un trabajo estable.
+
 - **Robert Anthony:** El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios, como por ejemplo el alcohol. 
 
-- **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Robert Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Robert.
+- **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Robert Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Robert. 
 
-- **Ava Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas.    
+- **Ava Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
 
 - ### 5.3 Lugares ###
+
+- **Vagón de clase alta:**
+
+- **Vagón de clase media:**
+
+- **Vagón de clase baja:**
+
+- **Vagón comedor:**
+
+- **Locomotora:**
 
 - ### 5.4 Objetos ###
 
