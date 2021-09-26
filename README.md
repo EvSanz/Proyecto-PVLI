@@ -34,7 +34,7 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 + _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego o la cocina, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales abrirán nuevas opciones de diálogo que ayuden a resolver el caso.
 
 + _Diálogos:_ Cuando el jugador se acerque a un NPC y pulse la tecla de interactuar, el la parte inferior de la pantalla aparecerán una imagen del NPC elegido; el cuadro de diálogo con el texto; debajo de éste una línea similar a los signos vitales, que el jugador podrá usar para determinar el humor del NPC interrogado; y un cuaderno en el cual se podrán anotar ciertas palabras clave dichas por los personajes que podrán impactar futuras conversaciones. 
-+ Durante la gran mayoría de las conversaciones, el jugador tendrá que responder al NPC  utilizando una lista de opciones para decirle, las cuales impactarán en la historia de distintas maneras tanto para bien como para mal.
+Durante la gran mayoría de las conversaciones, el jugador tendrá que responder al NPC  utilizando una lista de opciones para decirle, las cuales impactarán en la historia de distintas maneras tanto para bien como para mal.
 
 + _Barra de sospecha:_ Si a la hora de elegir la opción de diálogo se elige una que pueda levantar sospechas al resto de personajes (por ejemplo, mencionando directamente algún objeto encontrado en una habitación privada), la barra de sospecha se llenará. Si ésta llega a llenarse, los demás personajes estarán convencidos de que el asesino es el protagonista, lo cual conllevará a una partida perdida.
 
