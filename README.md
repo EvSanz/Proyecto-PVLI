@@ -24,6 +24,13 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 ## 3. Menús y modos de juego ##
 
 - ### 3.1. Interfaz y control ###
+- HUD:
+  + En la parte inferior de la pantalla estará el cuadro de diálogo.
+  + En la esquina inferior izquierda, al lado del cuadro del diálogo, habrá una imagen de la cara del personaje que está hablando.
+  + Debajo del cuadro de diálogo habrá un diagrama del pulso de la persona a la que estás interrogando.
+  + En la esquina superior izquierda, estará el botón del menú de la partida con ajustes varios.
+  + Arriba, centrada, estará la barra de sospecha, que indica cuánto las acciones del personaje están haciendo sospechar a otros pasajeros.
+  + En la esquina inferior derecha estará la libreta de detective, que incuirá apuntes de algunas pruebas, objetos y datos que vaya consiguiendo el jugador.
 
 ## 4. Jugabilidad ##
 
@@ -105,8 +112,6 @@ Interrogation (Videojuego)
 * **Dinámicas:**
 Psicosis (Película)
 Life is Strange (Videojuegos)
-Lobo de Castronegro (Juego de mesa)
-Cluedo (Juego de mesa)
 * **Guión:**
 Extraños en el tren (Película) 
 Asesinato en el Orient Express (Libro)
