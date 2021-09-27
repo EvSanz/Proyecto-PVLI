@@ -83,20 +83,25 @@ El juego estará compuesto de sprites realizados en pixelart con una resolucion 
 ## 6. Arquitectura UML ##
 
 ## 7. Plataformas de gestión ##
-Pivotal, Google Drive y GitHub
+
+Para realizar la distribución de tareas relacionadas con el proyecto estamos utilizando la plataforma de Pivotal Tracker, para almacenar documentos escritos o realizar presentaciones utilizamos una carpeta compartida en Google Drive, y, para mantener un repositorio con los datos guardados del proyecto utilizamos Git Hub.
 
 ## 8. Plataformas de comunicación ##
-Discord y WhatsApp
+
+Para realizar reuniones utilizamos la plataforma de Discord, mientras que para hacer recordatorios o tomar decisiones solemos utilizar WhatsApp. 
+
 
 ## 9. Referencias ##
 
 
 
-* **Estéticas**: 
-Extraños en un tren Alfred Hitchcock
-* **Mecánicas**:
-Los 3 Investigadores  Alfred Hitchcock
-* **Dinámicas**:
-Psicosis Alfred Hitchcock
+* **Estéticas:**
+Extraños en un tren (Película) 
+* **Mecánicas:**
+Los tres investigadores 
+* **Dinámicas:**
+Psicosis (Película) 
+* **Guión:**
+Extraños en el tren (Película) 
 
 ###### DEVELOPED BY: GRUPO 6
