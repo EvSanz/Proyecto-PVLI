@@ -105,6 +105,8 @@ Interrogation (Videojuego)
 * **Dinámicas:**
 Psicosis (Película)
 Life is Strange (Videojuegos)
+Lobo de Castronegro (Juego de mesa)
+Cluedo (Juego de mesa)
 * **Guión:**
 Extraños en el tren (Película) 
 Asesinato en el Orient Express (Libro)
