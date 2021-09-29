@@ -1,6 +1,9 @@
 # Proyecto-PVLI 
 > ###### Documento de diseño de videojuego - Versión 15/09/2021 (Hito 0)
-
+[Esquematren]:/Proyecto-PVLI/blob/main/esquemita%20pal%20gdd.png "IMG - esquema"
+[fondo]:/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png "IMG - fondo"
+[Personaje]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(3).png "IMG - senior"
+[objeto]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(4).png "IMG - tetera"
 ## 1. Resumen ##
 
 - **Géneros**: Misterio, novela gráfica, puzzles
@@ -53,7 +56,14 @@ Durante la gran mayoría de las conversaciones, el jugador tendrá que responder
 
 - ### 4.3. Estética ###
 
-El juego estará compuesto de sprites realizados en pixelart con una resolucion 32x32 y tomará inspiracion de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises que se usarán para todos los elementos del juego. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos, al igual que los objetos con los que podremos interactuar o el aspecto propio de cada vagón. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo ver el jugador a todos los personajes u objetos que haya en él nada más entrar en el vagón.
+El juego estará compuesto de sprites realizados en pixelart con una resolucion 32x32 y tomará inspiracion de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises que se usarán para todos los elementos del juego menos el fondo. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos(portando vestimentas diferentes y cambiando su composicion corporal), al igual que los objetos con los que podremos interactuar que tendran unos pocos pixeles animados para emular un brillo  o el aspecto propio de cada vagón que estará amueblado de una forma correspondiente a su rol en el tren.Para poder diferenciarse bien el fondo usará una paleta tintada en azul distinta a la que usan el resto de sprites. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo ver el jugador a todos los personajes u objetos que haya en él nada más entrar en el vagón.
+
+Fondo con gradiente azulado:
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png)
+Personaje con paleta de grises:
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(3).png)
+Objeto con brillos para destacar:
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(4).png)
 
 
 ## 5. Contenido ##
@@ -75,7 +85,7 @@ El juego estará compuesto de sprites realizados en pixelart con una resolucion 
 - **Ava Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
 
 - ### 5.3 Lugares ###
-
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/esquemita%20pal%20gdd.png)
 - **Vagón de clase alta:**
 
 - **Vagón de clase media:**
@@ -87,6 +97,27 @@ El juego estará compuesto de sprites realizados en pixelart con una resolucion 
 - **Locomotora:**
 
 - ### 5.4 Objetos ###
+**En la Habitación de las Morton**
+1 de los 2 gemelos pertenecientes a bruno anthony que se había quedado enganchado en la ropa de Norma.
+1 de los muchos cables de Ayva Yan.
+Una botella de Alcohol del señor Collins
+
+**En la habitación de los Anthony** 
+La lámpara tiene 1 bombilla cambiada (por Daniel el electricista)
+El otro gemelo del traje de bruno.
+Mazo cajas de galletas de Norma solo 1 de ellas de costura
+
+**En la Habitación de Haines**
+Raquetas de tenis
+Maletin teclado con contraseña
+Un cartón de cereales de gelatina (jell os) cuya fecha de caducidad es la contraseña
+(Si descubres su pasaportes falsos y te refieres a el como otra de sus identidades confesará todo el tema espías a cambio de información de lo que pasó esta noche.) 
+
+**En la habitación de Yan**
+Cables idénticos a los de la escena del crimen.
+Prototipos de placas solares
+Una caja de galletas de la señora anthony (se las dió a cambio del cable )
+
 
 ## 6. Arquitectura UML ##
 
