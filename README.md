@@ -54,6 +54,7 @@ Durante la gran mayoría de las conversaciones, el jugador tendrá que responder
 - ### 4.3. Estética ###
 
 El juego estará compuesto de sprites realizados en pixelart con una resolucion 32x32 y tomará inspiracion de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises que se usarán para todos los elementos del juego. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos, al igual que los objetos con los que podremos interactuar o el aspecto propio de cada vagón. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo ver el jugador a todos los personajes u objetos que haya en él nada más entrar en el vagón.
+[imagen]:https://github.com/EvSanz/Proyecto-PVLI/blob/main/inspectorwalking.gif "personaje"
 
 ## 5. Contenido ##
 
@@ -105,15 +106,19 @@ Extraños en un tren (Película)
 Midnight Scenes: the Highway (Videojuego)
 Interrogation (Videojuego)
 Profesor Layton (Videojuegos)
+BackBone(Videojuegos)
 * **Mecánicas:**
 Los tres investigadores (Libros)
 Ace Attorney (Videojuegos)
 Interrogation (Videojuego)
+LA Noire(videojuego)
+Heavy Rain(Videojuego)
 * **Dinámicas:**
 Psicosis (Película)
 Life is Strange (Videojuegos)
 * **Guión:**
 Extraños en el tren (Película) 
 Asesinato en el Orient Express (Libro)
+
 
 ###### DEVELOPED BY: GRUPO 6
