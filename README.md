@@ -86,7 +86,7 @@ Objeto con brillos para destacar:
 
 - **Daniel Grooms:** Daniel Grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho.
 
-- **Federick Bold:** Es un arquitecto que fue recientemente despedido por sugerir la idea de poner las columnas al revés. Planea buscar trabajo en ciudades/pueblos cercanos, empezando por el pueblo destino. Suele estar serio y es facilmente irritable, pero tiene buena memoria. Viaja en el vagón de clase media y nunca sale de ahí.
+- **Federick Bold:** Es un arquitecto que fue recientemente despedido por sugerir la idea de poner las columnas al revés. Planea buscar trabajo en ciudades cercanos, empezando por el pueblo destino. Suele estar serio y es facilmente irritable, pero tiene buena memoria. Viaja en el vagón de clase media y nunca sale de ahí.
 
 - **Alfred Hirtch:** Es un empleado que se encarga del vagón cafetería, en el cual es camarero y cocinero. Es muy servicial y aunque parezca muy serio siempre está dispuesto a ayudar. Duerme en un compartimento especial en el vagón cafetería.
 
