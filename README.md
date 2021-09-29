@@ -84,12 +84,15 @@ Objeto con brillos para destacar:
 
 - **Ava Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
 
-- **Daniel Grooms:** Daniel Grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho.
+- **Daniel Laddie Grooms:** Daniel Grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho.
 
-- **Federick Bold:** Es un arquitecto que fue recientemente despedido por sugerir la idea de poner las columnas al revés. Planea buscar trabajo en ciudades cercanos, empezando por el pueblo destino. Suele estar serio y es facilmente irritable, pero tiene buena memoria. Viaja en el vagón de clase media y nunca sale de ahí.
+- **Federick Bold:** Es un arquitecto que fue recientemente despedido por sugerir la idea de poner las columnas al revés. Planea buscar trabajo en ciudades cercanos, empezando por el pueblo destino. Suele estar serio y es fácilmente irritable, pero tiene buena memoria. Viaja en el vagón de clase media y nunca sale de ahí.
 
 - **Alfred Hirtch:** Es un empleado que se encarga del vagón cafetería, en el cual es camarero y cocinero. Es muy servicial y aunque parezca muy serio siempre está dispuesto a ayudar. Duerme en un compartimento especial en el vagón cafetería.
 
+- **Barry Railway:** Desde pequeño se dedicaba a montar maquetas de trenes, ahora que tiene el trabajo que siempre ha querido, solo desea tener más tiempo para sus maquetas. Aún así, se toma su trabajo muy en serio y no aguanta que nadie le distraiga. Suele ser poco hablador y prefiere evitar que haya problemas en su tren.
+
+- **Mihael Haines:** Su sueño siempre había sido ser tenista pero terminó como espía en otro país. Decidió compaginar su pasión y su trabajo y utiliza su nueva vida como tenista para viajar de un objetivo a otro mientras participa en diferentes torneos. Puede permitirse viajar en clase alta y evita relacionarse con otros pasajeros.
 
 
 - ### 5.3 Lugares ###
