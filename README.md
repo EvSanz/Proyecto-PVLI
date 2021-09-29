@@ -84,7 +84,7 @@ Objeto con brillos para destacar:
 
 - **Ava Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
 
-- **Daniel grooms:** Daniel grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho.
+- **Daniel Grooms:** Daniel Grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho.
 
 - **Federick Bold:** Es un arquitecto que fue recientemente despedido por sugerir la idea de poner las columnas al revés. Planea buscar trabajo en ciudades/pueblos cercanos, empezando por el pueblo destino. Suele estar serio y es facilmente irritable, pero tiene buena memoria. Viaja en el vagón de clase media y nunca sale de ahí.
 
