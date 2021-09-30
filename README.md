@@ -89,7 +89,7 @@ Haines no es solo un tenista sino un espía de un país extranjero, que utiliza 
 Ayva Yan está trabajando en paneles solares y viaja en busca de inversores. Lo considera un avance muy importante y lo quiere mantener en secreto. También dará acceso a su habitación
 Bruno Anthony confiesa su interes amoroso por Larry Sheppard, y que su madre, Norma Anthony, no acepta.
 
-Tras ésta última fase, el tren parará y el detective dará su veredicto final. Si acierta y culpa a Norma, se revelará la conversación que tuvo con Molly el día anterior; y si culpa a la persona equivocada, se descubre luego que es inocente y el jugador ha perdido.
+Tras esta última fase, el tren parará y el detective dará su veredicto final. Si acierta y culpa a Norma, se revelará la conversación que tuvo con Molly el día anterior; y si culpa a la persona equivocada, se descubre luego que es inocente y el jugador ha perdido.
 
 A continuación un diagrama con los puntos clave de la historia principal.
 
