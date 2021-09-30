@@ -5,6 +5,7 @@
 [Personaje]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(3).png "IMG - senior"
 [objeto]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(4).png "IMG - tetera"
 [Diagrama]:/Proyecto-PVLI/blob/main/diagrama.png "IMG - diagramaestados"
+[BocetoUI]:/Proyecto-PVLI/blob/main/interfaz_diagrama.png "IMG - bocetoUi"
 ## 1. Resumen ##
 
 - **Géneros**: Misterio, novela gráfica, puzzles
@@ -23,7 +24,7 @@
 
 - ### 2.1. Relato breve y parcial de una partida típica ###
 
-La partida comenzará con el jugador familiarizándose con el entorno, los controles y algunos personajes antes de que se revele el suceso que desencadenará toda la historia: un asesinato. El jugador deberá reunir todas las pistas posibles e interrogar a los pasajeros sin levantar sospechas, antes de que el tren llegue a la próxima parada. Si el jugador consigue identificar al asesino, este será detenido por la policia; por otro lado, si las acciones del jugador levantan sospechas en el resto de personajes superando un límite establecido, será acusado por los pasajeros y perderá la partida.
+La partida comenzará con el jugador familiarizándose con el entorno, los controles y algunos personajes antes de que se revele el suceso que desencadenará toda la historia: un asesinato. El jugador deberá reunir todas las pistas posibles e interrogar a los pasajeros sin levantar sospechas, antes de que el tren llegue a la próxima parada. Si el jugador consigue identificar al asesino, este será detenido por la policía; por otro lado, si las acciones del jugador levantan sospechas en el resto de personajes superando un límite establecido, será acusado por los pasajeros y perderá la partida.
 
 ## 3. Menús y modos de juego ##
 
@@ -35,6 +36,7 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   + En la esquina superior izquierda, estará el botón del menú de la partida con ajustes varios.
   + Arriba, centrada, estará la barra de sospecha, que indica cuánto las acciones del personaje están haciendo sospechar a otros pasajeros.
   + En la esquina inferior derecha estará la libreta de detective, que incuirá apuntes de algunas pruebas, objetos y datos que vaya consiguiendo el jugador.
+  ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/interfaz_diagrama.png)
 
 ## 4. Jugabilidad ##
 
@@ -51,13 +53,13 @@ Durante la gran mayoría de las conversaciones, el jugador tendrá que responder
 
 - ### 4.2. Dinámica ###
 
-+ _Objetivo:_ El objetivo del juego consiste en descubrir quien es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el avatar del jugador) 
++ _Objetivo:_ El objetivo del juego consiste en descubrir quién es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el avatar del jugador) 
 
 + _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, además de ser capaz de mantener un nivel de sospecha bajo para no ser acusado por el resto de pasajeros y de interrogar de forma efectiva a los sospechosos, quienes podrán ocultar información crucial en el caso de realizar las preguntas incorrectas.   
 
 - ### 4.3. Estética ###
 
-El juego estará compuesto de sprites realizados en pixelart con una resolucion 32x32 y tomará inspiracion de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises que se usarán para todos los elementos del juego menos el fondo. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos(portando vestimentas diferentes y cambiando su composicion corporal), al igual que los objetos con los que podremos interactuar que tendran unos pocos pixeles animados para emular un brillo  o el aspecto propio de cada vagón que estará amueblado de una forma correspondiente a su rol en el tren.Para poder diferenciarse bien el fondo usará una paleta tintada en azul distinta a la que usan el resto de sprites. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo ver el jugador a todos los personajes u objetos que haya en él nada más entrar en el vagón.
+El juego estará compuesto de sprites realizados en pixelart con una resolución 32x32 y tomará inspiración de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises que se usarán para todos los elementos del juego menos el fondo. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos(portando vestimentas diferentes y cambiando su composición corporal), al igual que los objetos con los que podremos interactuar que tendran unos pocos píxeles animados para emular un brillo  o el aspecto propio de cada vagón que estará amueblado de una forma correspondiente a su rol en el tren. Para poder diferenciarse bien el fondo usará una paleta tintada en azul distinta a la que usan el resto de sprites. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo ver el jugador a todos los personajes u objetos que haya en él nada más entrar en el vagón.
 
 Fondo con gradiente azulado:
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png) 
@@ -85,7 +87,7 @@ Al interrogar a unos pocos pasajeros se anunciará que el comedor está abierto,
 
 En éste punto, todos los demás pasajeros estarán disponibles para que hables con ellos. Puedes decidir presionar a ciertos personajes para averiguar algo que oculten y/o acceso a su habitación. Éstas historias son:
 
-Haines no es solo un tenista sino un espía de un país extranjero, que utiliza la coartada de tenista para viajar a distintos países. Dará acceso a su habitación.
+Haines no es solo un tenista sino un espía de un país extranjero, que utiliza la coartada de tenista para viajar a distintos países. 
 Ayva Yan está trabajando en paneles solares y viaja en busca de inversores. Lo considera un avance muy importante y lo quiere mantener en secreto. También dará acceso a su habitación
 Bruno Anthony confiesa su interes amoroso por Larry Sheppard, y que su madre, Norma Anthony, no acepta.
 
@@ -100,7 +102,7 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 - **Larry Shepard:** Un humilde pastor de cabras que viaja en el vagón de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
 
-- **Victor Collins:** Un profesor de matemáticas de Delaware con un carácter extrafalario y una severa adicción a la bebida. Viaja en el vagón de clase media, aunque suele pasar su tiempo libre en el vagón de clase baja charlando con Larry Shepard. 
+- **Victor Collins:** Un profesor de matemáticas de Delaware con un carácter estrafalario y una severa adicción a la bebida. Viaja en el vagón de clase media, aunque suele pasar su tiempo libre en el vagón de clase baja charlando con Larry Shepard. 
 
 - **Mery y Molly Morton:** Dos hermanas que intentaron triunfar en el mundo del arte pero acabaron arruinadas en el proceso. Viajan en el vagón de clase baja, con intención de regresar a la gran ciudad con sus padres y buscar un trabajo estable.
 
@@ -114,7 +116,7 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 - **Federick Bold:** Es un arquitecto que fue recientemente despedido por sugerir la idea de poner las columnas al revés. Planea buscar trabajo en ciudades cercanos, empezando por el pueblo destino. Suele estar serio y es fácilmente irritable, pero tiene buena memoria. Viaja en el vagón de clase media y nunca sale de ahí.
 
-- **Alfred Hirtch:** Es un empleado que se encarga del vagón cafetería, en el cual es camarero y cocinero. Es muy servicial y aunque parezca muy serio siempre está dispuesto a ayudar. Duerme en un compartimento especial en el vagón cafetería.
+- **Alfred Hirsch:** Es un empleado que se encarga del vagón cafetería, en el cual es camarero y cocinero. Es muy servicial y aunque parezca muy serio siempre está dispuesto a ayudar. Duerme en un compartimento especial en el vagón cafetería.
 
 - **Barry Railway:** Desde pequeño se dedicaba a montar maquetas de trenes, ahora que tiene el trabajo que siempre ha querido, solo desea tener más tiempo para sus maquetas. Aún así, se toma su trabajo muy en serio y no aguanta que nadie le distraiga. Suele ser poco hablador y prefiere evitar que haya problemas en su tren.
 
@@ -134,41 +136,41 @@ A continuación un diagrama con los puntos clave de la historia principal.
 - **Locomotora:**
 
 - ### 5.4 Objetos ###
-**En la Habitación de las Morton**
+**En la Habitación de las Morton:**
 
--1 de los 2 gemelos pertenecientes a bruno anthony que se había quedado enganchado en la ropa de Norma.
+-1 de los 2 gemelos pertenecientes a Bruno Anthony que se había quedado enganchado en la ropa de Norma.
 
 -1 de los muchos cables de Ayva Yan.
 
--Una botella de Alcohol del señor Collins
+-Una botella de Alcohol del señor Collins.
 
 
-**En la habitación de los Anthony** 
+**En la habitación de los Anthony:** 
 
--La lámpara tiene 1 bombilla cambiada (por Daniel el electricista)
+-La lámpara tiene 1 bombilla cambiada (por Daniel el electricista).
 
--El otro gemelo del traje de bruno.
+-El otro gemelo del traje de Bruno.
 
--Mazo cajas de galletas de Norma solo 1 de ellas de costura
+-Mazo cajas de galletas de Norma solo 1 de ellas de costura.
 
 
-**En la Habitación de Haines**
+**En la Habitación de Haines:**
 
--Raquetas de tenis
+-Raquetas de tenis.
 
--Maletin teclado con contraseña
+-Maletin teclado con contraseña.
 
 -Un cartón de cereales de gelatina (jell os) cuya fecha de caducidad es la contraseña
-(Si descubres su pasaportes falsos y te refieres a el como otra de sus identidades confesará todo el tema espías a cambio de información de lo que pasó esta noche.) 
+(Si descubres su pasaportes falsos y te refieres a el como otra de sus identidades confesará todo el tema espías a cambio de información de lo que pasó esta noche.) .
 
 
-**En la habitación de Yan**
+**En la habitación de Yan:**
 
 -Cables idénticos a los de la escena del crimen.
 
--Prototipos de placas solares
+-Prototipos de placas solares.
 
--Una caja de galletas de la señora anthony (se las dió a cambio del cable )
+-Una caja de galletas de la señora Anthony (se las dió a cambio del cable ).
 
 
 
