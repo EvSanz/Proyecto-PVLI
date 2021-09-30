@@ -73,6 +73,8 @@ Objeto con brillos para destacar:
 
 - ### 5.1. Historia ###
 
+**ADVERTENCIA SPOILERS**
+
 Norma Anthony y Molly Morton entablan una conversación a solas, y Norma, aparentemente de broma, menciona que quiere matar a Larry Shepard, por estar en una relación con su hijo Anthony, y Molly, creyendo que iba de broma y que la anciana tuviera algún problema mental, menciona que a su hermana Mery por que fue admitida en una escuela de arte prestigiosa y a ella no. Hacen un pacto que Norma mataría a Mery y Molly a Larry. Al día siguiente aparece Mery muerta por ahorcamiento en su cama.
 
 Es en esta mañana cuando nuestro protagonista, el investigador Ted Case, se sube a un tren para ir a visitar a un familiar cercano. Nada más subirse, Molly acude asustada y llorando al investigador, y entre balbuceos se entiende que quiere que vayas a su habitación, donde encuentra el cadáver de su hermana, y entiende que quiere que averigüe quién fue.
@@ -88,6 +90,8 @@ Ayva Yan está trabajando en paneles solares y viaja en busca de inversores. Lo 
 Bruno Anthony confiesa su interes amoroso por Larry Sheppard, y que su madre, Norma Anthony, no acepta.
 
 Tras ésta última fase, el tren parará y el detective dará su veredicto final. Si acierta y culpa a Norma, se revelará la conversación que tuvo con Molly el día anterior; y si culpa a la persona equivocada, se descubre luego que es inocente y el jugador ha perdido.
+
+A continuación un diagrama con los puntos clave de la historia principal.
 
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/diagrama.png)
 
