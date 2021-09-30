@@ -167,23 +167,37 @@ Para realizar reuniones utilizamos la plataforma de Discord, mientras que para h
 ## 9. Referencias ##
 
 * **Estéticas:**
-Extraños en un tren (Película) 
+Extraños en un tren (Película)
+
 Midnight Scenes: the Highway (Videojuego)
+
 Interrogation (Videojuego)
+
 Profesor Layton (Videojuegos)
+
 BackBone(Videojuegos)
+
 * **Mecánicas:**
 Los tres investigadores (Libros)
+
 Ace Attorney (Videojuegos)
+
 Interrogation (Videojuego)
+
 LA Noire(videojuego)
+
 Heavy Rain(Videojuego)
+
 * **Dinámicas:**
 Psicosis (Película)
+
 Life is Strange (Videojuegos)
+
 * **Guión:**
 Extraños en el tren (Película) 
+
 Asesinato en el Orient Express (Libro)
+
 
 
 ###### DEVELOPED BY: GRUPO 6
