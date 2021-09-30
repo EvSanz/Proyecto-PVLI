@@ -4,7 +4,7 @@
 [fondo]:/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png "IMG - fondo"
 [Personaje]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(3).png "IMG - senior"
 [objeto]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(4).png "IMG - tetera"
-[Diagrama]/Proyecto-PVLI/blob/main/diagrama.png "IMG - diagramaestados"
+[Diagrama]:/Proyecto-PVLI/blob/main/diagrama.png "IMG - diagramaestados"
 ## 1. Resumen ##
 
 - **Géneros**: Misterio, novela gráfica, puzzles
