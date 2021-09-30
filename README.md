@@ -1,4 +1,4 @@
-# Proyecto-PVLI 
+# Derailed Trade
 > ###### Documento de diseño de videojuego - Versión 15/09/2021 (Hito 0)
 [Esquematren]:/Proyecto-PVLI/blob/main/esquemita%20pal%20gdd.png "IMG - esquema"
 [fondo]:/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png "IMG - fondo"
