@@ -36,6 +36,7 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   + En la esquina superior izquierda, estará el botón del menú de la partida con ajustes varios.
   + Arriba, centrada, estará la barra de sospecha, que indica cuánto las acciones del personaje están haciendo sospechar a otros pasajeros.
   + En la esquina inferior derecha estará la libreta de detective, que incuirá apuntes de algunas pruebas, objetos y datos que vaya consiguiendo el jugador.
+  
   ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/interfaz_diagrama.png)
 
 ## 4. Jugabilidad ##
@@ -151,7 +152,7 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 -El otro gemelo del traje de Bruno.
 
--Mazo cajas de galletas de Norma solo 1 de ellas de costura.
+-Muchascajas de galletas de Norma solo 1 de ellas de costura.
 
 
 **En la Habitación de Haines:**
