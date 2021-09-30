@@ -4,6 +4,7 @@
 [fondo]:/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png "IMG - fondo"
 [Personaje]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(3).png "IMG - senior"
 [objeto]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(4).png "IMG - tetera"
+[Diagrama]/Proyecto-PVLI/blob/main/diagrama.png "IMG - diagramaestados"
 ## 1. Resumen ##
 
 - **Géneros**: Misterio, novela gráfica, puzzles
@@ -59,9 +60,11 @@ Durante la gran mayoría de las conversaciones, el jugador tendrá que responder
 El juego estará compuesto de sprites realizados en pixelart con una resolucion 32x32 y tomará inspiracion de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises que se usarán para todos los elementos del juego menos el fondo. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos(portando vestimentas diferentes y cambiando su composicion corporal), al igual que los objetos con los que podremos interactuar que tendran unos pocos pixeles animados para emular un brillo  o el aspecto propio de cada vagón que estará amueblado de una forma correspondiente a su rol en el tren.Para poder diferenciarse bien el fondo usará una paleta tintada en azul distinta a la que usan el resto de sprites. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo ver el jugador a todos los personajes u objetos que haya en él nada más entrar en el vagón.
 
 Fondo con gradiente azulado:
-![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png)
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png) 
+
 Personaje con paleta de grises:
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(3).png)
+
 Objeto con brillos para destacar:
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(4).png)
 
@@ -69,7 +72,11 @@ Objeto con brillos para destacar:
 ## 5. Contenido ##
 
 - ### 5.1. Historia ###
+En el juego se desarrola un caso de asesinato  que comienza cuando Mery Morton aparece muerta en su habitacion.Su hermana Molly Morton acude horrorizada al detective , personaje que controlará el jugador.A partir de  este momento algunos dialogos clabe guiaran al jugador a lo largo de tren para que mediente diversas conversaciones con los pasajeros y algunos puzzles conecte todas las piezas de  esta historia.Cada jugador es libre de profundizar cuanto quiera en aspectos secundarios de la trama pero la historia principal sigue el suguiete diagrama de flujo:
 
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/diagrama.png)
+
+Primero se investiga la habitacion de las hermanas Morton donde  se encontraran varios objetos claves para el caso. A continuación se accede al vagon de clase baja donde  se puede interrogar a 3 pasajeros para obtener algo de informacion trivial y confirmar la coartada de Molly Morton.A partir de  este momento la cafeteria abre para servir los desayunos y el jugador puede explorar libremente el tren entero .Durante el primer turno de  desayunos el jugador puede interrogar a los pasajeros de clase media y al camarero.Tras confirmar la coartada del camarero hablando con el maquinista el turno de  desayunos cambiará y se podrá interrogar a todos los personajes de clase alta si decide profundizar, el jugador  descubrirá que Haines no es un tenista sino un espia y que Ayva Yan está trabajando en una extraña maquina y viaja en busca de inversores.El secreto que se revelará en la trama principal  es el de Bruno Anthony que confiesa su interes amoroso por Larry Sheppard , una rellacion que horroriza a su madre, Norma Anthony.Si el jugador identifica correctamente a Norma como la  asesina  se mostrará una cinematica que desvela una conversacion que mantuvieron Molly y Norma antes del asesinato donde hipotetizan sobre como realizarian un asesinato y Norma le comenta a Molly la idea de intercambiar objetivos algo que confiesa haber escuchado en una pelicula, Molly no pensaba que Norma iba en serio.
 - ### 5.2. Personajes ###
 
 - **Larry Shepard:** Un humilde pastor de cabras que viaja en el vagón de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
@@ -109,25 +116,41 @@ Objeto con brillos para destacar:
 
 - ### 5.4 Objetos ###
 **En la Habitación de las Morton**
-1 de los 2 gemelos pertenecientes a bruno anthony que se había quedado enganchado en la ropa de Norma.
-1 de los muchos cables de Ayva Yan.
-Una botella de Alcohol del señor Collins
+
+-1 de los 2 gemelos pertenecientes a bruno anthony que se había quedado enganchado en la ropa de Norma.
+
+-1 de los muchos cables de Ayva Yan.
+
+-Una botella de Alcohol del señor Collins
+
 
 **En la habitación de los Anthony** 
-La lámpara tiene 1 bombilla cambiada (por Daniel el electricista)
-El otro gemelo del traje de bruno.
-Mazo cajas de galletas de Norma solo 1 de ellas de costura
+
+-La lámpara tiene 1 bombilla cambiada (por Daniel el electricista)
+
+-El otro gemelo del traje de bruno.
+
+-Mazo cajas de galletas de Norma solo 1 de ellas de costura
+
 
 **En la Habitación de Haines**
-Raquetas de tenis
-Maletin teclado con contraseña
-Un cartón de cereales de gelatina (jell os) cuya fecha de caducidad es la contraseña
+
+-Raquetas de tenis
+
+-Maletin teclado con contraseña
+
+-Un cartón de cereales de gelatina (jell os) cuya fecha de caducidad es la contraseña
 (Si descubres su pasaportes falsos y te refieres a el como otra de sus identidades confesará todo el tema espías a cambio de información de lo que pasó esta noche.) 
 
+
 **En la habitación de Yan**
-Cables idénticos a los de la escena del crimen.
-Prototipos de placas solares
-Una caja de galletas de la señora anthony (se las dió a cambio del cable )
+
+-Cables idénticos a los de la escena del crimen.
+
+-Prototipos de placas solares
+
+-Una caja de galletas de la señora anthony (se las dió a cambio del cable )
+
 
 
 ## 6. Arquitectura UML ##
