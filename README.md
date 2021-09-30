@@ -72,11 +72,26 @@ Objeto con brillos para destacar:
 ## 5. Contenido ##
 
 - ### 5.1. Historia ###
-En el juego se desarrola un caso de asesinato  que comienza cuando Mery Morton aparece muerta en su habitacion.Su hermana Molly Morton acude horrorizada al detective , personaje que controlará el jugador.A partir de  este momento algunos dialogos clabe guiaran al jugador a lo largo de tren para que mediente diversas conversaciones con los pasajeros y algunos puzzles conecte todas las piezas de  esta historia.Cada jugador es libre de profundizar cuanto quiera en aspectos secundarios de la trama pero la historia principal sigue el suguiete diagrama de flujo:
+
+Norma Anthony y Molly Morton entablan una conversación a solas, y Norma, aparentemente de broma, menciona que quiere matar a Larry Shepard, por estar en una relación con su hijo Anthony, y Molly, creyendo que iba de broma y que la anciana tuviera algún problema mental, menciona que a su hermana Mery por que fue admitida en una escuela de arte prestigiosa y a ella no. Hacen un pacto que Norma mataría a Mery y Molly a Larry. Al día siguiente aparece Mery muerta por ahorcamiento en su cama.
+
+Es en esta mañana cuando nuestro protagonista, el investigador Ted Case, se sube a un tren para ir a visitar a un familiar cercano. Nada más subirse, Molly acude asustada y llorando al investigador, y entre balbuceos se entiende que quiere que vayas a su habitación, donde encuentra el cadáver de su hermana, y entiende que quiere que averigüe quién fue.
+
+Aquí el jugador podrá sacar todas las pistas que pueda descubrir de la habitación. El vagón comedor estará cerrado dado que es bastante temprano, por lo que el jugador deberá hacer sus primeras interrogaciones en el vagón de clase baja ya que todos los de media están dormidos y encerrados en su habitación. 
+
+Al interrogar a unos pocos pasajeros se anunciará que el comedor está abierto, y se podrá acceder al resto de vagones y la mayoría estarán desayunando. Si se habla con el camarero y se eligen las opciones correctas, se podrá acceder al vagón locomotora, donde el maquinista confirma la coartada del camarero y avisa a la policía para que estén esperando en la próxima estación, y que les dirás ahí quien es el asesino para que no escape.
+
+En éste punto, todos los demás pasajeros estarán disponibles para que hables con ellos. Puedes decidir presionar a ciertos personajes para averiguar algo que oculten y/o acceso a su habitación. Éstas historias son:
+
+Haines no es solo un tenista sino un espía de un país extranjero, que utiliza la coartada de tenista para viajar a distintos países. Dará acceso a su habitación.
+Ayva Yan está trabajando en paneles solares y viaja en busca de inversores. Lo considera un avance muy importante y lo quiere mantener en secreto. También dará acceso a su habitación
+Bruno Anthony confiesa su interes amoroso por Larry Sheppard, y que su madre, Norma Anthony, no acepta.
+
+Tras ésta última fase, el tren parará y el detective dará su veredicto final. Si acierta y culpa a Norma, se revelará la conversación que tuvo con Molly el día anterior; y si culpa a la persona equivocada, se descubre luego que es inocente y el jugador ha perdido.
 
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/diagrama.png)
 
-Primero se investiga la habitacion de las hermanas Morton donde  se encontraran varios objetos claves para el caso. A continuación se accede al vagon de clase baja donde  se puede interrogar a 3 pasajeros para obtener algo de informacion trivial y confirmar la coartada de Molly Morton.A partir de  este momento la cafeteria abre para servir los desayunos y el jugador puede explorar libremente el tren entero .Durante el primer turno de  desayunos el jugador puede interrogar a los pasajeros de clase media y al camarero.Tras confirmar la coartada del camarero hablando con el maquinista el turno de  desayunos cambiará y se podrá interrogar a todos los personajes de clase alta si decide profundizar, el jugador  descubrirá que Haines no es un tenista sino un espia y que Ayva Yan está trabajando en una extraña maquina y viaja en busca de inversores.El secreto que se revelará en la trama principal  es el de Bruno Anthony que confiesa su interes amoroso por Larry Sheppard , una rellacion que horroriza a su madre, Norma Anthony.Si el jugador identifica correctamente a Norma como la  asesina  se mostrará una cinematica que desvela una conversacion que mantuvieron Molly y Norma antes del asesinato donde hipotetizan sobre como realizarian un asesinato y Norma le comenta a Molly la idea de intercambiar objetivos algo que confiesa haber escuchado en una pelicula, Molly no pensaba que Norma iba en serio.
+
 - ### 5.2. Personajes ###
 
 - **Larry Shepard:** Un humilde pastor de cabras que viaja en el vagón de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
@@ -89,7 +104,7 @@ Primero se investiga la habitacion de las hermanas Morton donde  se encontraran 
 
 - **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Robert Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Robert. 
 
-- **Ava Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
+- **Ayva Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
 
 - **Daniel Laddie Grooms:** Daniel Grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho.
 
