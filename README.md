@@ -94,7 +94,7 @@ En éste punto, todos los demás pasajeros estarán disponibles para que hables 
 
 - Ayva Yan está trabajando en un proyecto que involucra paneles solares, y por ello busca inversores que pueda financiar dicho proyecto, el cual quiere mantener en secreto por el momento. Después de descubrir esto, dará acceso a su habitación.
 
-- Robert Anthony confiesa tener una relación romántica con Larry Shephard que su madre Norma no acepta.
+- Bruno Anthony confiesa tener una relación romántica con Larry Shephard que su madre Norma no acepta.
 
 Tras esta última fase, el tren parará y el detective dará su veredicto final. Si acierta y culpa a Norma, se revelará la conversación que tuvo con Molly el día anterior; por otro lado, si culpa a la persona equivocada, se descubre que no es el asesino y por ende, que el jugador ha perdido el juego.
 
@@ -110,9 +110,9 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 - **Mery y Molly Morton:** Dos hermanas que intentaron triunfar en el mundo del arte pero acabaron arruinadas en el proceso. Viajan en el vagón de clase baja, con intención de regresar a la gran ciudad con sus padres y buscar un trabajo estable.
 
-- **Robert Anthony:** El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios, como por ejemplo el alcohol. 
+- **Bruno Anthony:** El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios, como por ejemplo el alcohol. 
 
-- **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Robert Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Robert. 
+- **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Bruno Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Bruno. 
 
 - **Ayva Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
 
@@ -131,7 +131,7 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/esquemita%20pal%20gdd.png)
 
-- **Vagón de clase alta:** Un vagón restringido al inicio de la partida donde residen Ayva Yan, Mihael Haines, Norma Anthony y Robert Anthony. Esta zona se desbloquea justo después de investigar el vagón comedor, pero solo se podrá examinar desde el exterior. Para entrar en los compartimentos y buscar pistas, habrá que realizar diferentes tipos de acciones que variarán según el personaje que resida en dichos cuartos.
+- **Vagón de clase alta:** Un vagón restringido al inicio de la partida donde residen Ayva Yan, Mihael Haines, Norma Anthony y Bruno Anthony. Esta zona se desbloquea justo después de investigar el vagón comedor, pero solo se podrá examinar desde el exterior. Para entrar en los compartimentos y buscar pistas, habrá que realizar diferentes tipos de acciones que variarán según el personaje que resida en dichos cuartos.
 
 - **Vagón de clase media:** Uno de los dos vagones que se podrán investigar al inicio, ya que el cádaver estará en uno de los compartimentos de este. Los pasajeros que residen en él son las hermanas Morton, Victor Collins, Frederick Bold y el detective Case, el cual controlará el jugador. Al principio del juego, la mayoría de las habitaciones estarán cerradas y no se podrán investigar hasta que se desbloquee el vagón cafetería, momento en el cual los pasajeros abandonarán sus cuartos.
 
@@ -145,17 +145,17 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 **En la Habitación de Molly y Mery Morton:**
 
-- Uno de los gemelos de Robert Anthony, que se había quedado enganchado en la ropa de Norma.
+- Uno de los gemelos de Bruno Anthony, que se había quedado enganchado en la ropa de Norma.
 
 - Un cable perteneciente a Ayva Yan.
 
 - Una botella de alcohol propiedad de Victor Collins.
 
-**En la habitación de Norma y Robert Anthony:** 
+**En la habitación de Norma y Bruno Anthony:** 
 
 - Una lámpara con una bombilla reemplazada por Daniel Grooms.
 
-- Uno de los gemelos de Robert Anthony.
+- Uno de los gemelos de Bruno Anthony.
 
 - Varias cajas de galletas pertenecientes a Norma Anthony, siendo una de ellas de costura.
 
