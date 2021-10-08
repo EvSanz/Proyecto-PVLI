@@ -39,7 +39,6 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   + Arriba, centrada, estará la barra de sospecha, que indica cuánto las acciones del personaje están haciendo sospechar a otros pasajeros.
   + En la esquina inferior derecha estará la libreta de detective, que incuirá apuntes de algunas pruebas, objetos y datos que vaya consiguiendo el jugador.
   
-  
   ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/interfaz_diagrama.png)
   
 
@@ -78,11 +77,9 @@ El juego estará compuesto de sprites realizados en pixelart con una resolución
 
 - ### 5.1. Historia ###
 
-**ADVERTENCIA SPOILERS**
+Norma Anthony y Molly Morton conversan a solas durante el primer día de viaje y Norma, aparentemente de broma, menciona que quiere matar a Larry Shepard por estar en una relación con su hijo y Molly, creyendo que no iba en serio, menciona que querría deshacerse de su hermana Mery porque fue admitida en una prestigiosa escuela de arte y ella no. Ese mismo día deciden hacer un trato, en el cual Norma mataría a Mery y Molly a Larry. Al día siguiente, Mery aparece estrangulada en su habitación.
 
-Norma Anthony y Molly Morton entablan una conversación a solas, y Norma, aparentemente de broma, menciona que quiere matar a Larry Shepard, por estar en una relación con su hijo Anthony, y Molly, creyendo que iba de broma y que la anciana tuviera algún problema mental, menciona que a su hermana Mery por que fue admitida en una escuela de arte prestigiosa y a ella no. Hacen un pacto que Norma mataría a Mery y Molly a Larry. Al día siguiente aparece Mery muerta por ahorcamiento en su cama.
-
-Es en esta mañana cuando nuestro protagonista, el investigador Ted Case, se sube a un tren para ir a visitar a un familiar cercano. Nada más subirse, Molly acude asustada y llorando al investigador, y entre balbuceos se entiende que quiere que vayas a su habitación, donde encuentra el cadáver de su hermana, y entiende que quiere que averigüe quién fue.
+Asustada, Molly decide pedir ayuda al detective Ted Case, quien ha subido al tren con intención de visitar a un familiar. Nada más subirse, Molly acude asustada y llorando al investigador, y entre balbuceos se entiende que quiere que vayas a su habitación, donde encuentra el cadáver de su hermana, y entiende que quiere que averigüe quién fue.
 
 Aquí el jugador podrá sacar todas las pistas que pueda descubrir de la habitación. El vagón comedor estará cerrado dado que es bastante temprano, por lo que el jugador deberá hacer sus primeras interrogaciones en el vagón de clase baja ya que todos los de media están dormidos y encerrados en su habitación. 
 
