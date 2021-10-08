@@ -20,6 +20,10 @@
   + _Pre-producción_: 25-10-2021 / 31-10-2021
   + _Producción_: 22-11-2021 / 28-10-2021
   + _Lanzamiento_: 20-12-2021 / 26-12-2021
+
+- ### 1.1. Resumen ###
+
+Derailed Trade es una aventura gráfica de misterio en la que el jugador debe averiguar la identidad del asesino interrogando a los pasajeros de un tren, tratando de que estos no se percaten de que ha habido un crimen. Este juego cuenta con elementos de investigación de escenarios y de ir descubriendo una historia mediante preguntas a los diferentes personajes.
   
 ## 2. Aspectos generales ##
 
@@ -35,12 +39,20 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   + En la parte inferior de la pantalla estará el cuadro de diálogo.
   + En la esquina inferior izquierda, al lado del cuadro del diálogo, habrá una imagen de la cara del personaje que está hablando.
   + Debajo del cuadro de diálogo habrá un diagrama del pulso de la persona a la que estás interrogando.
-  + En la esquina superior izquierda, estará el botón del menú de la partida con ajustes varios.
+  + En la esquina superior izquierda, habrá un círculo con forma de reloj que indicará las acciones restantes de la partida.
+  + En la esquina superior derecha, estará el botón del menú de la partida con ajustes varios.
   + Arriba, centrada, estará la barra de sospecha, que indica cuánto las acciones del personaje están haciendo sospechar a otros pasajeros.
   + En la esquina inferior derecha estará la libreta de detective, que incuirá apuntes de algunas pruebas, objetos y datos que vaya consiguiendo el jugador.
   
   ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/interfaz_diagrama.png)
   
+ - Control: TBC
+  + Movimiento WASD
+  + Objetos e interacciones: E
+  + Diario: Q
+
+- ### 3.2. Menú ### 
+TBC
 
 ## 4. Jugabilidad ##
 
@@ -53,7 +65,11 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 + _Diálogos:_ Cuando el jugador se acerque a un NPC y pulse la tecla de interactuar, el la parte inferior de la pantalla aparecerán una imagen del NPC elegido; el cuadro de diálogo con el texto; debajo de éste una línea similar a los signos vitales, que el jugador podrá usar para determinar el humor del NPC interrogado; y un cuaderno en el cual se podrán anotar ciertas palabras clave dichas por los personajes que podrán impactar futuras conversaciones. 
 Durante la gran mayoría de las conversaciones, el jugador tendrá que responder al NPC  utilizando una lista de opciones para decirle, las cuales impactarán en la historia de distintas maneras tanto para bien como para mal.
 
-+ _Barra de sospecha:_ Si a la hora de elegir la opción de diálogo se elige una que pueda levantar sospechas al resto de personajes (por ejemplo, mencionando directamente algún objeto encontrado en una habitación privada), la barra de sospecha se llenará. Si ésta llega a llenarse, los demás personajes estarán convencidos de que el asesino es el protagonista, lo cual conllevará a una partida perdida.
++ _Barra de sospecha:_ Si a la hora de elegir la opción de diálogo se elige una que pueda levantar sospechas al resto de personajes (por ejemplo, mencionando directamente algún objeto encontrado en una habitación privada), la barra de sospecha se llenará. Si ésta llega a llenarse, los demás personajes estarán convencidos de que el asesino es el protagonista, lo cual conllevará a una partida perdida. También, si se preguntan cosas directas sobre el asesinato o "raras" que puedan hacer pensar a los personajes que algo anda mal, ya que los pasajeros no saben que se ha cometido un asesinato.
+
++ _Gasto de tiempo_: TBC
+
++ _Diario_: TBC (apuntar pistas y objetos y acceder a ellos para repasarlos en el diario)
 
 - ### 4.2. Dinámica ###
 
