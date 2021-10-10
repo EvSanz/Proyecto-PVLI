@@ -7,6 +7,7 @@
 [Diagrama]:/Proyecto-PVLI/blob/main/diagrama.png "IMG - diagramaestados"
 [BocetoUI]:/Proyecto-PVLI/blob/main/interfaz_diagrama.png "IMG - bocetoUi"
 
+
 ## 1. Resumen ##
 
 - **Géneros**: Misterio, novela gráfica.
@@ -21,20 +22,25 @@
   + _Producción_: 22-11-2021 / 28-10-2021
   + _Lanzamiento_: 20-12-2021 / 26-12-2021
 
+
 - ### 1.1. Resumen ###
 
-Derailed Trade es una aventura gráfica de misterio en la que el jugador debe averiguar la identidad del asesino interrogando a los pasajeros de un tren, tratando de que estos no se percaten de que ha habido un crimen. Este juego cuenta con elementos de investigación de escenarios y de ir descubriendo que sucedió la noche anterior mediante preguntas a los diferentes personajes.
+Derailed Trade es una aventura gráfica de misterio en la que el jugador debe averiguar la identidad del asesino interrogando a los pasajeros de un tren. Este juego cuenta con elementos de investigación de escenarios y de ir descubriendo que sucedió la noche anterior mediante preguntas a los diferentes personajes.
+  
   
 ## 2. Aspectos generales ##
 
 - ### 2.1. Relato breve y parcial de una partida típica ###
 
 La partida comenzará con el jugador familiarizándose con el entorno, los controles y algunos personajes antes de que se revele el suceso que desencadenará toda la historia: un asesinato. El jugador podrá  recorrer el tren investigando algunas habitaciones e interrogando a los pasajeros pera recabar informacion.Para esta aventura el jugador cuenta con un diario donde se irán anotando de forma automática datos recogidos en los interrogatorios e informacion sobre los objetos que encontramos en las investigaciones.Cuando el jugador crea que tiene us sospechosos potencial podrá regresar a su cuarto para desvelar al asesino.Tambien es posible que no tengas ninguna sospecha clara hasta el final del trayecto o hasta quedarse sin acciones disponibles en cuyo caso el juego te obligará a elegir un asesino al llegar a la siguiente parada.   Si el jugador consigue identificar al asesino, este será detenido por la policia.En caso de ser el sospechoso incorrecto se mostrará un periodico detallando otro asesinato similar en el tren que da a entender al jugador que se ha equivocado. 
+
+
 ## 3. Menús y modos de juego ##
 
 - ### 3.1. Interfaz  ###
 
 - HUD:
+
   + En la parte inferior de la pantalla estará el cuadro de diálogo.
   + En la esquina inferior izquierda, al lado del cuadro del diálogo, habrá una imagen de la cara del personaje que está hablando.
   + Debajo de la imagen del personaje que está hablando aparece su barra de  incomodidad.
@@ -45,41 +51,48 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/interfaz_diagrama.png)
   
   
-  -3.2 ###Controles###: TBC
-  + Movimiento:El personaje principal se moverá de izquierda a derecha con los teclas  "A" y "D" y dentro de los menús de dialogos navegaremos por las opciones con "W" y "S".
+- ### 3.2 Controles ###
+  
+  + Movimiento: El personaje principal se moverá de izquierda a derecha con los teclas  "A" y "D" y dentro de los menús de dialogos navegaremos por las opciones con "W" y "S".
   + Objetos e interacciones: Al aproximarte a un objeto o persona con el que puedas interactuar la interacción comienza al pulsar la tecla "E". 
   + Diario: En cualquier momento del juego se podrá acceder a la informacion contenida en el diario presionando la tecla "Q".
-  + Click izquierdo:Durante una inspección podras recoger objectos y añadirlos al diario haciendo click izquierdo sobre él.Durante un dialogo podras clickear directamente sobre la opción de dialogo que quieras elegir. 
+  + Click izquierdo: Durante una inspección podras recoger objectos y añadirlos al diario haciendo click izquierdo sobre él.Durante un dialogo podras clickear directamente sobre la opción de dialogo que quieras elegir. 
   
 
-
 - ### 3.3. Menús ### 
+
 +Menú principal:El menú que aparece al principio del juego contará con un botón "play" para iniciar la partida, un botón de ajustes y un botón que muestra los creditos.
 +Menú de ajustes:mostrará los ajustes del juego.
 +Menú del diario: Al activar el diario se mostrará un libro abierto con una lista de objetos en la pagina derecha y una lista de la información recabada en los dialogos en la página izquierda.
+
 
 ## 4. Jugabilidad ##
 
 - ### 4.1. Mecánicas ###
 
-+ _Movimiento:_ El jugador podrá mover al protagonista de un lado a otro de cada vagón a una velocidad constante para interactuar con personajes o abrir puertas que lleven a otro vagón o den acceso a las habitaciones.
++ _Movimiento_: El jugador podrá mover al protagonista de un lado a otro de cada vagón a una velocidad constante para interactuar con personajes o abrir puertas que lleven a otro vagón o den acceso a las habitaciones.
 
-+ _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales abrirán nuevas opciones de diálogo que ayuden a resolver el caso.
++ _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales anotará en su diario.
 
-+ _Diálogos:_ Cuando el jugador se acerque a un NPC y pulse la tecla de interactuar, el la parte inferior de la pantalla aparecerán una imagen del NPC elegido; el cuadro de diálogo con el texto; debajo de éste la barra de incomodidad de ese personaje, que el jugador podrá usar para determinar el humor del NPC interrogado. 
-Durante las conversaciones, el jugador tendrá que responder al NPC  utilizando una lista de opciones de dialogo las cuales determinará la cantidad de información que el jugador es capaz de sacar de ese personaje.
-+_ Barra de incomodidad: Durante los dialogos con otros personajes se ofreceran ciertas opciones que pueden ofrecer informacion muy valiosa pero tambien incomodar al personaje que está siendo interrogado.Si esta barra llega al máximo el NPC se negará a  hablar con nosotros en un futuro. 
-+ _Gasto de tiempo_: Cada interrogatorio y cada investigación consumen tiempo que se irá añadiendo al indicador de la esquina superior izquierda de la pantalla.Cuando el circulo se complete habremos gastado todo nuestro tiempo lo que indica que el tren ya ha llegaod a la parada.En este momento el juego nos forzará a elegir un asesino entre los pasajeros.
-+ Desvelar asesino:En cualquier momento el jugador podrá acceder a su cuarto para terminar el juego y que se le muestre una pantala con todos los parajeros del tren.En este momento el jugador debe clickar sobre el que que crea que es el posible asesino y confrimar su decision para terminar el juego.Esta pantalla se mostrará tambien al llenar el indicador de tiempo.
++ _Diálogos_: Cuando el jugador se acerque a un NPC y pulse la tecla de interactuar, el la parte inferior de la pantalla aparecerán una imagen del NPC elegido; el cuadro de diálogo con el texto; debajo de éste la barra de incomodidad de ese personaje, que el jugador podrá usar para determinar el humor del NPC interrogado. 
+Durante las conversaciones, el diario se actualizará automáticamente para añadir información clave sobre el personaje interrogado u otros pasajeros.
+El jugador tendrá que responder o preguntar al NPC utilizando una lista de opciones de diálogo, y dependiendo cual elija se ofrecerá cierta cantidad de información y/o llene la barra de incomodidad del personaje interrogado.
 
-+ _Diario_: Durante las investigacione se recogeran objetos que se apuntaran de forma automática y durante los dialogos obtendremos información clave que también qurdará recogida en el diario de forma automatica
++ _Barra de incomodidad_: Durante los diálogos con otros personajes, la opción de diálogo que se elija pueden incomodar al pasajero que está siendo interrogado, lo cual hará que ésta barra se llene. Si llega al máximo el NPC se negará a hablar con nosotros en un futuro.
+
++ _Gasto de tiempo_: Cada interrogatorio e investigación consumen tiempo que se irá añadiendo al indicador de la esquina superior izquierda de la pantalla. Cuando el círculo se complete habremos gastado todo nuestro tiempo lo que indica que el tren ya ha llegado a la estación. En este momento, el juego nos forzará a la pantalla de desvelar asesino.
+
++ _Desvelar asesino_: Consiste en una pantalla en la que se muestran a todos los pasajeros del tren, y el jugador podrá hacer click sobre uno de ellos para indicar quién cree que es el asesino. Después de hacer su elección el juego acabará a la vez que se mostrará un texto en el que diga si ha elegido o no al verdadero asesino. Ésta pantalla se mostrará cuando se llene el indicador de tiempo o si el jugador decide acceder a su habitación en cualquier momento del juego.
+
++ _Diario_: Durante las inspecciones de habitaciones se recogerán objetos que se apuntarán de forma automática y durante los diálogos obtendremos información clave que también quedará recogida en el diario de forma automática. Al pulsar la tecla 'Q' se mostrará una pantalla con toda la información recogida hasta el momento.
 
 
 - ### 4.2. Dinámica ###
 
 + _Objetivo:_ El objetivo del juego consiste en descubrir quién es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el jugador) 
 
-+ _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, teniendo en cuenta que el numero de acciones que podremos tomar en una partida es limitado y que determinadas opciones de dialogo pueden incomodar a los pasajeros y hacer que no quieran volver a hablar con el detective bloqueando grandes  cantidades de posible infromación crucial para el caso.   
++ _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, teniendo en cuenta que el número de acciones que podremos tomar en una partida es limitado y que determinadas opciones de diálogo pueden incomodar a los pasajeros y hacer que no quieran volver a hablar con el detective bloqueando grandes cantidades de posible información crucial para el caso.   
+
 
 - ### 4.3. Estética ###
 
@@ -196,7 +209,7 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 Para realizar la distribución de tareas relacionadas con el proyecto estamos utilizando la plataforma de Pivotal Tracker, para almacenar documentos escritos o realizar presentaciones utilizamos una carpeta compartida en Google Drive, y, para mantener un repositorio con los datos guardados del proyecto utilizamos Git Hub. 
 
-Por otro lado, para realizar reuniones utilizamos la plataforma de Discord, mientras que para hacer recordatorios o tomar decisiones solemos utilizar WhatsApp. 
+Por otro lado, para realizar reuniones utilizamos la plataforma de Discord, mientras que para hacer recordatorios o tomar decisiones rápidas solemos utilizar WhatsApp. 
 
 ## 7. Plataformas de comunicación ##
 
