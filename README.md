@@ -61,16 +61,16 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 
 - ### 3.3. Menús ### 
 
-+Menú principal:El menú que aparece al principio del juego contará con un botón "play" para iniciar la partida, un botón de ajustes y un botón que muestra los creditos.
-+Menú de ajustes:mostrará los ajustes del juego.
-+Menú del diario: Al activar el diario se mostrará un libro abierto con una lista de objetos en la pagina derecha y una lista de la información recabada en los dialogos en la página izquierda.
+  + Menú principal: El menú que aparece al principio del juego contará con un botón "play" para iniciar la partida, un botón de ajustes y un botón que muestra los créditos.
+  + Menú de ajustes: Mostrará los ajustes del juego.
+  + Menú del diario: Al activar el diario se mostrará un libro abierto con una lista de objetos en la pagina derecha y una lista de la información recabada en los diálogos en la página izquierda.
 
 
 ## 4. Jugabilidad ##
 
 - ### 4.1. Mecánicas ###
 
-+ _Movimiento_: El jugador podrá mover al protagonista de un lado a otro de cada vagón a una velocidad constante para interactuar con personajes o abrir puertas que lleven a otro vagón o den acceso a las habitaciones.
++ _Movimiento_: El jugador podrá mover al protagonista de un lado a otro de cada vagón con 'A' y 'D' a una velocidad constante para interactuar con personajes o abrir puertas que lleven a otro vagón o den acceso a las habitaciones.
 
 + _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales anotará en su diario.
 
