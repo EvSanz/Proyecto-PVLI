@@ -70,28 +70,28 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 
 - ### 4.1. Mecánicas ###
 
-+ _Movimiento_: El jugador podrá mover al protagonista de un lado a otro de cada vagón con 'A' y 'D' a una velocidad constante para interactuar con personajes o abrir puertas que lleven a otro vagón o den acceso a las habitaciones.
+  + _Movimiento_: El jugador podrá mover al protagonista de un lado a otro de cada vagón con 'A' y 'D' a una velocidad constante para interactuar con personajes o abrir puertas que lleven a otro vagón o den acceso a las habitaciones.
 
-+ _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales anotará en su diario.
+  + _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales anotará en su diario.
 
-+ _Diálogos_: Cuando el jugador se acerque a un NPC y pulse la tecla de interactuar, el la parte inferior de la pantalla aparecerán una imagen del NPC elegido; el cuadro de diálogo con el texto; debajo de éste la barra de incomodidad de ese personaje, que el jugador podrá usar para determinar el humor del NPC interrogado. 
-Durante las conversaciones, el diario se actualizará automáticamente para añadir información clave sobre el personaje interrogado u otros pasajeros.
-El jugador tendrá que responder o preguntar al NPC utilizando una lista de opciones de diálogo, y dependiendo cual elija se ofrecerá cierta cantidad de información y/o llene la barra de incomodidad del personaje interrogado.
+  + _Diálogos_: Cuando el jugador se acerque a un NPC y pulse la tecla de interactuar, el la parte inferior de la pantalla aparecerán una imagen del NPC elegido; el cuadro de diálogo con el texto; debajo de éste la barra de incomodidad de ese personaje, que el jugador podrá usar para determinar el humor del NPC interrogado. 
+  Durante las conversaciones, el diario se actualizará automáticamente para añadir información clave sobre el personaje interrogado u otros pasajeros.
+  El jugador tendrá que responder o preguntar al NPC utilizando una lista de opciones de diálogo, y dependiendo cual elija se ofrecerá cierta cantidad de información y/o llene la barra de incomodidad del personaje interrogado.
 
-+ _Barra de incomodidad_: Durante los diálogos con otros personajes, la opción de diálogo que se elija pueden incomodar al pasajero que está siendo interrogado, lo cual hará que ésta barra se llene. Si llega al máximo el NPC se negará a hablar con nosotros en un futuro.
+  + _Barra de incomodidad_: Durante los diálogos con otros personajes, la opción de diálogo que se elija pueden incomodar al pasajero que está siendo interrogado, lo cual hará que ésta barra se llene. Si llega al máximo el NPC se negará a hablar con nosotros en un futuro.
 
-+ _Gasto de tiempo_: Cada interrogatorio e investigación consumen tiempo que se irá añadiendo al indicador de la esquina superior izquierda de la pantalla. Cuando el círculo se complete habremos gastado todo nuestro tiempo lo que indica que el tren ya ha llegado a la estación. En este momento, el juego nos forzará a la pantalla de desvelar asesino.
+  + _Gasto de tiempo_: Cada interrogatorio e investigación consumen tiempo que se irá añadiendo al indicador de la esquina superior izquierda de la pantalla. Cuando el círculo se complete habremos gastado todo nuestro tiempo lo que indica que el tren ya ha llegado a la estación. En este momento, el juego nos forzará a la pantalla de desvelar asesino.
 
-+ _Desvelar asesino_: Consiste en una pantalla en la que se muestran a todos los pasajeros del tren, y el jugador podrá hacer click sobre uno de ellos para indicar quién cree que es el asesino. Después de hacer su elección el juego acabará a la vez que se mostrará un texto en el que diga si ha elegido o no al verdadero asesino. Ésta pantalla se mostrará cuando se llene el indicador de tiempo o si el jugador decide acceder a su habitación en cualquier momento del juego.
+  + _Desvelar asesino_: Consiste en una pantalla en la que se muestran a todos los pasajeros del tren, y el jugador podrá hacer click sobre uno de ellos para indicar quién cree que es el asesino. Después de hacer su elección el juego acabará a la vez que se mostrará un texto en el que diga si ha elegido o no al verdadero asesino. Ésta pantalla se mostrará cuando se llene el indicador de tiempo o si el jugador decide acceder a su habitación en cualquier momento del juego.
 
-+ _Diario_: Durante las inspecciones de habitaciones se recogerán objetos que se apuntarán de forma automática y durante los diálogos obtendremos información clave que también quedará recogida en el diario de forma automática. Al pulsar la tecla 'Q' se mostrará una pantalla con toda la información recogida hasta el momento.
+  + _Diario_: Durante las inspecciones de habitaciones se recogerán objetos que se apuntarán de forma automática y durante los diálogos obtendremos información clave que también quedará recogida en el diario de forma automática. Al pulsar la tecla 'Q' se mostrará una pantalla con toda la información recogida hasta el momento.
 
 
 - ### 4.2. Dinámica ###
 
-+ _Objetivo:_ El objetivo del juego consiste en descubrir quién es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el jugador) 
+  + _Objetivo:_ El objetivo del juego consiste en descubrir quién es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el jugador) 
 
-+ _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, teniendo en cuenta que el número de acciones que podremos tomar en una partida es limitado y que determinadas opciones de diálogo pueden incomodar a los pasajeros y hacer que no quieran volver a hablar con el detective bloqueando grandes cantidades de posible información crucial para el caso.   
+  + _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, teniendo en cuenta que el número de acciones que podremos tomar en una partida es limitado y que determinadas opciones de diálogo pueden incomodar a los pasajeros y hacer que no quieran volver a hablar con el detective bloqueando grandes cantidades de posible información crucial para el caso.   
 
 
 - ### 4.3. Estética ###
@@ -134,76 +134,76 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 - ### 5.2. Personajes ###
 
-- **Larry Shepard:** Un humilde pastor de cabras que viaja en el vagón de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
+  - **Larry Shepard:** Un humilde pastor de cabras que viaja en el vagón de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
 
-- **Victor Collins:** Un profesor de matemáticas con un carácter estrafalario y una severa adicción a la bebida. Viaja en el vagón de clase media, aunque suele pasar su tiempo libre en el vagón de clase baja charlando con Larry Shepard. 
+  - **Victor Collins:** Un profesor de matemáticas con un carácter estrafalario y una severa adicción a la bebida. Viaja en el vagón de clase media, aunque suele pasar su tiempo libre en el vagón de clase baja charlando con Larry Shepard. 
 
-- **Mery y Molly Morton:** Dos hermanas que intentaron triunfar en el mundo del arte pero acabaron arruinadas en el proceso. Viajan en el vagón de clase baja, con intención de regresar a la gran ciudad con sus padres y buscar un trabajo estable.
+  - **Mery y Molly Morton:** Dos hermanas que intentaron triunfar en el mundo del arte pero acabaron arruinadas en el proceso. Viajan en el vagón de clase baja, con intención de regresar a la gran ciudad con sus padres y buscar un trabajo estable.
 
-- **Bruno Anthony:** El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios, como por ejemplo el alcohol. 
+  - **Bruno Anthony:** El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios, como por ejemplo el alcohol. 
 
-- **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Bruno Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Bruno. 
+  - **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Bruno Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Bruno. 
 
-- **Ayva Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
+  - **Ayva Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
 
-- **Daniel Laddie Grooms:** Daniel Grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho.
+  - **Daniel Laddie Grooms:** Daniel Grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho.
 
-- **Federick Bold:** Es un arquitecto que fue recientemente despedido tras realizar sugerencias de diseño controversiales. Está buscando trabajo en las ciudades cercanas al ferrocarril, siendo su último intento el pueblo donde finalizaremos el juego. Suele ser serio e irritable, además de poseer una memoria excelente. Viaja en el vagón de clase media, lugar que solo abandona para ir al vagón cafetería a desayunar.
+  - **Federick Bold:** Es un arquitecto que fue recientemente despedido tras realizar sugerencias de diseño controversiales. Está buscando trabajo en las ciudades cercanas al ferrocarril, siendo su último intento el pueblo donde finalizaremos el juego. Suele ser serio e irritable, además de poseer una memoria excelente. Viaja en el vagón de clase media, lugar que solo abandona para ir al vagón cafetería a desayunar.
 
-- **Alfred Hirsch:** Es un empleado que se encarga de vigilar y atender el vagón cafetería, en el cual trabaja como camarero y cocinero. Es muy servicial y aunque parezca muy serio, siempre está dispuesto a ayudar. Duerme en un compartimento especial que hay en susodicho vagón.
+  - **Alfred Hirsch:** Es un empleado que se encarga de vigilar y atender el vagón cafetería, en el cual trabaja como camarero y cocinero. Es muy servicial y aunque parezca muy serio, siempre está dispuesto a ayudar. Duerme en un compartimento especial que hay en susodicho vagón.
 
-- **Barry Railway:** Desde pequeño se dedicaba a montar maquetas de trenes, y aunque ahora que tiene el trabajo que siempre ha querido, solo desea tener más tiempo para sus maquetas. Aún así, se toma su trabajo en serio y no aguanta ningún tipo de distracción. Es poco hablador y prefiere evitar que haya problemas en el tren, motivo por el cual prohibe de forma explícita al detective Case informar a los pasajeros del asesinato.
+  - **Barry Railway:** Desde pequeño se dedicaba a montar maquetas de trenes, y aunque ahora que tiene el trabajo que siempre ha querido, solo desea tener más tiempo para sus maquetas. Aún así, se toma su trabajo en serio y no aguanta ningún tipo de distracción. Es poco hablador y prefiere evitar que haya problemas en el tren, motivo por el cual prohibe de forma explícita al detective Case informar a los pasajeros del asesinato.
 
-- **Mihael Haines:** Su sueño siempre había sido ser tenista, pero las circunstancias lo llegaron a trabajar como un espía. A pesar de ello, decidió compaginar su pasión y su trabajo, utilizando su nueva vida como tenista para viajar de un objetivo a otro mientras participa en diferentes torneos. Puede permitirse viajar en clase alta y evita relacionarse con otros pasajeros.
+  - **Mihael Haines:** Su sueño siempre había sido ser tenista, pero las circunstancias lo llegaron a trabajar como un espía. A pesar de ello, decidió compaginar su pasión y su trabajo, utilizando su nueva vida como tenista para viajar de un objetivo a otro mientras participa en diferentes torneos. Puede permitirse viajar en clase alta y evita relacionarse con otros pasajeros.
 
 
 - ### 5.3 Lugares ###
 
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/esquemita%20pal%20gdd.png)
 
-- **Vagón de clase alta:** Un vagón  donde residen Ayva Yan, Mihael Haines, Norma Anthony y Bruno Anthony. Esta zona se desbloquea justo después de investigar el vagón comedor, pero solo se podrá examinar desde el exterior. Para entrar en los compartimentos y buscar pistas, habrá que realizar diferentes tipos de acciones que variarán según el personaje que resida en dichos cuartos.
+  - **Vagón de clase alta:** Un vagón  donde residen Ayva Yan, Mihael Haines, Norma Anthony y Bruno Anthony. Esta zona se desbloquea justo después de investigar el vagón comedor, pero solo se podrá examinar desde el exterior. Para entrar en los compartimentos y buscar pistas, habrá que realizar diferentes tipos de acciones que variarán según el personaje que resida en dichos cuartos.
 
-- **Vagón de clase media:** el cádaver estará en uno de los compartimentos de este. Los pasajeros que residen en él son las hermanas Morton, Victor Collins, Frederick Bold y el detective Case, el cual controlará el jugador. Al principio del juego, la mayoría de las habitaciones estarán cerradas y no se podrán investigar hasta que se desbloquee el vagón cafetería, momento en el cual los pasajeros abandonarán sus cuartos.
+  - **Vagón de clase media:** el cádaver estará en uno de los compartimentos de este. Los pasajeros que residen en él son las hermanas Morton, Victor Collins, Frederick Bold y el detective Case, el cual controlará el jugador. Al principio del juego, la mayoría de las habitaciones estarán cerradas y no se podrán investigar hasta que se desbloquee el vagón cafetería, momento en el cual los pasajeros abandonarán sus cuartos.
 
-- **Vagón de clase baja:** Uno de los  vagones  donde el jugador podrá investigar libremente, debido a que no dispone de compartimentos y hay varios personajes deambulando por allí. En este vagón viajan Daniel Grooms y Larry Shephard, aunque es frecuente ver al resto del elenco en esta zona.
+  - **Vagón de clase baja:** Uno de los  vagones  donde el jugador podrá investigar libremente, debido a que no dispone de compartimentos y hay varios personajes deambulando por allí. En este vagón viajan Daniel Grooms y Larry Shephard, aunque es frecuente ver al resto del elenco en esta zona.
 
-- **Vagón comedor:** Zona desbloqueable después de investigar los vagones de clase baja y media (Aunque este último será de forma más superficial), que hace de nexo con el vagón de clase alta y la locomotora, y donde podremos encontrar a Alfred Hirsch, el camarero. Gracias a él se desbloquea la exploración del resto de zonas.
+  - **Vagón comedor:** Zona desbloqueable después de investigar los vagones de clase baja y media (Aunque este último será de forma más superficial), que hace de nexo con el vagón de clase alta y la locomotora, y donde podremos encontrar a Alfred Hirsch, el camarero. Gracias a él se desbloquea la exploración del resto de zonas.
 
-- **Locomotora:** El espacio más pequeño del juego, donde podremos encontrar al maquinista Barry Railway y algunas pistas de vital importancia. Se desbloquea al mismo tiempo que el vagón de clase alta.
+  - **Locomotora:** El espacio más pequeño del juego, donde podremos encontrar al maquinista Barry Railway y algunas pistas de vital importancia. Se desbloquea al mismo tiempo que el vagón de clase alta.
 
 - ### 5.4 Objetos ###
 
-**En la Habitación de Molly y Mery Morton:**
+  **En la Habitación de Molly y Mery Morton:**
 
-- Uno de los gemelos de Bruno Anthony, que se había quedado enganchado en la ropa de Norma.
+  - Uno de los gemelos de Bruno Anthony, que se había quedado enganchado en la ropa de Norma.
 
-- Un cable perteneciente a Ayva Yan.
+  - Un cable perteneciente a Ayva Yan.
 
-- Una botella de alcohol propiedad de Victor Collins.
+  - Una botella de alcohol propiedad de Victor Collins.
 
-**En la habitación de Norma y Bruno Anthony:** 
+  **En la habitación de Norma y Bruno Anthony:** 
 
-- Una lámpara con una bombilla reemplazada por Daniel Grooms.
+  - Una lámpara con una bombilla reemplazada por Daniel Grooms.
 
-- Uno de los gemelos de Bruno Anthony.
+  - Uno de los gemelos de Bruno Anthony.
 
-- Varias cajas de galletas pertenecientes a Norma Anthony, siendo una de ellas de costura.
+  - Varias cajas de galletas pertenecientes a Norma Anthony, siendo una de ellas de costura.
 
-**En la Habitación de Mihael Haines:**
+  **En la Habitación de Mihael Haines:**
 
-- Una raqueta de tenis.
+  - Una raqueta de tenis.
 
-- Un maletín cerrado con contraseña, que oculta un dispositivo de comunicación y varios pasaportes falsos.
+  - Un maletín cerrado con contraseña, que oculta un dispositivo de comunicación y varios pasaportes falsos.
 
-- Una caja de cereales que contiene la contraseña del maletín.
+  - Una caja de cereales que contiene la contraseña del maletín.
 
-**En la habitación de Ayva Yan:**
+  **En la habitación de Ayva Yan:**
 
-- Cables idénticos a los que aparecen en la escena del crimen.
+  - Cables idénticos a los que aparecen en la escena del crimen.
 
-- Varios prototipos de placas solares.
+  - Varios prototipos de placas solares.
 
-- Una caja de galletas, regalo de Norma Anthony tras ayudarla.
+  - Una caja de galletas, regalo de Norma Anthony tras ayudarla.
 
 ## 6. Plataformas de gestión ##
 
