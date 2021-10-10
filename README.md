@@ -9,7 +9,7 @@
 
 ## 1. Resumen ##
 
-- **Géneros**: Misterio, novela gráfica, puzzles
+- **Géneros**: Misterio, novela gráfica.
 
 - **Modos**: 1 Jugador.
 - **Público objetivo**: Jugadores casuales mayores de 12 años.
@@ -23,36 +23,40 @@
 
 - ### 1.1. Resumen ###
 
-Derailed Trade es una aventura gráfica de misterio en la que el jugador debe averiguar la identidad del asesino interrogando a los pasajeros de un tren, tratando de que estos no se percaten de que ha habido un crimen. Este juego cuenta con elementos de investigación de escenarios y de ir descubriendo una historia mediante preguntas a los diferentes personajes.
+Derailed Trade es una aventura gráfica de misterio en la que el jugador debe averiguar la identidad del asesino interrogando a los pasajeros de un tren, tratando de que estos no se percaten de que ha habido un crimen. Este juego cuenta con elementos de investigación de escenarios y de ir descubriendo que sucedió la noche anterior mediante preguntas a los diferentes personajes.
   
 ## 2. Aspectos generales ##
 
 - ### 2.1. Relato breve y parcial de una partida típica ###
 
-La partida comenzará con el jugador familiarizándose con el entorno, los controles y algunos personajes antes de que se revele el suceso que desencadenará toda la historia: un asesinato. El jugador deberá reunir todas las pistas posibles e interrogar a los pasajeros sin levantar sospechas, antes de que el tren llegue a la próxima parada. Si el jugador consigue identificar al asesino, este será detenido por la policía; por otro lado, si las acciones del jugador levantan sospechas en el resto de personajes superando un límite establecido, será acusado por los pasajeros y perderá la partida.
-
+La partida comenzará con el jugador familiarizándose con el entorno, los controles y algunos personajes antes de que se revele el suceso que desencadenará toda la historia: un asesinato. El jugador podrá  recorrer el tren investigando algunas habitaciones e interrogando a los pasajeros pera recabar informacion.Para esta aventura el jugador cuenta con un diario donde se irán anotando de forma automática datos recogidos en los interrogatorios e informacion sobre los objetos que encontramos en las investigaciones.Cuando el jugador crea que tiene us sospechosos potencial podrá regresar a su cuarto para desvelar al asesino.Tambien es posible que no tengas ninguna sospecha clara hasta el final del trayecto o hasta quedarse sin acciones disponibles en cuyo caso el juego te obligará a elegir un asesino al llegar a la siguiente parada.   Si el jugador consigue identificar al asesino, este será detenido por la policia.En caso de ser el sospechoso incorrecto se mostrará un periodico detallando otro asesinato similar en el tren que da a entender al jugador que se ha equivocado. 
 ## 3. Menús y modos de juego ##
 
-- ### 3.1. Interfaz y control ###
+- ### 3.1. Interfaz  ###
 
 - HUD:
   + En la parte inferior de la pantalla estará el cuadro de diálogo.
   + En la esquina inferior izquierda, al lado del cuadro del diálogo, habrá una imagen de la cara del personaje que está hablando.
-  + Debajo del cuadro de diálogo habrá un diagrama del pulso de la persona a la que estás interrogando.
+  + Debajo de la imagen del personaje que está hablando aparece su barra de  incomodidad.
   + En la esquina superior izquierda, habrá un círculo con forma de reloj que indicará las acciones restantes de la partida.
   + En la esquina superior derecha, estará el botón del menú de la partida con ajustes varios.
-  + Arriba, centrada, estará la barra de sospecha, que indica cuánto las acciones del personaje están haciendo sospechar a otros pasajeros.
   + En la esquina inferior derecha estará la libreta de detective, que incuirá apuntes de algunas pruebas, objetos y datos que vaya consiguiendo el jugador.
   
   ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/interfaz_diagrama.png)
   
- - Control: TBC
-  + Movimiento WASD
-  + Objetos e interacciones: E
-  + Diario: Q
+  
+  -3.2 ###Controles###: TBC
+  + Movimiento:El personaje principal se moverá de izquierda a derecha con los teclas  "A" y "D" y dentro de los menús de dialogos navegaremos por las opciones con "W" y "S".
+  + Objetos e interacciones: Al aproximarte a un objeto o persona con el que puedas interactuar la interacción comienza al pulsar la tecla "E". 
+  + Diario: En cualquier momento del juego se podrá acceder a la informacion contenida en el diario presionando la tecla "Q".
+  + Click izquierdo:Durante una inspección podras recoger objectos y añadirlos al diario haciendo click izquierdo sobre él.Durante un dialogo podras clickear directamente sobre la opción de dialogo que quieras elegir. 
+  
 
-- ### 3.2. Menú ### 
-TBC
+
+- ### 3.3. Menús ### 
++Menú principal:El menú que aparece al principio del juego contará con un botón "play" para iniciar la partida, un botón de ajustes y un botón que muestra los creditos.
++Menú de ajustes:mostrará los ajustes del juego.
++Menú del diario: Al activar el diario se mostrará un libro abierto con una lista de objetos en la pagina derecha y una lista de la información recabada en los dialogos en la página izquierda.
 
 ## 4. Jugabilidad ##
 
@@ -60,22 +64,22 @@ TBC
 
 + _Movimiento:_ El jugador podrá mover al protagonista de un lado a otro de cada vagón a una velocidad constante para interactuar con personajes o abrir puertas que lleven a otro vagón o den acceso a las habitaciones.
 
-+ _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego o la cocina, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales abrirán nuevas opciones de diálogo que ayuden a resolver el caso.
++ _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales abrirán nuevas opciones de diálogo que ayuden a resolver el caso.
 
-+ _Diálogos:_ Cuando el jugador se acerque a un NPC y pulse la tecla de interactuar, el la parte inferior de la pantalla aparecerán una imagen del NPC elegido; el cuadro de diálogo con el texto; debajo de éste una línea similar a los signos vitales, que el jugador podrá usar para determinar el humor del NPC interrogado; y un cuaderno en el cual se podrán anotar ciertas palabras clave dichas por los personajes que podrán impactar futuras conversaciones. 
-Durante la gran mayoría de las conversaciones, el jugador tendrá que responder al NPC  utilizando una lista de opciones para decirle, las cuales impactarán en la historia de distintas maneras tanto para bien como para mal.
++ _Diálogos:_ Cuando el jugador se acerque a un NPC y pulse la tecla de interactuar, el la parte inferior de la pantalla aparecerán una imagen del NPC elegido; el cuadro de diálogo con el texto; debajo de éste la barra de incomodidad de ese personaje, que el jugador podrá usar para determinar el humor del NPC interrogado. 
+Durante las conversaciones, el jugador tendrá que responder al NPC  utilizando una lista de opciones de dialogo las cuales determinará la cantidad de información que el jugador es capaz de sacar de ese personaje.
++_ Barra de incomodidad: Durante los dialogos con otros personajes se ofreceran ciertas opciones que pueden ofrecer informacion muy valiosa pero tambien incomodar al personaje que está siendo interrogado.Si esta barra llega al máximo el NPC se negará a  hablar con nosotros en un futuro. 
++ _Gasto de tiempo_: Cada interrogatorio y cada investigación consumen tiempo que se irá añadiendo al indicador de la esquina superior izquierda de la pantalla.Cuando el circulo se complete habremos gastado todo nuestro tiempo lo que indica que el tren ya ha llegaod a la parada.En este momento el juego nos forzará a elegir un asesino entre los pasajeros.
++ Desvelar asesino:En cualquier momento el jugador podrá acceder a su cuarto para terminar el juego y que se le muestre una pantala con todos los parajeros del tren.En este momento el jugador debe clickar sobre el que que crea que es el posible asesino y confrimar su decision para terminar el juego.Esta pantalla se mostrará tambien al llenar el indicador de tiempo.
 
-+ _Barra de sospecha:_ Si a la hora de elegir la opción de diálogo se elige una que pueda levantar sospechas al resto de personajes (por ejemplo, mencionando directamente algún objeto encontrado en una habitación privada), la barra de sospecha se llenará. Si ésta llega a llenarse, los demás personajes estarán convencidos de que el asesino es el protagonista, lo cual conllevará a una partida perdida. También, si se preguntan cosas directas sobre el asesinato o "raras" que puedan hacer pensar a los personajes que algo anda mal, ya que los pasajeros no saben que se ha cometido un asesinato.
++ _Diario_: Durante las investigacione se recogeran objetos que se apuntaran de forma automática y durante los dialogos obtendremos información clave que también qurdará recogida en el diario de forma automatica
 
-+ _Gasto de tiempo_: TBC
-
-+ _Diario_: TBC (apuntar pistas y objetos y acceder a ellos para repasarlos en el diario)
 
 - ### 4.2. Dinámica ###
 
-+ _Objetivo:_ El objetivo del juego consiste en descubrir quién es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el avatar del jugador) 
++ _Objetivo:_ El objetivo del juego consiste en descubrir quién es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el jugador) 
 
-+ _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, además de ser capaz de mantener un nivel de sospecha bajo para no ser acusado por el resto de pasajeros y de interrogar de forma efectiva a los sospechosos, quienes podrán ocultar información crucial en el caso de realizar las preguntas incorrectas.   
++ _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, teniendo en cuenta que el numero de acciones que podremos tomar en una partida es limitado y que determinadas opciones de dialogo pueden incomodar a los pasajeros y hacer que no quieran volver a hablar con el detective bloqueando grandes  cantidades de posible infromación crucial para el caso.   
 
 - ### 4.3. Estética ###
 
@@ -144,11 +148,11 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/esquemita%20pal%20gdd.png)
 
-- **Vagón de clase alta:** Un vagón restringido al inicio de la partida donde residen Ayva Yan, Mihael Haines, Norma Anthony y Bruno Anthony. Esta zona se desbloquea justo después de investigar el vagón comedor, pero solo se podrá examinar desde el exterior. Para entrar en los compartimentos y buscar pistas, habrá que realizar diferentes tipos de acciones que variarán según el personaje que resida en dichos cuartos.
+- **Vagón de clase alta:** Un vagón  donde residen Ayva Yan, Mihael Haines, Norma Anthony y Bruno Anthony. Esta zona se desbloquea justo después de investigar el vagón comedor, pero solo se podrá examinar desde el exterior. Para entrar en los compartimentos y buscar pistas, habrá que realizar diferentes tipos de acciones que variarán según el personaje que resida en dichos cuartos.
 
-- **Vagón de clase media:** Uno de los dos vagones que se podrán investigar al inicio, ya que el cádaver estará en uno de los compartimentos de este. Los pasajeros que residen en él son las hermanas Morton, Victor Collins, Frederick Bold y el detective Case, el cual controlará el jugador. Al principio del juego, la mayoría de las habitaciones estarán cerradas y no se podrán investigar hasta que se desbloquee el vagón cafetería, momento en el cual los pasajeros abandonarán sus cuartos.
+- **Vagón de clase media:** el cádaver estará en uno de los compartimentos de este. Los pasajeros que residen en él son las hermanas Morton, Victor Collins, Frederick Bold y el detective Case, el cual controlará el jugador. Al principio del juego, la mayoría de las habitaciones estarán cerradas y no se podrán investigar hasta que se desbloquee el vagón cafetería, momento en el cual los pasajeros abandonarán sus cuartos.
 
-- **Vagón de clase baja:** Uno de los dos vagones que se podrán investigar al inicio y donde el jugador podrá investigar libremente, debido a que no dispone de compartimentos y hay varios personajes deambulando por allí. En este vagón viajan Daniel Grooms y Larry Shephard, aunque es frecuente ver al resto del elenco en esta zona.
+- **Vagón de clase baja:** Uno de los  vagones  donde el jugador podrá investigar libremente, debido a que no dispone de compartimentos y hay varios personajes deambulando por allí. En este vagón viajan Daniel Grooms y Larry Shephard, aunque es frecuente ver al resto del elenco en esta zona.
 
 - **Vagón comedor:** Zona desbloqueable después de investigar los vagones de clase baja y media (Aunque este último será de forma más superficial), que hace de nexo con el vagón de clase alta y la locomotora, y donde podremos encontrar a Alfred Hirsch, el camarero. Gracias a él se desbloquea la exploración del resto de zonas.
 
