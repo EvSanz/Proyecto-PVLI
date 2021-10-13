@@ -1,11 +1,11 @@
 # Derailed Trade
 > ###### Documento de diseño de videojuego - Versión 15/09/2021 (Hito 0)
-[Esquematren]:/Proyecto-PVLI/blob/main/esquemita%20pal%20gdd.png "IMG - esquema"
-[fondo]:/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png "IMG - fondo"
-[Personaje]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(3).png "IMG - senior"
-[objeto]:/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(4).png "IMG - tetera"
-[Diagrama]:/Proyecto-PVLI/blob/main/diagrama.png "IMG - diagramaestados"
-[BocetoUI]:/Proyecto-PVLI/blob/main/interfaz_diagrama.png "IMG - bocetoUi"
+[Esquematren]:/Proyecto-PVLI/blob/main/Imagenes/esquemita%20pal%20gdd.png "IMG - esquema"
+[fondo]:/Proyecto-PVLI/blob/main/Imagenes/BACKGROUND%20(1)-4.png.png "IMG - fondo"
+[Personaje]:/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(3).png "IMG - senior"
+[objeto]:/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(4).png "IMG - tetera"
+[Diagrama]:/Proyecto-PVLI/blob/main/Imagenes/diagrama.png "IMG - diagramaestados"
+[BocetoUI]:/Proyecto-PVLI/blob/main/Imagenes/interfaz_diagrama.png "IMG - bocetoUi"
 
 
 ## 1. Resumen ##
@@ -48,7 +48,7 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   + En la esquina superior derecha, estará el botón del menú de la partida con ajustes varios.
   + En la esquina inferior derecha estará la libreta de detective, que incuirá apuntes de algunas pruebas, objetos y datos que vaya consiguiendo el jugador.
   
-  ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/interfaz_diagrama.png)
+  ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/interfaz_diagrama.png)
   
   
 - ### 3.2 Controles ###
@@ -101,9 +101,9 @@ El juego estará compuesto de sprites realizados en pixelart con una resolución
 
 | Nombre     | Imagen |
 | ---      | ---       |
-| Fondo | ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/BACKGROUND%20(1)-4.png.png) |
-| Personaje | ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(3).png) |
-| Objeto | ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/New%20Piskel-1.png%20(4).png) |
+| Fondo | ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/BACKGROUND%20(1)-4.png.png) |
+| Personaje | ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(3).png) |
+| Objeto | ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(4).png) |
 
 
 ## 5. Contenido ##
@@ -130,7 +130,7 @@ Tras esta última fase, el tren parará y el detective dará su veredicto final.
 
 A continuación un diagrama con los puntos clave de la historia principal.
 
-![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/diagrama.png)
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/diagrama.png)
 
 - ### 5.2. Personajes ###
 
@@ -159,7 +159,7 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 - ### 5.3 Lugares ###
 
-![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/esquemita%20pal%20gdd.png)
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/esquemita%20pal%20gdd.png)
 
   - **Vagón de clase alta:** Un vagón  donde residen Ayva Yan, Mihael Haines, Norma Anthony y Bruno Anthony. Esta zona se desbloquea justo después de investigar el vagón comedor, pero solo se podrá examinar desde el exterior. Para entrar en los compartimentos y buscar pistas, habrá que realizar diferentes tipos de acciones que variarán según el personaje que resida en dichos cuartos.
 
@@ -240,6 +240,12 @@ Interrogation (Videojuego)
 LA Noire (videojuego)
 
 Heavy Rain (Videojuego)
+
+The Secret of Monkey Island (Videojuego)
+
+Deponia (Videojuego) 
+
+Randall's Monday (Videojuego)
 
 * **Dinámicas:**
 
