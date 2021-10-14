@@ -1,12 +1,9 @@
-*{
-  margin: 0;
-  padding: 0;
+<style>
+.verticalhorizontal {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
 }
-
-.header {
-  min-height: 100;
-  width: 100;
-  background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7), url (https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/BACKGROUND%20(1).gif));
-  background-position: center;
-  position: relative; 
-}
+</style>
