@@ -4,6 +4,7 @@
  * una nueva estrella en otra posición, si el juego no ha terminado.
  * @extends Phaser.GameObjects.Sprite
  */
+ import diario from './diario.js';
 export default class Star extends Phaser.GameObjects.Sprite {
   
   /**
@@ -13,12 +14,16 @@ export default class Star extends Phaser.GameObjects.Sprite {
    * @param {number} x coordenada x
    * @param {number} y coordenada y
    */
-  constructor(scene, base, x, y) {
-    super(scene, x, y, 'star');
+  constructor(scene,x,y, base) {
+    super(scene, 100, 500, 'star').setInteractive();
     this.scene.add.existing(this);
     this.scene.physics.add.existing(this, true);
     this.y -= this.height;
     this.base = base;
+
+  }
+  create() {
+    this.diario= new diario(false);
   }
 
   /**
@@ -28,12 +33,28 @@ export default class Star extends Phaser.GameObjects.Sprite {
   preUpdate() {
     // IMPORTANTE: Si no ponemos esta instrucción y el sprite está animado
     // no se podrá ejecutar la animación del sprite. 
+    let aviso=false;
     super.preUpdate();
     if (this.scene.physics.overlap(this.scene.player, this)) {
         // Delegamos en la escena para decidir qué hacer al 
         // haber cogido una estrella
-        this.scene.starPickt(this.base);
+        
+        if(diario.tetera)
+       { this.scene.starPickt(this.base);
         this.destroy();
+       }
+        else if (!aviso) {console.log("Haz click en la estrella");
+      aviso=true;
+      };
     }
+    else 
+    //aviso=false;
+
+    this.on('pointerdown',()=>{this.setTint(0x00ff00)
+
+    console.log("diario actualizado");
+    diario.tetera=true;
+    }
+    );
   }
 }
