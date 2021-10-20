@@ -24,8 +24,10 @@ export default class Level extends Phaser.Scene {
   create() {
     //this.stars = 10;
     //this.bases = this.add.group();
-    this.player = new Player(this, 200, 300);
-    let tetera = new Star (this,100,800,);
+    this.add.sprite(200,330,'puerta');
+    this.player = new Player(this, 400, 300);
+    this.tetera = new Star (this,300,400);
+    
     //this.physics.add.collider(tetera);
     //tetera.body.collideWorldBounds = true;
     
@@ -57,8 +59,8 @@ export default class Level extends Phaser.Scene {
         this.scene.start('end');
       }
       else {
-        let s = this.bases.children.entries;
-        this.spawn(s.filter(o => o !== base));
+        //let s = this.bases.children.entries;
+        //this.spawn(s.filter(o => o !== base));
 
       }
   }
