@@ -21,7 +21,7 @@ export default class Boot extends Phaser.Scene {
     this.load.setPath('Imagenes/');
     //this.load.image('platform', 'platform');
     //this.load.image('base', 'platform');
-    this.load.image('star', 'New%20Piskel-1.png%20(4).png');
+    this.load.image('star', 'tetera.png');
     this.load.image('player', 'inspector.png');
   }
 

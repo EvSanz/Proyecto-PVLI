@@ -1,5 +1,6 @@
 import Player from './player.js';
 import Platform from './platform.js';
+import Star from './star.js'
 
 /**
  * Escena principal del juego. La escena se compone de una serie de plataformas 
@@ -21,16 +22,19 @@ export default class Level extends Phaser.Scene {
    * Creación de los elementos de la escena principal de juego
    */
   create() {
-    this.stars = 10;
-    this.bases = this.add.group();
+    //this.stars = 10;
+    //this.bases = this.add.group();
     this.player = new Player(this, 200, 300);
-
-    new Platform(this, this.player, this.bases, 150, 350);
+    let tetera = new Star (this,100,800,);
+    //this.physics.add.collider(tetera);
+    //tetera.body.collideWorldBounds = true;
+    
+    /*new Platform(this, this.player, this.bases, 150, 350);
     new Platform(this, this.player, this.bases, 850, 350);
     new Platform(this, this.player, this.bases, 500, 200);
     new Platform(this, this.player, this.bases, 150, 100);
     new Platform(this, this.player, this.bases, 850, 100);
-    this.spawn();
+    this.spawn();*/
   }
 
   /**
@@ -39,7 +43,7 @@ export default class Level extends Phaser.Scene {
    * Si es null, entonces se crea aleatoriamente sobre cualquiera de las bases existentes
    */
   spawn(from = null) {
-    Phaser.Math.RND.pick(from || this.bases.children.entries).spawn();
+    //Phaser.Math.RND.pick(from || this.bases.children.entries).spawn();
   }
 
   /**
@@ -57,5 +61,9 @@ export default class Level extends Phaser.Scene {
         this.spawn(s.filter(o => o !== base));
 
       }
+  }
+  preUpdate()
+  {
+    game.debug.body(tetera);
   }
 }

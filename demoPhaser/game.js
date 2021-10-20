@@ -19,9 +19,10 @@ let config = {
     scene: [Boot, Level, End],
     physics: { 
         default: 'arcade', 
+        debug: true,
         arcade: { 
             gravity: { y: 400 }, 
-            debug: false 
+            debug: true
         } 
     }
 };
