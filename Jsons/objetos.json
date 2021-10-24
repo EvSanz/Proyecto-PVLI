@@ -1,0 +1,152 @@
+{ "Objetos": [
+    {
+        "name": "Gemelo",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Se encontró en la habitación de las Morton. Tiene escrito una 'B'",
+        "important": true,
+        "characters":[
+            "Molly Morton",
+            "Bruno Anthony"
+        ]
+    },
+    {
+        "name": "Cable",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Encontrado en la escena del crimen. Parece que fue usado para ahorcar a la víctima",
+        "important": true,
+        "characters":[
+            "Molly Morton",
+            "Ayva Yan"
+        ]
+    },
+    {
+        "name": "Botella de vino",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Pertenece a la marca Cono Norte, y está casi vacía. Estaba en la habitación de Morton",
+        "important": true,
+        "characters":[
+            "Molly Morton",
+            "Victor Collins"
+        ]
+    },
+    {
+        "name": "Bombilla impecable",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Una bombilla que destaca sobre las demás al ser nueva. Se encontró en la habitación de Norma",
+        "important": true,
+        "characters":[
+            "Norma Anthony",
+            "Bruno Anthony",
+            "Daniel Grooms"
+        ]
+    },
+    {
+        "name": "Gemelo",
+        "posX": 20,
+        "posY": 20,
+        "desc": "El gemelo parejo al que se encontró en la escena del crímen. Tiene escrito una 'A'",
+        "important": true,
+        "characters":[
+            "Norma Anthony",
+            "Bruno Anthony"
+        ]
+    },
+    {
+        "name": "Caja de galletas 1",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Una caja de galletas hechas por Norma. Son de chocolate",
+        "important": false,
+        "characters":[
+            "Norma Anthony",
+            "Bruno Anthony"
+        ]
+    },
+    {
+        "name": "Caja de galletas 2",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Otra caja de galletas. Éstas son de vainilla",
+        "important": false,
+        "characters":[
+            "Norma Anthony",
+            "Bruno Anthony"
+        ]
+    },
+    {
+        "name": "Caja de galletas 3",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Otra caja más de galletas. Ésta contiene un kit de costura en su interior",
+        "important": false,
+        "characters":[
+            "Norma Anthony",
+            "Bruno Anthony"
+        ]
+    },
+    {
+        "name": "Raqueta de tenis",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Encontrada en la habitación de Mihael Haines",
+        "important": false,
+        "characters":[
+            "Mihael Haines"
+        ]
+    },
+    {
+        "name": "Maletín",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Encontrado en la habitación de Haines. Se necesita una contraseña para abrirlo",
+        "important": false,
+        "characters":[
+            "Mihael Haines"
+        ]
+    },
+    {
+        "name": "Caja de cereales",
+        "posX": 20,
+        "posY": 20,
+        "desc": "De la marca Jell'Os, se encontró en la habitación de Haines. Caduca el 2/6/17",
+        "important": false,
+        "characters":[
+            "Mihael Haines"
+        ]
+    },
+    {
+        "name": "Set de cables",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Varios cables muy parecidos al encontrado en la habitación de las Morton. Éste set se encontró en la habitación de Ayva Yan",
+        "important": false,
+        "characters":[
+            "Ayva Yan"
+        ]
+    },
+    {
+        "name": "Aparato extraño",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Una máquina encontrada en la habitación de Ayva Yan que parece tener una especie de bandeja en la parte superior. Pone 6v en la parte inferior",
+        "important": false,
+        "characters":[
+            "Ayva Yan"
+        ]
+    },
+    {
+        "name": "Caja de galletas",
+        "posX": 20,
+        "posY": 20,
+        "desc": "Hechas por Norma Anthony y encontrada en la habitación de Ayva Yan. Son de avena",
+        "important": false,
+        "characters":[
+            "Ayva Yan",
+            "Norma Anthony"
+        ]
+    }
+]}
