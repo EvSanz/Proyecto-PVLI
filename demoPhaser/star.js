@@ -5,6 +5,7 @@
  * @extends Phaser.GameObjects.Sprite
  */
  import diario from './diario.js';
+ import Dialog from './dialog.js';
 export default class Star extends Phaser.GameObjects.Sprite {
   
   /**
@@ -20,11 +21,14 @@ export default class Star extends Phaser.GameObjects.Sprite {
     this.scene.physics.add.existing(this, true);
     //this.y -= this.height;
    // this.base = base;
+
+   this.dialog = new Dialog(this.scene);
    
   }
   create() {
     
    this.diario = new diario(false);
+
   }
 
   /**
@@ -51,10 +55,14 @@ export default class Star extends Phaser.GameObjects.Sprite {
     else 
     //aviso=false;
 
-    this.on('pointerdown',()=>{this.setTint(0x00ff00)
+    this.on('pointerdown',()=>
+    {
+      this.setTint(0x00ff00)
 
-    console.log("diario actualizado");
-    diario.tetera=true;
+      console.log("diario actualizado");
+      diario.tetera=true;
+
+      this.dialog.talk(); //Hace que el objeto diga la línea de diálogo al ser pulsado
     }
     );
   }

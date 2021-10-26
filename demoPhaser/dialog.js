@@ -8,11 +8,12 @@ export default class Dialog
 {
   constructor(scene)
   {
-    this.lines = [];
     this.scene = scene;
-    this.label = this.scene.add.text(200, 375, "");
     this.myData = null;
     this.readTextFile("jsons/dialogues.json", this.onJsonRead, this);
+    this.textNum = 0;
+    this.label = this.scene.add.text(200, 375, "");
+    this.graphics = null;
   }
 
   readTextFile(file, callback, dialog) 
@@ -33,12 +34,42 @@ export default class Dialog
   onJsonRead(text, dialog)
   {
     dialog.myData = JSON.parse(text);
-    console.log(dialog.myData);
-    console.log(dialog.myData.Dialogues[0].char);
+    //console.log(dialog.myData);
+    //console.log(dialog.myData.Dialogues[0].char);
   }
 
   talk()
   {
-    this.label.text = this.myData.Dialogues[0].scenes[0].lines[0];
+    this.createBox();
+    this.textNum = 0;
+    this.label.text = this.myData.Dialogues[0].scenes[0].lines[this.textNum];
   }
+
+  nextText()
+  {
+    if (this.textNum < this.myData.Dialogues[0].scenes[0].lines.length)
+    {
+      this.textNum++;
+      this.label.text = this.myData.Dialogues[0].scenes[0].lines[this.textNum];
+    }
+    else
+    {
+      //textNum = 0; initText
+    }
+   
+  }
+
+  createBox()
+  {
+      //this.graphics = this.scene.add.rectangle(200, 450, 1600, 200, 0xff6699, 0xff6699); //Debug para mirar tamaño de caja de texto
+      this.graphics = new Phaser.GameObjects.Rectangle(this.scene, 200, 450, 1600, 200, 0xfffffff, 0xfffffff);
+      this.graphics.setInteractive();
+
+      this.graphics.on('pointerdown', () => 
+      { 
+          console.log('pointerover'); 
+          this.nextText();
+      });
+  }
+
 }

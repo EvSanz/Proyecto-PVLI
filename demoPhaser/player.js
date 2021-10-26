@@ -36,8 +36,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
   point() {
     this.score++;
     this.updateScore();
-
-    this.dialog.talk();
   }
   
   /**
