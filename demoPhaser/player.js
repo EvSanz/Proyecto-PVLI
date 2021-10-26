@@ -1,4 +1,5 @@
 import Star from './star.js';
+import Dialog from './dialog.js';
 /**
  * Clase que representa el jugador del juego. El jugador se mueve por el mundo usando los cursores.
  * También almacena la puntuación o número de estrellas que ha recogido hasta el momento.
@@ -24,6 +25,8 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.label = this.scene.add.text(10, 10, "");
     this.cursors = this.scene.input.keyboard.createCursorKeys();
     this.updateScore();
+
+    this.dialog = new Dialog(this.scene);
   }
 
   /**
@@ -33,6 +36,8 @@ export default class Player extends Phaser.GameObjects.Sprite {
   point() {
     this.score++;
     this.updateScore();
+
+    this.dialog.talk();
   }
   
   /**

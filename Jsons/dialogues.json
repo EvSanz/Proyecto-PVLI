@@ -1,0 +1,22 @@
+﻿{
+  "Dialogues": [
+    {
+      "char": "Guille",
+      "imageName": "Portrait_Guille",
+      "scenes": [
+        {
+          "id": "Scene0",
+          "lines": [
+            "No podéis pasar a producción sin el gdd correcto",
+            "Tenéis que corregir el gdd"
+          ]
+        },
+        {
+          "id": "Scene1",
+          "lines": [
+            "Ya podéis empezar con la producción"
+          ]
+        }
+      ]
+    }
+]}
