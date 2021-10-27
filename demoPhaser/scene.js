@@ -2,6 +2,7 @@ import Player from './player.js';
 import Platform from './platform.js';
 import Star from './star.js'
 import Base from './base.js'
+import Door from './door.js'
 
 /**
  * Escena principal del juego. La escena se compone de una serie de plataformas 
@@ -25,12 +26,19 @@ export default class Level extends Phaser.Scene {
   create() {
     //this.stars = 10;
     //this.bases = this.add.group();
-    this.add.sprite(150,150,'puerta');
+    let uisuelo;
+    //let puerta;
+    //this.add.sprite(150,150,'puerta');
+    this.door= new Door(this,150,150,'levelpt');
     this.add.sprite(480,174,'ventanas');
     this.add.sprite(830,174,'ventanas');
+    uisuelo=this.add.sprite(500,450,'ui');
+    this.add.sprite(880,230,'guille');
     this.player = new Player(this, 400, 200);
     this.tetera = new Star (this,500,465);
     new Base(this,150,600);
+    this.physics.add.existing(uisuelo, true);
+    this.physics.add.collider(this.player, uisuelo);
     //this.physics.add.collider(tetera);
     //tetera.body.collideWorldBounds = true;
     
