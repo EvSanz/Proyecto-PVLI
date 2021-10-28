@@ -10,9 +10,10 @@ export default class Dialog
   {
     this.scene = scene;
     this.myData = null;
-    this.readTextFile("jsons/dialogues.json", this.onJsonRead, this);
+    //this.myData = JSON.parse(this.cache.getText('dialogue'));
+    this.readTextFile("Jsons/dialogues.json", this.onJsonRead, this); // 'dialogue' no funciona
     this.textNum = 0;
-    this.label = this.scene.add.text(200, 375, "");
+    this.label = this.scene.add.text(275, 375, "");
     this.graphics = null;
   }
 
