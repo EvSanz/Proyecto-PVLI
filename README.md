@@ -132,6 +132,8 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/diagrama.png)
 
+En este diagrama: las formas y colores están seleccionados para claridad visual; la decisión final tras la partida se ve representada como un rombo, los eventos clave entre escenas están en amarillo, las conversaciones más importantes están encuadradas, la fase de investigación final está en azul y consiste en varias conversaciones dentro del límite de acciones, y la dirección de las sospechas que van sugiriendo los personajes del juego se encuentran enmarcadas en rojo.
+
 - ### 5.2. Personajes ###
 
   - **Larry Shepard:** Un humilde pastor de cabras que viaja en el vagón de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
