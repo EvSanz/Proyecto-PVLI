@@ -35,7 +35,7 @@ export default class Level extends Phaser.Scene {
     this.add.sprite(830,174,'ventanas');
     uisuelo=this.add.sprite(500,450,'ui');
     this.add.sprite(880,230,'guille');
-    this.player = new Player(this, 400, 200);
+    this.player = new Player(this, 400, 240);
     this.tetera = new Star (this,600,265);
     new Base(this,150,600);
     this.physics.add.existing(uisuelo, true);
