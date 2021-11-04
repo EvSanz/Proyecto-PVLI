@@ -29,7 +29,8 @@ export default class Level extends Phaser.Scene {
     let uisuelo;
     //let puerta;
     //this.add.sprite(150,150,'puerta');
-    this.door= new Door(this,150,150,'levelpt');
+    this.add.sprite(150,150,'puerta')
+    this.door= new Door(this,140,225,'levelpt');
     this.add.sprite(480,174,'ventanas');
     this.add.sprite(830,174,'ventanas');
     uisuelo=this.add.sprite(500,450,'ui');

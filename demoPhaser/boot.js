@@ -27,9 +27,12 @@ export default class Boot extends Phaser.Scene {
     this.load.image('puerta', 'door.png');
     this.load.image('ui','ui.png');
     this.load.image('guille','guille.png');
-
+    this.load.image('puertafun','workingdoor.png');
+    this.load.image('fondopt','ptfondo.png');
+    
     this.load.setPath('Jsons/');
     this.load.text('dialogue', 'dialogues.json');
+    
   }
 
   /**
