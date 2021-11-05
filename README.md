@@ -1,11 +1,18 @@
 # Derailed Trade
 > ###### Documento de diseño de videojuego - Versión 15/09/2021 (Hito 0)
+> ###### Documento de diseño de videojuego - Versión 29/10/2021 (Hito 1)
 [Esquematren]:/Proyecto-PVLI/blob/main/Imagenes/esquemita%20pal%20gdd.png "IMG - esquema"
 [fondo]:/Proyecto-PVLI/blob/main/Imagenes/BACKGROUND%20(1)-4.png.png "IMG - fondo"
 [Personaje]:/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(3).png "IMG - senior"
 [objeto]:/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(4).png "IMG - tetera"
 [Diagrama]:/Proyecto-PVLI/blob/main/Imagenes/diagrama.png "IMG - diagramaestados"
 [BocetoUI]:/Proyecto-PVLI/blob/main/Imagenes/interfaz_diagrama.png "IMG - bocetoUi"
+[UML]:/Proyecto-PVLI/blob/main/imagenes/UML.drawio.png "IMG - uml"
+
+[Web]: https://evsanz.github.io/Proyecto-PVLI/
+[Repositorio]: https://github.com/EvSanz/Proyecto-PVLI
+[Pivotal]: https://www.pivotaltracker.com/n/projects/2531647
+[Twitter]: https://twitter.com/NimetonStudios?t=g5mx3V4WPiuiLjGqiGzjZg&s=09
 
 
 ## 1. Resumen ##
@@ -21,6 +28,10 @@
   + _Pre-producción_: 25-10-2021 / 31-10-2021
   + _Producción_: 22-11-2021 / 28-10-2021
   + _Lanzamiento_: 20-12-2021 / 26-12-2021
+  
+
+| [Pagina web][Web] | [Repositorio][Repositorio] | [Gestión][Pivotal] | [Twitter][Twitter] |
+| -- | -- | -- | -- |
 
 
 - ### 1.1. Resumen ###
@@ -207,17 +218,21 @@ En este diagrama: las formas y colores están seleccionados para claridad visual
 
   - Una caja de galletas, regalo de Norma Anthony tras ayudarla.
 
-## 6. Plataformas de gestión ##
+## 6. UML ##
+
+  ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/imagenes/UML.drawio.png)
+
+## 7. Plataformas de gestión ##
 
 Para realizar la distribución de tareas relacionadas con el proyecto estamos utilizando la plataforma de Pivotal Tracker, para almacenar documentos escritos o realizar presentaciones utilizamos una carpeta compartida en Google Drive, y, para mantener un repositorio con los datos guardados del proyecto utilizamos Git Hub. 
 
 Por otro lado, para realizar reuniones utilizamos la plataforma de Discord, mientras que para hacer recordatorios o tomar decisiones rápidas solemos utilizar WhatsApp. 
 
-## 7. Plataformas de comunicación ##
+## 8. Plataformas de comunicación ##
 
 Para interactuar con el público se dispone de una cuenta de Twitter y el mismo repositorio de Github, habiendo además una página web del proyecto en proceso.
 
-## 8. Referencias ##
+## 9. Referencias ##
 
 * **Estéticas:**
 
