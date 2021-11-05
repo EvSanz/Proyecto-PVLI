@@ -7,7 +7,7 @@ export default class Levelpt extends Phaser.Scene {
     }
     create()
     {
-      this.add.sprite(0,0,'fondopt');
+      this.add.sprite(500,200,'fondopt');
      console.log("ESTOY DIBUJANDO LA ESCENA");
     }
 
