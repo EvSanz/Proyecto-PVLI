@@ -45,12 +45,14 @@ export default class Star extends Phaser.GameObjects.Sprite {
         // Delegamos en la escena para decidir qué hacer al 
         // haber cogido una estrella
         
-        if(diario.tetera)
-       { this.scene.starPickt(this.base);
+      if(diario.tetera)
+      { 
+        this.scene.starPickt(this.base);
         this.destroy();
-       }
-        else if (!aviso) {console.log("Haz click en la estrella");
-      aviso=true;
+      }
+      else if (!aviso) {
+        console.log("Haz click en la estrella");
+        aviso=true;
       };
     }
     else 

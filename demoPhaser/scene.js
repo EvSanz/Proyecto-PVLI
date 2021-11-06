@@ -3,6 +3,8 @@ import Platform from './platform.js';
 import Star from './star.js'
 import Base from './base.js'
 import Door from './door.js'
+import Boton from './boton.js'
+import Diary from './diario.js'
 
 /**
  * Escena principal del juego. La escena se compone de una serie de plataformas 
@@ -40,6 +42,9 @@ export default class Level extends Phaser.Scene {
     new Base(this,150,600);
     this.physics.add.existing(uisuelo, true);
     this.physics.add.collider(this.player, uisuelo);
+
+    this.Boton= new Boton(this,850,400, 'diary');
+
     //this.physics.add.collider(tetera);
     //tetera.body.collideWorldBounds = true;
     
