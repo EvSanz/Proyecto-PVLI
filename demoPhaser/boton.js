@@ -18,8 +18,8 @@ export default class Boton extends Phaser.GameObjects.Sprite {
 
       this.graphics.on('pointerdown', () => 
       { 
-          console.log('socorro'); 
-          this.scene.scene.start(gotoscene);
+        console.log(gotoscene)
+        this.scene.scene.start(gotoscene);
       });
 
  }

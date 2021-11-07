@@ -3,17 +3,25 @@ import Platform from './platform.js';
 import Star from './star.js'
 import Base from './base.js'
 import Door from './door.js'
+import Boton from './boton.js'
+import Scene from './scene.js'
 
 export default class Diary extends Phaser.Scene {
   /**
    * Constructor de la escena
    */
-  constructor(x) {
-    super({ key: 'diary' });
-    let tetera=true;                //Lo puse a true por que me salia que no estaba definido :v
+  constructor(currentScene) {
+
+
+    super({ currentScene, key: 'diary' });    //No le llega currentScene, dice que es undefined
+    this.currentScene = currentScene;
+    
+    console.log(this.currentScene);
+    
   }
 
   preload() {
+
     // Con setPath podemos establecer el prefijo que se añadirá a todos los load que aparecen a continuación
     this.load.setPath('Imagenes/');
     //this.load.image('platform', 'platform');
@@ -28,6 +36,10 @@ export default class Diary extends Phaser.Scene {
 
   create() {
     //this.stars = 10;
+
+
+    this.Boton= new Boton(this ,850 ,400, 'level');   //Aqui le deberia llegar una referencia a currentScene, no 'level' directamente
+
     //this.bases = this.add.group();
     console.log("Abres el diario y no ves nada por que odio javascript");
     //let uisuelo;

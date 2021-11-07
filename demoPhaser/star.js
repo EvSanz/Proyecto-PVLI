@@ -21,14 +21,14 @@ export default class Star extends Phaser.GameObjects.Sprite {
     this.scene.physics.add.existing(this, true);
 
     //this.y -= this.height;
-   // this.base = base;
+    // this.base = base;
 
-   this.dialog = new Dialog(this.scene);
+    this.dialog = new Dialog(this.scene);
    
   }
   create() {
     
-   this.diario = new diario(false);
+    this.Diario = new diario('level');
 
   }
 

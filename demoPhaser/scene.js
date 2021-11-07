@@ -43,7 +43,7 @@ export default class Level extends Phaser.Scene {
     this.physics.add.existing(uisuelo, true);
     this.physics.add.collider(this.player, uisuelo);
 
-    this.Boton= new Boton(this,850,400, 'diary');
+    this.Boton = new Boton(this,850,400, 'diary');
 
     //this.physics.add.collider(tetera);
     //tetera.body.collideWorldBounds = true;
