@@ -1,3 +1,5 @@
+import Diario from './diario.js'
+
 /**
  * Escena para la precarga de los assets que se usarán en el juego.
  * Esta escena se puede mejorar añadiendo una imagen del juego y una 
@@ -34,6 +36,8 @@ export default class Boot extends Phaser.Scene {
     this.load.setPath('Jsons/');
     this.load.text('dialogue', 'dialogues.json');
     this.load.text('objects', 'objetos.json');
+
+    this.Diario = new Diario();
     
   }
 
@@ -42,6 +46,8 @@ export default class Boot extends Phaser.Scene {
    * nivel del juego
    */
   create() {
+    this.scene.start('diary');
+    this.scene.sleep('diary');
     this.scene.start('level');
   }
 }

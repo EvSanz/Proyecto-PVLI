@@ -10,12 +10,18 @@ export default class Diary extends Phaser.Scene {
   /**
    * Constructor de la escena
    */
-  constructor(currentScene) {
+  constructor() {
 
+    super({ key: 'diary' });
 
-    super({ currentScene, key: 'diary' });    //No le llega currentScene, dice que es undefined
-    this.currentScene = currentScene;
+    this.tetera = false;
     
+  }
+
+  init(actualScene){
+
+    this.currentScene = actualScene;
+
   }
 
   preload() {
@@ -23,34 +29,19 @@ export default class Diary extends Phaser.Scene {
   }
 
   create() {
-    //this.stars = 10;
 
-    this.q = this.input.keyboard.addKey('Q');
+    this.events.on('teteraObtenida', () => {this.tetera = true;});      //esto no funciona :v
 
-    this.q.on('down', cierraDiario => {this.scene.start('level')})
-
-    this.Boton= new Boton(this ,850 ,400, 'level');   //Aqui le deberia llegar una referencia a currentScene, no 'level' directamente
-
-    //this.bases = this.add.group();
-    console.log("Abres el diario y no ves nada por que odio javascript");
-    //let uisuelo;
-    //let puerta;
-    //this.add.sprite(150,150,'puerta');
-    this.add.sprite(500,300,'diary')
-
-    if (this.tetera === true){                          //Asi con una cadena de ifs se colocan los objetos
-        this.add.sprite(500,300,'star')
+    this.q = this.input.keyboard.addKey('Q');                                 //Volver a la escena anterior
+    this.q.on('down', cierraDiario => {
+      this.scene.stop();
+      this.scene.resume(this.currentScene);
+    })
+    
+    this.add.sprite(500,260,'diary')
+    
+    if (this.tetera == true){                          //Posiciones en orden: x; 105, 210, 315, 420;    y; 125, 230, 335;   Habra que hacer los sprites un poquito mas pequeños
+      this.add.sprite(105,125,'star')
     }
-    //this.door= new Door(this,140,225,'levelpt');
-    //this.add.sprite(480,174,'ventanas');
-    //this.add.sprite(830,174,'ventanas');
-    //uisuelo=this.add.sprite(500,450,'ui');
-    //this.add.sprite(880,230,'guille');
-    //this.player = new Player(this, 400, 240);
-    //this.tetera = new Star (this,600,265);
-    //new Base(this,150,600);
-    //this.physics.add.existing(uisuelo, true);
-    //this.physics.add.collider(this.player, uisuelo);
   }
-
 }

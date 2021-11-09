@@ -28,8 +28,6 @@ export default class Star extends Phaser.GameObjects.Sprite {
   }
   create() {
     
-    this.Diario = new diario('level');
-
   }
 
   /**
@@ -64,6 +62,8 @@ export default class Star extends Phaser.GameObjects.Sprite {
 
       console.log("diario actualizado");
       diario.tetera=true;
+
+      this.scene.events.emit('teteraObtenida');
 
       this.dialog.talk(); //Hace que el objeto diga la línea de diálogo al ser pulsado
     }
