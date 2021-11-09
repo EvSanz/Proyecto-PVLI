@@ -33,6 +33,7 @@ export default class Boot extends Phaser.Scene {
     
     this.load.setPath('Jsons/');
     this.load.text('dialogue', 'dialogues.json');
+    this.load.text('objects', 'objetos.json');
     
   }
 

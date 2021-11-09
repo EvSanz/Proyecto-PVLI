@@ -21,16 +21,6 @@ export default class Diary extends Phaser.Scene {
   }
 
   preload() {
-
-    // Con setPath podemos establecer el prefijo que se añadirá a todos los load que aparecen a continuación
-    this.load.setPath('Imagenes/');
-    //this.load.image('platform', 'platform');
-    //this.load.image('base', 'platform');
-    this.load.image('star', 'tetera.png');
-    this.load.image('diary', 'diario.png');
-    
-    this.load.setPath('Jsons/');
-    this.load.text('objects', 'objetos.json');
     
   }
 

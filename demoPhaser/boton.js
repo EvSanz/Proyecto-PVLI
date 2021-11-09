@@ -14,13 +14,13 @@ export default class Boton extends Phaser.GameObjects.Sprite {
     super(scene,x,y, gotoscene);
 
     this.graphics = new Phaser.GameObjects.Rectangle(scene, x, y, 100, 100, 0xfffffff, 0xfffffff);
-      this.graphics.setInteractive();
+    this.graphics.setInteractive();
 
-      this.graphics.on('pointerdown', () => 
-      { 
-        console.log(gotoscene)
-        this.scene.scene.start(gotoscene);
-      });
+    this.graphics.on('pointerdown', () => 
+    { 
+      console.log(gotoscene)
+      this.scene.scene.start(gotoscene);
+    });
 
  }
 }
