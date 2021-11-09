@@ -28,6 +28,11 @@ export default class Level extends Phaser.Scene {
   create() {
     //this.stars = 10;
     //this.bases = this.add.group();
+
+    this.q = this.input.keyboard.addKey('Q');
+
+    this.q.on('down', abreDiario => {this.scene.start('diary')})
+
     let uisuelo;
     //let puerta;
     //this.add.sprite(150,150,'puerta');

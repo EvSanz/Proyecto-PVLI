@@ -16,8 +16,6 @@ export default class Diary extends Phaser.Scene {
     super({ currentScene, key: 'diary' });    //No le llega currentScene, dice que es undefined
     this.currentScene = currentScene;
     
-    console.log(this.currentScene);
-    
   }
 
   preload() {
@@ -27,6 +25,9 @@ export default class Diary extends Phaser.Scene {
   create() {
     //this.stars = 10;
 
+    this.q = this.input.keyboard.addKey('Q');
+
+    this.q.on('down', cierraDiario => {this.scene.start('level')})
 
     this.Boton= new Boton(this ,850 ,400, 'level');   //Aqui le deberia llegar una referencia a currentScene, no 'level' directamente
 
