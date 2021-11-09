@@ -1,4 +1,4 @@
-import Star from './star.js';
+import Tetera from './tetera.js';
 
 /**
  * Clase que representa la base sobre la que se sitúan las estrellas que aparecen en el juego

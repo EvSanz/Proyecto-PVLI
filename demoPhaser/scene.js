@@ -1,6 +1,6 @@
 import Player from './player.js';
 import Platform from './platform.js';
-import Star from './star.js'
+import Tetera from './tetera.js'
 import Base from './base.js'
 import Door from './door.js'
 import Boton from './boton.js'
@@ -52,7 +52,7 @@ export default class Level extends Phaser.Scene {
     this.add.sprite(880,230,'guille');
 
     this.player = new Player(this, 400, 240);
-    this.tetera = new Star (this,600,265);
+    this.tetera = new Tetera (this,600,265);
 
     new Base(this,150,600);
 
