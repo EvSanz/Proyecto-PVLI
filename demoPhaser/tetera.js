@@ -6,7 +6,8 @@
  */
  import diario from './diario.js';
  import Dialog from './dialog.js';
-export default class Star extends Phaser.GameObjects.Sprite {
+import GO from './GameObject.js';
+export default class Star extends GO {
   
   /**
    * Constructor de Star
@@ -16,7 +17,7 @@ export default class Star extends Phaser.GameObjects.Sprite {
    * @param {number} y coordenada y
    */
   constructor(scene,x,y ) {
-    super(scene,x,y, 'star').setInteractive();
+    super(scene,x,y, 'tetera',true,true)
     this.scene.add.existing(this);
     this.scene.physics.add.existing(this, true);
 

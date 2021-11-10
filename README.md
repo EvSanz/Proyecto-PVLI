@@ -143,7 +143,14 @@ A continuación un diagrama con los puntos clave de la historia principal.
 
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/diagrama.png)
 
-En este diagrama: las formas y colores están seleccionados para claridad visual; la decisión final tras la partida se ve representada como un rombo, los eventos clave entre escenas están en amarillo, las conversaciones más importantes están encuadradas, la fase de investigación final está en azul y consiste en varias conversaciones dentro del límite de acciones, y la dirección de las sospechas que van sugiriendo los personajes del juego se encuentran enmarcadas en rojo.
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/leyenda.png)
+
+Este es el árbol de decisiones de diálogo del jugador:
+
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/dialogos_diagrama1.png)
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/dialogos_diagrama2.png)
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/dialogos_diagrama3.png)
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/dialogos_diagrama4.png)
 
 - ### 5.2. Personajes ###
 

@@ -1,10 +1,11 @@
 import Player from './player.js';
 import Platform from './platform.js';
-import Star from './star.js'
+import Tetera from './tetera.js'
 import Base from './base.js'
 import Door from './door.js'
 import Boton from './boton.js'
 import Diary from './diario.js'
+import Npc from './npc.js';
 
 /**
  * Escena principal del juego. La escena se compone de una serie de plataformas 
@@ -52,8 +53,8 @@ export default class Level extends Phaser.Scene {
     this.add.sprite(880,230,'guille');
 
     this.player = new Player(this, 400, 240);
-    this.tetera = new Star (this,600,265);
-
+    this.tetera = new Tetera (this,600,265);
+    this.npc = new Npc (this, 880, 230, 0);
     new Base(this,150,600);
 
     this.physics.add.existing(uisuelo, true);

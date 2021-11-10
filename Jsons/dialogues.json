@@ -6,17 +6,41 @@
       "scenes": [
         {
           "id": "Scene0",
+          "opciones" : 2,
           "lines": [
             "No podéis pasar a producción sin el gdd correcto",
-            "Tenéis que corregir el gdd"
+            "Tenéis que corregir el gdd",
+            "Vale",
+            "No quiero",
+            "Eh......."
           ]
         },
+
         {
           "id": "Scene1",
+          "opciones" : -1,
           "lines": [
-            "Ya podéis empezar con la producción"
+            "Perfecto. Empezad a trabajar"
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : -1,
+          "lines": [
+            "Como que no. A TRABAJAR"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "lines": [
+            "Hare como que no escuche eso"
           ]
         }
       ]
     }
-]}
+  ]
+}
+    
