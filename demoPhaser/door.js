@@ -15,8 +15,11 @@ export default class Door extends Phaser.GameObjects.Sprite {
       super(scene,x,y, 'puertafun');
       this.scene.add.existing(this);
       this.scene.physics.add.existing(this, true);
-      this.gotoscene=gotoscene;//es al key para el super de la escena creo
+      this.gotoscene = gotoscene;
       this.scene.physics.add.existing(this, true);
+
+      this.graphics = new Phaser.GameObjects.Rectangle(this.scene, 140, 225, 200, 200, 0xfffffff, 0xfffffff);
+      this.graphics.setInteractive();
       //this.y -= this.height;
      // this.base = base;
   
@@ -24,9 +27,12 @@ export default class Door extends Phaser.GameObjects.Sprite {
     }
     preUpdate()
     {
-      if (this.scene.physics.overlap(this.scene.player, this)) {
-        console.log("QUIERES ABRIR LA PUERTA?");
-        this.scene.scene.start(this.gotoscene);
-      }
+      this.graphics.on('pointerdown', () => 
+      {
+        if (this.scene.physics.overlap(this.scene.player, this)) {
+          console.log("QUIERES ABRIR LA PUERTA?");
+          this.scene.scene.start(this.gotoscene);
+        }
+      });
     }
 }
