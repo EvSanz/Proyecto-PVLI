@@ -33,7 +33,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.anims.create({
       key: 'playerwalk',
       frames: this.anims.generateFrameNumbers('npcs', { start: 0, end: 3 }),
-      frameRate:4, // Velocidad de la animación
+      frameRate:5, // Velocidad de la animación
       repeat: -1    // Animación en bucle
     });
   }

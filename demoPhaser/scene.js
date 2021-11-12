@@ -53,8 +53,7 @@ export default class Level extends Phaser.Scene {
     let uisuelo;
     //let puerta;
     //this.add.sprite(150,150,'puerta');
-    this.add.sprite(150,150,'puerta');
-
+    this.add.sprite(150,174,'background',[26]);
     this.door= new Door(this,140,225,'levelpt');
 
     this.add.sprite(480,174,'ventanas').play('backgroundwindows');
@@ -62,7 +61,7 @@ export default class Level extends Phaser.Scene {
 
     uisuelo=this.add.sprite(500,450,'ui');
 
-    this.add.sprite(880,230,'guille');
+    this.add.sprite(880,230,'guille').play('guillehop');
 
     this.player = new Player(this, 400, 240);
     this.tetera = new Tetera (this,600,265);
