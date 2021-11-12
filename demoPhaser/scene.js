@@ -29,6 +29,18 @@ export default class Level extends Phaser.Scene {
   create() {
     //this.stars = 10;
     //this.bases = this.add.group();
+    this.anims.create({
+      key: 'backgroundwindows',
+      frames: this.anims.generateFrameNumbers('background', { start: 0, end: 25 }),
+      frameRate: 4, // Velocidad de la animación
+      repeat: -1    // Animación en bucle
+    });
+    this.anims.create({
+      key: 'guillehop',
+      frames: this.anims.generateFrameNumbers('npcs', { start: 4, end: 5 }),
+      frameRate: 4, // Velocidad de la animación
+      repeat: -1    // Animación en bucle
+    });
 
     this.q = this.input.keyboard.addKey('Q');
 
@@ -41,12 +53,12 @@ export default class Level extends Phaser.Scene {
     let uisuelo;
     //let puerta;
     //this.add.sprite(150,150,'puerta');
-    this.add.sprite(150,150,'puerta')
+    this.add.sprite(150,150,'puerta');
 
     this.door= new Door(this,140,225,'levelpt');
 
-    this.add.sprite(480,174,'ventanas');
-    this.add.sprite(830,174,'ventanas');
+    this.add.sprite(480,174,'ventanas').play('backgroundwindows');
+    this.add.sprite(830,174,'ventanas').play('backgroundwindows');
 
     uisuelo=this.add.sprite(500,450,'ui');
 

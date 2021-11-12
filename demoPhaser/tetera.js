@@ -7,7 +7,7 @@
  import diario from './diario.js';
  import Dialog from './dialog.js';
 import GO from './GameObject.js';
-export default class Star extends GO {
+export default class Tetera extends GO {
   
   /**
    * Constructor de Star
@@ -19,7 +19,7 @@ export default class Star extends GO {
   constructor(scene,x,y ) {
     super(scene,x,y, 'tetera',true,true)
     this.scene.add.existing(this);
-    this.scene.physics.add.existing(this, true);
+    //this.scene.physics.add.existing(this, true);
 
     //this.y -= this.height;
     // this.base = base;

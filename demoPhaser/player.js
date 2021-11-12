@@ -11,6 +11,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
    * @param {Phaser.Scene} scene Escena a la que pertenece el jugador
    * @param {number} x Coordenada X
    * @param {number} y Coordenada Y
+   * @param {bool} walking flag que se utiliza para no activar la animacion siempre si el jugador ya se está moviendo
    */
   constructor(scene, x, y) {
     super(scene, x, y, 'player');
@@ -25,8 +26,16 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.label = this.scene.add.text(10, 10, "");
     this.cursors = this.scene.input.keyboard.createCursorKeys();
     this.updateScore();
-
+    let walking;
+    this.walking=false;
     this.dialog = new Dialog(this.scene);
+    //animaciones
+    this.anims.create({
+      key: 'playerwalk',
+      frames: this.anims.generateFrameNumbers('npcs', { start: 0, end: 3 }),
+      frameRate:4, // Velocidad de la animación
+      repeat: -1    // Animación en bucle
+    });
   }
 
   /**
@@ -58,13 +67,24 @@ export default class Player extends Phaser.GameObjects.Sprite {
     }*/
     if (this.cursors.left.isDown) {
       this.body.setVelocityX(-this.speed);
+      if(!this.walking)
+    {  this.play('playerwalk');
+      this.walking=true;
+    }
       this.flipX=true;
     }
     else if (this.cursors.right.isDown) {
       this.body.setVelocityX(this.speed);
+      if(!this.walking)
+      {
+        this.play('playerwalk');
+        this.walking=true;
+      }
       this.flipX=false;
     }
     else {
+      this.stop('playerwalk');
+      this.walking=false;
       this.body.setVelocityX(0);
     }
   }
