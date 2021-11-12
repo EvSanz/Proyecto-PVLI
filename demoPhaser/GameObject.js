@@ -1,8 +1,8 @@
 export default class GO extends Phaser.GameObjects.Sprite {
   
     /**
-     * Constructor de Star
-     * @param {Sceme} scene Escena en la que aparece la estrella
+     * Constructor de GameObject
+     * @param {Sceme} scene Escena en la que aparece el objeto
      *@param {string} sprite El sprite del objecto
      * @param {number} x coordenada x
      * @param {number} y coordenada y
