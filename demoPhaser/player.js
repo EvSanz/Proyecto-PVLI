@@ -12,6 +12,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
    * @param {number} x Coordenada X
    * @param {number} y Coordenada Y
    * @param {bool} walking flag que se utiliza para no activar la animacion siempre si el jugador ya se está moviendo
+   * @param {bool} walking flag que se utiliza para no activar la animacion siempre si el jugador ya  está en stand by
    */
   constructor(scene, x, y) {
     super(scene, x, y, 'player');
@@ -28,6 +29,8 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.updateScore();
     let walking;
     this.walking=false;
+    let standing;
+    this.standing=false;
     this.dialog = new Dialog(this.scene);
     //animaciones
     this.anims.create({
@@ -36,6 +39,14 @@ export default class Player extends Phaser.GameObjects.Sprite {
       frameRate:5, // Velocidad de la animación
       repeat: -1    // Animación en bucle
     });
+    this.anims.create({
+      key: 'playerstand',
+      frames: this.anims.generateFrameNumbers('npcs', { start: 6, end: 7 }),
+      frameRate:3, // Velocidad de la animación
+      repeat: -1    // Animación en bucle
+    });
+   this.play('playerstand');
+    this.standing=true;
   }
 
   /**
@@ -62,13 +73,15 @@ export default class Player extends Phaser.GameObjects.Sprite {
    */
   preUpdate(t,dt) {
     super.preUpdate(t,dt);
-    /*if (this.cursors.up.isDown && this.body.onFloor()) {
+    if (this.cursors.up.isDown && this.body.onFloor()) {
       this.body.setVelocityY(this.jumpSpeed);
-    }*/
+    }
     if (this.cursors.left.isDown) {
       this.body.setVelocityX(-this.speed);
       if(!this.walking)
-    {  this.play('playerwalk');
+    {  this.stop('playerstand');
+      this.standing=false;
+      this.play('playerwalk');
       this.walking=true;
     }
       this.flipX=true;
@@ -77,6 +90,8 @@ export default class Player extends Phaser.GameObjects.Sprite {
       this.body.setVelocityX(this.speed);
       if(!this.walking)
       {
+        this.stop('playerstand');
+        this.standing=false;
         this.play('playerwalk');
         this.walking=true;
       }
@@ -85,6 +100,12 @@ export default class Player extends Phaser.GameObjects.Sprite {
     else {
       this.stop('playerwalk');
       this.walking=false;
+      if(!this.standing)
+     { 
+       this.play('playerstand');
+       console.log ('stand');
+       this.standing=true;
+    }
       this.body.setVelocityX(0);
     }
   }
