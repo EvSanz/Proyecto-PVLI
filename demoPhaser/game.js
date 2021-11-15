@@ -1,7 +1,6 @@
 //Js importados
 import Boot from './boot.js';
 import End from './end.js';
-import Platform from './platform.js';
 import Level from './scene.js';
 import Levelpt from './scenept.js';
 import Diary from './diario.js';

@@ -1,7 +1,3 @@
-//Js importados 
-import diario from './diario.js';
-import Dialog from './dialog.js';
-
 //Clase encargada de gestionar los botones
 export default class Boton extends Phaser.GameObjects.Sprite {
  

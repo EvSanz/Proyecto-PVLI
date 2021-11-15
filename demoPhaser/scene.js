@@ -1,11 +1,8 @@
 //Js importados
 import Player from './player.js';
-import Platform from './platform.js';
 import Tetera from './tetera.js'
 import Base from './base.js'
 import Door from './door.js'
-import Boton from './boton.js'
-import Diary from './diario.js'
 import Npc from './npc.js';
 
 /**Escena principal del juego
@@ -79,9 +76,6 @@ export default class Level extends Phaser.Scene {
     //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);
     this.physics.add.collider(this.player, uisuelo);
-
-    //this.physics.add.collider(tetera);
-    //tetera.body.collideWorldBounds = true;
   }
 
   spawn(from = null) {

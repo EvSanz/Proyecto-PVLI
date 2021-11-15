@@ -14,6 +14,7 @@ export default class GO extends Phaser.GameObjects.Sprite {
 
       //Si es un objeto clickeable, lo convertimos en interactivo
       if (clickable) { super(scene, x, y, sprite).setInteractive();}
+      
       //Si no, nos limitamos a cargarlo en la escena 
       else { super(scene, x, y, sprite);}
 

@@ -32,12 +32,7 @@ export default class Dialog
     rawFile.send(null);
   }
 
-  onJsonRead(text, dialog)
-  {
-    dialog.myData = JSON.parse(text);
-    //console.log(dialog.myData);
-    //console.log(dialog.myData.Dialogues[0].char);
-  }
+  onJsonRead(text, dialog) { dialog.myData = JSON.parse(text);}
 
   talk()
   {

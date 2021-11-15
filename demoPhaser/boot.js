@@ -22,9 +22,7 @@ export default class Boot extends Phaser.Scene {
     this.load.setPath('Jsons/');
     this.load.text('dialogue', 'dialogues.json');
     this.load.text('objects', 'objetos.json');
-
-    //this.load.image('platform', 'platform');
-    //this.load.image('base', 'platform');
+    this.load.text('personajes', 'personajes.json');
 
     this.Diario = new Diario();
   }

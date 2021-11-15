@@ -1,12 +1,3 @@
-//Js importados
-import Player from './player.js';
-import Platform from './platform.js';
-import Tetera from './tetera.js'
-import Door from './door.js'
-import Boton from './boton.js'
-import Scene from './scene.js'
-//import Base from './base.js'
-
 //Clase encargada de gestionar el diario
 export default class Diary extends Phaser.Scene {
   constructor() { super({key: 'diary'});
@@ -25,8 +16,7 @@ export default class Diary extends Phaser.Scene {
     //Añadimos el sprite del boton del diario
     this.add.sprite(500, 260, 'diary');
 
-    if (this.tetera) { console.log("psokijud"); 
-    this.add.sprite(105, 125, 'tetera');}
+    if (this.tetera) { this.add.sprite(105, 125, 'tetera');}
 
     //Añadimos el comando para desactivar el diario 
     this.q = this.input.keyboard.addKey('Q'); 
@@ -34,7 +24,5 @@ export default class Diary extends Phaser.Scene {
       this.scene.stop();
       this.scene.resume(this.currentScene);
     })
-    
-
   }
 }
