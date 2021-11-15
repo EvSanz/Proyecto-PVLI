@@ -1,25 +1,28 @@
+//Js importados 
 import diario from './diario.js';
 import Dialog from './dialog.js';
+
+//Clase encargada de gestionar los botones
 export default class Boton extends Phaser.GameObjects.Sprite {
  
- /**
-  * Constructor de Star
-  * @param {Sceme} scene Escena en la que aparece la estrella
-  * @param {Base} base Objeto base sobre el que se va a dibujar la estrella
-  * @param {number} x coordenada x
-  * @param {number} y coordenada y
+ /** Constructor de Boton
+  * @param {Sceme} scene Escena 
+  * @param {Base} base Objeto base 
+  * @param {number} x Coordenada X
+  * @param {number} y Coordenada Y
   */
- constructor(scene,x,y,gotoscene ) {
-   
-    super(scene,x,y, gotoscene);
 
-    this.graphics = new Phaser.GameObjects.Rectangle(scene, x, y, 100, 100, 0xfffffff, 0xfffffff);
+ constructor(scene, x, y, gotoscene) {
+    super(scene, x, y, gotoscene);
+
+    //Creamos un objeto interactuable invisible
+    this.graphics = new Phaser.GameObjects.Rectangle
+    (scene, x, y, 100, 100, 0xfffffff, 0xfffffff);
     this.graphics.setInteractive();
 
+    //Si lo clickamos mientras estamos dentro de 
+    //su rango, cambiaremos de escena 
     this.graphics.on('pointerdown', () => 
-    { 
-      this.scene.scene.launch(gotoscene, this.scene);
-    });
-
+    { this.scene.scene.launch(gotoscene, this.scene);});
  }
 }

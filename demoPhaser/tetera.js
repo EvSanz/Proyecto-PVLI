@@ -1,73 +1,52 @@
-/**
- * Clase para los objetos estrella que el jugador ha de recoger
- * Una estrella aparece sobre una base. Cuando el jugador la recoge, se crea 
- * una nueva estrella en otra posición, si el juego no ha terminado.
- * @extends Phaser.GameObjects.Sprite
- */
- import diario from './diario.js';
- import Dialog from './dialog.js';
+//Js importados
+import diario from './diario.js';
+import Dialog from './dialog.js';
 import GO from './GameObject.js';
+
+//Clase para crear y gestionar la tetera
 export default class Tetera extends GO {
   
-  /**
-   * Constructor de Star
-   * @param {Sceme} scene Escena en la que aparece la estrella
-   * @param {Base} base Objeto base sobre el que se va a dibujar la estrella
-   * @param {number} x coordenada x
-   * @param {number} y coordenada y
+  /**Constructor de la tetera
+   * @param {Sceme} scene Escena
+   * @param {Base} base Objeto 
+   * @param {number} x Coordenada X
+   * @param {number} y Coordenada 
    */
-  constructor(scene,x,y ) {
-    super(scene,x,y, 'tetera',true,true)
+
+  constructor(scene, x, y ) {
+    super(scene, x, y, 'tetera', true, true)
+
     this.scene.add.existing(this);
     //this.scene.physics.add.existing(this, true);
 
     //this.y -= this.height;
     // this.base = base;
 
+    //Creamos el dialogo
     this.dialog = new Dialog(this.scene);
-   
   }
-  create() {
-    
-  }
+
+  create() {}
 
   /**
-   * Redefinición del preUpdate de Phaser
    * @override
    */
-  preUpdate() {
-    // IMPORTANTE: Si no ponemos esta instrucción y el sprite está animado
-    // no se podrá ejecutar la animación del sprite. 
-    let aviso=false;
+
+  preUpdate() 
+  {
     super.preUpdate();
+
+    //Si el jugador esta en el rango del objeto...
     if (this.scene.physics.overlap(this.scene.player, this)) {
-        // Delegamos en la escena para decidir qué hacer al 
-        // haber cogido una estrella
-        
-      if(diario.tetera)
-      { 
-        this.scene.starPickt(this.base);
-        this.destroy();
-      }
-      else if (!aviso) {
-        console.log("Haz click en la estrella");
-        aviso=true;
-      };
-    }
-    else 
-    //aviso=false;
-
-    this.on('pointerdown',()=>
+      this.on('pointerdown', ()=>
     {
-      this.setTint(0x00ff00)
+        this.tetera = true; 
+        this.dialog.talk();
+        this.destroy();
+    });
+  }
 
-      console.log("diario actualizado");
-      diario.tetera=true;
-
-      this.scene.events.emit('teteraObtenida');
-
-      this.dialog.talk(); //Hace que el objeto diga la línea de diálogo al ser pulsado
-    }
-    );
+  else
+    { this.on('pointerdown', ()=> { this.setTint(0x00ff00);});}
   }
 }

@@ -1,19 +1,19 @@
-
+//Clase para crear y gestionar los NPCs
 export default class Npc extends Phaser.GameObjects.Sprite 
 {
-        /** Constructor de Npc
-     * @param {Sceme} scene Escena en la que aparece el npc
-     *@param {string} sprite Sprite del objecto
-     * @param {number} x Coordenada x
-     * @param {number} y Coordenada y
+    /** Constructor de Npc
+     * @param {Sceme} scene Escena 
+     *@param {string} sprite Sprite 
+     * @param {number} x Coordenada X
+     * @param {number} y Coordenada Y
      * @param {number} id Identificador del personaje
-     * @param {number} irritacion Nivel de irritacion del npc
+     * @param {number} irritacion Nivel de irritacion del NPC
      */
 
     constructor(scene, x, y, irritacion) { 
         super(scene, x, y, irritacion, 'guille').setInteractive(); 
 
-        //Se añade el personaje a la escena y se añaden fisicas
+        //Se crea el personaje con físicas 
         this.scene.add.existing(this); 
         this.scene.physics.add.existing(this, true);
 
@@ -37,7 +37,6 @@ export default class Npc extends Phaser.GameObjects.Sprite
         super.preUpdate();
 
         if (this.scene.physics.overlap(this.scene.player, this)) {
-            this.scene.starPickt(this.base);
             //this.destroy();
         }
     }
@@ -59,6 +58,4 @@ export default class Npc extends Phaser.GameObjects.Sprite
     onJsonRead(id){
        myData = JSON.parse(id);
     }*/
-
-
 }

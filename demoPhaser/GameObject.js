@@ -1,27 +1,26 @@
+//Clase encargada de gestionar los GameObject
 export default class GO extends Phaser.GameObjects.Sprite {
   
-    /**
-     * Constructor de GameObject
-     * @param {Sceme} scene Escena en la que aparece el objeto
-     *@param {string} sprite El sprite del objecto
-     * @param {number} x coordenada x
-     * @param {number} y coordenada y
-     * @param {bool} clickable nos indica si será un objecto clickeable(=true) o no
-     * @param {bool} chocante nos indica si es necesario detectar las colisiones de este objeto con el player (ej una puerta =true)
+    /**Constructor de GameObject
+     * @param {Sceme} scene Escena 
+     *@param {string} sprite Sprite
+     * @param {number} x Coordenada X
+     * @param {number} y Coordenada Y
+     * @param {bool} clickable ¿Es clickeable?
+     * @param {bool} chocante ¿Necesita detectar colisiones?
      */
-    constructor(scene,x,y,sprite,clickable,chocante ) {
-      if(clickable)
-        super(scene,x,y, sprite).setInteractive();
-    else 
-    super(scene,x,y, sprite);
+
+    constructor(scene, x, y, sprite, clickable, chocante ) {
+
+      //Si es un objeto clickeable, lo convertimos en interactivo
+      if (clickable) { super(scene, x, y, sprite).setInteractive();}
+      //Si no, nos limitamos a cargarlo en la escena 
+      else { super(scene, x, y, sprite);}
 
       this.scene.add.existing(this);
-      if(chocante)
-      this.scene.physics.add.existing(this, true);
-  
-      
-  
-      
-     
+
+      //Si es un objeto que necesita sistema de 
+      //colisiones, añadimos las físicas de movimiento
+      if (chocante) { this.scene.physics.add.existing(this, true);}
     }
 }
