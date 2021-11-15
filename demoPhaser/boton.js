@@ -3,9 +3,9 @@ import Dialog from './dialog.js';
 export default class Boton extends Phaser.GameObjects.Sprite {
  
  /**
-  * Constructor de Star
-  * @param {Sceme} scene Escena en la que aparece la estrella
-  * @param {Base} base Objeto base sobre el que se va a dibujar la estrella
+  * Constructor de Boton
+  * @param {Scene} scene Escena en la que aparece el botón
+  * @param {Base} base Objeto base sobre el que se va a dibujar
   * @param {number} x coordenada x
   * @param {number} y coordenada y
   */

@@ -10,9 +10,9 @@ import GO from './GameObject.js';
 export default class Tetera extends GO {
   
   /**
-   * Constructor de Star
-   * @param {Sceme} scene Escena en la que aparece la estrella
-   * @param {Base} base Objeto base sobre el que se va a dibujar la estrella
+   * Constructor de Tetera
+   * @param {Scene} scene Escena en la que aparece la tetera
+   * @param {Base} base Objeto base sobre el que se va a dibujar la tetera
    * @param {number} x coordenada x
    * @param {number} y coordenada y
    */
@@ -42,7 +42,7 @@ export default class Tetera extends GO {
     super.preUpdate();
     if (this.scene.physics.overlap(this.scene.player, this)) {
         // Delegamos en la escena para decidir qué hacer al 
-        // haber cogido una estrella
+        // haber cogido una tetera
         
       if(diario.tetera)
       { 
@@ -50,7 +50,7 @@ export default class Tetera extends GO {
         this.destroy();
       }
       else if (!aviso) {
-        console.log("Haz click en la estrella");
+        console.log("Haz click en la tetera");
         aviso=true;
       };
     }
