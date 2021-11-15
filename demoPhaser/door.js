@@ -36,8 +36,7 @@ export default class Door extends Phaser.GameObjects.Sprite {
       {
         //Y el jugador está dentro del rango, cargamos 
         //la siguiente escena
-        if (
-this.scene.physics.overlap(this.scene.player, this)) 
+        if (this.scene.physics.overlap(this.scene.player, this)) 
         { this.scene.scene.start(this.gotoscene);}
       });
     }

@@ -35,23 +35,7 @@ export default class Tetera extends GO {
   preUpdate() 
   {
     super.preUpdate();
-    if (this.scene.physics.overlap(this.scene.player, this)) {
-        // Delegamos en la escena para decidir qué hacer al 
-        // haber cogido una tetera
-        
-      if(diario.tetera)
-      { 
-        this.scene.starPickt(this.base);
-        this.destroy();
-      }
-      else if (!aviso) {
-        console.log("Haz click en la tetera");
-        aviso=true;
-      };
-    }
-    else 
-    //aviso=false;
-
+    
     //Si el jugador esta en el rango del objeto...
     if (this.scene.physics.overlap(this.scene.player, this)) {
       this.on('pointerdown', ()=>

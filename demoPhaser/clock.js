@@ -1,5 +1,4 @@
- /**
-  * Time
+ /**Time
   * @param {Time} time Tiempo que queda del reloj en esta ronda
   * @param {Total_Time} Total_Time Tiempo del reloj completo
   */
