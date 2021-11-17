@@ -4,7 +4,11 @@ import Clock from "./clock.js";
 //Clase para gestionar los dialogos
 export default class Dialog
 {
-  constructor(scene)
+  /** Constructor de Npc
+  * @param {Phaser.Scene} scene Escena 
+  * @param {Clock} clock el reloj que modifica el dialogo
+  */
+  constructor(scene,clock)
   {
     this.scene = scene;
     this.myData = null;
@@ -18,6 +22,8 @@ export default class Dialog
     this.label2 = this.scene.add.text(275, 425, "");
     this.label3 = this.scene.add.text(275, 475, "");
     this.graphics = null;
+   /// this.scene.player.clock.decreaseTime();
+    
   }
 
   readTextFile(file, callback, dialog) 
@@ -29,6 +35,7 @@ export default class Dialog
     {
         if (rawFile.readyState === 4 && rawFile.status == "200") 
         { callback(rawFile.responseText, dialog);}
+        
     }
 
     rawFile.send(null);
@@ -77,6 +84,11 @@ export default class Dialog
         this.label3.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
       }
     }
+    }
+    //si se ha terminado la conversacion y es una conversacion no trivial que gasta tiempo , modificamos el reloj
+    else {
+     // this.reloj.decreaseTime();
+      console.log('FIN');
     }
   }
 

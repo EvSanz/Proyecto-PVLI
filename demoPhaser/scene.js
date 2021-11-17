@@ -83,9 +83,9 @@ export default class Level extends Phaser.Scene {
     this.physics.add.collider(this.player, uisuelo);
 
     //Añadimos el reloj
-    this.clock = new Clock(this);
+    
     //Mostramos el reloj
-    this.clock.showTime();
+    this.player.clock.showTime();
   }
 
   spawn(from = null) {

@@ -4,7 +4,7 @@ import End from './end.js';
 import Level from './scene.js';
 import Levelpt from './scenept.js';
 import Diary from './diario.js';
-
+import Clock from './clock.js';
 //Inicio del juego en Phaser, creando para ello el archivo 
 //de configuración del juego y la clase Game, encargada de 
 //crear e iniciar el juego 
@@ -31,6 +31,7 @@ let config = {
             gravity: { y: 400 }, 
             debug: true } 
     }
+    
 };
 
 new Phaser.Game(config);

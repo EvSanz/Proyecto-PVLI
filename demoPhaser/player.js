@@ -1,6 +1,6 @@
 //Js importados
 import Dialog from './dialog.js';
-
+import Clock from './clock.js';
 //Clase para crear y gestionar el jugador
 export default class Player extends Phaser.GameObjects.Sprite {
   
@@ -33,9 +33,10 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.a =this.scene.input.keyboard.addKey('A');
     this.d = this.scene.input.keyboard.addKey('D');
 
-    
+    //Creamos el reloj
+    this.clock = new Clock (this.scene);
     //Creamos el dialogo
-    this.dialog = new Dialog(this.scene);
+    this.dialog = new Dialog(this.scene,this.clock);
 
     //Creacion de la animacion de caminado
     this.anims.create ({
