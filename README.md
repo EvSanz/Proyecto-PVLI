@@ -64,10 +64,10 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   
 - ### 3.2 Controles ###
   
-  + Movimiento: El personaje principal se moverá de izquierda a derecha con los teclas  "A" y "D" y dentro de los menús de dialogos navegaremos por las opciones con "W" y "S".
-  + Objetos e interacciones: Al aproximarte a un objeto o persona con el que puedas interactuar la interacción comienza al pulsar la tecla "E". 
+  + Movimiento: El personaje principal se moverá de izquierda a derecha con los teclas "A" y "D" o las flechas de dirección izquierda y derecha.
+  + Objetos e interacciones: Al aproximarte a un objeto o persona con el que puedas interactuar la interacción comienza al hacer click en él.
   + Diario: En cualquier momento del juego se podrá acceder a la informacion contenida en el diario presionando la tecla "Q".
-  + Click izquierdo: Durante una inspección podras recoger objectos y añadirlos al diario haciendo click izquierdo sobre él.Durante un dialogo podras clickear directamente sobre la opción de dialogo que quieras elegir. 
+  + Click izquierdo: Durante una inspección, podrás recoger objectos y añadirlos al diario haciendo click izquierdo sobre él. Durante un dialogo, podrás clickear directamente sobre la opción de dialogo que quieras elegir. 
   
 
 - ### 3.3. Menús ### 
@@ -81,12 +81,12 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 
 - ### 4.1. Mecánicas ###
 
-  + _Movimiento_: El jugador podrá mover al protagonista de un lado a otro de cada vagón con 'A' y 'D' a una velocidad constante para interactuar con personajes o abrir puertas que lleven a otro vagón o den acceso a las habitaciones.
+  + _Movimiento_: El jugador podrá mover al protagonista de un lado a otro de cada vagón con 'A' y 'D' o las flechas de dirección a una velocidad constante para interactuar con personajes o abrir puertas que dan acceso a otro vagón o habitaciones.
 
   + _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales anotará en su diario.
 
-  + _Diálogos_: Cuando el jugador se acerque a un NPC y pulse la tecla de interactuar, el la parte inferior de la pantalla aparecerán una imagen del NPC elegido; el cuadro de diálogo con el texto; debajo de éste la barra de incomodidad de ese personaje, que el jugador podrá usar para determinar el humor del NPC interrogado. 
-  Durante las conversaciones, el diario se actualizará automáticamente para añadir información clave sobre el personaje interrogado u otros pasajeros.
+  + _Diálogos_: Cuando el jugador se acerque a un NPC y clickee, en la parte inferior de la pantalla aparecerán una imagen del NPC elegido, el diálogo y, debajo del retrato, la barra de incomodidad del personaje con el que estamos interactuando, que el jugador podrá usar para determinar el estado de humor del NPC interrogado. 
+  Durante las conversaciones, el diario se actualizará automáticamente para añadir información clave sobre el personaje u otros pasajeros.
   El jugador tendrá que responder o preguntar al NPC utilizando una lista de opciones de diálogo, y dependiendo cual elija se ofrecerá cierta cantidad de información y/o llene la barra de incomodidad del personaje interrogado.
 
   + _Barra de incomodidad_: Durante los diálogos con otros personajes, la opción de diálogo que se elija pueden incomodar al pasajero que está siendo interrogado, lo cual hará que ésta barra se llene. Si llega al máximo el NPC se negará a hablar con nosotros en un futuro.
