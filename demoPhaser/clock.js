@@ -1,6 +1,6 @@
  /**Time
-  * @param {Time} time Tiempo que queda del reloj en esta ronda
-  * @param {Total_Time} Total_Time Tiempo del reloj completo
+  * @param {Time} time Tiempo que queda 
+  * @param {Total_Time} Total_Time Tiempo total 
   */
 
   const Total_Time = 12;
@@ -10,8 +10,8 @@ export default class Clock
 {
     constructor(scene) {
         this.scene = scene;
-        //clock.js:14 Uncaught TypeError: Cannot read properties of undefined (reading 'text')
-        this.label = this.scene.add.text(10, 2, "", { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
+        this.label = this.scene.add.text(10, 2, "", 
+        { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
 
         //Commented until sprite is added
         // super(scene,x,y, 'clock',true,true)
@@ -20,30 +20,18 @@ export default class Clock
 
     create() { }
 
-
+    //Método para disminuir el tiempo 
     decreaseTime() 
     {
         time--;
         showTime();
     }
 
-    resetTime() 
-    {
-        time = Total_Time;
-    }
+    //Método para resetear el tiempo
+    resetTime() { time = Total_Time;}
 
-    getTime() 
-    {
-        return time;
-    }
+    getTime() { return time;}
 
-    showTime() 
-    {
-        this.label.text = "Time: " + time;
-
-        //uses clockX.jpg, X being time, to change the image shown. 
-        //Unsure how to change the sprite of an object
-        //Graphics still not-added
-    }
-
+    //Método para mostrar el tiempo en pantalla
+    showTime() { this.label.text = "Time: " + time;}
 }
