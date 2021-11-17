@@ -6,35 +6,44 @@
   const Total_Time = 12;
   let time = 12;
 
-  export default class Clock
-  {
-    constructor(scene, x, y) 
-    {
+export default class Clock 
+{
+    constructor(scene) {
+        this.scene = scene;
+        //clock.js:14 Uncaught TypeError: Cannot read properties of undefined (reading 'text')
+        //this.label = this.scene.add.text(50, 50, "", { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
+
         //Commented until sprite is added
         // super(scene,x,y, 'clock',true,true)
         // this.scene.add.existing(this);    
     }
-}
 
-function decreaseTime()
-{
-    time--;
-    showTime();
-}
+    create() { }
 
-function resetTime()
-{
-    time = Total_Time;
-}
 
-function getTime()
-{
-    return time;
-}
+    decreaseTime() 
+    {
+        time--;
+        showTime();
+    }
 
-function showTime()
-{
-    //uses clockX.jpg, X being time, to change the image shown. 
-    //Unsure how to change the sprite of an object
-    //Graphics still not-added
+    resetTime() 
+    {
+        time = Total_Time;
+    }
+
+    getTime() 
+    {
+        return time;
+    }
+
+    showTime() 
+    {
+        //this.label.text = "Time: " + time;
+        
+        //uses clockX.jpg, X being time, to change the image shown. 
+        //Unsure how to change the sprite of an object
+        //Graphics still not-added
+    }
+
 }

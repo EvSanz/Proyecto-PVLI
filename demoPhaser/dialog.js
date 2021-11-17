@@ -1,3 +1,5 @@
+import Clock from "./clock.js";
+
 //Clase para gestionar los dialogos
 export default class Dialog
 {
@@ -46,35 +48,33 @@ export default class Dialog
     this.label3.text = "";
   }
 
-  nextText()
-  {
+  nextText() {
     //Comprobamos si queda frases por mostrar
-    if (this.textNum < this.myData.Dialogues[0].scenes[this.chat].lines.length)
-    {
+    if (this.textNum < this.myData.Dialogues[0].scenes[this.chat].lines.length) {
 
       //Comprobamos si no ha llegado a las opciones de dialogo
-      if (this.textNum != this.myData.Dialogues[0].scenes[this.chat].opciones - 1)
-    {
-      this.textNum++;
-      this.label.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
-    }
-
-    else
-    {
-      //Escribimos las opciones de dialogo, separadas entre ellas
-      this.textNum++;
-      this.label.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
-      this.textNum++;
-      this.label2.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum]
-
-      //No siempre habra tres opciones, asi que ponemos una condicion para 
-      //escribir la tercera respuesta si hay
-      if (this.textNum < this.myData.Dialogues[0].scenes[this.chat].lines.length)
-      {
+      if (this.textNum != this.myData.Dialogues[0].scenes[this.chat].opciones - 1) {
         this.textNum++;
-        this.label3.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
+        this.label.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
+      }
+      else {
+        //Escribimos las opciones de dialogo, separadas entre ellas
+        this.textNum++;
+        this.label.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
+        this.textNum++;
+        this.label2.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum]
+
+        //No siempre habra tres opciones, asi que ponemos una condicion para 
+        //escribir la tercera respuesta si hay
+        if (this.textNum < this.myData.Dialogues[0].scenes[this.chat].lines.length) {
+          this.textNum++;
+          this.label3.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
+        }
       }
     }
+    else
+    {
+      //reduce el tiempo
     }
   }
 

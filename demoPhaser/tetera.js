@@ -6,7 +6,7 @@ import GO from './GameObject.js';
 export default class Tetera extends GO {
   
   /**Constructor de la tetera
-   * @param {Sceme} scene Escena
+   * @param {Scene} scene Escena
    * @param {Base} base Objeto 
    * @param {number} x Coordenada X
    * @param {number} y Coordenada 

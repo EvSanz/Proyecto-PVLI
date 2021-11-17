@@ -4,6 +4,7 @@ import Tetera from './tetera.js'
 import Base from './base.js'
 import Door from './door.js'
 import Npc from './npc.js';
+import Clock from './clock.js';
 
 /**Escena principal del juego
  * @extends Phaser.Scene
@@ -11,7 +12,12 @@ import Npc from './npc.js';
 
 //Clase para crear y gestionar un nivel 
 export default class Level extends Phaser.Scene {
-  constructor() { super({ key: 'level' });}
+  constructor() 
+  { 
+    super({ key: 'level' });
+
+    this.clock = new Clock(this);
+  }
 
   //Creacion de los elementos del juego
   create() {
@@ -76,6 +82,9 @@ export default class Level extends Phaser.Scene {
     //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);
     this.physics.add.collider(this.player, uisuelo);
+
+    //Mostramos el reloj
+    this.clock.showTime();
   }
 
   spawn(from = null) {
