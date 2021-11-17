@@ -33,11 +33,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     //Indicamos el input de teclado
     this.cursors = this.scene.input.keyboard.createCursorKeys();
 
-    //Desactivamos el estado de animacion
-    //estatico y de caminado
-    this.walking = false;
-    this.standing = false;
-
+    
     //Creamos el dialogo
     this.dialog = new Dialog(this.scene);
 
@@ -61,7 +57,11 @@ export default class Player extends Phaser.GameObjects.Sprite {
 
     //Inicializamos la animacion estatica
     this.play('playerstand');
+  //Desactivamos el estado de animacion
+    //estatico y de caminado
+    this.walking = false;
     this.standing = true;
+
   }
 
   /**Metodo para establecer el movimiento del jugador
@@ -97,7 +97,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     {
       this.body.setVelocityX(this.speed);
 
-      if(!this.walking)
+      if(!this.walking)//NO HACEN FALTA LOS BOOLS SE PUEDE MIRAR SI LA VELOCIDAD DEL PERSONAJE ES 0 O NO
       {
         this.stop('playerstand');
         this.standing = false;
@@ -116,15 +116,16 @@ export default class Player extends Phaser.GameObjects.Sprite {
       this.stop('playerwalk');
       this.walking = false;
 
-      if(!this.standing)
+      if(!this.standing)//consultar documentacion play con segundo parametro ignore if playing
       {
-        this.play('playerstand');
+        this.play('playerstand');//depuera aqui
         this.standing = true;
       }
  
       //Anulamos el movimiento mientras no 
       //pulsemos ninguna flecha
       this.body.setVelocityX(0);
+     
     }
   }
 }
