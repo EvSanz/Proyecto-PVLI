@@ -11,7 +11,7 @@ export default class Clock
     constructor(scene) {
         this.scene = scene;
         //clock.js:14 Uncaught TypeError: Cannot read properties of undefined (reading 'text')
-        //this.label = this.scene.add.text(50, 50, "", { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
+        this.label = this.scene.add.text(10, 2, "", { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
 
         //Commented until sprite is added
         // super(scene,x,y, 'clock',true,true)
@@ -39,8 +39,8 @@ export default class Clock
 
     showTime() 
     {
-        //this.label.text = "Time: " + time;
-        
+        this.label.text = "Time: " + time;
+
         //uses clockX.jpg, X being time, to change the image shown. 
         //Unsure how to change the sprite of an object
         //Graphics still not-added

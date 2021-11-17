@@ -15,8 +15,6 @@ export default class Level extends Phaser.Scene {
   constructor() 
   { 
     super({ key: 'level' });
-
-    this.clock = new Clock(this);
   }
 
   //Creacion de los elementos del juego
@@ -83,6 +81,8 @@ export default class Level extends Phaser.Scene {
     this.physics.add.existing(uisuelo, true);
     this.physics.add.collider(this.player, uisuelo);
 
+    //Añadimos el reloj
+    this.clock = new Clock(this);
     //Mostramos el reloj
     this.clock.showTime();
   }
