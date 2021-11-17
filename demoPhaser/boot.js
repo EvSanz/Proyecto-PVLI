@@ -1,5 +1,6 @@
 //Js importados
 import Diario from './diario.js'
+import Clock from './clock.js';
 
 //Escena encargada de cargar los assets del juego
 export default class Boot extends Phaser.Scene {
@@ -25,6 +26,7 @@ export default class Boot extends Phaser.Scene {
     this.load.text('personajes', 'personajes.json');
 
     this.Diario = new Diario();
+    //this.Clock = new Clock();
   }
 
 //Creación de los elementos fijos de la escena 

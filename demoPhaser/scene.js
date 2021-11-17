@@ -64,7 +64,7 @@ export default class Level extends Phaser.Scene {
     uisuelo = this.add.sprite(500, 450, 'ui');
 
     //Añadimos la animacion a Guille (Prueba)
-    this.add.sprite(880, 230, 'guille').play('guillehop');
+    //this.add.sprite(880, 230, 'guille').play('guillehop');
 
     //Creamos el jugador
     this.player = new Player(this, 400, 240, true);

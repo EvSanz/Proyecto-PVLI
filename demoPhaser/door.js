@@ -1,3 +1,6 @@
+//Js importados
+//import Clock from "./clock.js";
+
 //Clase encargada de gestionar la puerta
 export default class Door extends Phaser.GameObjects.Sprite {
 
@@ -25,19 +28,19 @@ export default class Door extends Phaser.GameObjects.Sprite {
       (this.scene, 140, 225, 200, 200, 0xfffffff, 0xfffffff);
       this.graphics.setInteractive();
 
-      //this.y -= this.height;
-      // this.base = base;
-    }
-
-    preUpdate()
-    {
       //Si hacemos click en el area interactuable...
       this.graphics.on('pointerdown', () => 
       {
         //Y el jugador está dentro del rango, cargamos 
         //la siguiente escena
         if (this.scene.physics.overlap(this.scene.player, this)) 
-        { this.scene.scene.start(this.gotoscene);}
+        { 
+          //this.Clock.decreaseTime(); 
+          this.scene.scene.start(this.gotoscene);
+        }
       });
+
+      //this.y -= this.height;
+      // this.base = base;
     }
 }

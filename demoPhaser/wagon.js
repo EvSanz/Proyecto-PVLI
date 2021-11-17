@@ -13,8 +13,6 @@ import Npc from './npc.js';
 export default class Wagon extends Phaser.Scene {
   constructor(isPointAndClick) { super({ key: 'level' }); this.isPT = isPointAndClick}
 
-  Init()
-
   //Creacion de los elementos del juego
   create(spriteFondo1, spriteFondo2, spriteFondo3, vagonIzq, vagonDer) {
 
@@ -58,14 +56,16 @@ export default class Wagon extends Phaser.Scene {
 
 
     //Si es point and click...
-    if (this.isPT) {
-
-        //Añade el sprite del fondo y crea una puerta que llevara al vagon declarado a la izquierda
+    if (this.isPT) 
+    {
+        //Añade el sprite del fondo y crea una puerta que 
+        //llevara al vagon declarado a la izquierda
         this.add.sprite(500, 174, spriteFondo1);
         this.door = new Door(this, 140, 225, vagonIzq);
     }
-    else {
 
+    else 
+    {
         //Añade los sprites indicados en el create
         this.add.sprite(150, 174, spriteFondo1);
         this.add.sprite(480, 174, spriteFondo2);    //Aqui vendria bien tener el fondo con
