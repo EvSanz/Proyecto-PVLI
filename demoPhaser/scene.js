@@ -73,7 +73,8 @@ export default class Level extends Phaser.Scene {
     this.tetera = new Tetera (this, 600, 265);
 
     //Creamos el npc
-    this.npc = new Npc (this, 880, 230, 0).play('guillestand');
+    this.npc = new Npc (this, 880, 230, 0);
+    
 
     new Base(this, 150, 600);
 

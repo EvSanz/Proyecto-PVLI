@@ -30,6 +30,8 @@ export default class Player extends Phaser.GameObjects.Sprite {
 
     //Indicamos el input de teclado
     this.cursors = this.scene.input.keyboard.createCursorKeys();
+    this.a =this.scene.input.keyboard.addKey('A');
+    this.d = this.scene.input.keyboard.addKey('D');
 
     
     //Creamos el dialogo
@@ -68,7 +70,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     super.preUpdate (t, dt);
 
     //Si pulsamos la flecha de direccion izquierda
-    if (this.cursors.left.isDown) 
+    if (this.cursors.left.isDown||this.a.isDown) 
     {
       //Establecemos la velocidad de movimiento 
       //hacia la izquierda
@@ -80,7 +82,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     }
 
     //Si pulsamos la flecha de direccion derecha
-    else if (this.cursors.right.isDown) 
+    else if (this.cursors.right.isDown||this.d.isDown) 
     {
       this.body.setVelocityX(this.speed);
 

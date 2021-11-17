@@ -10,7 +10,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
      */
 
     constructor(scene, x, y, irritacion) { 
-        super(scene, x, y,'guille').setInteractive(); 
+        super(scene, x, y,'npcs',[5]).setInteractive(); 
 
         //Se crea el personaje con físicas 
         this.scene.add.existing(this);
@@ -21,20 +21,20 @@ export default class Npc extends Phaser.GameObjects.Sprite
             key: 'guillestand',
             frames: this.anims.generateFrameNumbers
             ('npcs', { start: 4, end: 5 }),
-            frameRate: 3, 
+            frameRate: 4, 
             repeat: -1    
           });
-       
+          this.play('guillestand',true); 
         
           
       
-        console.log("guileeeee");
+       // console.log("guileeeee");
     }
 
     preUpdate()
     {
         super.preUpdate();
-        this.play('guillestand',true); 
+      
         if (this.scene.physics.overlap(this.scene.player, this)) {
             console.log(",mkjhgfdghjkl"); 
         }
