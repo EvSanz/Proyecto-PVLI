@@ -8,8 +8,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
    * @param {Phaser.Scene} scene Escena 
    * @param {number} x Coordenada X
    * @param {number} y Coordenada Y
-   * @param {bool} walking ¿Esta caminando?
-   * @param {bool} standing ¿Esta quieto?
    * @param {bool} fijo ¿Puede moverse?
    */
 
@@ -57,10 +55,8 @@ export default class Player extends Phaser.GameObjects.Sprite {
 
     //Inicializamos la animacion estatica
     this.play('playerstand');
-  //Desactivamos el estado de animacion
-    //estatico y de caminado
-    this.walking = false;
-    this.standing = true;
+  
+    
 
   }
 
@@ -78,16 +74,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
       //hacia la izquierda
       this.body.setVelocityX(-this.speed);
 
-      //Desactivamos la animacion estatica 
-      //y activamos la de caminado
-      if(!this.walking)
-      {
-        this.stop('playerstand');
-        this.standing = false;
-        this.play('playerwalk');
-        this.walking = true;
-      }
-
+     
       //Cambiamos la direccion del sprite
       this.flipX = true;
     }
@@ -97,35 +84,19 @@ export default class Player extends Phaser.GameObjects.Sprite {
     {
       this.body.setVelocityX(this.speed);
 
-      if(!this.walking)//NO HACEN FALTA LOS BOOLS SE PUEDE MIRAR SI LA VELOCIDAD DEL PERSONAJE ES 0 O NO
-      {
-        this.stop('playerstand');
-        this.standing = false;
-        this.play('playerwalk');
-        this.walking = true;
-      }
 
       if (this.mov) { this.flipX = false;}
     }
-
+  else this.body.setVelocityX(0);
     //Si no pulsamos ninguna flecha
-    else 
-    {
-      //Desactivamos la animacion de caminado
-      //y activamos la animacion estatica
-      this.stop('playerwalk');
-      this.walking = false;
-
-      if(!this.standing)//consultar documentacion play con segundo parametro ignore if playing
-      {
-        this.play('playerstand');//depuera aqui
-        this.standing = true;
-      }
- 
-      //Anulamos el movimiento mientras no 
-      //pulsemos ninguna flecha
-      this.body.setVelocityX(0);
+    
      
-    }
+     
+    
+    //NO HACEN FALTA BOOLS PARA LAS ANIMACIONES solo hay 2 opciones o se mueve o su speed es 0 y YA.
+    if(this.body.speed>0)
+    this.play('playerwalk',true);
+    else
+    this.play('playerstand',true);
   }
 }

@@ -13,8 +13,8 @@ export default class Npc extends Phaser.GameObjects.Sprite
         super(scene, x, y,'guille').setInteractive(); 
 
         //Se crea el personaje con físicas 
-        
-        
+        this.scene.add.existing(this);
+        this.scene.physics.add.existing(this, true);
 
         //Creacion de la animacion de Guille (Prueba)
         this.anims.create ({
@@ -24,17 +24,17 @@ export default class Npc extends Phaser.GameObjects.Sprite
             frameRate: 3, 
             repeat: -1    
           });
-        //this.play('guillestand');
-        this.scene.add.existing(this); 
-        this.scene.physics.add.existing(this, true);
-        this.Sprite.play('guillestand')
+       
+        
+          
+      
         console.log("guileeeee");
     }
 
     preUpdate()
     {
         super.preUpdate();
-
+        this.play('guillestand',true); 
         if (this.scene.physics.overlap(this.scene.player, this)) {
             console.log(",mkjhgfdghjkl"); 
         }

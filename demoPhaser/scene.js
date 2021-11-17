@@ -32,13 +32,13 @@ export default class Level extends Phaser.Scene {
     });
 
     //Creacion de la animacion de Guille (Prueba)
-    this.anims.create({
+    /*this.anims.create({
       key: 'guillehop',
       frames: this.anims.generateFrameNumbers
       ('npcs', { start: 4, end: 5 }),
       frameRate: 4, 
       repeat: -1    
-    });
+    });*/
 
     //Añadimos una variable para guardar un comando de teclado
     this.q = this.input.keyboard.addKey('Q');
