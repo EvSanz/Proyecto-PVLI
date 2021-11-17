@@ -8,7 +8,7 @@ export default class Dialog
   * @param {Phaser.Scene} scene Escena 
   * @param {Clock} clock el reloj que modifica el dialogo
   */
-  constructor(scene,clock)
+  constructor(scene)
   {
     this.scene = scene;
     this.myData = null;
@@ -22,7 +22,10 @@ export default class Dialog
     this.label2 = this.scene.add.text(275, 425, "");
     this.label3 = this.scene.add.text(275, 475, "");
     this.graphics = null;
-   /// this.scene.player.clock.decreaseTime();
+    //this.scene.player.clock.decreaseTime();
+    //this.clock=this.scene.player.clock;
+    //this.clock.decreaseTime(); da undefined :(
+
     
   }
 

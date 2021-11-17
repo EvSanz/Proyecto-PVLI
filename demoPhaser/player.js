@@ -36,7 +36,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     //Creamos el reloj
     this.clock = new Clock (this.scene);
     //Creamos el dialogo
-    this.dialog = new Dialog(this.scene,this.clock);
+    this.dialog = new Dialog(this.scene);
 
     //Creacion de la animacion de caminado
     this.anims.create ({
