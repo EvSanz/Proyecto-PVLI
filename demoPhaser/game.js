@@ -5,6 +5,8 @@ import Level from './scene.js';
 import Levelpt from './scenept.js';
 import Diary from './diario.js';
 import Clock from './clock.js';
+import Wagon from './wagon.js';
+import ClaseBaja from './clasebaja.js';
 //Inicio del juego en Phaser, creando para ello el archivo 
 //de configuración del juego y la clase Game, encargada de 
 //crear e iniciar el juego 
@@ -21,7 +23,7 @@ let config = {
     pixelArt: true,
 
     //Establecemos todas las escenas del juego
-    scene: [Boot, Level, Levelpt, Diary, End],
+    scene: [Boot, Level, Levelpt, Wagon, ClaseBaja, Diary, End],
 
     //Establecemos las fisicas del juego
     physics: { 

@@ -11,10 +11,31 @@ import Npc from './npc.js';
 
 //Clase para crear y gestionar un nivel 
 export default class Wagon extends Phaser.Scene {
-  constructor(isPointAndClick) { super({ key: 'level' }); this.isPT = isPointAndClick}
+
+   /**Constructor del vagon
+   * @param {string} wagonKey key del vagon
+   * @param {boolean} isPointAndClick se entiende por su nombre (si se pone a true, solo importaran spritefondo1 y wagonizq)
+   * @param {string} spriteFondo1 Sprite que se renderizará al fondo a la izquierda (si es ventana se anima automáticamente)
+   * @param {string} spriteFondo2 Sprite que se renderizará al fondo en el centro
+   * @param {string} spriteFondo3 Sprite que se renderizará al fondo a la derecha
+   * @param {string} wagonIzq Vagon que esté a la izquierda de este
+   * @param {string} wagonDer Vagon que esté a la derecha de este
+   */
+
+  constructor(wagonKey, isPointAndClick, spriteFondo1, spriteFondo2, spriteFondo3, wagonIzq, wagonDer) { 
+    super({ key: wagonKey }); 
+    this.isPT = isPointAndClick
+    this.spriteFondo1 = spriteFondo1;
+    this.spriteFondo2 = spriteFondo2;
+    this.spriteFondo3 = spriteFondo3;
+    this.wagonIzq = wagonIzq;
+    this.wagonDer = wagonDer;
+  }
 
   //Creacion de los elementos del juego
-  create(spriteFondo1, spriteFondo2, spriteFondo3, vagonIzq, vagonDer) {
+  create(data) {
+
+    console.log(data);
 
     //this.bases = this.add.group();
 
@@ -23,15 +44,6 @@ export default class Wagon extends Phaser.Scene {
       key: 'backgroundwindows',
       frames: this.anims.generateFrameNumbers
       ('background', { start: 0, end: 25 }),
-      frameRate: 4, 
-      repeat: -1    
-    });
-
-    //Creacion de la animacion de Guille (Prueba)
-    this.anims.create({
-      key: 'guillehop',
-      frames: this.anims.generateFrameNumbers
-      ('npcs', { start: 4, end: 5 }),
       frameRate: 4, 
       repeat: -1    
     });
@@ -52,7 +64,6 @@ export default class Wagon extends Phaser.Scene {
 
     //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);
-    this.physics.add.collider(this.player, uisuelo);
 
 
     //Si es point and click...
@@ -60,43 +71,54 @@ export default class Wagon extends Phaser.Scene {
     {
         //Añade el sprite del fondo y crea una puerta que 
         //llevara al vagon declarado a la izquierda
-        this.add.sprite(500, 174, spriteFondo1);
-        this.door = new Door(this, 140, 225, vagonIzq);
-    }
+        this.add.sprite(500, 174, this.spriteFondo1);
+        this.door = new Door(this, 140, 225, this.wagonIzq);
 
+        //Creamos el jugador en una posicion fija
+        this.player = new Player(this, 160, 240, true);
+    }
+    //Si no lo es...
     else 
     {
         //Añade los sprites indicados en el create
-        this.add.sprite(150, 174, spriteFondo1);
-        this.add.sprite(480, 174, spriteFondo2);    //Aqui vendria bien tener el fondo con
-        this.add.sprite(830, 174, spriteFondo3);    //movimiento en sprites aparte
-                                                    //Simplemente se pone al inicio y se superponen
+        let a = this.add.sprite(167, 174, this.spriteFondo1);
+
+        //Si es una ventana la anima
+        if (this.spriteFondo1 === 'ventanas'){
+          a.play('backgroundwindows');
+        }
+
+        a = this.add.sprite(500, 174, this.spriteFondo2);
+
+        if (this.spriteFondo2 === 'ventanas'){
+          a.play('backgroundwindows');
+        }
+
+        a = this.add.sprite(833, 174, this.spriteFondo3);
+
+        if (this.spriteFondo3 === 'ventanas'){
+          a.play('backgroundwindows');
+        }
 
         //Añade las puertas indicadas
-        this.door = new Door(this, 140, 225, vagonIzq);
-        this.door = new Door(this, 860, 225, vagonDer);
+
+        new Door(this, 100, 225, this.wagonIzq);
+
+        new Door(this, 900, 225, this.wagonDer);
+
+        //Creamos el jugador donde nos indica
+        this.player = new Player(this, data, 240, true);
     }
+    this.physics.add.collider(this.player, uisuelo);
 
-    this.add.sprite(150, 174, 'background', [26]);
+    //Creamos los npc necesarios
+    this.spawnNPCs();
 
-    //Añadimos las animaciones del fondo
-    this.add.sprite(480, 174, 'ventanas').play('backgroundwindows');
-    this.add.sprite(830, 174, 'ventanas').play('backgroundwindows');
+    //Creamos los objetos necesarios
+    this.spawnObjects();
 
-
-    //Añadimos la animacion a Guille (Prueba) (Seria mas facil que lo cree directamente npc no??)
-    this.add.sprite(880, 230, 'guille').play('guillehop');
-
-    //Creamos el jugador
-    this.player = new Player(this, 400, 240, true);
-
-    //Creamos la tetera
-    this.tetera = new Tetera (this, 600, 265);
-
-    //Creamos el npc
-    this.npc = new Npc (this, 880, 230, 0);
-
-    new Base(this, 150, 600);
+    //Mostramos el reloj
+    this.player.clock.showTime();
 
   }
 
@@ -104,7 +126,11 @@ export default class Wagon extends Phaser.Scene {
     //Phaser.Math.RND.pick(from || this.bases.children.entries).spawn();
   }
 
-  preUpdate() { game.debug.body(tetera);}
+  //preUpdate() { game.debug.body(tetera);}
+
+  spawnNPCs() {}
+
+  spawnObjects() {}
 
   
 }

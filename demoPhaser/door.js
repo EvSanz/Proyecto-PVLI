@@ -27,12 +27,13 @@ export default class Door extends Phaser.GameObjects.Sprite {
       this.graphics = new Phaser.GameObjects.Rectangle
       (this.scene, 140, 225, 200, 200, 0xfffffff, 0xfffffff);
       this.graphics.setInteractive();
-
+      
       //Si hacemos click en el area interactuable...
       this.graphics.on('pointerdown', () => 
       {
         //Y el jugador está dentro del rango, cargamos 
         //la siguiente escena
+
         if (this.scene.physics.overlap(this.scene.player, this)) 
         { 
           //this.Clock.decreaseTime(); 

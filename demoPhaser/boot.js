@@ -1,6 +1,8 @@
 //Js importados
 import Diario from './diario.js'
 import Clock from './clock.js';
+import Wagon from './wagon.js';
+import ClaseBaja from './clasebaja.js';
 
 //Escena encargada de cargar los assets del juego
 export default class Boot extends Phaser.Scene {
@@ -34,6 +36,9 @@ export default class Boot extends Phaser.Scene {
   {
     this.scene.start('diary');
     this.scene.sleep('diary');
-    this.scene.start('level');
+
+    //this.scene.start('level')
+
+    this.scene.start('clasebaja', 400);
   }
 }
