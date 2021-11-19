@@ -24,7 +24,7 @@ export default class Clock
     decreaseTime() 
     {
         time--;
-        showTime();
+        this.showTime();
     }
 
     //Método para resetear el tiempo

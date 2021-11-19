@@ -73,6 +73,7 @@ export default class Dialog
       this.textNum++;
       this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     }
+    
 
     else
     {
@@ -88,14 +89,21 @@ export default class Dialog
       {
         this.textNum++;
         this.label3.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
+       
       }
+      if (this.myData.Dialogues[this.id].scenes[this.chat].opciones=-1) 
+      {
+        this.scene.player.clock.decreaseTime();
+        
+       // this.reloj.decreaseTime();
+        console.log('FIN');
+      }
+     
     }
+   
     //}
     //si se ha terminado la conversacion y es una conversacion no trivial que gasta tiempo , modificamos el reloj
-    //else {
-     // this.reloj.decreaseTime();
-     // console.log('FIN');
-    //}
+    
   }
 
   createBox()
