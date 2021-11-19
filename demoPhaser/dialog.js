@@ -8,7 +8,7 @@ export default class Dialog
   * @param {Phaser.Scene} scene Escena 
   * @param {Clock} clock el reloj que modifica el dialogo
   */
-  constructor(scene)
+  constructor(scene, id)
   {
     this.scene = scene;
     this.myData = null;
@@ -16,6 +16,7 @@ export default class Dialog
     //Linea de dialogo
     this.textNum = 0;
     //Bloque de dialogo
+    this.id = id;
     this.chat = 0; 
     //Textos
     this.label = this.scene.add.text(275, 375, "");
@@ -53,7 +54,7 @@ export default class Dialog
     //Primera linea de dialogo
     this.textNum = 0;  
     //Texto
-    this.label.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
+    this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     this.label2.text = "";
     this.label3.text = "";
   }
@@ -61,38 +62,40 @@ export default class Dialog
   nextText()
   {
     //Comprobamos si queda frases por mostrar
-    if (this.textNum < this.myData.Dialogues[0].scenes[this.chat].lines.length)
-    {
+    //if (this.textNum < this.myData.Dialogues[this.id].scenes[this.chat].lines.length)
+    //{
+
+    console.log ("Hay lineas leidas " + this.textNum);
 
       //Comprobamos si no ha llegado a las opciones de dialogo
-      if (this.textNum != this.myData.Dialogues[0].scenes[this.chat].opciones - 1)
+      if (this.textNum != this.myData.Dialogues[this.id].scenes[this.chat].opciones - 1)
     {
       this.textNum++;
-      this.label.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
+      this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     }
 
     else
     {
       //Escribimos las opciones de dialogo, separadas entre ellas
       this.textNum++;
-      this.label.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
+      this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
       this.textNum++;
-      this.label2.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum]
+      this.label2.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum]
 
       //No siempre habra tres opciones, asi que ponemos una condicion para 
       //escribir la tercera respuesta si hay
-      if (this.textNum < this.myData.Dialogues[0].scenes[this.chat].lines.length)
+      if (this.textNum < this.myData.Dialogues[this.id].scenes[this.chat].lines.length)
       {
         this.textNum++;
-        this.label3.text = this.myData.Dialogues[0].scenes[this.chat].lines[this.textNum];
+        this.label3.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
       }
     }
-    }
+    //}
     //si se ha terminado la conversacion y es una conversacion no trivial que gasta tiempo , modificamos el reloj
-    else {
+    //else {
      // this.reloj.decreaseTime();
-      console.log('FIN');
-    }
+     // console.log('FIN');
+    //}
   }
 
   createBox()
@@ -123,8 +126,8 @@ export default class Dialog
       { 
           //Si no hay mas lineas de dialogo y es una opcion de respuestas
           //reseteamos valores y cambiamos el bloque del dialogo al siguiente
-          if (this.textNum == this.myData.Dialogues[0].scenes[this.chat].lines.length - 1
-            && this.myData.Dialogues[0].scenes[this.chat].opciones != -1)
+          if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length - 1
+            && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
             this.chat++;
             this.talk()
@@ -138,8 +141,8 @@ export default class Dialog
       //Segundo bloque
       this.graphics2.on('pointerdown', () => 
       { 
-          if (this.textNum == this.myData.Dialogues[0].scenes[this.chat].lines.length - 1
-            && this.myData.Dialogues[0].scenes[this.chat].opciones != -1)
+          if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length - 1
+            && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
             this.chat = this.chat + 2;
             this.talk()
@@ -151,8 +154,8 @@ export default class Dialog
       //Tercer bloque
       this.graphics3.on('pointerdown', () => 
       { 
-          if (this.textNum == this.myData.Dialogues[0].scenes[this.chat].lines.length - 1
-            && this.myData.Dialogues[0].scenes[this.chat].opciones != -1)
+          if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length - 1
+            && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
             this.chat = this.chat + 3;
             this.talk()

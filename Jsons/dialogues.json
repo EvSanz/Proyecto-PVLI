@@ -40,6 +40,40 @@
           ]
         }
       ]
+    }, 
+
+    {
+      "char": "Tetera",
+      "imageName": "Tetera",
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 2,
+          "lines": [
+            "Es una tetera con restos de té en su interior",
+            "No parece tener ninguna pista ¿Investigar a fondo?",
+            "Si",
+            "No"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : -1,
+          "lines": [
+            "Encuentras unas siglas grabadas en el lateral",
+            "En ellas pone N.A"
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : -1,
+          "lines": [
+            "Dejas la tetera en el suelo"
+          ]
+        }
+      ]
     }
   ]
 }
