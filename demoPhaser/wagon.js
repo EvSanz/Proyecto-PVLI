@@ -35,7 +35,9 @@ export default class Wagon extends Phaser.Scene {
   //Creacion de los elementos del juego
   create(data) {
 
-    console.log(data);
+    this.diario = this.scene.getIndex('diary');
+
+    console.log(data);    //Aqui le llegara la posicion en la que aparecerá el jugador
 
     //this.bases = this.add.group();
 

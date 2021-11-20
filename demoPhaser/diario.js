@@ -4,6 +4,8 @@ export default class Diary extends Phaser.Scene {
 
       //Desactivamos los objetos que aparecen en el diario
       this.tetera; 
+
+      this.objectList = ['a', 'b'];
   }
 
   //Cargamos la escena inicial
@@ -16,7 +18,9 @@ export default class Diary extends Phaser.Scene {
     //Añadimos el sprite del boton del diario
     this.add.sprite(500, 260, 'diary');
 
-    if (this.tetera) { this.add.sprite(105, 125, 'tetera');}
+    this.objectList.forEach(element => {
+      console.log(element);
+    });
 
     //Añadimos el comando para desactivar el diario 
     this.q = this.input.keyboard.addKey('Q'); 
@@ -24,5 +28,10 @@ export default class Diary extends Phaser.Scene {
       this.scene.stop();
       this.scene.resume(this.currentScene);
     })
+  }
+  
+  addObject(obj)
+  {
+      this.objectList.push(obj);
   }
 }

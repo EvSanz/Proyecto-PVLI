@@ -23,5 +23,12 @@ export default class GO extends Phaser.GameObjects.Sprite {
       //Si es un objeto que necesita sistema de 
       //colisiones, añadimos las físicas de movimiento
       if (chocante) { this.scene.physics.add.existing(this, true);}
+
+      //this.on('pointerdown', ()=>
+      //{
+      //  this.scene.diario.addObject(this);  No borren esto porfa :v
+      //  this.dialog.talk();
+      //  this.destroy();
+      //});
     }
 }

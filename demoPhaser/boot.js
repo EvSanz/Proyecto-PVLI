@@ -27,18 +27,12 @@ export default class Boot extends Phaser.Scene {
     this.load.text('objects', 'objetos.json');
     this.load.text('personajes', 'personajes.json');
 
-    this.Diario = new Diario();
     //this.Clock = new Clock();
   }
 
 //Creación de los elementos fijos de la escena 
   create() 
   {
-    this.scene.start('diary');
-    this.scene.sleep('diary');
-
-    //this.scene.start('level')
-
     this.scene.start('clasebaja', 400);
   }
 }
