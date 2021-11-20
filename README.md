@@ -7,7 +7,7 @@
 [objeto]:/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(4).png "IMG - tetera"
 [Diagrama]:/Proyecto-PVLI/blob/main/Imagenes/diagrama.png "IMG - diagramaestados"
 [BocetoUI]:/Proyecto-PVLI/blob/main/Imagenes/interfaz_diagrama.png "IMG - bocetoUi"
-[UML]:/Proyecto-PVLI/blob/main/imagenes/UML.png "IMG - uml"
+[UML]:/Proyecto-PVLI/blob/main/imagenes/UML.drawio.png "IMG - uml"
 
 [Web]: https://evsanz.github.io/Proyecto-PVLI/
 [Repositorio]: https://github.com/EvSanz/Proyecto-PVLI
@@ -227,7 +227,7 @@ Este es el árbol de decisiones de diálogo del jugador:
 
 ## 6. UML ##
 
-  ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/imagenes/UML.png)
+  ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/imagenes/UML.drawio.png)
 
 ## 7. Plataformas de gestión ##
 
