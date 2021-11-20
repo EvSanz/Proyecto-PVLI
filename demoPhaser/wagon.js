@@ -33,13 +33,8 @@ export default class Wagon extends Phaser.Scene {
   }
 
   //Creacion de los elementos del juego
-  create(data) {
 
-    this.diario = this.scene.getIndex('diary');
-
-    console.log(data);    //Aqui le llegara la posicion en la que aparecerá el jugador
-
-    //this.bases = this.add.group();
+  create(data) {    //Aqui le llegara la posicion en la que aparecerá el jugador
 
     //Creacion de la animacion del fondo
     this.anims.create({
@@ -123,12 +118,6 @@ export default class Wagon extends Phaser.Scene {
     this.player.clock.showTime();
 
   }
-
-  spawn(from = null) {
-    //Phaser.Math.RND.pick(from || this.bases.children.entries).spawn();
-  }
-
-  //preUpdate() { game.debug.body(tetera);}
 
   spawnNPCs() {}
 

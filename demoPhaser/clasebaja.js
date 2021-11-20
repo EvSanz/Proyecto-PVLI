@@ -25,7 +25,15 @@ export default class ClaseBaja extends Wagon {
 
   spawnObjects(){
       
-    //this.tetera = new Tetera (this, 500, 265);
+    this.tetera = new Tetera (this, 20, 1);
+    this.tetera = new Tetera (this, 120, 10);
+    this.tetera = new Tetera (this, 220, 1);
+    this.tetera = new Tetera (this, 320, 10);
+    this.tetera = new Tetera (this, 420, 1);
+    this.tetera = new Tetera (this, 520, 10);
+    this.tetera = new Tetera (this, 620, 1);
+    this.tetera = new Tetera (this, 720, 10);
+    this.tetera = new Tetera (this, 820, 1);
 
   }
 
