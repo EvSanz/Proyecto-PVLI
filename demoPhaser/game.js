@@ -15,7 +15,7 @@ let config = {
     type: Phaser.AUTO,
     width:  1000,
     height: 500,
-
+    parent:"gameholder",
     scale: {
         //mode: Phaser.Scale.FIT,  
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY },
@@ -36,4 +36,4 @@ let config = {
     
 };
 
-new Phaser.Game(config,'gameholder');
+new Phaser.Game(config ,'gameholder');
