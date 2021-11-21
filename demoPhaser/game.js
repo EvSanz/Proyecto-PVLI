@@ -1,12 +1,11 @@
 //Js importados
 import Boot from './boot.js';
 import End from './end.js';
-import Level from './scene.js';
-import Levelpt from './scenept.js';
-import Diary from './diario.js';
-import Clock from './clock.js';
-import Wagon from './wagon.js';
-import ClaseBaja from './clasebaja.js';
+import Level from './Test/scene.js';
+import Levelpt from './Test/scenept.js';
+import Diary from './Utils/diario.js';
+import Wagon from './Wagons/wagon.js';
+import ClaseBaja from './Wagons/clasebaja.js';
 //Inicio del juego en Phaser, creando para ello el archivo 
 //de configuración del juego y la clase Game, encargada de 
 //crear e iniciar el juego 

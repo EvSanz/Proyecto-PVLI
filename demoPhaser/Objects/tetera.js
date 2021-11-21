@@ -1,5 +1,5 @@
 //Js importados
-import Dialog from './dialog.js';
+import Dialog from '../Utils/dialog.js';
 import GO from './GameObject.js';
 
 //Clase para crear y gestionar la tetera

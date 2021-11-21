@@ -15,7 +15,7 @@ export default class Diary extends Phaser.Scene {
 
   create() 
   {
-    //Añadimos el sprite del boton del diario
+    //Añadimos el sprite del diario
     this.add.sprite(500, 260, 'diary');
 
     //Por cada elemento del array de objetos se dibuja en el orden que se han obtenido

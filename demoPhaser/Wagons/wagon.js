@@ -1,9 +1,8 @@
 //Js importados
-import Player from './player.js';
-import Tetera from './tetera.js'
-import Base from './base.js'
-import Door from './door.js'
-import Npc from './npc.js';
+import Player from '../player.js';
+import Tetera from '../Objects/tetera.js'
+import Door from '../Utils/door.js'
+import Npc from '../NPCs/npc.js';
 
 /**Escena principal del juego
  * @extends Phaser.Scene

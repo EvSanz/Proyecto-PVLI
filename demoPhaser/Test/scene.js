@@ -1,10 +1,9 @@
 //Js importados
-import Player from './player.js';
-import Tetera from './tetera.js'
-import Base from './base.js'
-import Door from './door.js'
-import Npc from './npc.js';
-import Clock from './clock.js';
+import Player from '../player.js';
+import Tetera from '../Objects/tetera.js'
+import Door from '../Utils/door.js'
+import Npc from '../NPCs/npc.js';
+import Clock from '../Utils/clock.js';
 
 /**Escena principal del juego
  * @extends Phaser.Scene
@@ -75,9 +74,6 @@ export default class Level extends Phaser.Scene {
     //Creamos el npc
     this.npc = new Npc (this, 880, 230, 0);
     
-
-    new Base(this, 150, 600);
-
     //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);
     this.physics.add.collider(this.player, uisuelo);

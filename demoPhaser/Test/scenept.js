@@ -1,5 +1,5 @@
-import Door from './door.js'
-import Player from './player.js';
+import Door from '../Utils/door.js'
+import Player from '../player.js';
 
 //Clase para crear las escenas de point and click
 export default class Levelpt extends Phaser.Scene {

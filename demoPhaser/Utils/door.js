@@ -6,7 +6,7 @@ export default class Door extends Phaser.GameObjects.Sprite {
 
    /**Constructor de la puerta
    * @param {Phaser.Scene} scene Escena inicial
-   * @param {Platform} gotoscene Siguiente escena
+   * @param {Scene} gotoscene Siguiente escena
    * @param {number} x Coordenada x
    * @param {number} y Coordenada y 
    */
@@ -41,7 +41,5 @@ export default class Door extends Phaser.GameObjects.Sprite {
         }
       });
 
-      //this.y -= this.height;
-      // this.base = base;
     }
 }
