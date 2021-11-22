@@ -1,57 +1,459 @@
 ﻿{
   "Dialogues": [
+    
     {
-      "char": "Guille",
-      "imageName": "Portrait_Guille",
+      "char": "Tutorial",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 2,
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
           "lines": [
-            "No podéis pasar a producción sin el gdd correcto",
-            "Tenéis que corregir el gdd",
-            "Vale",
-            "No quiero",
-            "Eh......."
+            ""
           ]
         },
 
         {
           "id": "Scene1",
-          "opciones" : -1,
+          "opciones" : 4,
+          "irritacion": 0,
+          "clock": false,
           "lines": [
-            "Perfecto. Empezad a trabajar"
+            ""
           ]
         }, 
 
         {
           "id": "Scene2",
-          "opciones" : -1,
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
           "lines": [
-            "Como que no. A TRABAJAR"
+            ""
           ]
         },
 
         {
           "id": "Scene3",
           "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
           "lines": [
-            "Hare como que no escuche eso"
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    
+    
+    
+    {
+      "char": "Larry Shephard",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Buenos días, detective",
+            "¿Porqué un pastor como usted vendría a este tren?",
+            "¿Conoce usted a las hermanas Morton?"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Voy a llevar mi cabra al veterinario",
+            "Ya veo. Y digame ¿usted conoce usted a las hermanas Morton?"
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 3,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "¿Hermanas?",
+            "Conocí a Mery, quien me estuvo pintando un retrato",
+            "Pero no sabía que tenía una hermana...",
+            "¿Que estaba haciendo usted ayer a medianoche",
+            "Entiendo. Muchas gracias por tu ayuda"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 25,
+          "clock": true,
+          "lines": [
+            "Anoche a Gorty tuvo fiebre",
+            "Estuve toda la noche cuidando de ella",
+            "Ahora si me disculpas, voy a ver que tal está."
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "No hay de que"
           ]
         }
       ]
     }, 
 
     {
-      "char": "Tetera",
-      "imageName": "Tetera",
+      "char": "Larry Shephard",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Perdon, pero no tengo tiempo ahora",
+            "Necesito seguir cuidando de mi cabra"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Daniel Grooms",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Agh, es usted",
+            "¿Porqué un electricista como usted vendría a este tren?",
+            "¿Conoce usted a las hermanas Morton?"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 4,
+          "irritacion": 25,
+          "clock": false,
+          "lines": [
+            "No pienso arreglarte la bombilla, inspector de pacotilla",
+            "Se supone que estoy de vacaciones",
+            "Pero parece ser que todos asumen que no",
+            "Como la vieja esa, pidiendome que arregle su lampara",
+            "Entiendo... ¿Las hermanas Morton pidieron ayuda tambien?"
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "¿Morton?",
+            "No me suenan",
+            "¿Que estaba haciendo usted ayer a medianoche",
+            "Entiendo. Muchas gracias por tu ayuda"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 25,
+          "clock": true,
+          "lines": [
+            "¿A usted que le importa?",
+            "¿Se cree que tambien trabajo de noche?",
+            "Hagame un favor y dejeme en paz, picoleto"
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "Si, si, lo que sea"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Daniel Grooms",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 25,
+          "clock": false,
+          "lines": [
+            "Dejame en paz de una vez o si no..."
+          ]
+        }
+      ]
+    },
+    
+    {
+      "char": "Profesor Collins",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Benas, seniorr detec-tective",
+            "¿Se encuentra usted bien?",
+            "¿Conoce usted a las hermanas Morton?"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Sip- Siolo bebi uun poquitito",
+            "No creo que pueda decirme nada sobre Mery Morton asi"
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "¿Morton?",
+            "Nio, pe- pero ¿oio del pastor?",
+            "¿Que estaba haciendo usted ayer a medianoche",
+            "Algo he oido. Gracias por su ayuda"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 25,
+          "clock": true,
+          "lines": [
+            "Un pocoo entriometido ¿eh?",
+            "¡Puez tomando viino de Albie!",
+            "¿Albe? ¿Albert?",
+            "Vaia a priguntar al camareroo"
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "¡Di nada!"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Profesor Collins",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": false,
       "scenes": [
         {
           "id": "Scene0",
           "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
           "lines": [
-            "Es una tetera con restos de té en su interior",
-            "No parece tener ninguna pista ¿Investigar a fondo?",
+            "¡Deetective!",
+            "¿Ez esso lo qui creo que es?",
+            "¿Quieres un poco del vino?",
+            "Deberia descansar"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "¡Graaciaz!",
+            "Tan majo conmo el Anthon, Anthony",
+            "Me pidioo que dejase unaa de estaz en su cuarto",
+            "Piiro no habeia nadie",
+            "Zzzzz..."
+          ]
+        },
+
+        {
+          "id": "Scene2",
+          "opciones" : -1,
+          "irritacion": 25,
+          "clock": false,
+          "lines": [
+            "Egooista...",
+            "Zzzzz..."
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Profesor Collins",
+      "imageName": "",
+      "dialogo": 2,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Zzzzz..."
+          ]
+        }
+      ]
+    },
+    
+    {
+      "char": "Frederick Bold",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Buenos dias, amigo",
+            "¿Porqué ha decidido viajar a la gran ciudad?",
+            "¿Conoce usted a las hermanas Morton?"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Digamos que mis compañeros de trabajo eran nefastos",
+            "No entendian que el futuro de la arquitectura...",
+            "son los edificios rectos, con todas sus piezas simetricas...",
+            "¡Eficientes y hermosas!",
+            "Y eso no es todo, porque-",
+            "Perdone, me he dejado llevar",
+            "No seria la primera persona que me comenta que hablo demasiado",
+            "¿Alguna de esas personas eran las hermanas Morton?"
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 2,
+          "irritacion": 25,
+          "clock": false,
+          "lines": [
+            "¿Las hermanas pintoras?",
+            "¿Porque lo pregunta?",
+            "Solo escuche que estaban pintando retratos a poco precio",
+            "¿Y puede decirme que hizo ayer por la noche?",
+            "Gracias por su ayuda"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 25,
+          "clock": true,
+          "lines": [
+            "Dormir, como todo el mundo",
+            "Bueno, todos menos los borrachos esos",
+            "No se quienes son, pero Albert quizas sepa algo",
+            "Ahora si me disculpas, estoy un poco ocupado"
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "No hay de que"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Frederick Bold",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Resulta bastante extraño verlo merodear",
+            "¿Necesita ayuda con algo?",
             "Si",
             "No"
           ]
@@ -60,21 +462,850 @@
         {
           "id": "Scene1",
           "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
           "lines": [
-            "Encuentras unas siglas grabadas en el lateral",
-            "En ellas pone N.A"
+            "Entiendo. Bueno, no se preocupe",
+            "Despues de desayunar lo ayudo"
+          ]
+        },
+
+        {
+          "id": "Scene2",
+          "opciones" : -1,
+          "irritacion": 25,
+          "clock": false,
+          "lines": [
+            "Supongo..."
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Alfred Hirsch",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Buenos días, detective",
+            "¿Qué tal el trabajo?",
+            "¿Conoce usted a las hermanas Morton?"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 4,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Estoy un poco cansado",
+            "No es fácil ocultar un delito mientras sirves a los clientes",
+            "Aunque sé que es mejor no decir nada acerca del asesinato",
+            "Procure tenerlo en cuenta",
+            "Aunque si quiere preguntar, no se corte",
+            "¿Hablo con alguna de las hermanas Morton?"
           ]
         }, 
 
         {
           "id": "Scene2",
-          "opciones" : -1,
+          "opciones" : 3,
+          "irritacion": 0,
+          "clock": false,
           "lines": [
-            "Dejas la tetera en el suelo"
+            "No mucho",
+            "No venían mucho por la cafeteria",
+            "Quizas el maquinista sepa algo sobre ellas",
+            "¿Puedo saber que hacia usted ayer a medianoche",
+            "Entiendo. Buscare al maquinista entonces"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "Estuve sirviendo un par de copas",
+            "Un dia ajetreado, pero nada fuera de lo normal",
+            "Eso me recuerda que tengo que terminar de limpiar",
+            "Mucha suerte, detective"
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "Perdon por no ser de mas ayuda",
+            "Vuelva a preguntarme cuando sea"
+          ]
+        }
+      ]
+    }, 
+
+    {
+      "char": "Alfred Hirsch",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "No tengo mucho mas que decirle, señor detective"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Norma Anthony",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Buenas, joven",
+            "¿Porqué una señora como usted viajaria en este vagon?",
+            "¿Conoce usted a las hermanas Morton?"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 5,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "¿Señora?",
+            "Señor detective, me hace sentir mas mayor de lo que soy",
+            "¿Que porque estoy en este vagon?",
+            "Oh, nada importante cariño",
+            "Solo necesitaba ayuda de Daniel con una bombilla",
+            "Ya veo. Y digame ¿usted conoce usted a las hermanas Morton?"
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "No me suena haber escuchado ese nombre antes",
+            "¿Quizas viajen en clase media?",
+            "Puede ser. Muchas gracias por tu ayuda",
+            "¿Y que estaba haciendo usted ayer a medianoche"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "De nada, hijo"
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : 3,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "Estuve esperando despierta a que volviera mi hijo",
+            "Pero como no volvia, sali a buscarlo",
+            "Lo encontre borracho ¿Lo puedes creer?",
+            "¿Vio por casualidad a alguien mas fuera del vagon?"
+          ]
+        },
+
+        {
+          "id": "Scene5",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "No estoy segura, pero-",
+            "Juraria que vi a ese tenista caminando a hurtadillas",
+            "Y bueno, a Albert tambien",
+            "No se muy bien porque tantas preguntas",
+            "Pero espero que tenga suerte con su investigacion, detective"
+          ]
+        }
+      ]
+    }, 
+
+    {
+      "char": "Norma Anthony",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Barry Railway",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Buenos días, detective",
+            "¿Conoces bien a Albert?",
+            "¿Que sabe sobre las hermanas Morton?"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 5,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Je, un poble diablo",
+            "Todo el día trabajando e intentando ayudar a todos",
+            "Hasta pidió una pequeña habitacion cerca de la cocina",
+            "Solo por si acaso necesitaba ayudar a alguien por la noche",
+            "¿Porque preguntas?",
+            "¿Sospechas que pueda estar detras de lo de Morton?",
+            "Puede ser ¿Que sabes sobre las hermanas?"
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 3,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Escuche que habia cierta tension entre ambas",
+            "Al parecer Mery, descanse en paz,...",
+            "Habia conseguido una oferta de trabajo y Molly no",
+            "¿Que estaba haciendo usted ayer a medianoche",
+            "Entiendo. Muchas gracias por tu ayuda"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 25,
+          "clock": true,
+          "lines": [
+            "Trabajar, toda la noche",
+            "Mi compañero no pudo venir, asi que tengo turno doble",
+            "Y no, por si se lo pregunta, no vi a nadie.",
+            "Podria ir a preguntar a Albert, quizas sepa algo mas"
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "No hay de que"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Barry Railway",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Aiva Yan",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 4,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Aiva Yan",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Mihael Haines",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 4,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Mihael Haines",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Bruno Anthony",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 4,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Bruno Anthony",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Molly Morton",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 4,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 0,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Molly Morton",
+      "imageName": "",
+      "dialogo": 1,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+    {
+      "char": "Tetera",
+      "imageName": "Tetera",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Es una tetera con restos de té en su interior",
+            "Tras investigarla, ves unas siglas en su interior: A.N"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Gemelo",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Es el gemelo de una chaqueta cara y elegante",
+            "Debe de pertenecer a un hombre que viaja en clase alta"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Cable",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Un cable un poco raido",
+            "Parece que alguien lo ha retorcido con las manos"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Botella de alcohol",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Una botella de vino de gran calidad",
+            "No parece que lo vendan en la cafeteria"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Lampara",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Una lampara pequeña con marcas de golpe",
+            "La bombilla parece bastante nueva"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Caja de galletas",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Es una caja de galletas",
+            "Parecen deliciosas"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Raqueta",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Es una raqueta de tenis bastante vieja"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Maletin",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Es un maletin cerrado con candado",
+            "Forzarlo",
+            "Dejarlo como esta"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Dentro hay numerosos pasaportes falsos y una radio"
+          ]
+        },
+
+        {
+          "id": "Scene2",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Dejas el maletin donde esta"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Cables nuevos",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Cables nuevos, sin usar",
+            "Son identicos al que habia en la escena del crimen"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Placas solares",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Una maqueta de una serie de prototipos cientificos",
+            "Parecen unos cuadrados electricos"
+          ]
+        }
+      ]
+    },
+
+    {
+      "char": "Caja de galletas vacia",
+      "imageName": "",
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Es un envase vacio de galletas"
           ]
         }
       ]
     }
+    
   ]
 }
     
