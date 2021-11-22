@@ -1,7 +1,8 @@
 ﻿{
   "Dialogues": [
-    
+
     {
+      "id": 0,
       "char": "Tutorial",
       "imageName": "",
       "dialogo": 0,
@@ -63,6 +64,7 @@
     
     
     {
+      "id": 1,
       "char": "Larry Shephard",
       "imageName": "",
       "dialogo": 0,
@@ -130,6 +132,7 @@
     }, 
 
     {
+      "id": 2,
       "char": "Larry Shephard",
       "imageName": "",
       "dialogo": 1,
@@ -149,6 +152,7 @@
     },
 
     {
+      "id": 3,
       "char": "Daniel Grooms",
       "imageName": "",
       "dialogo": 0,
@@ -218,6 +222,7 @@
     },
 
     {
+      "id": 4,
       "char": "Daniel Grooms",
       "imageName": "",
       "dialogo": 1,
@@ -236,6 +241,7 @@
     },
     
     {
+      "id": 5,
       "char": "Profesor Collins",
       "imageName": "",
       "dialogo": 0,
@@ -303,6 +309,7 @@
     },
 
     {
+      "id": 6,
       "char": "Profesor Collins",
       "imageName": "",
       "dialogo": 1,
@@ -349,6 +356,7 @@
     },
 
     {
+      "id": 7,
       "char": "Profesor Collins",
       "imageName": "",
       "dialogo": 2,
@@ -367,6 +375,7 @@
     },
     
     {
+      "id": 8,
       "char": "Frederick Bold",
       "imageName": "",
       "dialogo": 0,
@@ -441,6 +450,7 @@
     },
 
     {
+      "id": 9,
       "char": "Frederick Bold",
       "imageName": "",
       "dialogo": 1,
@@ -483,6 +493,7 @@
     },
 
     {
+      "id": 10,
       "char": "Alfred Hirsch",
       "imageName": "",
       "dialogo": 0,
@@ -556,6 +567,7 @@
     }, 
 
     {
+      "id": 11,
       "char": "Alfred Hirsch",
       "imageName": "",
       "dialogo": 1,
@@ -574,6 +586,7 @@
     },
 
     {
+      "id": 12,
       "char": "Norma Anthony",
       "imageName": "",
       "dialogo": 0,
@@ -659,6 +672,7 @@
     }, 
 
     {
+      "id": 13,
       "char": "Norma Anthony",
       "imageName": "",
       "dialogo": 1,
@@ -677,6 +691,7 @@
     },
 
     {
+      "id": 14,
       "char": "Barry Railway",
       "imageName": "",
       "dialogo": 0,
@@ -750,6 +765,7 @@
     },
 
     {
+      "id": 15,
       "char": "Barry Railway",
       "imageName": "",
       "dialogo": 1,
@@ -768,6 +784,7 @@
     },
 
     {
+      "id": 16,
       "char": "Aiva Yan",
       "imageName": "",
       "dialogo": 0,
@@ -826,6 +843,7 @@
     },
 
     {
+      "id": 17,
       "char": "Aiva Yan",
       "imageName": "",
       "dialogo": 1,
@@ -844,6 +862,7 @@
     },
 
     {
+      "id": 18,
       "char": "Mihael Haines",
       "imageName": "",
       "dialogo": 0,
@@ -902,6 +921,7 @@
     },
 
     {
+      "id": 19,
       "char": "Mihael Haines",
       "imageName": "",
       "dialogo": 1,
@@ -920,6 +940,7 @@
     },
 
     {
+      "id": 20,
       "char": "Bruno Anthony",
       "imageName": "",
       "dialogo": 0,
@@ -978,6 +999,7 @@
     },
 
     {
+      "id": 21,
       "char": "Bruno Anthony",
       "imageName": "",
       "dialogo": 1,
@@ -996,6 +1018,7 @@
     },
 
     {
+      "id": 22,
       "char": "Molly Morton",
       "imageName": "",
       "dialogo": 0,
@@ -1054,6 +1077,7 @@
     },
 
     {
+      "id": 23,
       "char": "Molly Morton",
       "imageName": "",
       "dialogo": 1,
@@ -1079,6 +1103,7 @@
 
 
     {
+      "id": 24,
       "char": "Tetera",
       "imageName": "Tetera",
       "dialogo": 0,
@@ -1098,6 +1123,7 @@
     },
 
     {
+      "id": 25,
       "char": "Gemelo",
       "imageName": "",
       "dialogo": 0,
@@ -1117,6 +1143,7 @@
     },
 
     {
+      "id": 26,
       "char": "Cable",
       "imageName": "",
       "dialogo": 0,
@@ -1136,6 +1163,7 @@
     },
 
     {
+      "id": 27,
       "char": "Botella de alcohol",
       "imageName": "",
       "dialogo": 0,
@@ -1155,6 +1183,7 @@
     },
 
     {
+      "id": 28,
       "char": "Lampara",
       "imageName": "",
       "dialogo": 0,
@@ -1174,6 +1203,7 @@
     },
 
     {
+      "id": 29,
       "char": "Caja de galletas",
       "imageName": "",
       "dialogo": 0,
@@ -1193,6 +1223,7 @@
     },
 
     {
+      "id": 30,
       "char": "Raqueta",
       "imageName": "",
       "dialogo": 0,
@@ -1211,6 +1242,7 @@
     },
 
     {
+      "id": 31,
       "char": "Maletin",
       "imageName": "",
       "dialogo": 0,
@@ -1251,6 +1283,7 @@
     },
 
     {
+      "id": 32,
       "char": "Cables nuevos",
       "imageName": "",
       "dialogo": 0,
@@ -1270,6 +1303,7 @@
     },
 
     {
+      "id": 33,
       "char": "Placas solares",
       "imageName": "",
       "dialogo": 0,
@@ -1289,6 +1323,7 @@
     },
 
     {
+      "id": 34,
       "char": "Caja de galletas vacia",
       "imageName": "",
       "dialogo": 0,

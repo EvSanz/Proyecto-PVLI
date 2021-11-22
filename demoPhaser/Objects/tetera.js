@@ -18,7 +18,7 @@ export default class Tetera extends GO {
     this.scene.add.existing(this);
 
     //Creamos el dialogo
-    this.dialog = new Dialog(this.scene, 1);
+    this.dialog = new Dialog(this.scene, 24);
   }
 
   create() {}
