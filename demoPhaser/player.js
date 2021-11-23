@@ -112,7 +112,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     if (this.clock.getTime() <= 0)
     {
       //por ahora esto solo cambia la pantalla a negro
-      this.scene.scene.start(new SelectKillerScene());
+      this.scene.scene.start('levelpt');
     }
   }
 }

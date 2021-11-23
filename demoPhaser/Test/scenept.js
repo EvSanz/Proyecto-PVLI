@@ -1,5 +1,6 @@
 import Door from '../Utils/door.js'
 import Player from '../player.js';
+import Clock from '../Utils/clock.js';
 
 //Clase para crear las escenas de point and click
 export default class Levelpt extends Phaser.Scene {
@@ -21,10 +22,8 @@ export default class Levelpt extends Phaser.Scene {
      
       goback.on('pointerdown',()=>
       {
-         this.scene.start('level');
-
-
-
+        //this.scene.player.clock.decreaseTime();
+        this.scene.start('level');
       });
       //Creamos la puerta
      // this.door = new Door(this, 140, 225, 'level');
