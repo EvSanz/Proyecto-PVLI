@@ -1,6 +1,7 @@
 //Js importados
 import Dialog from './Utils/dialog.js';
 import Clock from './Utils/clock.js';
+import SelectKillerScene from './Test/selectkillerscene.js';
 //Clase para crear y gestionar el jugador
 export default class Player extends Phaser.GameObjects.Sprite {
   
@@ -87,7 +88,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
     {
       this.body.setVelocityX(this.speed);
 
-
       if (this.mov) { this.flipX = false;}
     }
   else this.body.setVelocityX(0);
@@ -101,5 +101,18 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.play('playerwalk',true);
     else
     this.play('playerstand',true);
+  }
+
+
+  //Llamar mediante:
+  // this.clock.decreaseTime();
+  // this.outOfTime();
+  outOfTime()
+  {
+    if (this.clock.getTime() <= 0)
+    {
+      //por ahora esto solo cambia la pantalla a negro
+      this.scene.scene.start(new SelectKillerScene());
+    }
   }
 }

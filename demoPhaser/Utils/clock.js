@@ -3,6 +3,8 @@
   * @param {Total_Time} Total_Time Tiempo total 
   */
 
+  import SelectKillerScene from '../Test/selectkillerscene.js';
+
   const Total_Time = 12;
   let time = 12;
 
@@ -10,6 +12,7 @@ export default class Clock
 {
     constructor(scene) {
         this.scene = scene;
+        this.selectKillerScene= new SelectKillerScene();
         this.label = this.scene.add.text(10, 2, "", 
         { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
 
