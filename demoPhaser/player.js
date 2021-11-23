@@ -103,6 +103,16 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.play('playerstand',true);
   }
 
+  clockDecreaseTime()
+  {
+    this.clock.decreaseTime();
+  }
+
+  getClock()
+  {
+    //return this.clock;
+  }
+
 
   //Llamar mediante:
   // this.clock.decreaseTime();
