@@ -89,9 +89,4 @@ export default class Level extends Phaser.Scene {
   }
 
   preUpdate() { game.debug.body(tetera);}
-
-  clockDecreaseTime()
-  {
-    this.player.clockDecreaseTime();
-  }
 }

@@ -22,7 +22,6 @@ export default class Levelpt extends Phaser.Scene {
      
       goback.on('pointerdown',()=>
       {
-        window.myScene = this;
         //reducir el tiempo
         //this.scene.scene.get('level');//.player.clock.decreaseTime();
         //this.scene.start('level');
