@@ -72,7 +72,7 @@ export default class Level extends Phaser.Scene {
     this.tetera = new Tetera (this, 600, 265);
 
     //Creamos el npc
-    this.npc = new Npc (this, 880, 230, 0);
+    this.npc = new Npc (this, 880, 230, 1);
     
     //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);

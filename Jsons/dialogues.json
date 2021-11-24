@@ -5,6 +5,7 @@
       "id": 0,
       "char": "Tutorial",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -67,6 +68,7 @@
       "id": 1,
       "char": "Larry Shephard",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -77,19 +79,19 @@
           "clock": false,
           "lines": [
             "Buenos días, detective",
-            "¿Porqué un pastor como usted vendría a este tren?",
+            "¿Porqué un pastor viajaria en este tren?",
             "¿Conoce usted a las hermanas Morton?"
           ]
         },
 
         {
           "id": "Scene1",
-          "opciones" : 1,
+          "opciones" : 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
             "Voy a llevar mi cabra al veterinario",
-            "Ya veo. Y digame ¿usted conoce usted a las hermanas Morton?"
+            "Entiendo. Por cierto ¿habló con las hermanas?"
           ]
         }, 
 
@@ -99,8 +101,8 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "¿Hermanas?",
-            "Conocí a Mery, quien me estuvo pintando un retrato",
+            "¿Hermanas? ¿Se refiere a las Morton?",
+            "Conocí a Mery, quien me pintó un retrato",
             "Pero no sabía que tenía una hermana...",
             "¿Que estaba haciendo usted ayer a medianoche",
             "Entiendo. Muchas gracias por tu ayuda"
@@ -135,6 +137,7 @@
       "id": 2,
       "char": "Larry Shephard",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -155,6 +158,7 @@
       "id": 3,
       "char": "Daniel Grooms",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -225,6 +229,7 @@
       "id": 4,
       "char": "Daniel Grooms",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -244,6 +249,7 @@
       "id": 5,
       "char": "Profesor Collins",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -312,6 +318,7 @@
       "id": 6,
       "char": "Profesor Collins",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": false,
       "scenes": [
@@ -359,6 +366,7 @@
       "id": 7,
       "char": "Profesor Collins",
       "imageName": "",
+      "isObject": false,
       "dialogo": 2,
       "ultDialogo": true,
       "scenes": [
@@ -378,6 +386,7 @@
       "id": 8,
       "char": "Frederick Bold",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -453,6 +462,7 @@
       "id": 9,
       "char": "Frederick Bold",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -496,6 +506,7 @@
       "id": 10,
       "char": "Alfred Hirsch",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -570,6 +581,7 @@
       "id": 11,
       "char": "Alfred Hirsch",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -589,6 +601,7 @@
       "id": 12,
       "char": "Norma Anthony",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -675,6 +688,7 @@
       "id": 13,
       "char": "Norma Anthony",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -694,6 +708,7 @@
       "id": 14,
       "char": "Barry Railway",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -768,6 +783,7 @@
       "id": 15,
       "char": "Barry Railway",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -787,6 +803,7 @@
       "id": 16,
       "char": "Aiva Yan",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -846,6 +863,7 @@
       "id": 17,
       "char": "Aiva Yan",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -865,6 +883,7 @@
       "id": 18,
       "char": "Mihael Haines",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -924,6 +943,7 @@
       "id": 19,
       "char": "Mihael Haines",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -943,6 +963,7 @@
       "id": 20,
       "char": "Bruno Anthony",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -1002,6 +1023,7 @@
       "id": 21,
       "char": "Bruno Anthony",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -1021,6 +1043,7 @@
       "id": 22,
       "char": "Molly Morton",
       "imageName": "",
+      "isObject": false,
       "dialogo": 0,
       "ultDialogo": false,
       "scenes": [
@@ -1080,6 +1103,7 @@
       "id": 23,
       "char": "Molly Morton",
       "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -1106,6 +1130,7 @@
       "id": 24,
       "char": "Tetera",
       "imageName": "Tetera",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1126,6 +1151,7 @@
       "id": 25,
       "char": "Gemelo",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1146,6 +1172,7 @@
       "id": 26,
       "char": "Cable",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1166,6 +1193,7 @@
       "id": 27,
       "char": "Botella de alcohol",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1186,6 +1214,7 @@
       "id": 28,
       "char": "Lampara",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1206,6 +1235,7 @@
       "id": 29,
       "char": "Caja de galletas",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1226,6 +1256,7 @@
       "id": 30,
       "char": "Raqueta",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1245,6 +1276,7 @@
       "id": 31,
       "char": "Maletin",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1286,6 +1318,7 @@
       "id": 32,
       "char": "Cables nuevos",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1306,6 +1339,7 @@
       "id": 33,
       "char": "Placas solares",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [
@@ -1326,6 +1360,7 @@
       "id": 34,
       "char": "Caja de galletas vacia",
       "imageName": "",
+      "isObject": true,
       "dialogo": 0,
       "ultDialogo": true,
       "scenes": [

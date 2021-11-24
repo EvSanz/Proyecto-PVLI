@@ -1,3 +1,6 @@
+//Js importados
+import Dialog from '../Utils/dialog.js';
+
 //Clase para crear y gestionar los NPCs
 export default class Npc extends Phaser.GameObjects.Sprite 
 {
@@ -6,15 +9,20 @@ export default class Npc extends Phaser.GameObjects.Sprite
      * @param {number} x Coordenada X
      * @param {number} y Coordenada Y
      * @param {number} id Identificador del personaje
-     * @param {number} irritacion Nivel de irritacion del NPC
+     * @param {number} dialogoIni Identificador del dialogo inicial
      */
 
-    constructor(scene, x, y, irritacion) { 
+    constructor(scene, x, y, dialogoIni) { 
         super(scene, x, y,'npcs',[5]).setInteractive(); 
 
         //Se crea el personaje con físicas 
         this.scene.add.existing(this);
         this.scene.physics.add.existing(this, true);
+
+        this.chat = dialogoIni;
+
+        //Creamos el dialogo
+        this.dialog = new Dialog(this.scene, this.chat);
 
         //Creacion de la animacion de Guille (Prueba)
         this.anims.create ({
@@ -24,11 +32,8 @@ export default class Npc extends Phaser.GameObjects.Sprite
             frameRate: 4, 
             repeat: -1    
           });
-          this.play('guillestand',true); 
-        
-          
-      
-       // console.log("guileeeee");
+
+          this.play('guillestand',true);    
     }
 
     preUpdate()
@@ -36,7 +41,10 @@ export default class Npc extends Phaser.GameObjects.Sprite
         super.preUpdate();
       
         if (this.scene.physics.overlap(this.scene.player, this)) {
-            console.log(",mkjhgfdghjkl"); 
+            this.on('pointerdown', ()=>
+          {
+              this.dialog.talk();
+          });
         }
     }
 }

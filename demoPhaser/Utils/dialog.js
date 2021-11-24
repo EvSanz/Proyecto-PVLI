@@ -1,13 +1,16 @@
 //Js archivados
 import Clock from "./clock.js";
+import Npc from "../NPCs/npc.js";
 
 //Clase para gestionar los dialogos
 export default class Dialog
 {
   /** Constructor de Npc
   * @param {Phaser.Scene} scene Escena 
-  * @param {Clock} clock el reloj que modifica el dialogo
+  * @param {number} id Identificador del dialogo que leeremos
+  * @param {Clock} clock Reloj encargado de modificar el dialogo
   */
+
   constructor(scene, id)
   {
     this.scene = scene;
@@ -22,12 +25,7 @@ export default class Dialog
     this.label = this.scene.add.text(275, 375, "");
     this.label2 = this.scene.add.text(275, 425, "");
     this.label3 = this.scene.add.text(275, 475, "");
-    this.graphics = null;
-    //this.scene.player.clock.decreaseTime();
-    //this.clock=this.scene.player.clock;
-    //this.clock.decreaseTime(); da undefined :(
-
-    
+    this.graphics = null;  
   }
 
   readTextFile(file, callback, dialog) 
@@ -61,12 +59,6 @@ export default class Dialog
 
   nextText()
   {
-    //Comprobamos si queda frases por mostrar
-    //if (this.textNum < this.myData.Dialogues[this.id].scenes[this.chat].lines.length)
-    //{
-
-    console.log ("Hay lineas leidas " + this.textNum);
-
       //Comprobamos si no ha llegado a las opciones de dialogo
       if (this.textNum != this.myData.Dialogues[this.id].scenes[this.chat].opciones - 1)
     {
@@ -74,14 +66,17 @@ export default class Dialog
       this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     }
     
-
     else
     {
       //Escribimos las opciones de dialogo, separadas entre ellas
       this.textNum++;
       this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
-      this.textNum++;
-      this.label2.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum]
+
+      if (this.textNum < this.myData.Dialogues[this.id].scenes[this.chat].lines.length)
+      {
+        this.textNum++;
+        this.label2.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
+      }
 
       //No siempre habra tres opciones, asi que ponemos una condicion para 
       //escribir la tercera respuesta si hay
@@ -89,21 +84,34 @@ export default class Dialog
       {
         this.textNum++;
         this.label3.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
-       
-      }
-      if (this.myData.Dialogues[this.id].scenes[this.chat].opciones=-1) 
+      }   
+    }
+
+    this.finishText();
+  }
+
+  //Metodo para finalizar el dialogo
+  finishText()
+  {
+    //Comprobamos que no hay elecciones de dialogo y 
+    //que no quedan lineas de dialogo por decir
+    if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length
+       && this.myData.Dialogues[this.id].scenes[this.chat].opciones == -1) 
+    {
+      //Comprobamos el booleano de reloj, y si esta activado,
+      //disminuimos el contador de reloj
+      if (this.myData.Dialogues[this.id].scenes[this.chat].clock)
       {
         this.scene.player.clock.decreaseTime();
-        
-       // this.reloj.decreaseTime();
-        console.log('FIN');
       }
-     
+
+      //Si no es el ultimo dialogo que pueden tener, aumentamos 
+      //el numero del dialogo actual
+      if (!this.myData.Dialogues[this.id].ultDialogo
+        && !this.myData.Dialogues[this.id].isObject) { this.id++;}
+
+      this.chat = 0;
     }
-   
-    //}
-    //si se ha terminado la conversacion y es una conversacion no trivial que gasta tiempo , modificamos el reloj
-    
   }
 
   createBox()
@@ -156,7 +164,8 @@ export default class Dialog
             this.talk()
           }
 
-          else { this.nextText();}
+          else 
+          { this.nextText();}
       });
 
       //Tercer bloque
@@ -169,8 +178,8 @@ export default class Dialog
             this.talk()
           }
 
-          else { this.nextText();}
+          else 
+          { this.nextText();}
       });
   }
-
 }

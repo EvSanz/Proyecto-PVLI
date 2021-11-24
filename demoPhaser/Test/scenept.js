@@ -17,14 +17,16 @@ export default class Levelpt extends Phaser.Scene {
       this.add.sprite(170, 174, 'background', [28]);
       this.add.sprite(480, 174, 'background', [29]);
       this.add.sprite(830, 174, 'background', [27]);
+      
       let goback
+
       goback=this.add.sprite(30, 30, 'objects',[4]).setInteractive();
      
       goback.on('pointerdown',()=>
       {
         //reducir el tiempo
         //this.scene.scene.get('level');//.player.clock.decreaseTime();
-        //this.scene.start('level');
+        this.scene.start('level');
       });
       //Creamos la puerta
      // this.door = new Door(this, 140, 225, 'level');
