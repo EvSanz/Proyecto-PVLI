@@ -48,7 +48,6 @@ export default class Dialog
   talk()
   {
     this.createBox();
-
     //Primera linea de dialogo
     this.textNum = 0;  
     //Texto
@@ -109,6 +108,13 @@ export default class Dialog
       //el numero del dialogo actual
       if (!this.myData.Dialogues[this.id].ultDialogo
         && !this.myData.Dialogues[this.id].isObject) { this.id++;}
+        
+        else
+        {
+          //Irritacion
+          this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+          console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+        }
 
       this.chat = 0;
     }
@@ -146,6 +152,9 @@ export default class Dialog
             && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
             this.chat++;
+            //Modificar la irritacion del npc segun el dialogo
+            this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+            console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             this.talk()
           }
 
@@ -161,6 +170,9 @@ export default class Dialog
             && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
             this.chat = this.chat + 2;
+            //Modificar la irritacion del npc segun el dialogo
+            this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+            console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             this.talk()
           }
 
@@ -175,6 +187,9 @@ export default class Dialog
             && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
             this.chat = this.chat + 3;
+            //Modificar la irritacion del npc segun el dialogo
+            this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+            console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             this.talk()
           }
 

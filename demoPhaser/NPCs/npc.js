@@ -19,10 +19,16 @@ export default class Npc extends Phaser.GameObjects.Sprite
         this.scene.add.existing(this);
         this.scene.physics.add.existing(this, true);
 
+        this.label = this.scene.add.text(120, 2, "", 
+        { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
+
         this.chat = dialogoIni;
 
         //Creamos el dialogo
         this.dialog = new Dialog(this.scene, this.chat);
+
+        //Establecemos la variable de irritacion
+        this.irritacion = 0; 
 
         //Creacion de la animacion de Guille (Prueba)
         this.anims.create ({
@@ -41,10 +47,24 @@ export default class Npc extends Phaser.GameObjects.Sprite
         super.preUpdate();
       
         if (this.scene.physics.overlap(this.scene.player, this)) {
+            
+            this.showIrritacion();
+
             this.on('pointerdown', ()=>
           {
               this.dialog.talk();
           });
         }
+
+        else { this.label.text = "";}
     }
+
+    aumentarIrritacion(cabreo)
+    { 
+        this.irritacion = this.irritacion + cabreo;
+        this.showIrritacion(); 
+    }
+
+    //Método para mostrar el tiempo en pantalla
+    showIrritacion() { this.label.text = "Irritacion: " + this.irritacion;}
 }
