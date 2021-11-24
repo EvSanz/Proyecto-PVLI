@@ -19,6 +19,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
         this.scene.add.existing(this);
         this.scene.physics.add.existing(this, true);
 
+        //Texto donde aparecera la irritacion
         this.label = this.scene.add.text(120, 2, "", 
         { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
 
@@ -48,6 +49,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
       
         if (this.scene.physics.overlap(this.scene.player, this)) {
             
+            //Si esta colisionando con el jugador, mostramos la irritacion
             this.showIrritacion();
 
             this.on('pointerdown', ()=>
@@ -56,14 +58,12 @@ export default class Npc extends Phaser.GameObjects.Sprite
           });
         }
 
+        //Si no esta colisionando, eliminamos el texto
         else { this.label.text = "";}
     }
 
-    aumentarIrritacion(cabreo)
-    { 
-        this.irritacion = this.irritacion + cabreo;
-        this.showIrritacion(); 
-    }
+    //Metodo para aumentar el nivel de irritacion del personaje
+    aumentarIrritacion(cabreo) { this.irritacion = this.irritacion + cabreo;}
 
     //Método para mostrar el tiempo en pantalla
     showIrritacion() { this.label.text = "Irritacion: " + this.irritacion;}
