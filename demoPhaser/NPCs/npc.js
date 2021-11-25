@@ -38,24 +38,41 @@ export default class Npc extends Phaser.GameObjects.Sprite
             ('npcs', { start: 4, end: 5 }),
             frameRate: 4, 
             repeat: -1    
-          });
+        });
 
-          this.play('guillestand',true);    
+        this.play('guillestand',true);
+
+        this.e = this.scene.input.keyboard.addKey('E');
+        
+        //Si pulsamos la e
+        this.e.on('down', () => 
+        {
+            //Mientras tocamos al npc Y el jugador no está bloqueado..
+            if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove)
+            {
+                this.dialog.talk();
+            }
+        });
+
+        //Si hacemos click al npc
+        this.on('pointerdown', ()=>
+        {
+            //Mientras tocamos al npc Y el jugador no está bloqueado..
+            if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove)
+            {
+                this.dialog.talk();
+            }
+        });
     }
 
     preUpdate()
     {
         super.preUpdate();
-      
+
         if (this.scene.physics.overlap(this.scene.player, this)) {
             
             //Si esta colisionando con el jugador, mostramos la irritacion
             this.showIrritacion();
-
-            this.on('pointerdown', ()=>
-          {
-              this.dialog.talk();
-          });
         }
 
         //Si no esta colisionando, eliminamos el texto
@@ -63,7 +80,10 @@ export default class Npc extends Phaser.GameObjects.Sprite
     }
 
     //Metodo para aumentar el nivel de irritacion del personaje
-    aumentarIrritacion(cabreo) { this.irritacion = this.irritacion + cabreo;}
+    aumentarIrritacion(cabreo)
+    { 
+        this.irritacion = this.irritacion + cabreo;
+    }
 
     //Método para mostrar el tiempo en pantalla
     showIrritacion() { this.label.text = "Irritacion: " + this.irritacion;}

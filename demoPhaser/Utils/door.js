@@ -27,8 +27,23 @@ export default class Door extends Phaser.GameObjects.Sprite {
       this.graphics = new Phaser.GameObjects.Rectangle
       (this.scene, 140, 225, 200, 200, 0xfffffff, 0xfffffff);
       this.graphics.setInteractive();
+
+
+      //Si pulsamos la e mientras tocamos la puerta
+      this.e = this.scene.input.keyboard.addKey('E');
+      this.e.on('down', () => 
+      {
+        if (this.scene.physics.overlap(this.scene.player, this)) 
+        { 
+          
+          //Entra por la puerta
+          this.scene.player.clock.decreaseTime(); 
+          this.scene.scene.start(this.gotoscene, {data: this.scene.player.clock} );
+        }
+      });
       
-      //Si hacemos click en el area interactuable...
+      
+      //O si hacemos click en el area interactuable...
       this.graphics.on('pointerdown', () => 
       {
         //Y el jugador está dentro del rango, cargamos 
