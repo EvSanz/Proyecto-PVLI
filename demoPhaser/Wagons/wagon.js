@@ -71,7 +71,7 @@ export default class Wagon extends Phaser.Scene {
         this.door = new Door(this, 140, 225, this.wagonIzq);
 
         //Creamos el jugador en una posicion fija
-        this.player = new Player(this, 160, 240, true);
+        this.player = new Player(this, 160, 240, false);
     }
     //Si no lo es...
     else 

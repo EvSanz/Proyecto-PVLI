@@ -9,11 +9,11 @@ export default class Player extends Phaser.GameObjects.Sprite {
    * @param {Phaser.Scene} scene Escena 
    * @param {number} x Coordenada X
    * @param {number} y Coordenada Y
-   * @param {bool} fijo ¿Puede moverse?
+   * @param {bool} seMueve ¿Puede moverse?
    */
 
-  constructor(scene, x, y, fijo) {
-    super(scene, x, y, 'player', fijo);
+  constructor(scene, x, y, seMueve) {
+    super(scene, x, y, 'player', seMueve);
 
 
     console.log("building player");
@@ -22,15 +22,17 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.scene.add.existing(this);
     this.scene.physics.add.existing(this);
 
-    this.mov = fijo; 
+    this.canMove = seMueve; 
 
     //Establecemos que el jugador colisione 
     //con los limites del mundo
     this.body.setCollideWorldBounds();
 
     //Indicamos la velocidad de movimiento (Si puede moverse)
-    if (fijo) 
+    if  (seMueve) 
     { this.speed = 300;}
+    else
+    { this.speed = 0;}
 
     //Indicamos el input de teclado
     this.cursors = this.scene.input.keyboard.createCursorKeys();
@@ -62,9 +64,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
 
     //Inicializamos la animacion estatica
     this.play('playerstand');
-  
-    
-
   }
 
   /**Metodo para establecer el movimiento del jugador
@@ -74,36 +73,41 @@ export default class Player extends Phaser.GameObjects.Sprite {
   preUpdate (t, dt) {
     super.preUpdate (t, dt);
 
-    //Si pulsamos la flecha de direccion izquierda
-    if (this.cursors.left.isDown||this.a.isDown) 
+    //Si puede moverse...
+    if (this.canMove)
     {
-      //Establecemos la velocidad de movimiento 
-      //hacia la izquierda
-      this.body.setVelocityX(-this.speed);
 
-     
-      //Cambiamos la direccion del sprite
-      this.flipX = true;
+      //Si pulsamos la flecha de direccion izquierda
+      if (this.cursors.left.isDown||this.a.isDown) 
+      {
+        //Establecemos la velocidad de movimiento 
+        //hacia la izquierda
+        this.body.setVelocityX(-this.speed);
+
+        //Cambiamos la direccion del sprite
+        this.flipX = true;
+      }
+
+      //Si pulsamos la flecha de direccion derecha
+      else if (this.cursors.right.isDown||this.d.isDown) 
+      {
+        this.body.setVelocityX(this.speed);
+
+        if (this.canMove) 
+          this.flipX = false;
+      }
+
+      //Si no pulsamos ninguna flecha
+      else 
+        this.body.setVelocityX(0);
+      
+      
+      //NO HACEN FALTA BOOLS PARA LAS ANIMACIONES solo hay 2 opciones o se mueve o su speed es 0 y YA.
+      if(this.body.speed>0)
+        this.play('playerwalk',true);
+      else
+        this.play('playerstand',true);
     }
-
-    //Si pulsamos la flecha de direccion derecha
-    else if (this.cursors.right.isDown||this.d.isDown) 
-    {
-      this.body.setVelocityX(this.speed);
-
-      if (this.mov) { this.flipX = false;}
-    }
-  else this.body.setVelocityX(0);
-    //Si no pulsamos ninguna flecha
-    
-     
-     
-    
-    //NO HACEN FALTA BOOLS PARA LAS ANIMACIONES solo hay 2 opciones o se mueve o su speed es 0 y YA.
-    if(this.body.speed>0)
-    this.play('playerwalk',true);
-    else
-    this.play('playerstand',true);
   }
 
   //Llamar mediante:

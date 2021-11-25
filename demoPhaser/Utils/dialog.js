@@ -47,6 +47,10 @@ export default class Dialog
 
   talk()
   {
+
+    //Bloqueamos el movimiento del jugador
+    this.scene.player.canMove = false;
+
     this.createBox();
     //Primera linea de dialogo
     this.textNum = 0;  
@@ -102,19 +106,28 @@ export default class Dialog
       if (this.myData.Dialogues[this.id].scenes[this.chat].clock)
       {
         this.scene.player.clock.decreaseTime();
+
+        //Y permitimos al jugador moverse otra vez
+        this.scene.player.canMove = true;
       }
 
       //Si no es el ultimo dialogo que pueden tener, aumentamos 
       //el numero del dialogo actual
-      if (!this.myData.Dialogues[this.id].ultDialogo
-        && !this.myData.Dialogues[this.id].isObject) { this.id++;}
+      if (!this.myData.Dialogues[this.id].ultDialogo && !this.myData.Dialogues[this.id].isObject)
+        this.id++;
         
-        else
+      else
+      {
+        //Irritacion solo si existe un npc 
+        if (this.scene.npc !== undefined)
         {
-          //Irritacion
           this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
           console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
         }
+
+        //Permitimos al jugador moverse otra vez
+        this.scene.player.canMove = true;
+      }
 
       this.chat = 0;
     }
