@@ -37,7 +37,7 @@ export default class Door extends Phaser.GameObjects.Sprite {
         if (this.scene.physics.overlap(this.scene.player, this)) 
         { 
           //this.Clock.decreaseTime(); 
-          this.scene.scene.start(this.gotoscene);
+          this.scene.scene.start(this.gotoscene, this.scene.player.clock);
         }
       });
 

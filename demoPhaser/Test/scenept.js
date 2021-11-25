@@ -5,13 +5,13 @@ import Clock from '../Utils/clock.js';
 //Clase para crear las escenas de point and click
 export default class Levelpt extends Phaser.Scene {
 
-    constructor() { super({ key: 'levelpt' });}
+    constructor() { super({ key: 'levelpt' }, {data : 'clock'} );}
 
     //Creamos los elementos de la escena
     create()
     {
       //this.add.sprite (500, 200, 'fondopt');
-
+      this.clock = 'clock';
       let uisuelo; 
       uisuelo = this.add.sprite(500, 450, 'ui');
       this.add.sprite(170, 174, 'background', [28]);
@@ -25,7 +25,7 @@ export default class Levelpt extends Phaser.Scene {
       goback.on('pointerdown',()=>
       {
         //reducir el tiempo
-        //this.scene.scene.get('level');//.player.clock.decreaseTime();
+        //this.clock.decreaseTime();
         this.scene.start('level');
       });
       //Creamos la puerta
