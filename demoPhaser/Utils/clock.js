@@ -35,4 +35,6 @@ export default class Clock
 
     //Método para mostrar el tiempo en pantalla
     showTime() { this.label.text = "Time: " + this.time;}
+
+    outOfTime(){}
 }

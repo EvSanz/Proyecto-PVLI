@@ -1,4 +1,6 @@
 //Escena encargada de cargar los assets del juego
+import Clock from './Utils/clock.js';
+
 export default class Boot extends Phaser.Scene {
   constructor() { super ({key: 'boot'});}
 
@@ -22,12 +24,14 @@ export default class Boot extends Phaser.Scene {
     this.load.text('objects', 'objetos.json');
     this.load.text('personajes', 'personajes.json');
 
-    //this.Clock = new Clock();
+    
   }
 
 //Creación de los elementos fijos de la escena 
   create() 
   {
     this.scene.start('clasebaja', 400);
+
+    this.clock = new Clock(this.scene.get('clasebaja'));
   }
 }
