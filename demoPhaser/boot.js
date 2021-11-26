@@ -34,7 +34,7 @@ export default class Boot extends Phaser.Scene {
     
     this.dmanager= new DialogManager();
     this.clock = new Clock(this.scene.get('clasebaja'));
-    //this.npc= new Npc('clasebaja',650, 230, 1);
+    this.npc= new Npc(this,650, 230, 1);
     this.scene.start('clasebaja', 400);
     /*for( let i=0;i<12;i++)
      {
