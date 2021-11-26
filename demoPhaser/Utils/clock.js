@@ -1,6 +1,10 @@
  /**Time
   * @param {Time} time Tiempo que queda 
   * @param {Total_Time} Total_Time Tiempo total 
+  * @method decreaseTime disminuye el tiempo que queda
+  * @method resetTime el tiempo actual vuelve a ser el maximo original
+  * @method getTime delvuelve el tiempo que queda
+  * @method showTime muestra el tiempo actual en pantalla
   */
 
   const Total_Time = 12;

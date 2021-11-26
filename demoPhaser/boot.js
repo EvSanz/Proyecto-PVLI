@@ -34,9 +34,9 @@ export default class Boot extends Phaser.Scene {
     
     this.dmanager= new DialogManager();
     this.clock = new Clock(this.scene.get('clasebaja'));
-    this.npc= new Npc(this,650, 230, 1);
-    this.scene.start('clasebaja', 400);
-    /*for( let i=0;i<12;i++)
+    //this.npc= new Npc(this.scene.get('clasebaja'),650, 230, 1);
+  
+    for( let i=0;i<12;i++)
      {
     //leeremos los datos del np del json de personajes
     let x=0;
@@ -44,8 +44,9 @@ export default class Boot extends Phaser.Scene {
     let scene='clasebaja';
      
       //let dialog= new Dialog('clasebaja',1);
-      this.npc=new Npc('clasebaja',100,100,1);
+      this.npc=new Npc(this.scene.get(scene),x,y,i);
       this.dmanager.Acoplarnpc(this.npc);
-     } */
+     } 
+     this.scene.start('clasebaja', 400);
   }
 }

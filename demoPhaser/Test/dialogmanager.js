@@ -9,7 +9,7 @@ export default class DialogManager {
     * @param {NPC} npc aqui se crean los npcs y se les asignan sus respectivos dialogos
     * @param {Dialog}dialog cada npc creara su dialogo en la clase npc pero los gestionaremos todos desde aqui
     * @param {NPC[]} npcholder aqui se almacenan todos los npcs del juego con su dialogo asociado;
-    * 
+    * @method Acoplarnpc mete en npc que se le pasa como parametro en el npc holder
     */
 constructor()
  { 
