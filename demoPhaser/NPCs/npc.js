@@ -12,7 +12,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
      * @param {number} dialogoIni Identificador del dialogo inicial
      */
 
-    constructor(scene, x, y, dialogoIni,dialo) { 
+    constructor(scene, x, y, dialogoIni) { 
         super(scene, x, y,'npcs',[5]).setInteractive(); 
 
         //Se crea el personaje con físicas 
@@ -26,8 +26,8 @@ export default class Npc extends Phaser.GameObjects.Sprite
         this.chat = dialogoIni;
 
         //Creamos el dialogo
-       // this.dialog = new Dialog(this.scene, this.chat);
-        this.dialog=dialo;
+       this.dialog = new Dialog(this.scene, this.chat);
+        
         //Establecemos la variable de irritacion
         this.irritacion = 0; 
 
