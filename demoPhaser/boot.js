@@ -1,6 +1,7 @@
 //Escena encargada de cargar los assets del juego
 import Clock from './Utils/clock.js';
-
+import Npc from './NPCs/npc.js';
+import DialogManager from './Test/dialogmanager.js'
 export default class Boot extends Phaser.Scene {
   constructor() { super ({key: 'boot'});}
 
@@ -30,8 +31,21 @@ export default class Boot extends Phaser.Scene {
 //Creación de los elementos fijos de la escena 
   create() 
   {
-    this.scene.start('clasebaja', 400);
-
+    
+    this.dmanager= new DialogManager();
     this.clock = new Clock(this.scene.get('clasebaja'));
+    //this.npc= new Npc('clasebaja',650, 230, 1);
+    this.scene.start('clasebaja', 400);
+    /*for( let i=0;i<12;i++)
+     {
+    //leeremos los datos del np del json de personajes
+    let x=0;
+    let y=i;
+    let scene='clasebaja';
+     
+      //let dialog= new Dialog('clasebaja',1);
+      this.npc=new Npc('clasebaja',100,100,1);
+      this.dmanager.Acoplarnpc(this.npc);
+     } */
   }
 }
