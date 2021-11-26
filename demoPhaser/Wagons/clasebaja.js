@@ -18,9 +18,9 @@ export default class ClaseBaja extends Wagon {
   //Sobreescribimos los métodos que estan en wagon
   spawnNPCs(){
       
-   // this.npc = new Npc (this, 650, 230, 1);
+    this.npc = new Npc (this, 650, 230, 1);
    this.dmanager= new DialogManager();
-
+    this.dmanager.Acoplarnpc(this.npc);
   }
 
   spawnObjects(){    
