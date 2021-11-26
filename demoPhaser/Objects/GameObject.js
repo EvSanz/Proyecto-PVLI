@@ -37,5 +37,7 @@ export default class GO extends Phaser.GameObjects.Sprite {
       this.dialog.talk();
       this.destroy();
     });
+
+    
   }
 }

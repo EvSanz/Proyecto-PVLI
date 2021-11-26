@@ -98,12 +98,12 @@ export default class Wagon extends Phaser.Scene {
 
         //Añade las puertas indicadas
 
-        new Door(this, 100, 225, this.wagonIzq);
+        new Door(this, 100, 222, this.wagonIzq);
 
-        new Door(this, 900, 225, this.wagonDer);
+        new Door(this, 900, 222, this.wagonDer);
 
         //Creamos el jugador donde nos indica
-        this.player = new Player(this, data, 240, true);
+        this.player = new Player(this, 260, 240, true);
     }
     this.physics.add.collider(this.player, uisuelo);
 
@@ -120,7 +120,5 @@ export default class Wagon extends Phaser.Scene {
 
   spawnNPCs() {}
 
-  spawnObjects() {}
-
-  
+  spawnObjects() {} 
 }

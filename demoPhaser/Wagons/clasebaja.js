@@ -18,11 +18,11 @@ export default class ClaseBaja extends Wagon {
   //Sobreescribimos los métodos que estan en wagon
   spawnNPCs(){
       
-    //this.npc = new Npc (this, 650, 230, 0);
+    this.npc = new Npc (this, 650, 230, 1);
 
   }
 
   spawnObjects(){    
-    this.tetera = new Tetera (this, 60, 200);
+    //this.tetera = new Tetera (this, 60, 200);
   }
 }

@@ -25,7 +25,7 @@ export default class Door extends Phaser.GameObjects.Sprite {
 
       //Añadimos un bloque interactuable invisible 
       this.graphics = new Phaser.GameObjects.Rectangle
-      (this.scene, 140, 225, 200, 200, 0xfffffff, 0xfffffff);
+      (this.scene, x, y, 200, 200, 0xfffffff, 0xfffffff);
       this.graphics.setInteractive();
 
 
@@ -37,7 +37,7 @@ export default class Door extends Phaser.GameObjects.Sprite {
         { 
           
           //Entra por la puerta
-          this.scene.player.clock.decreaseTime(); 
+          //this.scene.player.clock.decreaseTime(); 
           this.scene.scene.start(this.gotoscene, {data: this.scene.player.clock} );
         }
       });
@@ -51,7 +51,7 @@ export default class Door extends Phaser.GameObjects.Sprite {
 
         if (this.scene.physics.overlap(this.scene.player, this)) 
         { 
-          this.scene.scene.get('boot').clock.decreaseTime(); 
+          //this.scene.scene.get('boot').clock.decreaseTime(); 
           this.scene.scene.start(this.gotoscene, {data: this.scene.player.clock} );
         }
       });

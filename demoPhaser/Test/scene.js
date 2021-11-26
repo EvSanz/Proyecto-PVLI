@@ -54,7 +54,7 @@ export default class Level extends Phaser.Scene {
     this.add.sprite(150, 174, 'background', [26]);
 
     //Creamos la puerta
-    this.door = new Door(this, 140, 225, 'levelpt');
+    this.door = new Door(this, 100, 222, 'clasebaja');
 
     //Añadimos las animaciones del fondo
     this.add.sprite(480, 174, 'ventanas').play('backgroundwindows');
@@ -72,7 +72,7 @@ export default class Level extends Phaser.Scene {
     this.tetera = new Tetera (this, 600, 265);
 
     //Creamos el npc
-    this.npc = new Npc (this, 880, 230, 1);
+    this.npc = new Npc (this, 880, 230, 3);
     
     //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);

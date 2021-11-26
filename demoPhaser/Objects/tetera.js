@@ -15,6 +15,5 @@ export default class Tetera extends GO {
     super(scene, x, y, 'tetera', true, true)
 
     this.scene.add.existing(this);
-
   }
 }

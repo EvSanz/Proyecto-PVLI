@@ -80,11 +80,11 @@ export default class Npc extends Phaser.GameObjects.Sprite
     }
 
     //Metodo para aumentar el nivel de irritacion del personaje
-    aumentarIrritacion(cabreo)
-    { 
-        this.irritacion = this.irritacion + cabreo;
-    }
+    aumentarIrritacion(cabreo) { this.irritacion = this.irritacion + cabreo;}
 
     //Método para mostrar el tiempo en pantalla
     showIrritacion() { this.label.text = "Irritacion: " + this.irritacion;}
+
+    //Metodo para devolver la irritacion
+    getIrritacion() { return this.irritacion;}
 }

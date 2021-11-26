@@ -49,11 +49,12 @@ export default class Dialog
   {
 
     //Bloqueamos el movimiento del jugador
-    this.scene.player.canMove = false;
+    if (this.scene.player != null) {this.scene.player.canMove = false;}
 
     this.createBox();
     //Primera linea de dialogo
     this.textNum = 0;  
+
     //Texto
     this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     this.label2.text = "";
@@ -106,30 +107,28 @@ export default class Dialog
       if (this.myData.Dialogues[this.id].scenes[this.chat].clock)
       {
         this.scene.player.clock.decreaseTime();
-
-        //Y permitimos al jugador moverse otra vez
-        this.scene.player.canMove = true;
       }
 
       //Si no es el ultimo dialogo que pueden tener, aumentamos 
       //el numero del dialogo actual
-      if (!this.myData.Dialogues[this.id].ultDialogo && !this.myData.Dialogues[this.id].isObject)
+      if (this.myData.Dialogues[this.id].ultDialogo == false 
+        && this.myData.Dialogues[this.id].isObject == false)
         this.id++;
         
       else
       {
         //Irritacion solo si existe un npc 
-        if (this.scene.npc !== undefined)
+        if (this.myData.Dialogues[this.id].isObject == false)
         {
           this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
           console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
         }
-
-        //Permitimos al jugador moverse otra vez
-        this.scene.player.canMove = true;
       }
 
       this.chat = 0;
+
+      //Y permitimos al jugador moverse otra vez
+      if (this.scene.player != null) {this.scene.player.canMove = true;}
     }
   }
 
@@ -168,12 +167,30 @@ export default class Dialog
             //Modificar la irritacion del npc segun el dialogo
             this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+
+            //if (this.scene.npc.getIrritacion() >= 100) 
+            //{ 
+              //this.id = 0; 
+              //this.chat = 0;
+            //}
+
             this.talk()
           }
 
           //Si hay, cargamos el siguiente texto
           else
-          { this.nextText();}
+          { 
+            //if (this.scene.npc.getIrritacion() >= 100) 
+            //{ 
+              //this.id = 0; 
+              //this.chat = 0;
+            //}
+
+            //else
+            //{
+              this.nextText();
+            //}
+          }
       });
 
       //Segundo bloque
@@ -186,11 +203,28 @@ export default class Dialog
             //Modificar la irritacion del npc segun el dialogo
             this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+            
+            //if (this.scene.npc.getIrritacion() >= 100) 
+            //{ 
+              //this.id = 0; 
+              //this.chat = 0;
+            //}
+            
             this.talk()
           }
 
           else 
-          { this.nextText();}
+          { //if (this.scene.npc.getIrritacion() >= 100) 
+            //{ 
+              //this.id = 0; 
+              //this.chat = 0;
+            //}
+
+            //else
+            //{
+              this.nextText();
+            //}
+          }
       });
 
       //Tercer bloque
@@ -203,11 +237,33 @@ export default class Dialog
             //Modificar la irritacion del npc segun el dialogo
             this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+            
+            //if (this.scene.npc.getIrritacion() >= 100) 
+            //{ 
+              //this.id = 0; 
+              //this.chat = 0;
+            //}
+            
             this.talk()
           }
 
           else 
-          { this.nextText();}
+          { 
+            //if (this.scene.npc.getIrritacion() >= 100) 
+            //{ 
+              //this.id = 0; 
+              //this.chat = 0;
+            //}
+
+            //else
+            //{
+              this.nextText();
+            //}
+          }
       });
   }
 }
+
+
+
+

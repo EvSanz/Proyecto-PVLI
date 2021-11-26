@@ -3,7 +3,7 @@
 
     {
       "id": 0,
-      "char": "Tutorial",
+      "char": "IrritacionMax",
       "imageName": "",
       "isObject": false,
       "dialogo": 0,
@@ -11,51 +11,12 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 0,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            ""
-          ]
-        },
-
-        {
-          "id": "Scene1",
-          "opciones" : 4,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            ""
-          ]
-        }, 
-
-        {
-          "id": "Scene2",
-          "opciones" : 0,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            ""
-          ]
-        },
-
-        {
-          "id": "Scene3",
           "opciones" : -1,
           "irritacion": 0,
-          "clock": true,
+          "clock": false,
           "lines": [
-            ""
-          ]
-        },
-
-        {
-          "id": "Scene4",
-          "opciones" : -1,
-          "irritacion": 0,
-          "clock": true,
-          "lines": [
-            ""
+            "No quiero hablar",
+            "Fuera de mi vista, entrometido"
           ]
         }
       ]
@@ -104,7 +65,7 @@
             "¿Hermanas? ¿Se refiere a las Morton?",
             "Conocí a Mery, quien me pintó un retrato",
             "Pero no sabía que tenía una hermana...",
-            "¿Que estaba haciendo usted ayer a medianoche",
+            "¿Que hacía usted ayer a medianoche?",
             "Entiendo. Muchas gracias por tu ayuda"
           ]
         },
@@ -169,22 +130,24 @@
           "clock": false,
           "lines": [
             "Agh, es usted",
-            "¿Porqué un electricista como usted vendría a este tren?",
+            "¿Porqué un electricista vendría a este tren?",
             "¿Conoce usted a las hermanas Morton?"
           ]
         },
 
         {
           "id": "Scene1",
-          "opciones" : 4,
+          "opciones" : 6,
           "irritacion": 25,
           "clock": false,
           "lines": [
-            "No pienso arreglarte la bombilla, inspector de pacotilla",
+            "No pienso arreglarte la bombilla, madero",
             "Se supone que estoy de vacaciones",
             "Pero parece ser que todos asumen que no",
-            "Como la vieja esa, pidiendome que arregle su lampara",
-            "Entiendo... ¿Las hermanas Morton pidieron ayuda tambien?"
+            "Como esa vieja decrepita...",
+            "Mira que pedirme que arregle su lampara.",
+            "Igual que esa muchacha... Todos igual",
+            "¿La chica por casualidad se apellidaba Morton?"
           ]
         }, 
 
@@ -195,8 +158,8 @@
           "clock": false,
           "lines": [
             "¿Morton?",
-            "No me suenan",
-            "¿Que estaba haciendo usted ayer a medianoche",
+            "No me suena",
+            "¿Que hacía usted ayer a medianoche?",
             "Entiendo. Muchas gracias por tu ayuda"
           ]
         },
@@ -1141,7 +1104,8 @@
           "clock": false,
           "lines": [
             "Es una tetera con restos de té en su interior",
-            "Tras investigarla, ves unas siglas: A.N"
+            "Tras investigarla, ves unas siglas: A.N",
+            "La guardas en tu chaqueta"
           ]
         }
       ]
