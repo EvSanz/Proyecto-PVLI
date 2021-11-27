@@ -19,7 +19,8 @@ export default class Wagon extends Phaser.Scene {
    * @param {string} spriteFondo3 Sprite que se renderizará al fondo a la derecha
    * @param {string} wagonIzq Vagon que esté a la izquierda de este
    * @param {string} wagonDer Vagon que esté a la derecha de este
-   * @param {DialogManager} dmanager es el gestor de dialogos almacenado en boot, de donde se sacan los dialogos
+   * @param {DialogManager} dmanager es el gestor de dialogos almacenado en boot, de donde se sacan los dialogos de los npcs
+   * @param {ObjectManager} gomanager es el gestor de los objetos recogibles  de la escena(los que se pueden almacenar ene l diario)
    */
 
   constructor(wagonKey, isPointAndClick, spriteFondo1, spriteFondo2, spriteFondo3, wagonIzq, wagonDer) { 
@@ -39,6 +40,7 @@ export default class Wagon extends Phaser.Scene {
 
     //Creacion de la animacion del fondo
     this.dmanager=this.scene.get('boot').dmanager;
+    this.gomanager=this.scene.get('boot').gomanager;
     this.anims.create({
       key: 'backgroundwindows',
       frames: this.anims.generateFrameNumbers

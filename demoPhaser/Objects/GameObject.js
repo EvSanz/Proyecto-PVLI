@@ -10,10 +10,11 @@ export default class GO extends Phaser.GameObjects.Sprite {
     * @param {number} y Coordenada Y
     * @param {bool} clickable ¿Es clickeable?
     * @param {bool} chocante ¿Necesita detectar colisiones?
+    * @param {bool} presente estará a true si el objeto todavia no se ha recogido y debe aparecer en la escena
     */
 
   constructor(scene, x, y, sprite, clickable, chocante ) {
-
+    
     //Si es un objeto clickeable, lo convertimos en interactivo
     if (clickable) { super(scene, x, y, sprite).setInteractive();}
     
@@ -21,7 +22,8 @@ export default class GO extends Phaser.GameObjects.Sprite {
     else { super(scene, x, y, sprite);}
 
     this.scene.add.existing(this);
-
+    this.presente=true;
+    this.setDepth(1);//para que aparezca encima del fondo igual qeu el npc
     this.sprite = sprite;
     
     //Creamos el dialogo
@@ -34,6 +36,7 @@ export default class GO extends Phaser.GameObjects.Sprite {
     this.on('pointerdown', ()=>
     {
       scene.scene.get('diary').addObject(this);
+      this.presente=false;
       this.dialog.talk();
       this.destroy();
     });

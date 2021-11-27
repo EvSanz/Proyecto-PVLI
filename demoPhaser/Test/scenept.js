@@ -3,12 +3,14 @@ import Player from '../player.js';
 import Clock from '../Utils/clock.js';
 import Tetera from '../Objects/tetera.js';
 import GameObject from '../Objects/GameObject.js';
+import Wagon from '../Wagons/wagon.js'
 
 //Clase para crear las escenas de point and click
-export default class Levelpt extends Phaser.Scene {
+export default class Levelpt extends Wagon{
 
   constructor() {
-    super({ key: 'levelpt' })
+    //super({ key: 'levelpt' })
+    super('levelpt', true, 'ventanas', 'ventanas', 'ventanas', 'levelpt', 'level',);
   }
 
   //Creamos los elementos de la escena
@@ -23,9 +25,10 @@ export default class Levelpt extends Phaser.Scene {
     this.add.sprite(480, 174, 'background', [29]);
     this.add.sprite(830, 174, 'background', [27]);
 
-    //Creamos una tetera
-    this.tetera = new GameObject (this, 600, 265, 'tetera', true, true);
-
+    //Creamos una tetera ahora desde el manager en boot
+    //this.tetera = new GameObject (this, 600, 265, 'tetera', true, true);
+   //if(!this.gomanager.consultarobj(0).presente)
+    
     //Añadimos una variable para guardar un comando de teclado
     this.q = this.input.keyboard.addKey('Q');
 
@@ -52,6 +55,16 @@ export default class Levelpt extends Phaser.Scene {
     //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);
     //this.physics.add.collider(this.player, uisuelo);
+  }
+  consultarObjetos()
+  {
+  if(!this.gomanager.consultarObjetos(0).presente)
+  {
+    this.gomanager.consultarObjetos(0).scene='boot';
+
+  }
+
+
   }
 
 }

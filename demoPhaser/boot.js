@@ -2,6 +2,8 @@
 import Clock from './Utils/clock.js';
 import Npc from './NPCs/npc.js';
 import DialogManager from './Test/dialogmanager.js'
+import ObjectManager from './Objects/objectmanager.js'
+import GO from './Objects/GameObject.js'
 export default class Boot extends Phaser.Scene {
   constructor() { super ({key: 'boot'});}
 
@@ -36,7 +38,11 @@ export default class Boot extends Phaser.Scene {
     this.clock = new Clock(this.scene.get('clasebaja'));
     this.npc= new Npc(this.scene.get('clasebaja'),650, 230, 1);
     this.dmanager.acoplarnpc(this.npc);
+    this.gomanager=new ObjectManager();
+    this.object=new GO(this.scene.get('levelpt'), 600, 265, 'tetera', true, true);
+    this.gomanager.acoplarobj(this.object);
     this.scene.start('clasebaja', 400);
+
     /*for( let i=0;i<12;i++)
      {
     //leeremos los datos del np del json de personajes(NO BORRAR ESTÁ EN PROCESO)
