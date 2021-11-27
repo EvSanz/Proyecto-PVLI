@@ -10,6 +10,10 @@ export default class Npc extends Phaser.GameObjects.Sprite
      * @param {number} y Coordenada Y
      * @param {number} id Identificador del personaje
      * @param {number} dialogoIni Identificador del dialogo inicial
+     * @method aumentarIrritacion aumenta el nivel de irritacion del personaje tanto como especifique la variable cabreo
+     * @method  showIrritacion muestra la irritacion en pantalla
+     * @method getIrritacion devuleve el valor de la irritacion actual
+     * @method getDialogo devuelve el dialogo asociado al personaje
      */
 
     constructor(scene, x, y, dialogoIni) { 
@@ -87,4 +91,5 @@ export default class Npc extends Phaser.GameObjects.Sprite
 
     //Metodo para devolver la irritacion
     getIrritacion() { return this.irritacion;}
+    getDialogo() {return this.dialog;}
 }
