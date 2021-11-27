@@ -14,7 +14,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
 
     constructor(scene, x, y, dialogoIni) { 
         super(scene, x, y,'npcs',[5]).setInteractive(); 
-
+       this.setDepth(1);
         //Se crea el personaje con físicas 
         this.scene.add.existing(this);
         this.scene.physics.add.existing(this, true);

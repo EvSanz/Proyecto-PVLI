@@ -1,9 +1,9 @@
 {
   "Personajes": [
     {
-      "name": "Larry Shepard",
-      "posX": 20,
-      "posY": 20,
+      "name": "clasebaja",
+      "posX": 650,
+      "posY": 230,
       "culpable": false,
       "desc": "Un humilde pastor de cabras que viaja en el vagón de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario",
       "tirria": 0,

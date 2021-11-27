@@ -34,19 +34,42 @@ export default class Boot extends Phaser.Scene {
     
     this.dmanager= new DialogManager();
     this.clock = new Clock(this.scene.get('clasebaja'));
-    //this.npc= new Npc(this.scene.get('clasebaja'),650, 230, 1);
-  
-    for( let i=0;i<12;i++)
+    this.npc= new Npc(this.scene.get('clasebaja'),650, 230, 1);
+    this.dmanager.acoplarnpc(this.npc);
+    this.scene.start('clasebaja', 400);
+    /*for( let i=0;i<12;i++)
      {
-    //leeremos los datos del np del json de personajes
-    let x=0;
+    //leeremos los datos del np del json de personajes(NO BORRAR ESTÁ EN PROCESO)
+    /*let x=0;
     let y=i;
     let scene='clasebaja';
+    this.leerjson("Jsons/dialogues.json",this.procesajson(),scene)
+    this.leerjson("Jsons/dialogues.json",this.procesajson(),x)
+    this.leerjson("Jsons/dialogues.json",this.procesajson(),y)
      
       //let dialog= new Dialog('clasebaja',1);
       this.npc=new Npc(this.scene.get(scene),x,y,i);
-      this.dmanager.Acoplarnpc(this.npc);
+      this.dmanager.acoplarnpc(this.npc);
      } 
-     this.scene.start('clasebaja', 400);
+     this.scene.start('clasebaja', 400);*///VA TODO MENOS EL PUTO JSON CONFIEN GENTE 
   }
+  leerjson(json,postlectura,variable)
+  {
+    let rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", json, true);
+    rawFile.onreadystatechange = function() 
+    {
+        if (rawFile.readyState === 4 && rawFile.status == "200") 
+        { postlectura(rawFile.responseText, variable);}
+        
+    }
+
+    rawFile.send(null);
+
+
+
+  } 
+  procesajson(valor,variable){variable=JSON.parse(valor)}
+ consultamanager(){return this.dmanager;}
 }
