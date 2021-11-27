@@ -9,6 +9,7 @@ export default class Boot extends Phaser.Scene {
 
   preload() 
   {
+
     this.load.setPath('Imagenes/');
     this.load.image('tetera', 'tetera.png');
     this.load.image('player', 'inspector.png');
@@ -19,28 +20,33 @@ export default class Boot extends Phaser.Scene {
     this.load.image('puertafun', 'workingdoor.png');
     this.load.image('fondopt', 'fondopt.png');
     this.load.image('diary', 'diario.png');
+
     this.load.spritesheet('background', 'backgroundspritesheet.png', { frameWidth: 352, frameHeight: 352 });
     this.load.spritesheet('npcs', 'npcspritesheet1.png', { frameWidth: 220, frameHeight: 220 });
     this.load.spritesheet('objects', 'objectsspritesheet.png', { frameWidth: 64, frameHeight: 64 });
+
     this.load.setPath('Jsons/');
     this.load.text('dialogue', 'dialogues.json');
     this.load.text('objects', 'objetos.json');
     this.load.text('personajes', 'personajes.json');
 
-    
   }
 
 //Creación de los elementos fijos de la escena 
   create() 
   {
     
-    this.dmanager= new DialogManager();
+    this.dmanager = new DialogManager();
+
     this.clock = new Clock(this.scene.get('clasebaja'));
-    this.npc= new Npc(this.scene.get('clasebaja'),650, 230, 1);
+
+    this.npc = new Npc(this.scene.get('clasebaja'), 650, 230, 1);
     this.dmanager.acoplarnpc(this.npc);
-    this.gomanager=new ObjectManager();
-    this.object=new GO(this.scene.get('levelpt'), 600, 265, 'tetera', true, true);
+
+    this.gomanager = new ObjectManager();
+    this.object = new GO(this.scene.get('levelpt'), 600, 265, 'tetera', true, true);
     this.gomanager.acoplarobj(this.object);
+
     this.scene.start('clasebaja', 400);
 
     /*for( let i=0;i<12;i++)
@@ -59,7 +65,7 @@ export default class Boot extends Phaser.Scene {
      } 
      this.scene.start('clasebaja', 400);*///VA TODO MENOS EL PUTO JSON CONFIEN GENTE 
   }
-  leerjson(json,postlectura,variable)
+  leerjson(json, postlectura, variable)
   {
     let rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -73,9 +79,15 @@ export default class Boot extends Phaser.Scene {
 
     rawFile.send(null);
 
-
-
   } 
-  procesajson(valor,variable){variable=JSON.parse(valor)}
- consultamanager(){return this.dmanager;}
+
+  procesajson(valor,variable) 
+  { 
+    variable = JSON.parse(valor); 
+  }
+
+  consultamanager() 
+  { 
+    return this.dmanager; 
+  }
 }

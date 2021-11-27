@@ -19,10 +19,10 @@ export default class ClaseBaja extends Wagon {
   spawnNPCs(){
       
     //this.npc = new Npc (this, 650, 230, 1);
-   //this.dmanager= new DialogManager();
+    //this.dmanager= new DialogManager();
     //this.dmanager.Acoplarnpc(this.npc);
-    this.npc= this.dmanager.consultarnpc(0);//devuelve el npc que es YAY
-   // this.scene.add(this.npc);
+    this.npc = this.dmanager.consultarnpc(0); //devuelve el npc que es YAY
+    // this.scene.add(this.npc);
 
   }
 

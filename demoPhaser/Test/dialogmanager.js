@@ -12,35 +12,37 @@ export default class DialogManager {
     * @method acoplarnpc mete en npc que se le pasa como parametro en el npc holder
     * @method consultarnpc dado el identificador de un npc , devuelve ese npc 
     */
-constructor()
- { 
-     
-      this.npcholder=[];
-     /*for( let i=0;i<12;i++)
-     {
-    //leeremos los datos del np del json de personajes
-    let x=0;
-    let y=i;
-    let scene='clasebaja';
-     
-      //let dialog= new Dialog('clasebaja',1);
-     
-       npcholder.push(npc);
-     } */
-     //let npc=new Npc('clasebaja',100,100,1);
+    constructor()
+    { 
+        
+        this.npcholder=[];
+        /*for( let i=0;i<12;i++)
+        {
+            //leeremos los datos del np del json de personajes
+            let x=0;
+            let y=i;
+            let scene='clasebaja';
+            
+            //let dialog= new Dialog('clasebaja',1);
+            
+            npcholder.push(npc);
+        } */
+        //let npc=new Npc('clasebaja',100,100,1);
 
-     //npcholder.push(npc);
- }
-acoplarnpc(npc)
-{
-    this.npcholder.push(npc);
+        //npcholder.push(npc);
 
-}
-consultarnpc(id)
-{
+    }
 
-    return this.npcholder[id];
-}
+    acoplarnpc(npc)
+    {
+        this.npcholder.push(npc);
+
+    }
+    
+    consultarnpc(id)
+    {
+        return this.npcholder[id];
+    }
 }
 
     

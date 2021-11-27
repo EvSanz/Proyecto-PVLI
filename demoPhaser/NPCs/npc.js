@@ -18,7 +18,9 @@ export default class Npc extends Phaser.GameObjects.Sprite
 
     constructor(scene, x, y, dialogoIni) { 
         super(scene, x, y,'npcs',[5]).setInteractive(); 
-       this.setDepth(1);
+
+        this.setDepth(1);
+
         //Se crea el personaje con físicas 
         this.scene.add.existing(this);
         this.scene.physics.add.existing(this, true);
@@ -84,12 +86,25 @@ export default class Npc extends Phaser.GameObjects.Sprite
     }
 
     //Metodo para aumentar el nivel de irritacion del personaje
-    aumentarIrritacion(cabreo) { this.irritacion = this.irritacion + cabreo;}
+    aumentarIrritacion(cabreo) 
+    { 
+        this.irritacion = this.irritacion + cabreo;
+    }
 
     //Método para mostrar el tiempo en pantalla
-    showIrritacion() { this.label.text = "Irritacion: " + this.irritacion;}
+    showIrritacion() 
+    { 
+        this.label.text = "Irritacion: " + this.irritacion;
+    }
 
     //Metodo para devolver la irritacion
-    getIrritacion() { return this.irritacion;}
-    getDialogo() {return this.dialog;}
+    getIrritacion() 
+    { 
+        return this.irritacion;
+    }
+
+    getDialogo() 
+    {
+        return this.dialog;
+    }
 }

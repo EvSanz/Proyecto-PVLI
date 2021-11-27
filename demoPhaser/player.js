@@ -78,7 +78,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     {
 
       //Si pulsamos la flecha de direccion izquierda
-      if (this.cursors.left.isDown||this.a.isDown) 
+      if (this.cursors.left.isDown || this.a.isDown) 
       {
         //Establecemos la velocidad de movimiento 
         //hacia la izquierda
@@ -89,7 +89,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
       }
 
       //Si pulsamos la flecha de direccion derecha
-      else if (this.cursors.right.isDown||this.d.isDown) 
+      else if (this.cursors.right.isDown || this.d.isDown) 
       {
         this.body.setVelocityX(this.speed);
 
@@ -103,10 +103,16 @@ export default class Player extends Phaser.GameObjects.Sprite {
       
       
       //NO HACEN FALTA BOOLS PARA LAS ANIMACIONES solo hay 2 opciones o se mueve o su speed es 0 y YA.
-      if(this.body.speed>0)
+      if(this.body.speed > 0)
         this.play('playerwalk',true);
       else
         this.play('playerstand',true);
+    }
+    //Nos aseguramos que el player está quieto si no se le permite mover
+    else
+    {
+      this.body.setVelocityX(0);
+      this.play('playerstand',true);
     }
   }
 
