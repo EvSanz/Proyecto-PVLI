@@ -59,8 +59,8 @@ export default class Wagon extends Phaser.Scene {
 
     //Creamos el suelo
     let uisuelo;
-    uisuelo = this.add.sprite(500, 450, 'ui');
-
+    uisuelo = this.add.sprite(500, 450, 'ui').setDepth(-1);
+    
     //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);
 
