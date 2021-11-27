@@ -33,12 +33,21 @@ export default class Clock
     }
 
     //Método para resetear el tiempo
-    resetTime() { this.time = Total_Time;}
+    resetTime() 
+    { 
+        this.time = Total_Time;
+    }
 
-    getTime() { return this.time;}
+    getTime() 
+    { 
+        return this.time;
+    }
 
     //Método para mostrar el tiempo en pantalla
-    showTime() { this.label.text = "Time: " + this.time;}
+    showTime() 
+    { 
+        this.label.text = "Time: " + this.time;
+    }
 
     outOfTime(){}
 }

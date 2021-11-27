@@ -22,7 +22,7 @@ export default class GO extends Phaser.GameObjects.Sprite {
     else { super(scene, x, y, sprite);}
 
     this.scene.add.existing(this);
-    this.presente=true;
+    this.presente = true;
     this.setDepth(1);//para que aparezca encima del fondo igual qeu el npc
     this.sprite = sprite;
     
@@ -36,11 +36,10 @@ export default class GO extends Phaser.GameObjects.Sprite {
     this.on('pointerdown', ()=>
     {
       scene.scene.get('diary').addObject(this);
-      this.presente=false;
+      this.presente = false;
       this.dialog.talk();
       this.destroy();
     });
-
     
   }
 }
