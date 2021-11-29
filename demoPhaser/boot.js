@@ -4,6 +4,7 @@ import Npc from './NPCs/npc.js';
 import DialogManager from './Test/dialogmanager.js'
 import ObjectManager from './Objects/objectmanager.js'
 import GO from './Objects/GameObject.js'
+import Dialog from './Utils/dialog.js';
 export default class Boot extends Phaser.Scene {
   constructor() { super ({key: 'boot'});}
 
@@ -49,22 +50,26 @@ export default class Boot extends Phaser.Scene {
 
     this.scene.start('clasebaja', 400);
 
-    /*for( let i=0;i<12;i++)
-     {
-    //leeremos los datos del np del json de personajes(NO BORRAR ESTÁ EN PROCESO)
-    /*let x=0;
-    let y=i;
-    let scene='clasebaja';
-    this.leerjson("Jsons/dialogues.json",this.procesajson(),scene)
-    this.leerjson("Jsons/dialogues.json",this.procesajson(),x)
-    this.leerjson("Jsons/dialogues.json",this.procesajson(),y)
-     
+    this.myData = null;
+
+    for (let i = 0; i < 12; i++) 
+    {
+      //leeremos los datos del np del json de personajes(NO BORRAR ESTÁ EN PROCESO)
+      let x = 0;
+      let y = i;
+      let scene = 'clasebaja';
+      let claseBajaDialogues = new Dialog(scene, 0);
+      this.leerjson("Jsons/dialogues.json", claseBajaDialogues.onJsonRead(), claseBajaDialogues) //Le tienen que pasar un objeto ya tipo dialog en esta casilla
+      // this.leerjson("Jsons/dialogues.json", this.procesajson(), x)
+      // this.leerjson("Jsons/dialogues.json", this.procesajson(), y)
+
       //let dialog= new Dialog('clasebaja',1);
-      this.npc=new Npc(this.scene.get(scene),x,y,i);
+      this.npc = new Npc(this.scene.get(scene), x, y, i);
       this.dmanager.acoplarnpc(this.npc);
-     } 
-     this.scene.start('clasebaja', 400);*///VA TODO MENOS EL PUTO JSON CONFIEN GENTE 
+    }
+    this.scene.start('clasebaja', 400);//VA TODO MENOS EL PUTO JSON CONFIEN GENTE 
   }
+
   leerjson(json, postlectura, variable)
   {
     let rawFile = new XMLHttpRequest();
@@ -81,9 +86,9 @@ export default class Boot extends Phaser.Scene {
 
   } 
 
-  procesajson(valor,variable) 
+  procesajson(valor, variable) 
   { 
-    variable = JSON.parse(valor); 
+    claseBajaDialogues.myData = JSON.parse(valor); 
   }
 
   consultamanager() 

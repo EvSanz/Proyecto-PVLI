@@ -15,6 +15,7 @@ export default class Dialog
   {
     this.scene = scene;
     this.myData = null;
+    //this.myData.Dialogues = this.scene.scene.get('boot').myData;
     this.readTextFile("Jsons/dialogues.json", this.onJsonRead, this); 
     //Linea de dialogo
     this.textNum = 0;
@@ -155,6 +156,8 @@ export default class Dialog
       //Dependiendo del rectangulo que pulsemos, si es una respuesta 
       //conducira al siguiente bloque de dialogo y reseteara valores
 
+
+      //IMPORTANTE: ESTO ESTÄ CONECTADO A DIALOG, NO A BOOT, A DIALOG LE TIENE Q LLEGAR EL JSON
       //Primer bloque
       this.graphics.on('pointerdown', () => 
       { 
