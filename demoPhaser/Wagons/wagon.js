@@ -31,7 +31,7 @@ export default class Wagon extends Phaser.Scene {
     this.spriteFondo3 = spriteFondo3;
     this.wagonIzq = wagonIzq;
     this.wagonDer = wagonDer;
-    
+    let a;
   }
 
   //Creacion de los elementos del juego
@@ -66,7 +66,8 @@ export default class Wagon extends Phaser.Scene {
     //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);
 
-
+//EL FONDO , tenemos qeu comprobar si cada sprite del fondo es la animacion de las ventanas o un sprite solo 
+//si es un sprite simple el parametro del constructor qeu nos han pasado es el numero del frame en la spritesheet
     //Si es point and click...
     if (this.isPT) 
     {
@@ -82,23 +83,35 @@ export default class Wagon extends Phaser.Scene {
     else 
     {
         //Añade los sprites indicados en el create
-        let a = this.add.sprite(167, 174, this.spriteFondo1);
-
+        if (typeof(this.spriteFondo1)=='number')
+        {
+           this.a = this.add.sprite(167, 174, 'background', [this.spriteFondo1]);
+        }
+        else
+       {
+          this.a = this.add.sprite(167, 174, this.spriteFondo1);
+       }
         //Si es una ventana la anima
         if (this.spriteFondo1 === 'ventanas'){
-          a.play('backgroundwindows');
+          this.a.play('backgroundwindows');
         }
-
-        a = this.add.sprite(500, 174, this.spriteFondo2);
+        if (typeof(this.spriteFondo1)=='number')
+        {
+           this.a = this.add.sprite(167, 174, 'background', [this.spriteFondo1]);
+        }
+        else
+       {
+          this.a = this.add.sprite(500, 174, this.spriteFondo2);
+       }
 
         if (this.spriteFondo2 === 'ventanas'){
-          a.play('backgroundwindows');
+          this.a.play('backgroundwindows');
         }
 
-        a = this.add.sprite(833, 174, this.spriteFondo3);
+        this.a = this.add.sprite(833, 174, this.spriteFondo3);
 
         if (this.spriteFondo3 === 'ventanas'){
-          a.play('backgroundwindows');
+          this.a.play('backgroundwindows');
         }
 
         //Añade las puertas indicadas

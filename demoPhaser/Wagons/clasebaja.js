@@ -12,7 +12,8 @@ import DialogManager  from '../Test/dialogmanager.js'
 //Clase para crear y gestionar un nivel 
 export default class ClaseBaja extends Wagon {
   constructor() { 
-    super('clasebaja', false, 'ventanas', 'ventanas', 'ventanas', 'levelpt', 'level',);
+    
+    super('clasebaja', false, 26, 'ventanas', 26, 'clasebaja', 'clasemedia',);
   }
 
   //Sobreescribimos los métodos que estan en wagon
