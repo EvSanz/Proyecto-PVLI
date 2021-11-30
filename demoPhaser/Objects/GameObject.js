@@ -37,7 +37,7 @@ export default class GO extends Phaser.GameObjects.Sprite {
     {
       scene.scene.get('diary').addObject(this);
       this.presente = false;
-      this.dialog.talk();
+      this.dialog.initDialog();
       this.destroy();
     });
     

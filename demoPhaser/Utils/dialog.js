@@ -15,8 +15,8 @@ export default class Dialog
   {
     this.scene = scene;
     this.myData = null;
-    //this.myData.Dialogues = this.scene.scene.get('boot').myData;
-    this.readTextFile("Jsons/dialogues.json", this.onJsonRead, this); 
+
+    //this.readTextFile("Jsons/dialogues.json", this.onJsonRead, this); 
     //Linea de dialogo
     this.textNum = 0;
     //Bloque de dialogo
@@ -27,6 +27,12 @@ export default class Dialog
     this.label2 = this.scene.add.text(275, 425, "");
     this.label3 = this.scene.add.text(275, 475, "");
     this.graphics = null;  
+  }
+  
+  create()
+  {
+    this.myData = this.myData;
+    console.log("Dialog: ", this.myData.Dialogues[0]);
   }
 
   readTextFile(file, callback, dialog) 
@@ -46,9 +52,16 @@ export default class Dialog
 
   onJsonRead(text, dialog) { dialog.myData = JSON.parse(text);}
 
+  initDialog()
+  {
+    this.myData = this.scene.scene.get('boot').myData;
+    console.log("Dialog: ", this.myData.Dialogues[0]);
+
+    this.talk();
+  }
+
   talk()
   {
-
     //Bloqueamos el movimiento del jugador
     if (this.scene.player != null) {this.scene.player.canMove = false;}
 

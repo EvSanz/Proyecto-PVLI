@@ -58,12 +58,11 @@ export default class Boot extends Phaser.Scene {
       let x = 0;
       let y = i;
       let scene = 'clasebaja';
-      let claseBajaDialogues = new Dialog(scene, 0);
-      this.leerjson("Jsons/dialogues.json", claseBajaDialogues.onJsonRead(), claseBajaDialogues) //Le tienen que pasar un objeto ya tipo dialog en esta casilla
+      this.leerjson("Jsons/dialogues.json", this.procesajson, this) //Le tienen que pasar un objeto ya tipo dialog en esta casilla
       // this.leerjson("Jsons/dialogues.json", this.procesajson(), x)
       // this.leerjson("Jsons/dialogues.json", this.procesajson(), y)
 
-      //let dialog= new Dialog('clasebaja',1);
+      let dialog= new Dialog('clasebaja', 1);
       this.npc = new Npc(this.scene.get(scene), x, y, i);
       this.dmanager.acoplarnpc(this.npc);
     }
@@ -72,6 +71,7 @@ export default class Boot extends Phaser.Scene {
 
   leerjson(json, postlectura, variable)
   {
+    console.log("Leyendo json en boot");
     let rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", json, true);
@@ -88,7 +88,8 @@ export default class Boot extends Phaser.Scene {
 
   procesajson(valor, variable) 
   { 
-    claseBajaDialogues.myData = JSON.parse(valor); 
+    variable.myData = JSON.parse(valor); 
+    console.log("Dialogo: ", variable.myData.Dialogues[0].scenes[0].lines[0]);
   }
 
   consultamanager() 
