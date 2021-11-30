@@ -123,6 +123,16 @@ export default class Dialog
     }
   }
 
+  dialogoIrritacionMax()
+  {
+    console.log("Dentro del dialogoIrritacionMax");
+
+    //Bloqueamos el movimiento del jugador
+    if (this.scene.player != null) {this.scene.player.canMove = false;}
+
+    this.label.text = "No pienso seguir hablando"; 
+  }
+
   createBox()
   {
       //Establecemos cuadros de texto interactivos donde 
@@ -150,7 +160,9 @@ export default class Dialog
       //IMPORTANTE: ESTO ESTÄ CONECTADO A DIALOG, NO A BOOT, A DIALOG LE TIENE Q LLEGAR EL JSON
       //Primer bloque
       this.graphics.on('pointerdown', () => 
-      { 
+      {
+        if (this.scene.npc.getIrritacion() < 100)
+        {
           //Si no hay mas lineas de dialogo y es una opcion de respuestas
           //reseteamos valores y cambiamos el bloque del dialogo al siguiente
           if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length - 1
@@ -160,35 +172,34 @@ export default class Dialog
             //Modificar la irritacion del npc segun el dialogo
             this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
-
-            //if (this.scene.npc.getIrritacion() >= 100) 
-            //{ 
-              //this.id = 0; 
-              //this.chat = 0;
-            //}
-
+            
             this.talk()
           }
 
           //Si hay, cargamos el siguiente texto
           else
-          { 
-            //if (this.scene.npc.getIrritacion() >= 100) 
-            //{ 
-              //this.id = 0; 
-              //this.chat = 0;
-            //}
+          { this.nextText();}
+        }
 
-            //else
-            //{
-              this.nextText();
-            //}
+        else
+          {
+            console.log("Elimino el texto de cabreo"); 
+
+            if (this.chat == 0) { this.label.text = "";}
+            else 
+            {   
+              this.label.text = "Fuera de mi vista";
+              this.chat = 0; 
+            }
+
+            if (this.scene.player != null) {this.scene.player.canMove = true;} 
           }
       });
 
       //Segundo bloque
       this.graphics2.on('pointerdown', () => 
       { 
+        if (this.scene.npc.getIrritacion() < 100) {
           if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length - 1
             && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
@@ -196,33 +207,34 @@ export default class Dialog
             //Modificar la irritacion del npc segun el dialogo
             this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
-            
-            //if (this.scene.npc.getIrritacion() >= 100) 
-            //{ 
-              //this.id = 0; 
-              //this.chat = 0;
-            //}
-            
+
             this.talk()
           }
 
           else 
-          { //if (this.scene.npc.getIrritacion() >= 100) 
-            //{ 
-              //this.id = 0; 
-              //this.chat = 0;
-            //}
+          { this.nextText();}
+        }
 
-            //else
-            //{
-              this.nextText();
-            //}
+        else
+          {
+            console.log("Elimino el texto de cabreo");
+
+            if (this.chat == 0) { this.label.text = "";}
+            else 
+            {   
+              this.label.text = "Fuera de mi vista";
+              this.chat = 0; 
+            }
+
+            if (this.scene.player != null) {this.scene.player.canMove = true;} 
           }
       });
 
       //Tercer bloque
       this.graphics3.on('pointerdown', () => 
       { 
+        if (this.scene.npc.getIrritacion() < 100)
+        {
           if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length - 1
             && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
@@ -231,27 +243,25 @@ export default class Dialog
             this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             
-            //if (this.scene.npc.getIrritacion() >= 100) 
-            //{ 
-              //this.id = 0; 
-              //this.chat = 0;
-            //}
-            
             this.talk()
           }
 
           else 
-          { 
-            //if (this.scene.npc.getIrritacion() >= 100) 
-            //{ 
-              //this.id = 0; 
-              //this.chat = 0;
-            //}
+          { this.nextText();}
+        }
 
-            //else
-            //{
-              this.nextText();
-            //}
+        else
+          {
+            console.log("Elimino el texto de cabreo"); 
+            
+            if (this.chat == 0) { this.label.text = "";}
+            else 
+            {   
+              this.label.text = "Fuera de mi vista";
+              this.chat = 0; 
+            }
+            
+            if (this.scene.player != null) {this.scene.player.canMove = true;} 
           }
       });
   }

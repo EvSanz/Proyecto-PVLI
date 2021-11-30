@@ -56,7 +56,10 @@ export default class Npc extends Phaser.GameObjects.Sprite
             //Mientras tocamos al npc Y el jugador no está bloqueado..
             if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove)
             {
-                this.dialog.initDialog();
+                if (this.getIrritacion() < 100) { this.dialog.initDialog();}
+
+                else { this.dialog.dialogoIrritacionMax()}
+
             }
         });
 
@@ -66,7 +69,9 @@ export default class Npc extends Phaser.GameObjects.Sprite
             //Mientras tocamos al npc Y el jugador no está bloqueado..
             if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove)
             {
-                this.dialog.initDialog();
+                if (this.getIrritacion() < 100) { this.dialog.initDialog();}
+
+                else { this.dialog.dialogoIrritacionMax()}
             }
         });
     }
