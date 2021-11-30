@@ -28,34 +28,11 @@ export default class Dialog
     this.label3 = this.scene.add.text(275, 475, "");
     this.graphics = null;  
   }
-  
-  create()
-  {
-    this.myData = this.myData;
-    console.log("Dialog: ", this.myData.Dialogues[0]);
-  }
-
-  readTextFile(file, callback, dialog) 
-  {
-    let rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() 
-    {
-        if (rawFile.readyState === 4 && rawFile.status == "200") 
-        { callback(rawFile.responseText, dialog);}
-        
-    }
-
-    rawFile.send(null);
-  }
-
-  onJsonRead(text, dialog) { dialog.myData = JSON.parse(text);}
 
   initDialog()
   {
     this.myData = this.scene.scene.get('boot').myData;
-    console.log("Dialog: ", this.myData.Dialogues[0]);
+    console.log("Dialog: ", this.myData.Dialogues[0]); //Traza para comprobar que Dialogues es accesible y tiene contenido
 
     this.talk();
   }
