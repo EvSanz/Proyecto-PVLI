@@ -9,14 +9,14 @@ export default class Door extends Phaser.GameObjects.Sprite {
    * @param {Scene} gotoscene Siguiente escena
    * @param {number} x Coordenada x
    * @param {number} y Coordenada y 
-   * @param {bool} isfront denota si la puerta esta de frente o no para saber qeu sprite tiene qeu tener
+   
    */
 
-    constructor(scene, x, y, gotoscene,isfront) {
-      if(isfront)
-      super(scene, x, y, 'puertafun');
-      else
-      super(scene, x, y, 'puertafunlat');
+    constructor(scene, x, y, gotoscene,foto) {
+      
+      super(scene, x, y, foto);
+      
+      
 
 
       //Añadimos el objeto y sus fisicas a la escena

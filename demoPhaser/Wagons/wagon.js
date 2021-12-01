@@ -71,11 +71,11 @@ export default class Wagon extends Phaser.Scene {
 //Añade los sprites indicados en el create
 if (typeof(this.spriteFondo1)=='number')
 {
-   this.a = this.add.sprite(180, 174, 'background', [this.spriteFondo1]);
+   this.a = this.add.sprite(170, 174, 'background', [this.spriteFondo1]);
 }
 else
 {
-  this.a = this.add.sprite(180, 174, this.spriteFondo1);
+  this.a = this.add.sprite(170, 174, this.spriteFondo1);
 
   //Si es una ventana la anima
     if (this.spriteFondo1 === 'ventanas')
@@ -85,7 +85,7 @@ else
 }
 if (typeof(this.spriteFondo2)=='number')
 {
-   this.a = this.add.sprite(167, 174, 'background', [this.spriteFondo2]);
+   this.a = this.add.sprite(500, 174, 'background', [this.spriteFondo2]);
 }
 else
 {
@@ -99,7 +99,7 @@ else
 }
 if (typeof(this.spriteFondo3)=='number')
 {
-   this.a = this.add.sprite(167, 174, 'background', [this.spriteFondo3]);
+   this.a = this.add.sprite(833, 174, 'background', [this.spriteFondo3]);
 }
 else
 {
@@ -123,9 +123,9 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
     }
     else 
     {
-        new Door(this, 10, 222, this.wagonIzq,false);
+        new Door(this, 15, 222, this.wagonIzq,'puertafunlat');
 
-        new Door(this, 900, 222, this.wagonDer,false);
+        new Door(this, 985, 222, this.wagonDer,'puertafunlat2');
 
         //Creamos el jugador donde nos indica
         this.player = new Player(this, 260, 240, true);

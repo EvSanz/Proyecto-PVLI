@@ -20,12 +20,13 @@ export default class Boot extends Phaser.Scene {
     this.load.image('guille', 'guille.png');
     this.load.image('puertafun', 'workingdoor.png');
     this.load.image('puertafunlat','workingsidedoor.png');
+    this.load.image('puertafunlat2','workingsidedoor2.png');
     this.load.image('fondopt', 'fondopt.png');
     this.load.image('diary', 'diario.png');
 
     this.load.spritesheet('background', 'backgroundspritesheet.png', { frameWidth: 352, frameHeight: 352 });
     this.load.spritesheet('npcs', 'npcspritesheet.png', { frameWidth: 140, frameHeight: 224 });
-    this.load.spritesheet('objects', 'objectsspritesheet.png', { frameWidth: 64, frameHeight: 64 });
+    this.load.spritesheet('objects', 'objectsspritesheet.png', { frameWidth: 192, frameHeight: 192 });
     
     this.load.setPath('Jsons/');
     this.load.text('dialogue', 'dialogues.json');

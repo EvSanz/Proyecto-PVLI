@@ -13,7 +13,7 @@ import DialogManager  from '../Test/dialogmanager.js'
 export default class ClaseBaja extends Wagon {
   constructor() { 
     
-    super('clasebaja', false, 26, 'ventanas','ventanas', 'clasebaja', 'clasemedia',);
+    super('clasebaja', false, 'ventanas', 'ventanas','ventanas', 'clasebaja', 'clasemedia',);
   }
 
   //Sobreescribimos los métodos que estan en wagon
