@@ -25,11 +25,11 @@ export default class Clock
     create() { }
 
     //Método para disminuir el tiempo 
-    decreaseTime() 
+    decreaseTime(scencenow) 
     {
         this.time--;
         console.log("TIME: ", this.time);
-        this.showTime();
+        this.showTime(scencenow);
     }
 
     //Método para resetear el tiempo
