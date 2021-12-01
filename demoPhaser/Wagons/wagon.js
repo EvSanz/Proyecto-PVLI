@@ -68,63 +68,75 @@ export default class Wagon extends Phaser.Scene {
 
 //EL FONDO , tenemos qeu comprobar si cada sprite del fondo es la animacion de las ventanas o un sprite solo 
 //si es un sprite simple el parametro del constructor qeu nos han pasado es el numero del frame en la spritesheet
-    //Si es point and click...
+//Añade los sprites indicados en el create
+if (typeof(this.spriteFondo1)=='number')
+{
+   this.a = this.add.sprite(180, 174, 'background', [this.spriteFondo1]);
+}
+else
+{
+  this.a = this.add.sprite(180, 174, this.spriteFondo1);
+
+  //Si es una ventana la anima
+    if (this.spriteFondo1 === 'ventanas')
+  {
+  this.a.play('backgroundwindows');
+  }
+}
+if (typeof(this.spriteFondo2)=='number')
+{
+   this.a = this.add.sprite(167, 174, 'background', [this.spriteFondo2]);
+}
+else
+{
+  this.a = this.add.sprite(500, 174, this.spriteFondo2);
+
+
+  if (this.spriteFondo2 === 'ventanas')
+  {
+  this.a.play('backgroundwindows');
+  }
+}
+if (typeof(this.spriteFondo3)=='number')
+{
+   this.a = this.add.sprite(167, 174, 'background', [this.spriteFondo3]);
+}
+else
+{
+this.a = this.add.sprite(833, 174, this.spriteFondo3);
+
+  if (this.spriteFondo3 === 'ventanas')
+  {
+  this.a.play('backgroundwindows');
+  }
+}    
+//Si es point and click...
     if (this.isPT) 
     {
-        //Añade el sprite del fondo y crea una puerta que 
+       /* //Añade el sprite del fondo y crea una puerta que 
         //llevara al vagon declarado a la izquierda
         this.add.sprite(500, 174, this.spriteFondo1);
         this.door = new Door(this, 140, 225, this.wagonIzq);
 
         //Creamos el jugador en una posicion fija
-        this.player = new Player(this, 160, 240, false);
+        this.player = new Player(this, 160, 240, false);*/
     }
-    //Si no lo es...
     else 
     {
-        //Añade los sprites indicados en el create
-        if (typeof(this.spriteFondo1)=='number')
-        {
-           this.a = this.add.sprite(167, 174, 'background', [this.spriteFondo1]);
-        }
-        else
-       {
-          this.a = this.add.sprite(167, 174, this.spriteFondo1);
-       }
-        //Si es una ventana la anima
-        if (this.spriteFondo1 === 'ventanas'){
-          this.a.play('backgroundwindows');
-        }
-        if (typeof(this.spriteFondo1)=='number')
-        {
-           this.a = this.add.sprite(167, 174, 'background', [this.spriteFondo1]);
-        }
-        else
-       {
-          this.a = this.add.sprite(500, 174, this.spriteFondo2);
-       }
+        new Door(this, 10, 222, this.wagonIzq,false);
 
-        if (this.spriteFondo2 === 'ventanas'){
-          this.a.play('backgroundwindows');
-        }
-
-        this.a = this.add.sprite(833, 174, this.spriteFondo3);
-
-        if (this.spriteFondo3 === 'ventanas'){
-          this.a.play('backgroundwindows');
-        }
-
-        //Añade las puertas indicadas
-
-        new Door(this, 100, 222, this.wagonIzq);
-
-        new Door(this, 900, 222, this.wagonDer);
+        new Door(this, 900, 222, this.wagonDer,false);
 
         //Creamos el jugador donde nos indica
         this.player = new Player(this, 260, 240, true);
-    }
+    
     this.physics.add.collider(this.player, uisuelo);
+    }
+        
+        //Añade las puertas indicadas
 
+        //Si no lo es...
+    
     //Creamos los npc necesarios
     this.spawnNPCs();
 
