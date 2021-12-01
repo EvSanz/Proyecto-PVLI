@@ -144,7 +144,8 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
     this.spawnObjects();
 
     //Mostramos el reloj
-    this.player.clock.showTime();
+    //this.player.clock.showTime();
+    this.scene.get('boot').consultclock().showTime(this.wagonkey);
 
   }
 

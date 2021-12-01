@@ -41,8 +41,8 @@ export default class Boot extends Phaser.Scene {
     
     this.dmanager = new DialogManager();
 
-    this.clock = new Clock(this.scene.get('clasebaja'));
-
+    //this.clock = new Clock(this.scene.get('clasebaja'));
+    this.clock= new Clock(this)
     this.npc = new Npc(this.scene.get('clasebaja'), 650, 230, 1);
     this.dmanager.acoplarnpc(this.npc);
 
@@ -97,5 +97,9 @@ export default class Boot extends Phaser.Scene {
   consultamanager() 
   { 
     return this.dmanager; 
+  }
+  consultclock()
+  {
+    return this.clock;
   }
 }

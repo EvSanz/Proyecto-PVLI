@@ -14,8 +14,8 @@ export default class Clock
     constructor(scene) {
         this.scene = scene;
         this.time = Total_Time;
-        this.label = this.scene.add.text(10, 2, "", 
-        { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' });
+      
+        
 
         //Commented until sprite is added
         // super(scene,x,y, 'clock',true,true)
@@ -45,7 +45,8 @@ export default class Clock
 
     //Método para mostrar el tiempo en pantalla
     showTime() 
-    { 
+    {   this.label = this.scene.add.text(10, 2, "",
+    { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
         this.label.text = "Time: " + this.time;
     }
 
