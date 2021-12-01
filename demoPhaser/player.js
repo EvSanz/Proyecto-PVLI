@@ -40,7 +40,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.d = this.scene.input.keyboard.addKey('D');
 
     //Creamos el reloj
-    this.clock = new Clock (this.scene);
+    //this.clock = new Clock (this.scene);
     //Creamos el dialogo
     this.dialog = new Dialog(this.scene);
 
