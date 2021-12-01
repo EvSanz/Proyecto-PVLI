@@ -31,6 +31,7 @@ export default class Wagon extends Phaser.Scene {
     this.spriteFondo3 = spriteFondo3;
     this.wagonIzq = wagonIzq;
     this.wagonDer = wagonDer;
+    this.wagonKey= wagonKey;
     let a;
   }
 
@@ -145,7 +146,7 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
 
     //Mostramos el reloj
     //this.player.clock.showTime();
-    this.scene.get('boot').consultclock().showTime(this.wagonkey);
+    this.scene.get('boot').consultclock().showTime( this.wagonKey );
 
   }
 

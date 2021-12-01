@@ -45,7 +45,7 @@ export default class Clock
 q
     //Método para mostrar el tiempo en pantalla
     showTime(scenenow) 
-    {   this.label = this.scene.scene.get('clasebaja').add.text(10, 2, "",
+    {   this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
     { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
         this.label.text = "Time: " + this.time;
     }
