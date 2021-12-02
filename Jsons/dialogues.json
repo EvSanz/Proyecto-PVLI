@@ -3,7 +3,7 @@
 
     {
       "id": 0,
-      "char": "IrritacionMax",
+      "char": "Tutorial",
       "imageName": "",
       "isObject": false,
       "dialogo": 0,
@@ -15,8 +15,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "No quiero hablar",
-            "Fuera de mi vista, entrometido"
+            ""
           ]
         }
       ]
@@ -459,7 +458,7 @@
           "irritacion": 25,
           "clock": false,
           "lines": [
-            "Supongo..."
+            "Hmm..."
           ]
         }
       ]
@@ -495,7 +494,7 @@
             "No es fácil ocultar un delito mientras sirves a los clientes",
             "Aunque sé que es mejor no decir nada acerca del asesinato",
             "Procure tenerlo en cuenta",
-            "Aunque si quiere preguntar, no se corte",
+            "Pero si quiere preguntar, no se corte",
             "¿Hablo con alguna de las hermanas Morton?"
           ]
         }, 
@@ -538,10 +537,81 @@
           ]
         }
       ]
-    }, 
-
+    },
+    
     {
       "id": 11,
+      "char": "Alfred Hirsch",
+      "imageName": "",
+      "isObject": false,
+      "dialogo": 1,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Buenas, señor Case",
+            "¿Seguro que no vio nada inusual?",
+            "¿No durmio bien anoche?"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "No vi nada, ya se lo dije"
+          ]
+        },
+
+        {
+          "id": "Scene2",
+          "opciones" : 2,
+          "irritacion": 20,
+          "clock": false,
+          "lines": [
+            "No se lo diga al jefe, pero...",
+            "Estuve bebiendo un par de copas",
+            "¿Estuvo bebiendo a solas?",
+            "¿Cuanto bebio?"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "No, con un pasajero...",
+            "Haines pidio mucha bebida y me ofrecio",
+            "¿Cuanto bebio?"
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "No mucho",
+            "Una o dos copas...",
+            "Quizas tres",
+            "Ains... Marchese por favor",
+            "Tengo que terminar de limpiar esto"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 12,
       "char": "Alfred Hirsch",
       "imageName": "",
       "isObject": false,
@@ -554,14 +624,17 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "No tengo mucho mas que decirle, señor detective"
+            "No tengo mas que decir, señor Case"
           ]
         }
       ]
     },
 
+
+
+
     {
-      "id": 12,
+      "id": 13,
       "char": "Norma Anthony",
       "imageName": "",
       "isObject": false,
@@ -641,14 +714,14 @@
             "Juraria que vi a ese tenista caminando a hurtadillas",
             "Y bueno, a Albert tambien",
             "No se muy bien porque tantas preguntas",
-            "Pero espero que tenga suerte con su investigacion, detective"
+            "Pero espero que tenga suerte, detective"
           ]
         }
       ]
     }, 
 
     {
-      "id": 13,
+      "id": 14,
       "char": "Norma Anthony",
       "imageName": "",
       "isObject": false,
@@ -661,14 +734,17 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "Deberias ir a dormir, hijo",
+            "Te noto muy cansado",
+            "¡Y delgado!",
+            "Tal vez podria darte algunas galletas..."
           ]
         }
       ]
     },
 
     {
-      "id": 14,
+      "id": 15,
       "char": "Barry Railway",
       "imageName": "",
       "isObject": false,
@@ -743,7 +819,7 @@
     },
 
     {
-      "id": 15,
+      "id": 16,
       "char": "Barry Railway",
       "imageName": "",
       "isObject": false,
@@ -756,14 +832,18 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "Señor Case...",
+            "No quiero presionar, pero-",
+            "Llamare a la policia al llegar a la estacion",
+            "Y los policias van a querer a su asesino",
+            "Asi que esfuercese en encontrarlo"
           ]
         }
       ]
     },
 
     {
-      "id": 16,
+      "id": 17,
       "char": "Aiva Yan",
       "imageName": "",
       "isObject": false,
@@ -823,7 +903,7 @@
     },
 
     {
-      "id": 17,
+      "id": 18,
       "char": "Aiva Yan",
       "imageName": "",
       "isObject": false,
@@ -835,66 +915,6 @@
           "opciones" : -1,
           "irritacion": 0,
           "clock": false,
-          "lines": [
-            ""
-          ]
-        }
-      ]
-    },
-
-    {
-      "id": 18,
-      "char": "Mihael Haines",
-      "imageName": "",
-      "isObject": false,
-      "dialogo": 0,
-      "ultDialogo": false,
-      "scenes": [
-        {
-          "id": "Scene0",
-          "opciones" : 0,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            ""
-          ]
-        },
-
-        {
-          "id": "Scene1",
-          "opciones" : 4,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            ""
-          ]
-        }, 
-
-        {
-          "id": "Scene2",
-          "opciones" : 0,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            ""
-          ]
-        },
-
-        {
-          "id": "Scene3",
-          "opciones" : -1,
-          "irritacion": 0,
-          "clock": true,
-          "lines": [
-            ""
-          ]
-        },
-
-        {
-          "id": "Scene4",
-          "opciones" : -1,
-          "irritacion": 0,
-          "clock": true,
           "lines": [
             ""
           ]
@@ -907,6 +927,73 @@
       "char": "Mihael Haines",
       "imageName": "",
       "isObject": false,
+      "dialogo": 0,
+      "ultDialogo": false,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones" : 1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Good morning, sir",
+            "¿Hablas mi idioma?",
+            "Pareces cansado..."
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Si, si",
+            "I am just too tired to speak different",
+            "¿Porque esta tan cansado?"
+          ]
+        }, 
+
+        {
+          "id": "Scene2",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "I drank with Alfie last night",
+            "Too many things to think about...",
+            "¿Pensar en las Morton quizas",
+            "¿Alfie?"
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            ""
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 20,
+      "char": "Mihael Haines",
+      "imageName": "",
+      "isObject": false,
       "dialogo": 1,
       "ultDialogo": true,
       "scenes": [
@@ -921,6 +1008,16 @@
         }
       ]
     },
+
+
+
+
+
+
+
+
+
+    
 
     {
       "id": 20,
@@ -981,6 +1078,10 @@
         }
       ]
     },
+
+
+
+
 
     {
       "id": 21,
