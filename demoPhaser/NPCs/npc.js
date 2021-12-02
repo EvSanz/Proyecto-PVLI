@@ -31,8 +31,23 @@ export default class Npc extends Phaser.GameObjects.Sprite
 
         this.chat = dialogoIni;
 
+        let rawFile = new XMLHttpRequest();
+        rawFile.overrideMimeType("application/json");
+        rawFile.open("GET", "Jsons/personajes.json", true);
+
+        rawFile.onreadystatechange = () =>
+        {
+            if (rawFile.readyState === 4 && rawFile.status == "200")
+            {
+                this.info = JSON.parse(rawFile.responseText).Personajes[dialogoIni - 1];
+            }
+        }
+
+        rawFile.send(null);
+
+
         //Creamos el dialogo
-       this.dialog = new Dialog(this.scene, this.chat);
+        this.dialog = new Dialog(this.scene, this.chat);
         
         //Establecemos la variable de irritacion
         this.irritacion = 0; 
@@ -56,7 +71,11 @@ export default class Npc extends Phaser.GameObjects.Sprite
             //Mientras tocamos al npc Y el jugador no está bloqueado..
             if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove)
             {
-                if (this.getIrritacion() < 100) { this.dialog.initDialog();}
+                if (this.getIrritacion() < 100)
+                { 
+                    this.dialog.initDialog();
+                    this.apuntarEnDiario();
+                }
 
                 else { this.dialog.dialogoIrritacionMax()}
 
@@ -69,7 +88,11 @@ export default class Npc extends Phaser.GameObjects.Sprite
             //Mientras tocamos al npc Y el jugador no está bloqueado..
             if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove)
             {
-                if (this.getIrritacion() < 100) { this.dialog.initDialog();}
+                if (this.getIrritacion() < 100)
+                {
+                    this.dialog.initDialog();
+                    this.apuntarEnDiario();
+                }
 
                 else { this.dialog.dialogoIrritacionMax()}
             }
@@ -111,5 +134,11 @@ export default class Npc extends Phaser.GameObjects.Sprite
     getDialogo() 
     {
         return this.dialog;
+    }
+
+    apuntarEnDiario()
+    {
+        //Obtenemos una referencia al diario y añadimos la informacion necesaria
+        this.scene.scene.get('diary').addCharacter(this.info)
     }
 }

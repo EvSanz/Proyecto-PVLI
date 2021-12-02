@@ -89,15 +89,15 @@ export default class Boot extends Phaser.Scene {
   } 
 
   procesajson(valor, variable) 
-  { 
+  {
     variable.myData = JSON.parse(valor); 
-
   }
 
   consultamanager() 
   { 
     return this.dmanager; 
   }
+
   consultclock()
   {
     return this.clock;
