@@ -928,7 +928,7 @@
       "imageName": "",
       "isObject": false,
       "dialogo": 0,
-      "ultDialogo": false,
+      "ultDialogo": true,
       "scenes": [
         {
           "id": "Scene0",
@@ -970,10 +970,11 @@
         {
           "id": "Scene3",
           "opciones" : -1,
-          "irritacion": 0,
+          "irritacion": 20,
           "clock": true,
           "lines": [
-            ""
+            "¿Morton?",
+            "I dont know who they are"
           ]
         },
 
@@ -983,41 +984,13 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            ""
+            "Yes, Alfred",
+            "He works here in the... Cafeteria?",
+            "Pregunta around there"
           ]
         }
       ]
     },
-
-    {
-      "id": 20,
-      "char": "Mihael Haines",
-      "imageName": "",
-      "isObject": false,
-      "dialogo": 1,
-      "ultDialogo": true,
-      "scenes": [
-        {
-          "id": "Scene0",
-          "opciones" : -1,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            ""
-          ]
-        }
-      ]
-    },
-
-
-
-
-
-
-
-
-
-    
 
     {
       "id": 20,

@@ -1,6 +1,5 @@
 //Js importados
 import Player from '../player.js';
-import Tetera from '../Objects/tetera.js'
 import Door from '../Utils/door.js'
 import Npc from '../NPCs/npc.js';
 import Clock from '../Utils/clock.js';

@@ -1,7 +1,6 @@
 import Door from '../Utils/door.js'
 import Player from '../player.js';
 import Clock from '../Utils/clock.js';
-import Tetera from '../Objects/tetera.js';
 import GameObject from '../Objects/GameObject.js';
 import Wagon from '../Wagons/wagon.js'
 
