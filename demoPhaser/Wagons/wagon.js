@@ -16,7 +16,7 @@ export default class Wagon extends Phaser.Scene {
    * @param {string} spriteFondo1 Sprite que se renderizará al fondo a la izquierda (si es ventana se anima automáticamente)
    * @param {string} spriteFondo2 Sprite que se renderizará al fondo en el centro
    * @param {string} spriteFondo3 Sprite que se renderizará al fondo a la derecha
-   * @param {string} wagonIzq Vagon que esté a la izquierda de este
+   * @param {string} wagonIzq Vagon que esté a la izquierda de este.En caso de uan escena Point&Click , el vagon al que pertenece la habitacion
    * @param {string} wagonDer Vagon que esté a la derecha de este
    * @param {DialogManager} dmanager es el gestor de dialogos almacenado en boot, de donde se sacan los dialogos de los npcs
    * @param {ObjectManager} gomanager es el gestor de los objetos recogibles  de la escena(los que se pueden almacenar ene l diario)
@@ -115,7 +115,7 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
     {
       let goback;
 
-      goback = this.add.sprite(30, 30, 'objects', [4]).setInteractive();
+      goback = this.add.sprite(920, 40, 'objects', [4]).setInteractive();
   
       goback.on('pointerdown', () => 
       {
