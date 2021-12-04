@@ -25,11 +25,11 @@ export default class Clock
     create() { }
 
     //Método para disminuir el tiempo 
-    decreaseTime(scencenow) 
+    decreaseTime(scenenow) 
     {
         this.time--;
         console.log("TIME: ", this.time);
-        this.showTime(scencenow);
+        this.showTime(scenenow);
     }
 
     //Método para resetear el tiempo
@@ -45,7 +45,9 @@ export default class Clock
 q
     //Método para mostrar el tiempo en pantalla
     showTime(scenenow) 
-    {   this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
+    {   
+       
+        this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
     { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
         this.label.text = "Time: " + this.time;
     }

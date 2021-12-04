@@ -128,7 +128,7 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
         new Door(this, 985, 222, this.wagonDer,'puertafunlat2');
 
         //Creamos el jugador donde nos indica
-        this.player = new Player(this, 260, 240, true);
+        this.player = new Player(this, 260, 240, true).setDepth(2);
     
     this.physics.add.collider(this.player, uisuelo);
     }
