@@ -113,6 +113,19 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
 //Si es point and click...
     if (this.isPT) 
     {
+      let goback;
+
+      goback = this.add.sprite(30, 30, 'objects', [4]).setInteractive();
+  
+      goback.on('pointerdown', () => 
+      {
+        //reducir el tiempo
+        
+        //console.log(this.clock);
+        
+        //this.clock.decreaseTime();
+        this.scene.start(this.wagonIzq);
+      });
        /* //Añade el sprite del fondo y crea una puerta que 
         //llevara al vagon declarado a la izquierda
         this.add.sprite(500, 174, this.spriteFondo1);
