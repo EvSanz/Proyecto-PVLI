@@ -11,6 +11,11 @@ import Cafeteria from './Wagons/cafeteria.js';
 import ClaseAlta from './Wagons/clasealta.js';
 import Locomotora from './Wagons/locomotora.js';
 import HabitacionMorton from './Wagons/Rooms/habitacionmorton.js'
+import HabitacionCollins from './Wagons/Rooms/habitacioncollins.js'
+import HabitacionBold from './Wagons/Rooms/habitacionbold.js'
+import HabitacionYan from './Wagons/Rooms/habitacionyan.js'
+import HabitacionAnthony from './Wagons/Rooms/habitacionanthony.js'
+import HabitacionHaines from './Wagons/Rooms/habitacionhaines.js'
 //Inicio del juego en Phaser, creando para ello el archivo 
 //de configuración del juego y la clase Game, encargada de 
 //crear e iniciar el juego 
@@ -27,7 +32,7 @@ let config = {
     pixelArt: true,
 
     //Establecemos todas las escenas del juego
-    scene: [Boot, Level, Levelpt, Wagon, ClaseBaja,ClaseMedia,ClaseAlta,Cafeteria,Locomotora,HabitacionMorton, Diary, End],
+    scene: [Boot, Level, Levelpt, Wagon, ClaseBaja,ClaseMedia,ClaseAlta,Cafeteria,Locomotora,HabitacionMorton,HabitacionCollins,HabitacionBold,HabitacionYan,HabitacionAnthony,HabitacionHaines, Diary, End],
 
     //Establecemos las fisicas del juego
     physics: { 

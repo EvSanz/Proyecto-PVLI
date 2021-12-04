@@ -8,7 +8,9 @@ export default class ClaseMedia extends Wagon {
     spawnObjects()
     {
        let mortondoor;
-       this.mortondoor= new Door(this,120,220,'habitacionmorton','puertafun');
+       this.mortondoor= new Door(this,120,222,'habitacionmorton','puertafun');
+       this.mortondoor2= new Door(this,440,222,'habitacioncollins','puertafun');
+       this.mortondoor3= new Door(this,780,222,'habitacionbold','puertafun');
        
 
 

@@ -115,7 +115,7 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
     {
       let goback;
 
-      goback = this.add.sprite(920, 40, 'objects', [4]).setInteractive();
+      goback = this.add.sprite(960, 50, 'objects', [4]).setInteractive();
   
       goback.on('pointerdown', () => 
       {
