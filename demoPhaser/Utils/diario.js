@@ -8,7 +8,7 @@ export default class Diary extends Phaser.Scene {
 
     this.characterList = [];
 
-    this.letterSize = 17;
+    this.letterSize = 20;
   }
 
   //Cargamos la escena inicial
@@ -35,7 +35,20 @@ export default class Diary extends Phaser.Scene {
         yPos = 335;
       }
 
-      this.add.sprite(105 + ((index % 4) * 105), yPos, element.sprite);
+      this.item = this.add.sprite(105 + ((index % 4) * 105), yPos, element.sprite).setInteractive();
+
+      this.item.on('pointerover', () => 
+      {
+
+        this.showInfoPanel(true, element.desc)
+
+      })
+      this.item.on('pointerout', () => 
+      {
+
+        this.showInfoPanel(false)
+
+      })
 
     }, this);
 
@@ -43,13 +56,30 @@ export default class Diary extends Phaser.Scene {
     //Por cada personaje interrogado sale un poco de informacion de ellos
     this.characterList.forEach(function showSuspects(element, index) {
 
-      //Mostramos el nombre...
-      this.add.text(540, 90 + index * this.letterSize * 1.8, element.name,
-        { fontSize: this.letterSize, color: 'black', fontStyle: 'bold', wordWrap: { width: 400 } });
+      let xPos;
 
-      //Y su descripcion
-      this.add.text(555, 90 + this.letterSize + index * this.letterSize * 1.8, element.desc,
-        { fontSize: this.letterSize * 0.8, color: 'black', wordWrap: { width: 400 } });
+      if (index < 6)
+        xPos = 540;
+      else
+        xPos = 740;
+
+
+      //Mostramos el nombre...
+      this.name = this.add.text(xPos, 100 + (index % 6) * (this.letterSize * 2.5), element.name,
+        { fontSize: this.letterSize, color: 'black', fontStyle: 'bold', wordWrap: { width: 400 } }).setInteractive();
+
+      this.name.on('pointerover', () => 
+      {
+
+        this.showInfoPanel(true, element.desc)
+
+      })
+      this.name.on('pointerout', () => 
+      {
+
+        this.showInfoPanel(false)
+
+      })
 
     }, this);
 
@@ -61,12 +91,27 @@ export default class Diary extends Phaser.Scene {
     })
   }
 
+  showInfoPanel(active, text = ' ')
+  {
+    if (active)
+    {
+      this.panel = this.add.sprite(500, 475, 'infopanel');
+      this.description = this.add.text(200, 410, text,
+        { fontSize: this.letterSize * 0.8, color: 'white', wordWrap: { width: 600 } });
+    }
+    else 
+    {
+      this.panel.destroy();
+      this.description.destroy();
+    }
+  }
+
   /** Agrega un objeto al array de objetos en el orden que se recogen
   * @param {GameObject} obj Objeto a agregar
   */
   addObject(obj)
   {
-    if (obj.sprite !== null)
+    if (obj.sprite !== null && obj.desc !== null)
       this.objectList.push(obj);
   }
 

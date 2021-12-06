@@ -17,7 +17,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
      */
 
     constructor(scene, x, y, dialogoIni) { 
-        super(scene, x, y,'npcs',[5]).setInteractive(); 
+        super(scene, x, y, 'npcs', [5]).setInteractive(); 
 
         this.setDepth(1);
 

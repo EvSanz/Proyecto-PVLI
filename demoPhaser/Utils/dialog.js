@@ -157,7 +157,7 @@ export default class Dialog
       //conducira al siguiente bloque de dialogo y reseteara valores
 
 
-      //IMPORTANTE: ESTO ESTÄ CONECTADO A DIALOG, NO A BOOT, A DIALOG LE TIENE Q LLEGAR EL JSON
+      //IMPORTANTE: ESTO ESTA CONECTADO A DIALOG, NO A BOOT, A DIALOG LE TIENE Q LLEGAR EL JSON
       //Primer bloque
       this.graphics.on('pointerdown', () => 
       {

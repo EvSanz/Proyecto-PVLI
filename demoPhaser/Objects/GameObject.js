@@ -13,7 +13,7 @@ export default class GO extends Phaser.GameObjects.Sprite {
     * @param {bool} presente estará a true si el objeto todavia no se ha recogido y debe aparecer en la escena
     */
 
-  constructor(scene, x, y, sprite, clickable, chocante ) {
+  constructor(scene, x, y, sprite, clickable, chocante) {
     
     //Si es un objeto clickeable, lo convertimos en interactivo
     if (clickable) { super(scene, x, y, sprite).setInteractive();}
@@ -21,9 +21,11 @@ export default class GO extends Phaser.GameObjects.Sprite {
     //Si no, nos limitamos a cargarlo en la escena 
     else { super(scene, x, y, sprite);}
 
+    this.desc = 'este texto deberia salir del json pero ni se lee el json de objetos :v'
+
     this.scene.add.existing(this);
     this.presente = true;
-    this.setDepth(1);//para que aparezca encima del fondo igual qeu el npc
+    this.setDepth(1); //para que aparezca encima del fondo igual que el npc
     this.sprite = sprite;
     
     //Creamos el dialogo

@@ -23,6 +23,7 @@ export default class Boot extends Phaser.Scene {
     this.load.image('puertafunlat2','workingsidedoor2.png');
     this.load.image('fondopt', 'fondopt.png');
     this.load.image('diary', 'diario.png');
+    this.load.image('infopanel', 'infopanel.png');
 
     this.load.spritesheet('background', 'backgroundspritesheet.png', { frameWidth: 352, frameHeight: 352 });
     this.load.spritesheet('npcs', 'npcspritesheet.png', { frameWidth: 140, frameHeight: 224 });
@@ -47,7 +48,7 @@ export default class Boot extends Phaser.Scene {
     this.dmanager.acoplarnpc(this.npc);
 
     this.gomanager = new ObjectManager();
-    this.object = new GO(this.scene.get('levelpt'), 600, 265, 'tetera', true, true);
+    this.object = new GO(this.scene.get('clasebaja'), 600, 265, 'tetera', true, true);
     this.gomanager.acoplarobj(this.object);
 
     this.scene.start('clasebaja', 400);
