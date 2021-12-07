@@ -11,11 +11,62 @@
       "scenes": [
         {
           "id": "Scene0",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "¿Quien eres tu?",
+            "¿Que estas haciendo aqui?",
+            "¿Mery Morton?",
+            "Vengo a traerte un mensaje"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : 2,
+          "irritacion": 20,
+          "clock": false,
+          "lines": [
+            "¿Si...?",
+            "¿Que... que quieres de mi?",
+            "Darte un mensaje, de parte de un amigo",
+            "Creo que puedes imaginartelo"
+          ]
+        },
+
+        {
+          "id": "Scene2",
+          "opciones" : 2,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "¿Mensaje?...",
+            "Salga de aqui o... O...",
+            "¿Nerviosa? Tranquila, todo acabara pronto",
+            "Relajese. Todo acabara pronto"
+          ]
+        },
+
+        {
+          "id": "Scene3",
           "opciones" : -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "No, no, no, no",
+            "Noooooooooo"
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "No, no, no, no",
+            "Noooooooooo"
           ]
         }
       ]
@@ -1086,31 +1137,44 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 0,
+          "opciones" : 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "Aun no me creo que... que...",
+            "Oh dios mio",
+            "Respire hondo",
+            "¿Donde estuvo ayer por la noche?"
           ]
         },
 
         {
           "id": "Scene1",
           "opciones" : 4,
-          "irritacion": 0,
+          "irritacion": 20,
           "clock": false,
           "lines": [
-            ""
+            "¿Como? ¿Que res-respire?",
+            "¡Han asesinado a Mery!",
+            "¿Como espera que...?",
+            "Oh dios mio ¿Porque decidi dejarla?",
+            "¿Dejarla?",
+            "¿Mery tenia algun enemigo?"
           ]
         }, 
 
         {
           "id": "Scene2",
-          "opciones" : 0,
-          "irritacion": 0,
+          "opciones" : 4,
+          "irritacion": 20,
           "clock": false,
           "lines": [
-            ""
+            "Yo... Yo...",
+            "Tuvimos una pelea y... y...",
+            "Me fui del vagon. Y cuando volvi...",
+            "Estaba ahi. Muerta",
+            "¿Vio a alguien?",
+            "Interesante..."
           ]
         },
 
@@ -1120,17 +1184,24 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            ""
+            "No, nadie",
+            "Nadie podria...",
+            "¿Acaso podria haber...?",
+            "Oh dios mio, Mery",
+            "¿Que te han hecho Mery?"
           ]
         },
 
         {
           "id": "Scene4",
           "opciones" : -1,
-          "irritacion": 0,
+          "irritacion": 10,
           "clock": true,
           "lines": [
-            ""
+            "¿Cree que yo podria...?",
+            "No lo he hecho, creeme",
+            "Yo nunca podria... Oh dios mio, Mery",
+            "¿Que te han hecho Mery?"
           ]
         }
       ]
@@ -1146,11 +1217,71 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones" : 3,
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "Oh Mery",
+            "Lo siento mucho Mery",
+            "Nunca pense que esto pasaria...",
+            "¿Pasar el que?",
+            "No es su culpa"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : -1,
+          "irritacion": 60,
+          "clock": true,
+          "lines": [
+            "Nada",
+            "No pasa nada detective",
+            "Solo que Mery esta muerta y usted...",
+            "Usted solo hace preguntas estupidas"
+          ]
+        },
+
+        {
+          "id": "Scene2",
+          "opciones" : 3,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Gracias, pero creo que lo es",
+            "Estaba celosa y dije cosas",
+            "Cosas que no deberia haber dicho",
+            "¿Hablo con alguien?",
+            "¿Como que?"      
+          ]
+        },
+
+        {
+          "id": "Scene3",
+          "opciones" : -1,
+          "irritacion": 60,
+          "clock": true,
+          "lines": [
+            "No... No lo se",
+            "Estaba enfadada y el te...",
+            "No recuerdo que paso, solo bebi te y-",
+            "Agh, mi cabeza"
+          ]
+        },
+
+        {
+          "id": "Scene4",
+          "opciones" : -1,
+          "irritacion": 60,
+          "clock": true,
+          "lines": [
+            "Estaba enfadada",
+            "Sali del vagon y alguien...",
+            "Alguien me ofrecio beber un poco de te",
+            "Hable mal de Mery, dije que... que...",
+            "Que desearia que muriera",
+            "Nunca quise esto",
+            "Lo siento Mery, lo siento mucho"
           ]
         }
       ]

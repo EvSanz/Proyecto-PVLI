@@ -67,9 +67,6 @@ export default class Level extends Phaser.Scene {
     //Creamos el jugador
     this.player = new Player(this, 400, 240, true);
 
-    //Creamos la tetera
-    this.tetera = new Tetera (this, 600, 265);
-
     //Creamos el npc
     this.npc = new Npc (this, 880, 230, 3);
     

@@ -30,6 +30,11 @@ export default class Boot extends Phaser.Scene {
     this.load.spritesheet('npcs', 'npcspritesheet.png', { frameWidth: 140, frameHeight: 224 });
     this.load.spritesheet('objects', 'objectsspritesheet.png', { frameWidth: 192, frameHeight: 192 });
     
+    this.load.setPath('sonidos/');
+    this.load.audio('suspenseFondo', 'suspense.mp3');
+    this.load.audio('reloj', 'clocks.wav');
+    this.load.audio('pies', 'footsteps.mp3');
+
     this.load.setPath('Jsons/');
     this.load.json('dialogue', 'dialogues.json');
     this.load.json('objects', 'objetos.json');

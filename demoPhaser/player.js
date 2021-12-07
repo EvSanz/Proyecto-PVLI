@@ -98,10 +98,11 @@ export default class Player extends Phaser.GameObjects.Sprite {
       }
 
       //Si no pulsamos ninguna flecha
-      else 
+      else
+      {
         this.body.setVelocityX(0);
-      
-      
+      } 
+   
       //NO HACEN FALTA BOOLS PARA LAS ANIMACIONES solo hay 2 opciones o se mueve o su speed es 0 y YA.
       if(this.body.speed > 0)
         this.play('playerwalk',true);

@@ -41,6 +41,10 @@ export default class Wagon extends Phaser.Scene {
     //Creacion de la animacion del fondo
     this.dmanager=this.scene.get('boot').dmanager;
     this.gomanager=this.scene.get('boot').gomanager;
+
+    this.musica = this.sound.add('suspenseFondo', {volume: 0.5, loop: true});
+    this.musica.play(); 
+
     this.anims.create({
       key: 'backgroundwindows',
       frames: this.anims.generateFrameNumbers
@@ -122,7 +126,6 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
         //reducir el tiempo
         
         //console.log(this.clock);
-        
         //this.clock.decreaseTime();
         this.scene.start(this.wagonIzq);
       });
@@ -165,4 +168,6 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
   spawnNPCs() {}
 
   spawnObjects() {} 
+
+  stopMusic() { this.musica.stop();}
 }
