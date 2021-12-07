@@ -45,11 +45,11 @@ export default class Levelpt extends Wagon{
     goback.on('pointerdown', () => 
     {
       //reducir el tiempo
-      console.log(this.clock);
+      // console.log(this.clock);
       
-      this.scene.scene.get('boot').consultClock().decreaseTime(this);
-      console.log("decreaseTime");
-      this.scene.start('level');
+      // this.scene.scene.get('boot').consultClock().decreaseTime(this.scene.scene.get('level'));
+      // console.log("decreaseTime");
+      //this.scene.start('level');
     });
 
     //Añadimos la fisicas y los colliders al suelo

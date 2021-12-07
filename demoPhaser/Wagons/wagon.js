@@ -120,6 +120,7 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
       goback.on('pointerdown', () => 
       {
         //reducir el tiempo
+        this.scene.get('boot').consultClock().decreaseTime(this);
         
         //console.log(this.clock);
         
