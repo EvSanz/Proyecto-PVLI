@@ -124,10 +124,15 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
       goback.on('pointerdown', () => 
       {
         //reducir el tiempo
+        this.scene.get('boot').consultClock().decreaseTime(this);
         
         //console.log(this.clock);
-        //this.clock.decreaseTime();
-        this.scene.start(this.wagonIzq);
+        
+        if (this.scene.get('boot').consultClock().getTime() > 0)
+          this.scene.start(this.wagonIzq);
+        else
+        // TODO create killer scene
+        ;
       });
        /* //Añade el sprite del fondo y crea una puerta que 
         //llevara al vagon declarado a la izquierda
@@ -161,7 +166,7 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
 
     //Mostramos el reloj
     //this.player.clock.showTime();
-    this.scene.get('boot').consultclock().showTime( this.wagonKey );
+    this.scene.get('boot').consultClock().showTime( this.wagonKey );
 
   }
 

@@ -15,8 +15,6 @@ export default class Door extends Phaser.GameObjects.Sprite {
     constructor(scene, x, y, gotoscene,foto) {
       
       super(scene, x, y, foto);
-      
-      
 
 
       //Añadimos el objeto y sus fisicas a la escena
@@ -42,7 +40,8 @@ export default class Door extends Phaser.GameObjects.Sprite {
         { 
           this.scene.stopMusic();
           //Entra por la puerta
-          //this.scene.player.clock.decreaseTime(); 
+          // this.scene.scene.get('boot').consultClock().decreaseTime(this.scene);
+          // console.log("decreaseTime");
           this.scene.scene.start(this.gotoscene, {data: this.scene.player.clock} );
         }
       });
@@ -58,6 +57,8 @@ export default class Door extends Phaser.GameObjects.Sprite {
         { 
           this.scene.stopMusic();
           //this.scene.scene.get('boot').clock.decreaseTime(); 
+          // this.scene.scene.get('boot').consultClock().decreaseTime(this.scene);
+          // console.log("decreaseTime");
           this.scene.scene.start(this.gotoscene, {data: this.scene.player.clock} );
         }
       });

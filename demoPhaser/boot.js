@@ -107,7 +107,7 @@ export default class Boot extends Phaser.Scene {
     return this.dmanager; 
   }
 
-  consultclock()
+  consultClock()
   {
     return this.clock;
   }

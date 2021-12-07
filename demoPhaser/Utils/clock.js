@@ -7,6 +7,8 @@
   * @method showTime muestra el tiempo actual en pantalla
   */
 
+import SelectKillerScene from "../Test/selectkillerscene.js";
+
   const Total_Time = 12;
 
 export default class Clock 
@@ -14,6 +16,7 @@ export default class Clock
     constructor(scene) {
         this.scene = scene;
         this.time = Total_Time;
+        this.selectKillerScene = null;
       
         
 
@@ -27,9 +30,17 @@ export default class Clock
     //Método para disminuir el tiempo 
     decreaseTime(scenenow) 
     {
-        this.time--;
+        if (this.time > 0)
+            this.time--;
         console.log("TIME: ", this.time);
         this.showTime(scenenow);
+
+        if (this.time <= 0)
+        {
+            console.log("out of time");
+            this.outOfTime();
+        }
+            
     }
 
     //Método para resetear el tiempo
@@ -46,11 +57,19 @@ q
     //Método para mostrar el tiempo en pantalla
     showTime(scenenow) 
     {   
-       
+        this.label = null;
+        this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
+        { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
+        this.label.text = "        "; //Borra el tiempo anterior
         this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
     { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
         this.label.text = "Time: " + this.time;
     }
 
-    outOfTime(){}
+    outOfTime()
+    {
+        console.log("select killer");
+        this.selectKillerScene = new SelectKillerScene();
+        this.scene.scene.start(this.selectKillerScene);
+    }
 }
