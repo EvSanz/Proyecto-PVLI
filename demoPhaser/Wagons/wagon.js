@@ -124,8 +124,11 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
         
         //console.log(this.clock);
         
-        //this.clock.decreaseTime();
-        this.scene.start(this.wagonIzq);
+        if (this.scene.get('boot').consultClock().getTime() > 0)
+          this.scene.start(this.wagonIzq);
+        else
+        // TODO create killer scene
+        ;
       });
        /* //Añade el sprite del fondo y crea una puerta que 
         //llevara al vagon declarado a la izquierda

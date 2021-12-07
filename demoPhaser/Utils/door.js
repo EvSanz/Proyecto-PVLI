@@ -15,8 +15,6 @@ export default class Door extends Phaser.GameObjects.Sprite {
     constructor(scene, x, y, gotoscene,foto) {
       
       super(scene, x, y, foto);
-      
-      
 
 
       //Añadimos el objeto y sus fisicas a la escena
