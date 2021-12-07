@@ -97,7 +97,7 @@ export default class Dialog
       //disminuimos el contador de reloj
       if (this.myData.Dialogues[this.id].scenes[this.chat].clock)
       {
-        this.scene.scene.get('boot').consultclock().decreaseTime(this.scene);
+        this.scene.scene.get('boot').consultClock().decreaseTime(this.scene);
       }
 
       //Si no es el ultimo dialogo que pueden tener, aumentamos 

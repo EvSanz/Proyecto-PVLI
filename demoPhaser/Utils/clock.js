@@ -27,7 +27,8 @@ export default class Clock
     //Método para disminuir el tiempo 
     decreaseTime(scenenow) 
     {
-        this.time--;
+        if (this.time > 0)
+            this.time--;
         console.log("TIME: ", this.time);
         this.showTime(scenenow);
     }
@@ -46,7 +47,10 @@ q
     //Método para mostrar el tiempo en pantalla
     showTime(scenenow) 
     {   
-       
+        this.label = null;
+        this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
+        { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
+        this.label.text = "        "; //Borra el tiempo anterior
         this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
     { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
         this.label.text = "Time: " + this.time;

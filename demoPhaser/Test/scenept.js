@@ -47,7 +47,8 @@ export default class Levelpt extends Wagon{
       //reducir el tiempo
       console.log(this.clock);
       
-      //this.clock.decreaseTime();
+      this.scene.scene.get('boot').consultClock().decreaseTime(this);
+      console.log("decreaseTime");
       this.scene.start('level');
     });
 
