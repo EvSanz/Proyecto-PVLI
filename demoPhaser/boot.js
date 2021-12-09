@@ -5,7 +5,7 @@ import DialogManager from './Test/dialogmanager.js'
 import ObjectManager from './Objects/objectmanager.js'
 import GO from './Objects/GameObject.js'
 import Dialog from './Utils/dialog.js';
-import Info from './info.js';
+import t, {Info} from './info.js'
 export default class Boot extends Phaser.Scene {
   constructor() { super ({key: 'boot'});}
 
@@ -59,19 +59,21 @@ export default class Boot extends Phaser.Scene {
 
     this.scene.start('clasebaja', 400);
 
-    this.myData = null;
+    this.myDialog = null;
+    this.myObjects = null;
 
     for (let i = 0; i < 12; i++) 
     {
       //leeremos los datos del np del json de personajes(NO BORRAR ESTÁ EN PROCESO)
       let x = 0;
       let y = i;
-      let scene = 'clasebaja';
-      // this.myData = Info.cargaInfo(this.cache.json.get('dialogue'));
+      let scene = 'clasebaja'; 
+      //this.myObjects = Info.cargaInfo(this.cache.json.get('objects'));
+      //this.myData = Info.cargaInfo(this.cache.json.get('dialogue'));
       // console.log("Dialog: ", this.myData.Dialogues[0]); //Traza para comprobar que Dialogues es accesible y tiene contenido
-      this.leerjson("Jsons/dialogues.json", this.procesajson, this);
-      this.leerjson("Jsons/dialogues.json", this.procesajson, this);
-      this.leerjson("Jsons/dialogues.json", this.procesajson, this);
+      this.leerjson("Jsons/dialogues.json", this.procesajson, this.myDialog);
+      this.leerjson("Jsons/objetos.json", this.procesajson, this.myObjects);
+      // this.leerjson("Jsons/dialogues.json", this.procesajson, this);
 
       let dialog = new Dialog('clasebaja', 1);
       this.npc = new Npc(this.scene.get(scene), x, y, i);
@@ -99,7 +101,7 @@ export default class Boot extends Phaser.Scene {
 
   procesajson(valor, variable) 
   {
-    variable.myData = JSON.parse(valor); 
+    variable = JSON.parse(valor); 
   }
 
   consultamanager() 
