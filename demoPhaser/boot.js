@@ -61,6 +61,7 @@ export default class Boot extends Phaser.Scene {
 
     this.myDialog = null;
     this.myObjects = null;
+    this.myCharacters = null;
 
     for (let i = 0; i < 12; i++) 
     {
@@ -73,7 +74,7 @@ export default class Boot extends Phaser.Scene {
       // console.log("Dialog: ", this.myData.Dialogues[0]); //Traza para comprobar que Dialogues es accesible y tiene contenido
       this.leerjson("Jsons/dialogues.json", this.procesajson, this.myDialog);
       this.leerjson("Jsons/objetos.json", this.procesajson, this.myObjects);
-      // this.leerjson("Jsons/dialogues.json", this.procesajson, this);
+      this.leerjson("Jsons/personajes.json", this.procesajson, this.myCharacters);
 
       let dialog = new Dialog('clasebaja', 1);
       this.npc = new Npc(this.scene.get(scene), x, y, i);
