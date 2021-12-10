@@ -56,7 +56,7 @@ export default class Boot extends Phaser.Scene {
     this.gomanager = new ObjectManager();
     this.object = new GO(this.scene.get('clasebaja'), 600, 265, 'tetera', true, true);
     this.gomanager.acoplarobj(this.object);
-
+    this.silla=this.add.sprite(320, 262, 'objects', [2]);
     this.scene.start('clasebaja', 400);
 
     this.myDialog = null;

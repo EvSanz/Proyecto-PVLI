@@ -107,7 +107,7 @@ if (typeof(this.spriteFondo3)=='number')
 }
 else
 {
-this.a = this.add.sprite(833, 174, this.spriteFondo3);
+this.a = this.add.sprite(433, 174, this.spriteFondo3);
 
   if (this.spriteFondo3 === 'ventanas')
   {

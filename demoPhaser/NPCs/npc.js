@@ -141,4 +141,9 @@ export default class Npc extends Phaser.GameObjects.Sprite
         //Obtenemos una referencia al diario y añadimos la informacion necesaria
         this.scene.scene.get('diary').addCharacter(this.info)
     }
+    getscene()
+    {
+        return this.scene.scene.get(this.scene);
+
+    }
 }

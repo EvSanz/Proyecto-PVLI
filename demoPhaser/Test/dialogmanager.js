@@ -39,9 +39,14 @@ export default class DialogManager {
 
     }
     
-    consultarnpc(id)
+    consultarnpc(id,scena)
     {
-        return this.npcholder[id];
+
+       // this.escena = this.npcholder[id].getscene();
+       //scene.add.existing(this.npcholder[id]);
+       // return this.npcholder[id];
+     //  scena.scene.add.exsting(new Npc(scena.scene.get('clasebaja'),650, 230, 1))
+       
     }
 }
 
