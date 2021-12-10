@@ -12,10 +12,11 @@ export default class Door extends Phaser.GameObjects.Sprite {
    
    */
 
-    constructor(scene, x, y, gotoscene,foto) {
+    constructor(scene, x, y, gotoscene, foto) {
       
       super(scene, x, y, foto);
 
+      this.foto = foto;
 
       //Añadimos el objeto y sus fisicas a la escena
       this.scene.add.existing(this);
@@ -30,7 +31,6 @@ export default class Door extends Phaser.GameObjects.Sprite {
       this.graphics = new Phaser.GameObjects.Rectangle
       (this.scene, x, y, 200, 200, 0xfffffff, 0xfffffff);
       this.graphics.setInteractive();
-
 
       //Si pulsamos la e mientras tocamos la puerta
       this.e = this.scene.input.keyboard.addKey('E');
@@ -63,5 +63,16 @@ export default class Door extends Phaser.GameObjects.Sprite {
         }
       });
 
+    }
+    preUpdate()
+    {
+      if (this.foto === 'puertafunlat' || this.foto === 'puertafunlat2')
+      {
+        if (this.scene.physics.overlap(this.scene.player, this)) 
+        { 
+          this.scene.stopMusic();
+          this.scene.scene.start(this.gotoscene, {data: this.scene.player.clock} );
+        }
+      }
     }
 }
