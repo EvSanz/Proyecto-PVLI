@@ -39,8 +39,8 @@ export default class Wagon extends Phaser.Scene {
   create(data) {    //Aqui le llegara la posicion en la que aparecerá el jugador
 
     //Creacion de la animacion del fondo
-    this.dmanager=this.scene.get('boot').dmanager;
-    this.gomanager=this.scene.get('boot').gomanager;
+    this.dmanager = this.scene.get('boot').dmanager;
+    this.gomanager = this.scene.get('boot').gomanager;
 
     this.musica = this.sound.add('suspenseFondo', {volume: 0.5, loop: true});
     this.musica.play(); 
@@ -144,9 +144,11 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
     }
     else 
     {
-        new Door(this, 15, 222, this.wagonIzq,'puertafunlat');
+      if (this.wagonKey !== this.wagonIzq)
+        new Door(this, 15, 222, this.wagonIzq, 'puertafunlat');
 
-        new Door(this, 985, 222, this.wagonDer,'puertafunlat2');
+      if (this.wagonKey !== this.wagonDer)
+        new Door(this, 985, 222, this.wagonDer, 'puertafunlat2');
 
         //Creamos el jugador donde nos indica
         this.player = new Player(this, 260, 240, true).setDepth(2);
