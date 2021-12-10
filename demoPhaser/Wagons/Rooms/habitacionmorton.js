@@ -1,5 +1,5 @@
 import Wagon from '../wagon.js';
-import GameObject from '../../Objects/GameObject.js';
+import GameObject from '../../Objects/gameobject.js';
 
 export default class HabitacionMorton extends Wagon {
     constructor() { 

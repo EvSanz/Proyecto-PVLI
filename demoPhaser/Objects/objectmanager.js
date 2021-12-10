@@ -1,6 +1,6 @@
 //import Npc from '../NPCs/npc.js'
 import Dialog from '../Utils/dialog.js';
-import GO from './GameObject.js';
+import GO from './gameobject.js';
 
 
 export default class ObjectManager {
