@@ -65,7 +65,7 @@ export default class Boot extends Phaser.Scene {
   //En este bucle se leen los json de dialogos y personajes para crear cada personajes con su dialogo asociado
   //el id de cada npc corresponde con el indice del bucle (i) deben crearse en el orden del gdd para que no nso volvamos locos
     
-  this.leerjson("Jsons/dialogues.json", this.procesajson, this);
+  this.leerjson("Jsons/dialogues.json", this.procesajsonDialog, this);
   //this.leerjson("Jsons/personajes.json", this.procesajson, this.myCharacters);
   //console.log("Dialog: ", this.myDialog); //Traza para comprobar que Dialogues es accesible y tiene contenido  
 
@@ -119,7 +119,7 @@ export default class Boot extends Phaser.Scene {
 
   } 
 
-  procesajson(valor, variable) 
+  procesajsonDialog(valor, variable) 
   {
     variable.myDialog = JSON.parse(valor); 
   }
