@@ -5,7 +5,7 @@ import DialogManager from './Test/dialogmanager.js'
 import ObjectManager from './Objects/objectmanager.js'
 import GO from './Objects/gameobject.js'
 import Dialog from './Utils/dialog.js';
-import Info from './info.js';
+import t, {Info} from './info.js'
 export default class Boot extends Phaser.Scene {
   constructor() { super ({key: 'boot'});}
 
@@ -59,26 +59,43 @@ export default class Boot extends Phaser.Scene {
 
     this.scene.start('clasebaja', 400);
 
-    this.myData = null;
-    
+    this.myDialog = null;
+    this.myObjects = null;
+    this.myCharacters = null;
+  //En este bucle se leen los json de dialogos y personajes para crear cada personajes con su dialogo asociado
+  //el id de cada npc corresponde con el indice del bucle (i) deben crearse en el orden del gdd para que no nso volvamos locos
     for (let i = 0; i < 12; i++) 
     {
-      //leeremos los datos del npc del json de personajes(NO BORRAR ESTÁ EN PROCESO)
+      //leeremos los datos del np del json de personajes(NO BORRAR ESTÁ EN PROCESO)
       let x = 0;
-      let y = i;
-      let scene = 'clasebaja';
-      // this.myData = Info.cargaInfo(this.cache.json.get('dialogue'));
+      let y = 0;
+      let scene = 'clasebaja'; 
+      //this.myObjects = Info.cargaInfo(this.cache.json.get('objects'));
+      //this.myData = Info.cargaInfo(this.cache.json.get('dialogue'));
       // console.log("Dialog: ", this.myData.Dialogues[0]); //Traza para comprobar que Dialogues es accesible y tiene contenido
-      this.leerjson("Jsons/dialogues.json", this.procesajson, this);
-      this.leerjson("Jsons/dialogues.json", this.procesajson, this);
-      this.leerjson("Jsons/dialogues.json", this.procesajson, this);
+      this.leerjson("Jsons/dialogues.json", this.procesajson, this.myDialog);
+    //  this.leerjson("Jsons/objetos.json", this.procesajson, this.myObjects); AQUI NO >:[
+      this.leerjson("Jsons/personajes.json", this.procesajson, this.myCharacters);
 
       let dialog = new Dialog('clasebaja', 1);
       this.npc = new Npc(this.scene.get(scene), x, y, i);
       this.dmanager.acoplarnpc(this.npc);
     }
-    
+    //Bucle de objetos
+    for (let j=0;j<16;j++)
+    {
+    //cositas que tienes qeu leer del json 
+    let scene;//habitacion donde aparece el objeto
+    //como la spritesheet esta en el orden del gdd el indice corresponde con el sprite de cada objeto (para los personajes igual)
+    //la posicion del objeto
+    let x=0;
+    let y=0;
+    this.object = new GO(this.scene.get(scene),x,y,i,true,false);// todos lo gameobjects EXCEPTO LAS PUERTAS  tendran los 2 ultimos parametros como "true,false"
+    this.ObjectManager.acoplarobj(this.object);
+    }
     this.scene.start('clasebaja', 400);
+
+    //Creación aquí de personajes y objetos para cada vagón según la info de los jsons?
   }
 
   leerjson(json, postlectura, variable)
@@ -100,7 +117,7 @@ export default class Boot extends Phaser.Scene {
 
   procesajson(valor, variable) 
   {
-    variable.myData = JSON.parse(valor); 
+    variable = JSON.parse(valor); 
   }
 
   consultamanager() 
