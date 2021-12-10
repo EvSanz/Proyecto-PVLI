@@ -1,5 +1,6 @@
 import Wagon from './wagon.js';
 import Door from '../Utils/door.js';
+
 export default class ClaseAlta extends Wagon
  {
     constructor() { 

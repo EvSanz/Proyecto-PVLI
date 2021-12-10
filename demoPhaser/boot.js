@@ -81,6 +81,8 @@ export default class Boot extends Phaser.Scene {
       this.dmanager.acoplarnpc(this.npc);
     }
     this.scene.start('clasebaja', 400);
+
+    //Creación aquí de personajes y objetos para cada vagón según la info de los jsons?
   }
 
   leerjson(json, postlectura, variable)
