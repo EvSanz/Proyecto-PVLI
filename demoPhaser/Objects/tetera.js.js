@@ -1,5 +1,5 @@
 //Js importados
-import GO from './GameObject.js';
+import GO from './gameobject.js';
 
 //Clase para crear y gestionar la tetera
 export default class Tetera extends GO {

@@ -3,7 +3,7 @@ import Clock from './Utils/clock.js';
 import Npc from './NPCs/npc.js';
 import DialogManager from './Test/dialogmanager.js'
 import ObjectManager from './Objects/objectmanager.js'
-import GO from './Objects/GameObject.js'
+import GO from './Objects/gameobject.js'
 import Dialog from './Utils/dialog.js';
 import t, {Info} from './info.js'
 export default class Boot extends Phaser.Scene {
@@ -90,7 +90,8 @@ export default class Boot extends Phaser.Scene {
     //la posicion del objeto
     let x=0;
     let y=0;
-    this.object = new GO(this.scene.get(scene),x,y,i,true,false);
+    this.object = new GO(this.scene.get(scene),x,y,i,true,false);// todos lo gameobjects EXCEPTO LAS PUERTAS  tendran los 2 ultimos parametros como "true,false"
+    this.ObjectManager.acoplarobj(this.object);
     }
     this.scene.start('clasebaja', 400);
 

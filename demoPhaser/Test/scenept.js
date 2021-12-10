@@ -1,7 +1,7 @@
 import Door from '../Utils/door.js'
 import Player from '../player.js';
 import Clock from '../Utils/clock.js';
-import GameObject from '../Objects/GameObject.js';
+import GameObject from '../Objects/gameobject.js';
 import Wagon from '../Wagons/wagon.js'
 
 //Clase para crear las escenas de point and click
