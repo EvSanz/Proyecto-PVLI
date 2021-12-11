@@ -22,6 +22,7 @@ export default class ClaseBaja extends Wagon {
     //this.dmanager= new DialogManager();
     //this.dmanager.Acoplarnpc(this.npc);
     this.npc = this.dmanager.consultarnpc(0,this); //devuelve el npc que es YAY
+   
     //console.log("EJECUTANDO SPAWNPCS");
     //this.scene.add(this.npc);
     
@@ -32,6 +33,7 @@ export default class ClaseBaja extends Wagon {
     //this.tetera = new Tetera (this, 60, 200);
     //this.game.npcholder[0].x;
    // this.game.x;
+   //console.log(this.scene.get('boot').dmanager.npcinfoholder[1].id); DEVUELEVE LO QEU TOCA YAY
     this.add.sprite(320, 262, 'objects', [2]);
     this.add.sprite(520, 262, 'objects', [2]);
     this.add.sprite(830, 262, 'objects', [2]);

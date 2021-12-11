@@ -42,11 +42,19 @@ let config = {
             gravity: { y: 400 }, 
             debug: true } 
     },
-     
+
+   
 };
 new Phaser.Game(config ,'gameholder');
 
 //let npcholder={x=0,y=0}; 
-//let x=0;
-let npcholder;
-this.npcholder= [{x:0}];
+let test=0;
+this.test=675;
+//let npcholder;
+//UN ARRAY CON LA INFORMACION DE LOS 11 NPCS EN EL ORDEN ESTABLECIDO EN EL GDD
+let npcholder= [{id:0,anger:0},{id:1,anger:0},{id:2,anger:0},{id:3,anger:0},
+    {id:4,anger:0},{id:5,anger:0},{id:6,anger:0},{id:7,anger:0},{id:8,anger:0},
+    {id:9,anger:0},{id:10,anger:0},
+];
+//let prueba;
+//this.prueba=678;

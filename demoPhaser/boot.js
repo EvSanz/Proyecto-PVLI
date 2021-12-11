@@ -50,7 +50,7 @@ export default class Boot extends Phaser.Scene {
 
     //this.clock = new Clock(this.scene.get('clasebaja'));
     this.clock= new Clock(this)
-    this.npc = new Npc(this.scene.get('clasebaja'), 650, 230, 1);
+    this.npc = new Npc(this.scene.get('clasebaja'), 650, 230, 1,0);
     this.dmanager.acoplarnpc(this.npc);
 
     this.gomanager = new ObjectManager();

@@ -16,7 +16,8 @@ export default class Npc extends Phaser.GameObjects.Sprite
      * @method getDialogo devuelve el dialogo asociado al personaje
      */
 
-    constructor(scene, x, y, dialogoIni) { 
+    constructor(scene, x, y, dialogoIni,anger)
+     { 
         super(scene, x, y, 'npcs', [5]).setInteractive(); 
 
         this.setDepth(1);
@@ -50,8 +51,8 @@ export default class Npc extends Phaser.GameObjects.Sprite
         this.dialog = new Dialog(this.scene, this.chat);
         
         //Establecemos la variable de irritacion
-        this.irritacion = 0; 
-
+        this.irritacion = anger; 
+        
         //Creacion de la animacion de Guille (Prueba)
         this.anims.create ({
             key: 'guillestand',
@@ -116,7 +117,10 @@ export default class Npc extends Phaser.GameObjects.Sprite
     //Metodo para aumentar el nivel de irritacion del personaje
     aumentarIrritacion(cabreo) 
     { 
-        this.irritacion = this.irritacion + cabreo;
+       // this.irritacion = this.irritacion + cabreo;
+       this.scene.game.npcholder[dialogoIni].anger=this.irritacion + cabreo;
+       this.irritacion=this.game.scene.npcholder[dialogoIni].anger;
+      //this.irritacion=this.irritacion+cabreo;
     }
 
     //Método para mostrar el tiempo en pantalla
