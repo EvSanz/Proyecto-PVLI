@@ -71,38 +71,37 @@ export default class Boot extends Phaser.Scene {
   //this.myObjects = Info.cargaInfo(this.cache.json.get('objects'));
   //this.myData = Info.cargaInfo(this.cache.json.get('dialogue'));
 
-  this.leerjson("../Jsons/dialogues.json", this.procesajsonDialog, this.myDialog);
-  console.log("External Dialog: ", this.myDialog); //Traza para comprobar que Dialogues es accesible y tiene contenido  
+  this.leerjson("../Jsons/dialogues.json", this.procesajsonDialog, this);
   this.leerjson("../Jsons/personajes.json", this.procesajsonPersonajes, this);
 
   console.log("Characters: ", this.myCharacters);
 
-  for (let i = 0; i < 12; i++) 
-    {
-      //leeremos los datos del np del json de personajes(NO BORRAR ESTÁ EN PROCESO)
-      let pers = this.myCharacters[i];
+  // for (let i = 0; i < 12; i++) 
+  //   {
+  //     //leeremos los datos del np del json de personajes(NO BORRAR ESTÁ EN PROCESO)
+  //     let pers = this.myCharacters[i];
 
-      let dialog = new Dialog(pers.scene, i);
-      this.npc = new Npc(pers.scene, pers.posX, pers.posY, i);
-      this.dmanager.acoplarnpc(this.npc);
-    }
+  //     let dialog = new Dialog(pers.scene, i);
+  //     this.npc = new Npc(pers.scene, pers.posX, pers.posY, i);
+  //     this.dmanager.acoplarnpc(this.npc);
+  //   }
 
     //Bucle de objetos
     this.leerjson("Jsons/objetos.json", this.procesajsonObjetos, this);
     
-    for (let j = 0; j < 16; j++)
-    {
-      let scene;//habitacion donde aparece el objeto
-      //como la spritesheet esta en el orden del gdd el indice corresponde con el sprite de cada objeto (para los personajes igual)
-      let obj = this.myObjects[j];
+  //   for (let j = 0; j < 16; j++)
+  //   {
+  //     let scene;//habitacion donde aparece el objeto
+  //     //como la spritesheet esta en el orden del gdd el indice corresponde con el sprite de cada objeto (para los personajes igual)
+  //     let obj = this.myObjects[j];
 
-      // todos lo gameobjects EXCEPTO LAS PUERTAS  tendran los 2 ultimos parametros como "true,false"
-      this.object = new GO(obj.scene, obj.posX, obj.posY, desc, true, false);
+  //     // todos lo gameobjects EXCEPTO LAS PUERTAS  tendran los 2 ultimos parametros como "true,false"
+  //     this.object = new GO(obj.scene, obj.posX, obj.posY, desc, true, false);
 
-      this.ObjectManager.acoplarobj(this.object);
-    }
-    this.scene.start('clasebaja', 400);
-  }
+  //     this.ObjectManager.acoplarobj(this.object);
+  //   }
+  //   this.scene.start('clasebaja', 400);
+   }
 
   leerjson(json, postlectura, variable)
   {
@@ -122,7 +121,8 @@ export default class Boot extends Phaser.Scene {
 
   procesajsonDialog(valor, variable) 
   {
-    variable = JSON.parse(valor); 
+    variable.myDialog = JSON.parse(valor); 
+    console.log("procesajsonDialog: ", variable);
   }
 
   procesajsonObjetos(valor, variable) 

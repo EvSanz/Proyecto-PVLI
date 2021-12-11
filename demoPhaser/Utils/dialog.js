@@ -31,8 +31,8 @@ export default class Dialog
 
   initDialog()
   {
+    console.log("Dialog: ", this.scene.scene.get('boot').myDialog); //Traza para comprobar que Dialogues es accesible y tiene contenido
     this.myData = this.scene.scene.get('boot').myDialog;
-    console.log("Dialog: ", this.myData.Dialogues[0]); //Traza para comprobar que Dialogues es accesible y tiene contenido
 
     this.talk();
   }
