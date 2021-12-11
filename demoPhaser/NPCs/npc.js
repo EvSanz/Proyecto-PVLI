@@ -52,7 +52,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
         
         //Establecemos la variable de irritacion
         this.irritacion = anger; 
-        
+        this.locator=locator;
         //Creacion de la animacion de Guille (Prueba)
        /* this.anims.create ({
             key: 'guillestand',
@@ -123,7 +123,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
     { 
        this.irritacion = this.irritacion + cabreo;
        console.log(this.irritacion);
-       this.scene.scene.get('boot').dmanager.npcinfoholder[0].anger=this.irritacion;
+       this.scene.scene.get('boot').dmanager.npcinfoholder[this.locator].anger=this.irritacion;
        //this.scene.game.npcholder[dialogoIni].anger=this.irritacion + cabreo;
       // this.irritacion=this.game.scene.npcholder[dialogoIni].anger;
       //this.irritacion=cabreo;
