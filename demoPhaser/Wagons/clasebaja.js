@@ -26,7 +26,7 @@ export default class ClaseBaja extends Wagon {
 
 
    this.npc=new Npc(this,160,238,0,this.scene.get('boot').dmanager.npcinfoholder[0].anger,9,0);
-   this.npc2=new Npc(this,390,238,1,this.scene.get('boot').dmanager.npcinfoholder[1].anger,22,6);
+   this.npc2=new Npc(this,390,238,1,this.scene.get('boot').dmanager.npcinfoholder[7].anger,22,7);
 
    //this.add.Npc(this,200,262,1,this.scene.get('boot').dmanager.npcinfoholder[1].anger)
     //console.log("EJECUTANDO SPAWNPCS");
