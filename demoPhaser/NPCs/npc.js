@@ -18,7 +18,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
 
     constructor(scene, x, y, dialogoIni,anger)
      { 
-        super(scene, x, y, 'npcs', [5]).setInteractive(); 
+        super(scene, x, y, 'npcs', [9]).setInteractive(); 
 
         this.setDepth(1);
 
@@ -118,8 +118,10 @@ export default class Npc extends Phaser.GameObjects.Sprite
     aumentarIrritacion(cabreo) 
     { 
        // this.irritacion = this.irritacion + cabreo;
-       this.scene.game.npcholder[dialogoIni].anger=this.irritacion + cabreo;
-       this.irritacion=this.game.scene.npcholder[dialogoIni].anger;
+       //this.scene.game.npcholder[dialogoIni].anger=this.irritacion + cabreo;
+      // this.irritacion=this.game.scene.npcholder[dialogoIni].anger;
+      this.scene.get('boot').dmanager.npcinfoholder[dialogoIni].anger= this.scene.get('boot').dmanager.npcinfoholder[dialogoIni].anger + cabreo;
+     this.irritacion= this.scene.get('boot').dmanager.npcinfoholder[dialogoIni].anger;
       //this.irritacion=this.irritacion+cabreo;
     }
 
