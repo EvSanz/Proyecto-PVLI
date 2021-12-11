@@ -47,4 +47,6 @@ let config = {
 new Phaser.Game(config ,'gameholder');
 
 //let npcholder={x=0,y=0}; 
-let x=0;
+//let x=0;
+let npcholder;
+this.npcholder= [{x:0}];
