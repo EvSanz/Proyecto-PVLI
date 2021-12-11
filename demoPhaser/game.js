@@ -41,8 +41,10 @@ let config = {
         arcade: { 
             gravity: { y: 400 }, 
             debug: true } 
-    }
-    
+    },
+     
 };
-
 new Phaser.Game(config ,'gameholder');
+
+//let npcholder={x=0,y=0}; 
+let x=0;

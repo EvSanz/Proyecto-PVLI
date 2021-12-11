@@ -30,9 +30,11 @@ export default class ClaseBaja extends Wagon {
 
   spawnObjects(){    
     //this.tetera = new Tetera (this, 60, 200);
-    this.add.existing(this.scene.get('boot').silla)
-    //this.add.sprite(520, 262, 'objects', [2]);
-    //this.add.sprite(830, 262, 'objects', [2]);
+    //this.game.npcholder[0].x;
+   // this.game.x;
+    this.add.sprite(320, 262, 'objects', [2]);
+    this.add.sprite(520, 262, 'objects', [2]);
+    this.add.sprite(830, 262, 'objects', [2]);
 
   }
 }
