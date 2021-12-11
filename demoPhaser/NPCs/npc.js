@@ -16,7 +16,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
      * @method getDialogo devuelve el dialogo asociado al personaje
      */
 
-    constructor(scene, x, y, dialogoIni,anger,frame)
+    constructor(scene, x, y, dialogoIni,anger,frame,locator)
      { 
         super(scene, x, y, 'npcs', [frame]).setInteractive(); 
 
@@ -72,10 +72,12 @@ export default class Npc extends Phaser.GameObjects.Sprite
             //Mientras tocamos al npc Y el jugador no está bloqueado..
             if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove)
             {
+                this.aumentarIrritacion(5);
                 if (this.getIrritacion() < 100)
                 { 
                     this.dialog.initDialog();
                     this.apuntarEnDiario();
+
                 }
 
                 else { this.dialog.dialogoIrritacionMax()}
@@ -89,10 +91,12 @@ export default class Npc extends Phaser.GameObjects.Sprite
             //Mientras tocamos al npc Y el jugador no está bloqueado..
             if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove)
             {
+                this.aumentarIrritacion(5);
                 if (this.getIrritacion() < 100)
                 {
                     this.dialog.initDialog();
                     this.apuntarEnDiario();
+                   
                 }
 
                 else { this.dialog.dialogoIrritacionMax()}
@@ -117,12 +121,16 @@ export default class Npc extends Phaser.GameObjects.Sprite
     //Metodo para aumentar el nivel de irritacion del personaje
     aumentarIrritacion(cabreo) 
     { 
-       // this.irritacion = this.irritacion + cabreo;
+       this.irritacion = this.irritacion + cabreo;
+       console.log(this.irritacion);
+       this.scene.scene.get('boot').dmanager.npcinfoholder[0].anger=this.irritacion;
        //this.scene.game.npcholder[dialogoIni].anger=this.irritacion + cabreo;
       // this.irritacion=this.game.scene.npcholder[dialogoIni].anger;
-      this.scene.get('boot').dmanager.npcinfoholder[dialogoIni].anger= this.scene.get('boot').dmanager.npcinfoholder[dialogoIni].anger + cabreo;
-     this.irritacion= this.scene.get('boot').dmanager.npcinfoholder[dialogoIni].anger;
+      //this.irritacion=cabreo;
+      //this.scene.get('boot').dmanager.npcinfoholder[dialogoIni].anger= this.scene.get('boot').dmanager.npcinfoholder[dialogoIni].anger + cabreo;
+     //this.irritacion= this.scene.get('boot').dmanager.npcinfoholder[dialogoIni].anger;
       //this.irritacion=this.irritacion+cabreo;
+      this.showIrritacion();
     }
 
     //Método para mostrar el tiempo en pantalla

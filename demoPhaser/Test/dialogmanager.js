@@ -51,6 +51,12 @@ export default class DialogManager {
      //  scena.scene.add.exsting(new Npc(scena.scene.get('clasebaja'),650, 230, 1))
        
     }
+    asignacabreo(id,cabreo)
+    {
+
+    this.npcinfoholder[id].anger=cabreo;
+
+    }
 }
 
     
