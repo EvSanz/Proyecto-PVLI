@@ -16,9 +16,9 @@ export default class Npc extends Phaser.GameObjects.Sprite
      * @method getDialogo devuelve el dialogo asociado al personaje
      */
 
-    constructor(scene, x, y, dialogoIni,anger)
+    constructor(scene, x, y, dialogoIni,anger,frame)
      { 
-        super(scene, x, y, 'npcs', [9]).setInteractive(); 
+        super(scene, x, y, 'npcs', [frame]).setInteractive(); 
 
         this.setDepth(1);
 
@@ -54,15 +54,15 @@ export default class Npc extends Phaser.GameObjects.Sprite
         this.irritacion = anger; 
         
         //Creacion de la animacion de Guille (Prueba)
-        this.anims.create ({
+       /* this.anims.create ({
             key: 'guillestand',
             frames: this.anims.generateFrameNumbers
-            ('npcs', { start: 4, end: 5 }),
+            ('npcs', { start: 4, end: 6 }),
             frameRate: 4, 
             repeat: -1    
         });
 
-        this.play('guillestand',true);
+        this.play('guillestand',true);*/
 
         this.e = this.scene.input.keyboard.addKey('E');
         
