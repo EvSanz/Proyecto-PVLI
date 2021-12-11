@@ -1,6 +1,7 @@
 import Wagon from './wagon.js';
 import Door from '../Utils/door.js';
 import Npc from '../NPCs/npc.js';
+import GO from '../Objects/gameobject.js';
 
 export default class ClaseMedia extends Wagon {
     constructor() { 
@@ -15,13 +16,25 @@ export default class ClaseMedia extends Wagon {
     }
     spawnObjects()
     {
+      this.objs = this.scene.get('boot').myObjects;
+      console.log("Objs: ", this.objs.Objetos);
+  
+      this.objects = []; 
+  
+        let j = 0;
+  
+        for (let i = 0; i < this.objs.Objetos.length; ++i)
+        {
+          if(this.objs.Objetos[i].vagon == this.scene.key)
+            this.objects[j++] = new GO(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].desc, true, false);
+        }
+    
+        console.log("Objetos en escena: ", this.objects);
+
+
        let mortondoor;
        this.mortondoor= new Door(this,120,222,'habitacionmorton','puertafun');
        this.mortondoor2= new Door(this,440,222,'habitacioncollins','puertafun');
        this.mortondoor3= new Door(this,780,222,'habitacionbold','puertafun');
-       
-
-
-
     }
 }

@@ -3,6 +3,7 @@ import Player from '../player.js';
 import Door from '../Utils/door.js'
 import Wagon from './wagon.js';
 import Npc from '../NPCs/npc.js';
+import GO from '../Objects/gameobject.js';
 import DialogManager  from '../Test/dialogmanager.js'
 /**Escena principal del juego
  * @extends Wagon
@@ -36,6 +37,22 @@ export default class ClaseBaja extends Wagon {
   }
 
   spawnObjects(){    
+
+    // this.objs = this.scene.get('boot').myObjects;
+    // console.log("Objs: ", this.objs.Objetos);
+
+    // this.objects = []; 
+
+    //   let j = 0;
+
+    //   for (let i = 0; i < this.objs.Objetos.length; ++i)
+    //   {
+    //     if(this.objs.Objetos[i].vagon == this.scene.key)
+    //       this.objects[j++] = new GO(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].desc, true, false);
+    //   }
+  
+    //   console.log("Objetos en escena: ", this.objects);
+
     //this.tetera = new Tetera (this, 60, 200);
     //this.game.npcholder[0].x;
    // this.game.x;

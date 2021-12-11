@@ -48,7 +48,7 @@
     "name": "Gemelo ensangrentado",
     "posX": 20,
     "posY": 262,
-    "vagon": "habitacionnorm<l",
+    "vagon": "habitacionanthony",
     "desc": "El gemelo parejo al que se encontró en la escena del crímen. Tiene escrito una 'A'",
     "characters": [
       "Norma Anthony",
@@ -59,7 +59,7 @@
     "name": "Caja de galletas 1",
     "posX": 20,
     "posY": 262,
-    "vagon": "habitacionnorma",
+    "vagon": "habitacionanthony",
     "desc": "Una caja de galletas hechas por Norma. Son de chocolate",
     "characters": [
       "Norma Anthony",
@@ -70,7 +70,7 @@
     "name": "Caja de galletas 2",
     "posX": 20,
     "posY": 262,
-    "vagon": "hab",
+    "vagon": "habitacionanthony",
     "desc": "Otra caja de galletas. Éstas son de vainilla",
     "characters":[
       "Norma Anthony",
@@ -81,7 +81,7 @@
     "name": "Caja de galletas 3",
     "posX": 35,
     "posY": 262,
-    "vagon": "habitacionorma",
+    "vagon": "habitacionanthony",
     "desc": "Otra caja más de galletas. Ésta contiene un kit de costura en su interior",
     "characters": [
       "Norma Anthony",
@@ -122,7 +122,7 @@
     "name": "Set de cables",
     "posX": 20,
     "posY": 252,
-    "vagon": "habitacionayva",
+    "vagon": "habitacionyan",
     "desc": "Varios cables muy parecidos al encontrado en la habitación de las Morton. Éste set se encontró en la habitación de Ayva Yan",
     "characters": [
       "Ayva Yan"
@@ -132,7 +132,7 @@
     "name": "Aparato extraño",
     "posX": 20,
     "posY": 242,
-    "vagon": "habitacion ayva",
+    "vagon": "habitacionyan",
     "desc": "Una máquina encontrada en la habitación de Ayva Yan que parece tener una especie de bandeja en la parte superior. Pone 6v en la parte inferior",
     "characters": [
       "Ayva Yan"
@@ -142,7 +142,7 @@
     "name": "Caja de galletas",
     "posX": 20,
     "posY": 232,
-    "vagon": "habitacionnorma",
+    "vagon": "habitacionanthony",
     "desc": "Hechas por Norma Anthony y encontrada en la habitación de Ayva Yan. Son de avena",
     "characters": [
       "Ayva Yan",
