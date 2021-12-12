@@ -19,7 +19,7 @@ export default class HabitacionHaines extends Wagon {
   
       for (let i = 0; i < this.objs.Objetos.length; ++i) {
         if (this.objs.Objetos[i].vagon == this.scene.key)
-          this.objects[j++] = new GO(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].desc, true, false);
+          this.objects[j++] = new GameObject(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].desc, true, false);
       }
   
       console.log("Objetos en escena: ", this.objects);
