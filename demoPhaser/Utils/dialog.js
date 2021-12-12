@@ -8,7 +8,7 @@ export default class Dialog
   /** Constructor de Npc
   * @param {Phaser.Scene} scene Escena 
   * @param {number} id Identificador del dialogo que leeremos
-  * @param {Npc} npc npc
+  * @param {Npc} npc Npc asociado a este dialogo
   */
 
   constructor(scene, id, npc)
@@ -19,9 +19,6 @@ export default class Dialog
     //npc asociado a este dialogo
     this.currentNpc = npc;
     this.id = id;
-
-    console.log("Se construye el dialog de " + this.id);
-    console.log("npc: " + this.currentNpc);
 
     //this.readTextFile("Jsons/dialogues.json", this.onJsonRead, this); 
     //Linea de dialogo
@@ -38,8 +35,6 @@ export default class Dialog
 
   initDialog()
   {
-    console.log("Dialog: ", this.scene.scene.get('boot').myDialog); //Traza para comprobar que Dialogues es accesible y tiene contenido
-    console.log("Id: " + this.id);
     this.myData = this.scene.scene.get('boot').myDialog;
 
     this.talk();
@@ -47,21 +42,23 @@ export default class Dialog
 
   talk()
   {
+
+    //Se borran los cuadros si queda alguna traza de dialogos anteriores
     if (this.graphics !== undefined && this.graphics2 !== undefined && this.graphics3 !== undefined)
     {
       this.graphics.destroy();
       this.graphics2.destroy();
       this.graphics3.destroy();
     }
+
     //Bloqueamos el movimiento del jugador
     if (this.scene.player != null) {this.scene.player.canMove = false;}
 
     this.createBox();
+
     //Primera linea de dialogo
-    console.log("Textnum inicio talk: " + this.textNum + " para " + this.id);
     this.textNum = 0;  
 
-    console.log("Textnum final talk: " + this.textNum + " para " + this.id);
     //Texto
     this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     this.label2.text = "";
@@ -70,9 +67,8 @@ export default class Dialog
 
   nextText()
   {
-    console.log("Textnum inicio nextText: " + this.textNum + " para " + this.id);
-      //Comprobamos si no ha llegado a las opciones de dialogo
-      if (this.textNum != this.myData.Dialogues[this.id].scenes[this.chat].opciones - 1)
+    //Comprobamos si no ha llegado a las opciones de dialogo
+    if (this.textNum != this.myData.Dialogues[this.id].scenes[this.chat].opciones - 1)
     {
       this.textNum++;
       this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
@@ -98,8 +94,6 @@ export default class Dialog
         this.label3.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
       }   
     }
-    
-    console.log("Textnum final nextText: " + this.textNum + " para " + this.id);
 
     this.finishText();
   }
@@ -107,6 +101,7 @@ export default class Dialog
   //Metodo para finalizar el dialogo
   finishText()
   {
+
     //Comprobamos que no hay elecciones de dialogo y 
     //que no quedan lineas de dialogo por decir
     if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length
@@ -133,12 +128,12 @@ export default class Dialog
         if (this.myData.Dialogues[this.id].isObject == false)
         {
           this.currentNpc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
-          console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
         }
       }
 
       this.chat = 0;
 
+      //Destruimos los cuadros de opciones
       this.graphics.destroy();
       this.graphics2.destroy();
       this.graphics3.destroy();
@@ -155,7 +150,7 @@ export default class Dialog
     //Bloqueamos el movimiento del jugador
     if (this.scene.player != null) {this.scene.player.canMove = false;}
 
-    this.label.text = "No pienso seguir hablando"; 
+    this.label.text = "No pienso seguir hablando";
   }
 
   createBox()
@@ -186,11 +181,14 @@ export default class Dialog
       //Primer bloque
       this.graphics.on('pointerdown', () => 
       {
+        
+        //Si el dialogo no tenia un npc como tal asociado, se llama al siguiente texto y sale de la funcion
         if (this.currentNpc === undefined)
         {
           this.nextText();
           return;
         }
+
         if (this.currentNpc.getIrritacion() < 100)
         {
           //Si no hay mas lineas de dialogo y es una opcion de respuestas

@@ -25,7 +25,13 @@ export default class Boot extends Phaser.Scene {
     this.load.image('fondopt', 'fondopt.png');
     this.load.image('diary', 'diario.png');
     this.load.image('infopanel', 'infopanel.png');
+    this.load.image('fondo', 'fondo.png');
+    this.load.image('menuprincipal', 'menuprincipal.png');
+    this.load.image('menuopciones', 'menuopciones.png');
+    this.load.image('creditos', 'creditos.png');
 
+    this.load.spritesheet('checkbox', 'checkbox.png', { frameWidth: 48, frameHeight: 48 });
+    this.load.spritesheet('botones', 'botones.png', { frameWidth: 240, frameHeight: 48 });
     this.load.spritesheet('background', 'backgroundspritesheet.png', { frameWidth: 352, frameHeight: 352 });
     this.load.spritesheet('npcs', 'npcspritesheet.png', { frameWidth: 140, frameHeight: 224 });
     this.load.spritesheet('objects', 'objectsspritesheet.png', { frameWidth: 192, frameHeight: 192 });
@@ -57,7 +63,8 @@ export default class Boot extends Phaser.Scene {
     this.object = new GameObject(this.scene.get('clasebaja'), 600, 265, 'tetera', true, true);
     this.gomanager.acoplarobj(this.object);
     
-    this.scene.start('clasebaja', 400);
+    //this.scene.start('clasebaja', 400);
+    this.scene.start('mainmenu');
 
     this.myDialog = [1];
     this.myObjects = null;

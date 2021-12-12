@@ -1,5 +1,8 @@
 //Js importados
 import Boot from './boot.js';
+import Menu from './Menus/mainmenu.js';
+import Settings from './Menus/settingsmenu.js';
+import Credits from './Menus/credits.js';
 import End from './end.js';
 import Level from './Test/scene.js';
 import Levelpt from './Test/scenept.js';
@@ -24,7 +27,7 @@ import HabitacionHaines from './Wagons/Rooms/habitacionhaines.js'
 let config = {
     type: Phaser.AUTO,
     width:  1000,
-    height: 500,
+    height: 512,
     parent:"gameholder",
     scale: {
         //mode: Phaser.Scale.FIT,  
@@ -33,7 +36,7 @@ let config = {
     pixelArt: true,
 
     //Establecemos todas las escenas del juego
-    scene: [Boot, Level, Levelpt, Wagon, ClaseBaja,ClaseMedia,ClaseAlta,Cafeteria,Locomotora,HabitacionMorton,HabitacionCollins,HabitacionBold,HabitacionYan,HabitacionAnthony,HabitacionHaines, Diary, End],
+    scene: [Boot, Menu, Settings, Credits, Level, Levelpt, Wagon, ClaseBaja,ClaseMedia,ClaseAlta,Cafeteria,Locomotora,HabitacionMorton,HabitacionCollins,HabitacionBold,HabitacionYan,HabitacionAnthony,HabitacionHaines, Diary, End],
 
     //Establecemos las fisicas del juego
     physics: { 

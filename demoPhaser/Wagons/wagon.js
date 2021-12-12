@@ -43,7 +43,7 @@ export default class Wagon extends Phaser.Scene {
     this.dmanager = this.scene.get('boot').dmanager;
     this.gomanager = this.scene.get('boot').gomanager;
 
-    this.musica = this.sound.add('suspenseFondo', {volume: 0.5, loop: true});
+    this.musica = this.sound.add('suspenseFondo', {volume: this.game.sound.volume * 0.5, loop: true});
     this.musica.play(); 
 
     this.anims.create({
