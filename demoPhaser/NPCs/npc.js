@@ -16,7 +16,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
      * @method getDialogo devuelve el dialogo asociado al personaje
      */
 
-    constructor(scene, x, y, dialogoIni,anger,frame,locator)
+    constructor(scene, x, y, dialogoIni, anger, frame, locator)
      { 
         super(scene, x, y, 'npcs', [frame]).setInteractive(); 
 
@@ -48,7 +48,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
 
 
         //Creamos el dialogo
-        this.dialog = new Dialog(this.scene, this.chat);
+        this.dialog = new Dialog(this.scene, locator, this);
         
         //Establecemos la variable de irritacion
         this.irritacion = anger; 
@@ -77,7 +77,6 @@ export default class Npc extends Phaser.GameObjects.Sprite
                 { 
                     this.dialog.initDialog();
                     this.apuntarEnDiario();
-
                 }
 
                 else { this.dialog.dialogoIrritacionMax()}
@@ -96,7 +95,6 @@ export default class Npc extends Phaser.GameObjects.Sprite
                 {
                     this.dialog.initDialog();
                     this.apuntarEnDiario();
-                   
                 }
 
                 else { this.dialog.dialogoIrritacionMax()}
@@ -153,11 +151,23 @@ export default class Npc extends Phaser.GameObjects.Sprite
     apuntarEnDiario()
     {
         //Obtenemos una referencia al diario y añadimos la informacion necesaria
-        this.scene.scene.get('diary').addCharacter(this.info)
+        if (this.info !== undefined)
+        {
+            this.scene.scene.get('diary').addCharacter(this.info)
+        }
     }
     getscene()
     {
         return this.scene.scene.get(this.scene);
+    }
 
+    increaseChatId()
+    {
+        this.chat++;
+    }
+
+    getChat()
+    {
+        return this.chat;
     }
 }

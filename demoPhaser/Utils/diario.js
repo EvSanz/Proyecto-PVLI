@@ -96,8 +96,7 @@ export default class Diary extends Phaser.Scene {
     if (active)
     {
       this.panel = this.add.sprite(500, 475, 'infopanel');
-      this.description = this.add.text(200, 410, text,
-        { fontSize: this.letterSize * 0.8, color: 'white', wordWrap: { width: 600 } });
+      this.description = this.add.text(200, 410, text, { fontSize: this.letterSize * 0.8, color: 'white', wordWrap: { width: 600 } });
     }
     else 
     {

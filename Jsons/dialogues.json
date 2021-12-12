@@ -385,7 +385,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 2,
+          "opciones" : -1,
           "irritacion": 0,
           "clock": false,
           "lines": [

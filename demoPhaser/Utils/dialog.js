@@ -8,30 +8,38 @@ export default class Dialog
   /** Constructor de Npc
   * @param {Phaser.Scene} scene Escena 
   * @param {number} id Identificador del dialogo que leeremos
-  * @param {Clock} clock Reloj encargado de modificar el dialogo
+  * @param {Npc} npc npc
   */
 
-  constructor(scene, id)
+  constructor(scene, id, npc)
   {
     this.scene = scene;
     this.myData = null;
 
+    //npc asociado a este dialogo
+    this.currentNpc = npc;
+    this.id = id;
+
+    console.log("Se construye el dialog de " + this.id);
+    console.log("npc: " + this.currentNpc);
+
     //this.readTextFile("Jsons/dialogues.json", this.onJsonRead, this); 
     //Linea de dialogo
     this.textNum = 0;
+
     //Bloque de dialogo
-    this.id = id;
-    this.chat = 0; 
+    this.chat = 0;
     //Textos
-    this.label = this.scene.add.text(275, 375, "");
-    this.label2 = this.scene.add.text(275, 425, "");
-    this.label3 = this.scene.add.text(275, 475, "");
+    this.label = this.scene.add.text(275, 375, " ", { wordWrap: { width: 400 } });
+    this.label2 = this.scene.add.text(275, 425, " ", { wordWrap: { width: 400 } });
+    this.label3 = this.scene.add.text(275, 475, " ", { wordWrap: { width: 400 } });
     this.graphics = null;  
   }
 
   initDialog()
   {
     console.log("Dialog: ", this.scene.scene.get('boot').myDialog); //Traza para comprobar que Dialogues es accesible y tiene contenido
+    console.log("Id: " + this.id);
     this.myData = this.scene.scene.get('boot').myDialog;
 
     this.talk();
@@ -39,13 +47,21 @@ export default class Dialog
 
   talk()
   {
+    if (this.graphics !== undefined && this.graphics2 !== undefined && this.graphics3 !== undefined)
+    {
+      this.graphics.destroy();
+      this.graphics2.destroy();
+      this.graphics3.destroy();
+    }
     //Bloqueamos el movimiento del jugador
     if (this.scene.player != null) {this.scene.player.canMove = false;}
 
     this.createBox();
     //Primera linea de dialogo
+    console.log("Textnum inicio talk: " + this.textNum + " para " + this.id);
     this.textNum = 0;  
 
+    console.log("Textnum final talk: " + this.textNum + " para " + this.id);
     //Texto
     this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     this.label2.text = "";
@@ -54,6 +70,7 @@ export default class Dialog
 
   nextText()
   {
+    console.log("Textnum inicio nextText: " + this.textNum + " para " + this.id);
       //Comprobamos si no ha llegado a las opciones de dialogo
       if (this.textNum != this.myData.Dialogues[this.id].scenes[this.chat].opciones - 1)
     {
@@ -81,6 +98,8 @@ export default class Dialog
         this.label3.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
       }   
     }
+    
+    console.log("Textnum final nextText: " + this.textNum + " para " + this.id);
 
     this.finishText();
   }
@@ -104,19 +123,25 @@ export default class Dialog
       //el numero del dialogo actual
       if (this.myData.Dialogues[this.id].ultDialogo == false 
         && this.myData.Dialogues[this.id].isObject == false)
+      {
         this.id++;
+      }
         
       else
       {
         //Irritacion solo si existe un npc 
         if (this.myData.Dialogues[this.id].isObject == false)
         {
-          this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+          this.currentNpc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
           console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
         }
       }
 
       this.chat = 0;
+
+      this.graphics.destroy();
+      this.graphics2.destroy();
+      this.graphics3.destroy();
 
       //Y permitimos al jugador moverse otra vez
       if (this.scene.player != null) {this.scene.player.canMove = true;}
@@ -161,7 +186,12 @@ export default class Dialog
       //Primer bloque
       this.graphics.on('pointerdown', () => 
       {
-        if (this.scene.npc.getIrritacion() < 100)
+        if (this.currentNpc === undefined)
+        {
+          this.nextText();
+          return;
+        }
+        if (this.currentNpc.getIrritacion() < 100)
         {
           //Si no hay mas lineas de dialogo y es una opcion de respuestas
           //reseteamos valores y cambiamos el bloque del dialogo al siguiente
@@ -170,7 +200,7 @@ export default class Dialog
           {
             this.chat++;
             //Modificar la irritacion del npc segun el dialogo
-            this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+            this.currentNpc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             
             this.talk()
@@ -199,13 +229,13 @@ export default class Dialog
       //Segundo bloque
       this.graphics2.on('pointerdown', () => 
       { 
-        if (this.scene.npc.getIrritacion() < 100) {
+        if (this.currentNpc.getIrritacion() < 100) {
           if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length - 1
             && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
             this.chat = this.chat + 2;
             //Modificar la irritacion del npc segun el dialogo
-            this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+            this.currentNpc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
 
             this.talk()
@@ -233,14 +263,14 @@ export default class Dialog
       //Tercer bloque
       this.graphics3.on('pointerdown', () => 
       { 
-        if (this.scene.npc.getIrritacion() < 100)
+        if (this.currentNpc.getIrritacion() < 100)
         {
           if (this.textNum >= this.myData.Dialogues[this.id].scenes[this.chat].lines.length - 1
             && this.myData.Dialogues[this.id].scenes[this.chat].opciones != -1)
           {
             this.chat = this.chat + 3;
             //Modificar la irritacion del npc segun el dialogo
-            this.scene.npc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+            this.currentNpc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
             
             this.talk()
