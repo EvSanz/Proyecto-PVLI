@@ -3,7 +3,7 @@ import Clock from './Utils/clock.js';
 import Npc from './NPCs/npc.js';
 import DialogManager from './Test/dialogmanager.js'
 import ObjectManager from './Objects/objectmanager.js'
-import GO from './Objects/gameobject.js'
+import GameObject from './Objects/gameobject.js'
 import Dialog from './Utils/dialog.js';
 import t, {Info} from './info.js'
 export default class Boot extends Phaser.Scene {
@@ -54,7 +54,7 @@ export default class Boot extends Phaser.Scene {
     this.dmanager.acoplarnpc(this.npc);
 
     this.gomanager = new ObjectManager();
-    this.object = new GO(this.scene.get('clasebaja'), 600, 265, 'tetera', true, true);
+    this.object = new GameObject(this.scene.get('clasebaja'), 600, 265, 'tetera', true, true);
     this.gomanager.acoplarobj(this.object);
     
     this.scene.start('clasebaja', 400);

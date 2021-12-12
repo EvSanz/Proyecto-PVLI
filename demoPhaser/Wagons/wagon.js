@@ -2,6 +2,7 @@
 import Player from '../player.js';
 import Door from '../Utils/door.js'
 import Npc from '../NPCs/npc.js';
+//import GameObject from './gameobject.js';
 
 /**Escena principal del juego
  * @extends Phaser.Scene

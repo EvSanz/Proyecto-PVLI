@@ -1,7 +1,7 @@
 import Dialog from '../Utils/dialog.js';
 
 //Clase encargada de gestionar los GameObject
-export default class GO extends Phaser.GameObjects.Sprite {
+export default class GameObject extends Phaser.GameObjects.Sprite {
   
   /**Constructor de GameObject
    * @param {Sceme} scene Escena 

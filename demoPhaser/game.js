@@ -10,6 +10,7 @@ import ClaseMedia from './Wagons/clasemedia.js';
 import Cafeteria from './Wagons/cafeteria.js';
 import ClaseAlta from './Wagons/clasealta.js';
 import Locomotora from './Wagons/locomotora.js';
+import GameObject from './Objects/gameobject.js'
 import HabitacionMorton from './Wagons/Rooms/habitacionmorton.js'
 import HabitacionCollins from './Wagons/Rooms/habitacioncollins.js'
 import HabitacionBold from './Wagons/Rooms/habitacionbold.js'

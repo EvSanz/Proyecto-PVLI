@@ -1,6 +1,6 @@
 import Wagon from './wagon.js';
 import Npc from '../NPCs/npc.js';
-import GO from '../Objects/gameobject.js';
+import GameObject from '../Objects/gameobject.js';
 
 export default class Cafeteria extends Wagon {
     constructor() { 

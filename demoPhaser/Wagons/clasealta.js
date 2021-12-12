@@ -1,7 +1,7 @@
 import Wagon from './wagon.js';
 import Door from '../Utils/door.js';
 import Npc from '../NPCs/npc.js';
-import GO from '../Objects/gameobject.js';
+import GameObject from '../Objects/gameobject.js';
 
 export default class ClaseAlta extends Wagon
  {

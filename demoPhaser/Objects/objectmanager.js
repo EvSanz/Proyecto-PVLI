@@ -1,14 +1,14 @@
 //import Npc from '../NPCs/npc.js'
 import Dialog from '../Utils/dialog.js';
-import GO from './gameobject.js';
+import GameObject from './gameobject.js';
 
 
 export default class ObjectManager {
 
     /**Gestioamos todos los dialogos del juego desde aqui
-    * @param {GO} go aqui se crean los objetos y se les asignan sus respectivos dialogos
+    * @param {GameObject} go aqui se crean los objetos y se les asignan sus respectivos dialogos
     * @param {Dialog} dialog cada objeto creara su dialogo en la clase npc pero los gestionaremos todos desde aqui
-    * @param {GO[]} goholder aqui se almacenan todos los npcs del juego con su dialogo asociado;
+    * @param {GameObject[]} goholder aqui se almacenan todos los npcs del juego con su dialogo asociado;
     * @method acoplarobj mete el objeto que se le pasa como parametro en el goholder
     * @method consultarobj dado el identificador de un objeto , devuelve ese objeto
     */

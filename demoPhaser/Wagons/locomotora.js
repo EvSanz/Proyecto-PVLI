@@ -1,5 +1,6 @@
 import Wagon from './wagon.js';
 import Npc from '../NPCs/npc.js';
+
 export default class Locomotora extends Wagon {
     constructor() { 
       super('locomotora', false, 33, 35, 36, 'clasealta', 'locomotora',);
