@@ -42,6 +42,5 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
       this.dialog.initDialog();
       this.destroy();
     });
-    
   }
 }
