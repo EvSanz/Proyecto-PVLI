@@ -52,8 +52,8 @@ export default class Wagon extends Phaser.Scene {
     this.musica.play(); 
     }
     else
-    this.musica = this.sound.add('musicafondo', {volume: this.game.sound.volume * 0.5, loop: true});
-    this.musica.play(); 
+   { this.musica = this.sound.add('musicafondo', {volume: this.game.sound.volume * 0.5, loop: true});
+    this.musica.play(); }
     this.anims.create({
       key: 'backgroundwindows',
       frames: this.anims.generateFrameNumbers

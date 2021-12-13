@@ -36,5 +36,12 @@ export default class ClaseMedia extends Wagon {
        this.mortondoor= new Door(this,120,222,'habitacionmorton','puertafun');
        this.mortondoor2= new Door(this,440,222,'habitacioncollins','puertafun');
        this.mortondoor3= new Door(this,780,222,'habitacionbold','puertafun');
+       this.phone=this.add.sprite(280,230,'objects',[23]).setDepth(1);
+       this.phone.setInteractive();
+       this.phone.on('pointerdown',()=>
+       {
+        this.scene.start('selectscene');
+        
+       });
     }
 }
