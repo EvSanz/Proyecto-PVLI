@@ -59,6 +59,15 @@ export default class Dialog
     //Primera linea de dialogo
     this.textNum = 0;  
 
+    //Dibujamos al npc correspondiente en el cuadradito de los retratos
+    if (this.portrait !== undefined)
+    {
+      this.portrait.destroy();
+    }
+    this.portrait = this.scene.add.sprite(100, 460, 'npcs', [this.currentNpc.image]);
+    this.portrait.setCrop(0, 0, 100, 128);
+    this.portrait.flipX = true;
+
     //Texto
     this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     this.label2.text = "";
@@ -70,12 +79,31 @@ export default class Dialog
     //Comprobamos si no ha llegado a las opciones de dialogo
     if (this.textNum != this.myData.Dialogues[this.id].scenes[this.chat].opciones - 1)
     {
+
+      //Dibujamos al npc correspondiente en el cuadradito de los retratos
+      if (this.portrait !== undefined)
+      {
+        this.portrait.destroy();
+      }
+      this.portrait = this.scene.add.sprite(100, 460, 'npcs', [this.currentNpc.image]);
+      this.portrait.setCrop(0, 0, 100, 128);
+      this.portrait.flipX = true;
+
       this.textNum++;
       this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     }
     
     else
     {
+      //Dibujamos al npc correspondiente en el cuadradito de los retratos
+      if (this.portrait !== undefined)
+      {
+        this.portrait.destroy();
+      }
+      this.portrait = this.scene.add.sprite(110, 480, 'npcs', [0]);
+      this.portrait.setCrop(0, 0, 120, 108);
+      this.portrait.flipX = false;
+
       //Escribimos las opciones de dialogo, separadas entre ellas
       this.textNum++;
       this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
@@ -133,6 +161,7 @@ export default class Dialog
 
       this.chat = 0;
 
+      this.portrait.destroy();
       //Destruimos los cuadros de opciones
       this.graphics.destroy();
       this.graphics2.destroy();
