@@ -9,7 +9,7 @@
 
 import SelectKillerScene from "../Test/selectkillerscene.js";
 
-  const Total_Time = 12;
+  const Total_Time = 2;
 
 export default class Clock 
 {
@@ -30,6 +30,7 @@ export default class Clock
     //Método para disminuir el tiempo 
     decreaseTime(scenenow) 
     {
+        this.scenenow=scenenow;
         if (this.time > 0)
             this.time--;
         console.log("TIME: ", this.time);
@@ -38,6 +39,7 @@ export default class Clock
         if (this.time <= 0)
         {
             console.log("out of time");
+           this.scenenow.scene.start('selectscene');
             this.outOfTime();
         }
             

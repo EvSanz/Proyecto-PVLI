@@ -1,5 +1,5 @@
 
-export default class Npc extends Phaser.GameObjects.Sprite 
+export default class Sus extends Phaser.GameObjects.Sprite 
 {
 
     constructor(scene, x, y, escenafin,frame)
