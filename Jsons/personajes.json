@@ -11,13 +11,13 @@
     },
 
     {
-      "name": "Mery Morton",
+      "name": "Daniel Laddie Grooms",
       "posX": 20,
       "posY": 20,
       "culpable": false,
-      "desc": "Una de las dos hermanas Morton que viajaban en el vagon de clase baja con intencion de regresar a su ciudad natal tras arruinarse. Es asesinada en el trayecto",
-      "scene": "habitacionmorton",
-      "dialogoIni": 0
+      "desc": "Un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho",
+      "scene": "clasebaja",
+      "dialogoIni": 3
     },
 
     {
@@ -41,6 +41,16 @@
     },
 
     {
+      "name": "Frederick Bold",
+      "posX": 20,
+      "posY": 20,
+      "culpable": false,
+      "desc": "Un arquitecto que fue recientemente despedido tras realizar sugerencias de diseño controversiales. Está buscando trabajo en las ciudades cercanas al ferrocarril, siendo su último intento el pueblo donde finalizaremos el juego. Suele ser serio e irritable, además de poseer una memoria excelente. Viaja en el vagón de clase media, lugar que solo abandona para ir al vagón cafetería a desayunar",
+      "scene": "habitacionbold",
+      "dialogoIni": 8
+    },
+    
+    {
       "name": "Bruno Anthony",
       "posX": 20,
       "posY": 20,
@@ -48,6 +58,17 @@
       "desc": "El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios",
       "scene":  "cafeteria",
       "dialogoIni": 20
+    },
+
+    
+    {
+      "name": "Mery Morton",
+      "posX": 20,
+      "posY": 20,
+      "culpable": false,
+      "desc": "Una de las dos hermanas Morton que viajaban en el vagon de clase baja con intencion de regresar a su ciudad natal tras arruinarse. Es asesinada en el trayecto",
+      "scene": "habitacionmorton",
+      "dialogoIni": 0
     },
 
     {
@@ -68,26 +89,6 @@
       "desc": "Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren",
       "scene":  "habitacionyan",
       "dialogoIni": 16
-    },
-
-    {
-      "name": "Daniel Laddie Grooms",
-      "posX": 20,
-      "posY": 20,
-      "culpable": false,
-      "desc": "Un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho",
-      "scene": "clasebaja",
-      "dialogoIni": 3
-    },
-
-    {
-      "name": "Frederick Bold",
-      "posX": 20,
-      "posY": 20,
-      "culpable": false,
-      "desc": "Un arquitecto que fue recientemente despedido tras realizar sugerencias de diseño controversiales. Está buscando trabajo en las ciudades cercanas al ferrocarril, siendo su último intento el pueblo donde finalizaremos el juego. Suele ser serio e irritable, además de poseer una memoria excelente. Viaja en el vagón de clase media, lugar que solo abandona para ir al vagón cafetería a desayunar",
-      "scene": "habitacionbold",
-      "dialogoIni": 8
     },
 
     {

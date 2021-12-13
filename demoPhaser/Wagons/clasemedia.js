@@ -9,9 +9,9 @@ export default class ClaseMedia extends Wagon {
     }
     spawnNPCs()
     {
-      this.npc=new Npc(this,160,238,0,this.scene.get('boot').dmanager.npcinfoholder[2].anger,14,2);
-      this.npc2=new Npc(this,390,238,1,this.scene.get('boot').dmanager.npcinfoholder[1].anger,11,1);
-      this.npc3=new Npc(this,590,238,1,this.scene.get('boot').dmanager.npcinfoholder[6].anger,24,6);
+      this.npc=new Npc(this,160,238,3,this.scene.get('boot').dmanager.npcinfoholder[2].anger,14,22);
+      this.npc2=new Npc(this,390,238,4,this.scene.get('boot').dmanager.npcinfoholder[1].anger,11,5);
+      this.npc3=new Npc(this,590,238,5,this.scene.get('boot').dmanager.npcinfoholder[6].anger,24,8);
 
     }
     spawnObjects()
