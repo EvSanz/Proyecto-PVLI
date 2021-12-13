@@ -34,20 +34,7 @@ export default class Npc extends Phaser.GameObjects.Sprite
 
         this.chat = dialogoIni;
 
-        let rawFile = new XMLHttpRequest();
-        rawFile.overrideMimeType("application/json");
-        rawFile.open("GET", "Jsons/personajes.json", true);
-
-        rawFile.onreadystatechange = () =>
-        {
-            if (rawFile.readyState === 4 && rawFile.status == "200")
-            {
-                this.info = JSON.parse(rawFile.responseText).Personajes[dialogoIni - 1];
-            }
-        }
-
-        rawFile.send(null);
-
+        this.info = this.scene.scene.get('boot').cache.json.get('personajes').Personajes[dialogoIni - 1];
 
         //Creamos el dialogo
         this.dialog = new Dialog(this.scene, locator, this);

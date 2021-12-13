@@ -82,8 +82,12 @@ export default class Boot extends Phaser.Scene {
   //this.myObjects = Info.cargaInfo(this.cache.json.get('objects'));
   //this.myData = Info.cargaInfo(this.cache.json.get('dialogue'));
 
-  this.leerjson("../Jsons/dialogues.json", this.procesajsonDialog, this);
-  this.leerjson("../Jsons/personajes.json", this.procesajsonPersonajes, this);
+  this.myDialog = this.cache.json.get('dialogue');
+  this.myObjects = this.cache.json.get('objects');
+  this.myCharacters = this.cache.json.get('personajes');
+
+  // this.leerjson("../Jsons/dialogues.json", this.procesajsonDialog, this);
+  // this.leerjson("../Jsons/personajes.json", this.procesajsonPersonajes, this);
 
   console.log("Characters: ", this.myCharacters);
 
@@ -96,9 +100,6 @@ export default class Boot extends Phaser.Scene {
   //     this.npc = new Npc(pers.scene, pers.posX, pers.posY, i);
   //     this.dmanager.acoplarnpc(this.npc);
   //   }
-
-    //Bucle de objetos
-    this.leerjson("Jsons/objetos.json", this.procesajsonObjetos, this);
     
   //   for (let j = 0; j < 16; j++)
   //   {
@@ -114,37 +115,37 @@ export default class Boot extends Phaser.Scene {
   //   this.scene.start('clasebaja', 400);
    }
 
-  leerjson(json, postlectura, variable)
-  {
-    console.log("Leyendo json en boot");
-    let rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", json, true);
-    rawFile.onreadystatechange = function() 
-    {
-        if (rawFile.readyState === 4 && rawFile.status == "200") 
-        { postlectura(rawFile.responseText, variable);}
+  // leerjson(json, postlectura, variable)
+  // {
+  //   console.log("Leyendo json en boot");
+  //   let rawFile = new XMLHttpRequest();
+  //   rawFile.overrideMimeType("application/json");
+  //   rawFile.open("GET", json, true);
+  //   rawFile.onreadystatechange = function() 
+  //   {
+  //       if (rawFile.readyState === 4 && rawFile.status == "200") 
+  //       { postlectura(rawFile.responseText, variable);}
         
-    }
+  //   }
 
-    rawFile.send(null);
-  } 
+  //   rawFile.send(null);
+  // } 
 
-  procesajsonDialog(valor, variable) 
-  {
-    variable.myDialog = JSON.parse(valor); 
-    console.log("procesajsonDialog: ", variable);
-  }
+  // procesajsonDialog(valor, variable) 
+  // {
+  //   variable.myDialog = JSON.parse(valor); 
+  //   console.log("procesajsonDialog: ", variable);
+  // }
 
-  procesajsonObjetos(valor, variable) 
-  {
-    variable.myObjects = JSON.parse(valor); 
-  }
+  // procesajsonObjetos(valor, variable) 
+  // {
+  //   variable.myObjects = JSON.parse(valor); 
+  // }
 
-  procesajsonPersonajes(valor, variable) 
-  {
-    variable.myCharacters = JSON.parse(valor); 
-  }
+  // procesajsonPersonajes(valor, variable) 
+  // {
+  //   variable.myCharacters = JSON.parse(valor); 
+  // }
 
   consultamanager() 
   { 

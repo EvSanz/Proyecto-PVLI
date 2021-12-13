@@ -21,12 +21,14 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
     //Si no, nos limitamos a cargarlo en la escena 
     else { super(scene, x, y, sprite);}
 
-    this.desc = 'este texto deberia salir del json pero ni se lee el json de objetos :v'
+    // this.info = this.scene.scene.get('boot').myObjects.Objetos[1];
+    // this.info.sprite = sprite;
+
+    this.info = { desc: 'aaaaaaaaaaaaaaa', sprite: sprite};
 
     this.scene.add.existing(this);
     this.presente = true;
     this.setDepth(1); //para que aparezca encima del fondo igual que el npc
-    this.sprite = sprite;
     
     //Creamos el dialogo
     this.dialog = new Dialog(this.scene, 24);
@@ -37,7 +39,7 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
 
     this.on('pointerdown', ()=>
     {
-      scene.scene.get('diary').addObject(this);
+      scene.scene.get('diary').addObject(this.info);
       this.presente = false;
       this.dialog.initDialog();
       this.destroy();
