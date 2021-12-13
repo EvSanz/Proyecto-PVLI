@@ -42,7 +42,7 @@ export default class Wagon extends Phaser.Scene {
     //Creacion de la animacion del fondo
     this.dmanager = this.scene.get('boot').dmanager;
     this.gomanager = this.scene.get('boot').gomanager;
-    if(isPointAndClick)
+    if(this.isPointAndClick)
     {
       this.musica = this.sound.add('musicafondopt', {volume: this.game.sound.volume * 0.5, loop: true});
     this.musica.play(); 
