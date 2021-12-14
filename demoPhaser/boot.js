@@ -33,7 +33,7 @@ export default class Boot extends Phaser.Scene {
     this.load.spritesheet('checkbox', 'checkbox.png', { frameWidth: 48, frameHeight: 48 });
     this.load.spritesheet('botones', 'botones.png', { frameWidth: 240, frameHeight: 48 });
     this.load.spritesheet('background', 'backgroundspritesheet.png', { frameWidth: 352, frameHeight: 352 });
-    this.load.spritesheet('npcs', 'npcspritesheet.png', { frameWidth: 140, frameHeight: 224 });
+    this.load.spritesheet('npcs', 'npcspritesheet.png', { frameWidth: 115, frameHeight: 224 });
     this.load.spritesheet('objects', 'objectsspritesheet.png', { frameWidth: 192, frameHeight: 192 });
     
     this.load.setPath('sonidos/');
