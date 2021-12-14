@@ -18,6 +18,7 @@ export default class Dialog
 
     //npc asociado a este dialogo
     this.currentNpc = npc;
+
     this.id = id;
 
     //this.readTextFile("Jsons/dialogues.json", this.onJsonRead, this); 
@@ -59,15 +60,19 @@ export default class Dialog
     //Primera linea de dialogo
     this.textNum = 0;  
 
-    //Dibujamos al npc correspondiente en el cuadradito de los retratos
-    if (this.portrait !== undefined) { this.portrait.destroy();}
+    //Si lo que ha activado el dialogo es un npc...
+    if (this.myData.Dialogues[this.id].isObject == false)
+    {
+      //renderizamos la imagen del npc
+      this.changePortrait(this.currentNpc.image);
+    }
 
-    if (this.currentNpc !== undefined)
-    { this.portrait = this.scene.add.sprite(100, 460, 'npcs', [this.currentNpc.image]);}
-    else { this.portrait = this.scene.add.sprite(100, 460, 'npcs', [0]);}
-
-    this.portrait.setCrop(0, 0, 100, 128);
-    this.portrait.flipX = true;
+    //Si lo es...
+    else
+    {
+      //renderizamos al inspector
+      this.changePortrait(0);
+    }
 
     //Texto
     this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
@@ -80,31 +85,30 @@ export default class Dialog
     //Comprobamos si no ha llegado a las opciones de dialogo
     if (this.textNum != this.myData.Dialogues[this.id].scenes[this.chat].opciones - 1)
     {
-      //Dibujamos al npc correspondiente en el cuadradito de los retratos
-      if (this.portrait !== undefined) {this.portrait.destroy();}
 
-      if (this.currentNpc !== undefined)
-      { this.portrait = this.scene.add.sprite(100, 460, 'npcs', [this.currentNpc.image]);}
-      else { this.portrait = this.scene.add.sprite(100, 460, 'npcs', [0]);}
+      //Si lo que ha activado el dialogo es un npc...
+      if (this.myData.Dialogues[this.id].isObject == false)
+      {
+        //renderizamos la imagen del npc
+        this.changePortrait(this.currentNpc.image);
+      }
 
-      this.portrait.setCrop(0, 0, 100, 128);
-      this.portrait.flipX = true;
+      //Si lo es...
+      else
+      {
+        //renderizamos al inspector
+        this.changePortrait(0);
+      }
 
       this.textNum++;
       this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     }
     
+    //Si hemos llegado a unas opciones de dialogo...
     else
     {
-      //Dibujamos al npc correspondiente en el cuadradito de los retratos
-      if (this.portrait !== undefined)
-      {
-        this.portrait.destroy();
-      }
-
-      this.portrait = this.scene.add.sprite(110, 480, 'npcs', [0]);
-      this.portrait.setCrop(0, 0, 120, 108);
-      this.portrait.flipX = false;
+      //renderizamos el retrato del inspector
+      this.changePortrait(0);
 
       //Escribimos las opciones de dialogo, separadas entre ellas
       this.textNum++;
@@ -163,7 +167,9 @@ export default class Dialog
 
       this.chat = 0;
 
-      this.portrait.destroy();
+      //Eliminamos el retrato
+      this.changePortrait();
+
       //Destruimos los cuadros de opciones
       this.graphics.destroy();
       this.graphics2.destroy();
@@ -222,41 +228,62 @@ export default class Dialog
 
   createBox()
   {
-      //Establecemos cuadros de texto interactivos donde 
-      //apareceran las respuestas 
+    //Establecemos cuadros de texto interactivos donde 
+    //apareceran las respuestas 
 
-      //Primer bloque
-      this.graphics = new Phaser.GameObjects.Rectangle
-      (this.scene, 200, 400, 1600, 50, 0xfffffff, 0xfffffff);
-      this.graphics.setInteractive();
+    //Primer bloque
+    this.graphics = new Phaser.GameObjects.Rectangle
+    (this.scene, 200, 400, 1600, 50, 0xfffffff, 0xfffffff);
+    this.graphics.setInteractive();
 
-      //Segundo bloque
-      this.graphics2 = new Phaser.GameObjects.Rectangle
-      (this.scene, 200, 450, 1600, 50, 0xfffffff, 0xfffffff);
-      this.graphics2.setInteractive();
-      
-      //Tercer bloque
-      this.graphics3 = new Phaser.GameObjects.Rectangle
-      (this.scene, 200, 500, 1600, 50, 0xfffffff, 0xfffffff);
-      this.graphics3.setInteractive();
-      
-      //Dependiendo del rectangulo que pulsemos, si es una respuesta 
-      //conducira al siguiente bloque de dialogo y reseteara valores
+    //Segundo bloque
+    this.graphics2 = new Phaser.GameObjects.Rectangle
+    (this.scene, 200, 450, 1600, 50, 0xfffffff, 0xfffffff);
+    this.graphics2.setInteractive();
+    
+    //Tercer bloque
+    this.graphics3 = new Phaser.GameObjects.Rectangle
+    (this.scene, 200, 500, 1600, 50, 0xfffffff, 0xfffffff);
+    this.graphics3.setInteractive();
+    
+    //Dependiendo del rectangulo que pulsemos, si es una respuesta 
+    //conducira al siguiente bloque de dialogo y reseteara valores
 
-      //Primer bloque
-      this.graphics.on('pointerdown', () => 
-      { this.interaccionDialogo(1); });
+    //Primer bloque
+    this.graphics.on('pointerdown', () => 
+    { this.interaccionDialogo(1); });
 
-      //Segundo bloque
-      this.graphics2.on('pointerdown', () => 
-      { this.interaccionDialogo(2); });
+    //Segundo bloque
+    this.graphics2.on('pointerdown', () => 
+    { this.interaccionDialogo(2); });
 
-      //Tercer bloque
-      this.graphics3.on('pointerdown', () => 
-      { this.interaccionDialogo(3); });
+    //Tercer bloque
+    this.graphics3.on('pointerdown', () => 
+    { this.interaccionDialogo(3); });
+
+  }
+
+  /** Cambia el retrato que aparece a la derecha del cuadro de dialogo
+  * @param {number} image Frame correspondiente al npc en la spritesheet de npcs (dejar en blanco o en valor negativo para borrar el retrato)
+  */
+  changePortrait(image = -1)
+  {
+    //Borramos el retrato anterior
+    if (this.portrait !== undefined)
+    {
+      this.portrait.destroy();
+    }
+
+    //Si image es positivo, renderizamos otro sprite
+    if (image >= 0)
+    {
+      //La imagen del inspector (0) tiene valores distintos a los demas npcs, por ello los valores dependen de si image vale 0
+
+      this.portrait = this.scene.add.sprite(image !== 0 ? 100 : 110, image !== 0 ? 460 : 480, 'npcs', [image]);
+
+      this.portrait.setCrop(0, 0, image !== 0 ? 100 : 120, image !== 0 ? 128 : 108);
+
+      this.portrait.flipX = image !== 0 ? true : false;
+    }
   }
 }
-
-
-
-
