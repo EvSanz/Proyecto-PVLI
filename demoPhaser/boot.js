@@ -29,12 +29,14 @@ export default class Boot extends Phaser.Scene {
     this.load.image('menuprincipal', 'menuprincipal.png');
     this.load.image('menuopciones', 'menuopciones.png');
     this.load.image('creditos', 'creditos.png');
+    
 
     this.load.spritesheet('checkbox', 'checkbox.png', { frameWidth: 48, frameHeight: 48 });
     this.load.spritesheet('botones', 'botones.png', { frameWidth: 240, frameHeight: 48 });
     this.load.spritesheet('background', 'backgroundspritesheet.png', { frameWidth: 352, frameHeight: 352 });
     this.load.spritesheet('npcs', 'npcspritesheet.png', { frameWidth: 115, frameHeight: 224 });
     this.load.spritesheet('objects', 'objectsspritesheet.png', { frameWidth: 192, frameHeight: 192 });
+    this.load.spritesheet('clockanim','clockanim.png',{frameWidth: 110, frameHeight: 110 });
     
     this.load.setPath('sonidos/');
     this.load.audio('suspenseFondo', 'suspense.mp3');

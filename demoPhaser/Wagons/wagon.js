@@ -44,7 +44,7 @@ export default class Wagon extends Phaser.Scene {
     this.gomanager = this.scene.get('boot').gomanager;
 
    
-    
+    this.game.sound.stopAll();
     if(this.isPT)
 
     {

@@ -9,7 +9,7 @@
 
 import SelectKillerScene from "../Test/selectkillerscene.js";
 
-  const Total_Time = 2;
+  const Total_Time = 12;
 
 export default class Clock 
 {
@@ -59,13 +59,15 @@ q
     //Método para mostrar el tiempo en pantalla
     showTime(scenenow) 
     {   
-        this.label = null;
+
+        this.scene.scene.get(scenenow).add.sprite(45,35,'clockanim',[this.time]);
+       /* this.label = null;
         this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
         { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
         this.label.text = "        "; //Borra el tiempo anterior
         this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
     { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
-        this.label.text = "Time: " + this.time;
+        this.label.text = "Time: " + this.time;*/
     }
 
     outOfTime()
