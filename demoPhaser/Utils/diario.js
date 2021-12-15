@@ -9,6 +9,8 @@ export default class Diary extends Phaser.Scene {
     this.characterList = [];
 
     this.letterSize = 20;
+
+    this.itemboxSize = 80;
   }
 
   //Cargamos la escena inicial
@@ -26,16 +28,19 @@ export default class Diary extends Phaser.Scene {
 
       //si el objeto se sale de la línea, la cambiamos
       if (index < 4){
-        yPos = 125;
+        yPos = 135;
       }
       else if (index < 8){
-        yPos = 230;
+        yPos = 240;
       }
       else{
-        yPos = 335;
+        yPos = 345;
       }
 
       this.item = this.add.sprite(105 + ((index % 4) * 105), yPos, 'objects', [element.sprite]).setInteractive();
+
+      this.item.displayWidth = this.itemboxSize;
+      this.item.displayHeight = this.itemboxSize;
 
       this.item.on('pointerover', () => 
       {
@@ -91,6 +96,10 @@ export default class Diary extends Phaser.Scene {
     })
   }
 
+  /** Agrega un objeto al array de objetos en el orden que se recogen
+  * @param {bool} active Set to true to show it, to false to delete it
+  * @param {string} text Text to show if active is set to true
+  */
   showInfoPanel(active, text = ' ')
   {
     if (active)
@@ -106,11 +115,21 @@ export default class Diary extends Phaser.Scene {
   }
 
   /** Agrega un objeto al array de objetos en el orden que se recogen
-  * @param {GameObject} obj Objeto a agregar
+  * @param {GameObject} obj Info del objeto a agregar
   */
   addObject(obj)
   {
-    if (obj.sprite !== null && obj.desc !== null)
+    let valido = true;
+
+    if (obj.sprite != null && obj.desc != null)
+
+      this.objectList.forEach(element => 
+      {
+        if (valido && element.sprite === obj.sprite)
+          valido = false;
+      });
+
+    if (valido)
       this.objectList.push(obj);
   }
 
@@ -126,7 +145,7 @@ export default class Diary extends Phaser.Scene {
       this.characterList.forEach(element => 
       {
         if (valido && element.name === char.name)
-          valido = false
+          valido = false;
       });
 
     if (valido)

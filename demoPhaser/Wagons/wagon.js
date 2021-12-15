@@ -199,7 +199,7 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
 
     for (let i = 0; i < this.objs.Objetos.length; ++i) {
       if (this.objs.Objetos[i].vagon == this.scene.key)
-        this.objects[j++] = new GameObject(this, this.objs.Objetos[i].x, this.objs.Objetos[i].y, this.objs.Objetos[i].sprite, i, true);
+        this.objects[j++] = new GameObject(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].sprite, i, true);
     }
 
     console.log("Objetos en escena: ", this.objects);
