@@ -7,7 +7,6 @@ export default class Locomotora extends Wagon {
     }
     spawnNPCs()
     {
-
       this.npc=new Npc(this,160,238,11,this.scene.get('boot').dmanager.npcinfoholder[9].anger,29,15);
     }
 }

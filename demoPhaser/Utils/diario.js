@@ -35,7 +35,7 @@ export default class Diary extends Phaser.Scene {
         yPos = 335;
       }
 
-      this.item = this.add.sprite(105 + ((index % 4) * 105), yPos, element.sprite).setInteractive();
+      this.item = this.add.sprite(105 + ((index % 4) * 105), yPos, 'objects', [element.sprite]).setInteractive();
 
       this.item.on('pointerover', () => 
       {

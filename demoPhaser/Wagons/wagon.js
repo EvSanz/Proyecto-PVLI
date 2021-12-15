@@ -2,7 +2,7 @@
 import Player from '../player.js';
 import Door from '../Utils/door.js'
 import Npc from '../NPCs/npc.js';
-//import GameObject from './gameobject.js';
+import GameObject from '../Objects/gameobject.js';
 
 /**Escena principal del juego
  * @extends Phaser.Scene
@@ -186,4 +186,23 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
   spawnObjects() {} 
 
   stopMusic() { this.musica.stop();}
+
+  addSceneObjects()
+  {
+    console.log("habitacion: ", this.scene.key);
+
+    this.objs = this.scene.get('boot').myObjects;
+    console.log("Objs: ", this.objs.Objetos);
+
+    this.objects = [];
+
+    let j = 0;
+
+    for (let i = 0; i < this.objs.Objetos.length; ++i) {
+      if (this.objs.Objetos[i].vagon == this.scene.key)
+        this.objects[j++] = new GameObject(this, this.objs.Objetos[i].x, this.objs.Objetos[i].y, this.objs.Objetos[i].sprite, i, true);
+    }
+
+    console.log("Objetos en escena: ", this.objects);
+  }
 }
