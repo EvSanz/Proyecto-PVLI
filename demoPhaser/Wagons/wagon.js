@@ -45,6 +45,7 @@ export default class Wagon extends Phaser.Scene {
 
    
     this.game.sound.stopAll();
+    
     if(this.isPT)
 
     {
@@ -184,9 +185,13 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
   spawnNPCs() {}
 
   spawnObjects() {} 
-
+  playwhistle()
+  {
+    this.woo =  this.sound.add('choochoo', {volume: this.game.sound.volume * 0.5, loop: false});
+    this.woo.play();
+  }
   stopMusic() { this.musica.stop();}
-
+ 
   addSceneObjects()
   {
     console.log("habitacion: ", this.scene.key);
@@ -204,4 +209,5 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
 
     console.log("Objetos en escena: ", this.objects);
   }
+ 
 }

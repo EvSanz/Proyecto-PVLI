@@ -7,6 +7,8 @@ export default class Menu extends Phaser.Scene {
 
     create()
     {
+      this.musica = this.sound.add('menumusic', {volume: this.game.sound.volume * 0.5, loop: true});
+      this.musica.play();
         this.add.sprite(500, 256, 'fondo');
         this.add.sprite(500, 256, 'menuprincipal');
 

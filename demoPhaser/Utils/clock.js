@@ -30,6 +30,7 @@ export default class Clock
     //Método para disminuir el tiempo 
     decreaseTime(scenenow) 
     {
+        this.scene.scene.get(scenenow).playwhistle();
         this.scenenow=scenenow;
         if (this.time > 0)
             this.time--;
@@ -59,7 +60,9 @@ q
     //Método para mostrar el tiempo en pantalla
     showTime(scenenow) 
     {   
-
+       // this.musica =  this.scenenow.scene.add.sound('choochoo', {volume: this.game.sound.volume * 0.5, loop: false});
+       // this.musica.play();
+       
         this.scene.scene.get(scenenow).add.sprite(45,35,'clockanim',[this.time]);
        /* this.label = null;
         this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
