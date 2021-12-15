@@ -192,7 +192,6 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
     console.log("habitacion: ", this.scene.key);
 
     this.objs = this.scene.get('boot').myObjects;
-    console.log("Objs: ", this.objs.Objetos);
 
     this.objects = [];
 

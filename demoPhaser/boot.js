@@ -54,96 +54,21 @@ export default class Boot extends Phaser.Scene {
 
   }
 
-//Creación de los elementos fijos de la escena 
-  create() 
-  {
-    
+  //Creación de los elementos fijos de la escena 
+  create() {
+
     this.dmanager = new DialogManager();
 
-    //this.clock = new Clock(this.scene.get('clasebaja'));
-    this.clock= new Clock(this);
+    this.clock = new Clock(this);
 
     this.gomanager = new ObjectManager();
-    
-    //this.scene.start('clasebaja', 400);
+
     this.scene.start('mainmenu');
 
-    this.myDialog = [1];
-    this.myObjects = null;
-    this.myCharacters = [1];
-
-
-  //En este bucle se leen los json de dialogos y personajes para crear cada personajes con su dialogo asociado
-  //el id de cada npc corresponde con el indice del bucle (i) deben crearse en el orden del gdd para que no nso volvamos locos
-    
-
-  //this.myObjects = Info.cargaInfo(this.cache.json.get('objects'));
-  //this.myData = Info.cargaInfo(this.cache.json.get('dialogue'));
-
-  this.myDialog = this.cache.json.get('dialogue');
-  this.myObjects = this.cache.json.get('objects');
-  this.myCharacters = this.cache.json.get('personajes');
-
-  // this.leerjson("../Jsons/dialogues.json", this.procesajsonDialog, this);
-  // this.leerjson("../Jsons/personajes.json", this.procesajsonPersonajes, this);
-
-  console.log("Characters: ", this.myCharacters);
-
-  // for (let i = 0; i < 12; i++) 
-  //   {
-  //     //leeremos los datos del np del json de personajes(NO BORRAR ESTÁ EN PROCESO)
-  //     let pers = this.myCharacters[i];
-
-  //     let dialog = new Dialog(pers.scene, i);
-  //     this.npc = new Npc(pers.scene, pers.posX, pers.posY, i);
-  //     this.dmanager.acoplarnpc(this.npc);
-  //   }
-    
-  //   for (let j = 0; j < 16; j++)
-  //   {
-  //     let scene;//habitacion donde aparece el objeto
-  //     //como la spritesheet esta en el orden del gdd el indice corresponde con el sprite de cada objeto (para los personajes igual)
-  //     let obj = this.myObjects[j];
-
-  //     // todos lo gameobjects EXCEPTO LAS PUERTAS  tendran los 2 ultimos parametros como "true,false"
-  //     this.object = new GO(obj.scene, obj.posX, obj.posY, desc, true, false);
-
-  //     this.ObjectManager.acoplarobj(this.object);
-  //   }
-  //   this.scene.start('clasebaja', 400);
-   }
-
-  // leerjson(json, postlectura, variable)
-  // {
-  //   console.log("Leyendo json en boot");
-  //   let rawFile = new XMLHttpRequest();
-  //   rawFile.overrideMimeType("application/json");
-  //   rawFile.open("GET", json, true);
-  //   rawFile.onreadystatechange = function() 
-  //   {
-  //       if (rawFile.readyState === 4 && rawFile.status == "200") 
-  //       { postlectura(rawFile.responseText, variable);}
-        
-  //   }
-
-  //   rawFile.send(null);
-  // } 
-
-  // procesajsonDialog(valor, variable) 
-  // {
-  //   variable.myDialog = JSON.parse(valor); 
-  //   console.log("procesajsonDialog: ", variable);
-  // }
-
-  // procesajsonObjetos(valor, variable) 
-  // {
-  //   variable.myObjects = JSON.parse(valor); 
-  // }
-
-  // procesajsonPersonajes(valor, variable) 
-  // {
-  //   variable.myCharacters = JSON.parse(valor); 
-  // }
+    this.myDialog = this.cache.json.get('dialogue');
+    this.myObjects = this.cache.json.get('objects');
+    this.myCharacters = this.cache.json.get('personajes');
+  }
 
   consultamanager() 
   { 
