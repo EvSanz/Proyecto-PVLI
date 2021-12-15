@@ -49,36 +49,25 @@
       "scene": "habitacionbold",
       "dialogoIni": 8
     },
-    
+
     {
-      "name": "Bruno Anthony",
+      "name": "Alfred Hirsch",
       "posX": 20,
       "posY": 20,
       "culpable": false,
-      "desc": "El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios",
-      "scene":  "cafeteria",
-      "dialogoIni": 20
+      "desc": "El empleado del tren que se encarga de vigilar y atender el vagón cafetería, en el cual trabaja como camarero y cocinero. Es muy servicial y aunque parezca muy serio, siempre está dispuesto a ayudar. Duerme en un compartimento especial que hay en susodicho vagón",
+      "scene": "cafeteria",
+      "dialogoIni": 10
     },
 
-    
     {
-      "name": "Mery Morton",
+      "name": "Mihael Haines",
       "posX": 20,
       "posY": 20,
       "culpable": false,
-      "desc": "Una de las dos hermanas Morton que viajaban en el vagon de clase baja con intencion de regresar a su ciudad natal tras arruinarse. Es asesinada en el trayecto",
-      "scene": "habitacionmorton",
-      "dialogoIni": 0
-    },
-
-    {
-      "name": "Norma Anthony",
-      "posX": 20,
-      "posY": 20,
-      "culpable": true,
-      "desc": "La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Bruno Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Bruno",
-      "scene": "clasebaja",
-      "dialogoIni": 13
+      "desc": "Su sueño siempre había sido ser tenista, pero las circunstancias lo llegaron a trabajar como un espía. A pesar de ello, decidió compaginar su pasión y su trabajo, utilizando su nueva vida como tenista para viajar de un objetivo a otro mientras participa en diferentes torneos. Puede permitirse viajar en clase alta y evita relacionarse con otros pasajeros.",
+      "scene": "habitacionhaines",
+      "dialogoIni": 19
     },
 
     {
@@ -92,13 +81,23 @@
     },
 
     {
-      "name": "Alfred Hirsch",
+      "name": "Norma Anthony",
+      "posX": 20,
+      "posY": 20,
+      "culpable": true,
+      "desc": "La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Bruno Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Bruno",
+      "scene": "clasebaja",
+      "dialogoIni": 13
+    },
+   
+    {
+      "name": "Bruno Anthony",
       "posX": 20,
       "posY": 20,
       "culpable": false,
-      "desc": "El empleado del tren que se encarga de vigilar y atender el vagón cafetería, en el cual trabaja como camarero y cocinero. Es muy servicial y aunque parezca muy serio, siempre está dispuesto a ayudar. Duerme en un compartimento especial que hay en susodicho vagón",
-      "scene": "cafeteria",
-      "dialogoIni": 10
+      "desc": "El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios",
+      "scene":  "cafeteria",
+      "dialogoIni": 20
     },
 
     {
@@ -109,16 +108,6 @@
       "desc": "Desde pequeño se dedicaba a montar maquetas de trenes, y aunque ahora que tiene el trabajo que siempre ha querido, solo desea tener más tiempo para sus maquetas. Aún así, se toma su trabajo en serio y no aguanta ningún tipo de distracción. Es poco hablador y prefiere evitar que haya problemas en el tren, motivo por el cual prohibe de forma explícita al detective Case informar a los pasajeros del asesinato",
       "scene": "locomotora",
       "dialogoIni": 15
-    },
-
-    {
-      "name": "Mihael Haines",
-      "posX": 20,
-      "posY": 20,
-      "culpable": false,
-      "desc": "Su sueño siempre había sido ser tenista, pero las circunstancias lo llegaron a trabajar como un espía. A pesar de ello, decidió compaginar su pasión y su trabajo, utilizando su nueva vida como tenista para viajar de un objetivo a otro mientras participa en diferentes torneos. Puede permitirse viajar en clase alta y evita relacionarse con otros pasajeros.",
-      "scene": "habitacionhaines",
-      "dialogoIni": 19
     }
   ]
 }

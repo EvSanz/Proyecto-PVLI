@@ -10,9 +10,9 @@ export default class ClaseAlta extends Wagon
     }
     spawnNPCs()
     {
-      this.npc=new Npc(this, 160, 238, 5, this.scene.get('boot').dmanager.npcinfoholder[5].anger, 21, 5);
-      this.npc2=new Npc(this, 460, 238, 3, this.scene.get('boot').dmanager.npcinfoholder[3].anger, 19, 3);
-      this.npc3=new Npc(this, 660, 238, 10, this.scene.get('boot').dmanager.npcinfoholder[4].anger, 17, 10);
+      this.npc=new Npc(this, 160, 238, 8, this.scene.get('boot').dmanager.npcinfoholder[5].anger, 21, 17);
+      this.npc2=new Npc(this, 460, 238, 9, this.scene.get('boot').dmanager.npcinfoholder[3].anger, 19, 13);
+      this.npc3=new Npc(this, 660, 238, 10, this.scene.get('boot').dmanager.npcinfoholder[4].anger, 17, 20);
 
       console.log("Scene Clase Alta: ", this.scene.key);
 

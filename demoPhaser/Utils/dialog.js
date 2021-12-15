@@ -30,7 +30,6 @@ export default class Dialog
     //Textos
     this.label = this.scene.add.text(275, 375, " ", { wordWrap: { width: 400 } });
     this.label2 = this.scene.add.text(275, 425, " ", { wordWrap: { width: 400 } });
-    this.label3 = this.scene.add.text(275, 475, " ", { wordWrap: { width: 400 } });
     this.graphics = null;  
   }
 
@@ -45,11 +44,10 @@ export default class Dialog
   {
 
     //Se borran los cuadros si queda alguna traza de dialogos anteriores
-    if (this.graphics !== undefined && this.graphics2 !== undefined && this.graphics3 !== undefined)
+    if (this.graphics !== undefined && this.graphics2 !== undefined)
     {
       this.graphics.destroy();
       this.graphics2.destroy();
-      this.graphics3.destroy();
     }
 
     //Bloqueamos el movimiento del jugador
@@ -77,7 +75,6 @@ export default class Dialog
     //Texto
     this.label.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
     this.label2.text = "";
-    this.label3.text = "";
   }
 
   nextText()
@@ -85,7 +82,6 @@ export default class Dialog
     //Comprobamos si no ha llegado a las opciones de dialogo
     if (this.textNum != this.myData.Dialogues[this.id].scenes[this.chat].opciones - 1)
     {
-
       //Si lo que ha activado el dialogo es un npc...
       if (this.myData.Dialogues[this.id].isObject == false)
       {
@@ -118,15 +114,7 @@ export default class Dialog
       {
         this.textNum++;
         this.label2.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
-      }
-
-      //No siempre habra tres opciones, asi que ponemos una condicion para 
-      //escribir la tercera respuesta si hay
-      if (this.textNum < this.myData.Dialogues[this.id].scenes[this.chat].lines.length)
-      {
-        this.textNum++;
-        this.label3.text = this.myData.Dialogues[this.id].scenes[this.chat].lines[this.textNum];
-      }   
+      }  
     }
 
     this.finishText();
@@ -153,7 +141,10 @@ export default class Dialog
       if (this.myData.Dialogues[this.id].ultDialogo == false 
         && this.myData.Dialogues[this.id].isObject == false)
       {
+        console.log("id previo: " + this.id);
         this.id++;
+        this.currentNpc.cambiarScene(); 
+        console.log("id posterior: " + this.id);
       }
         
       else
@@ -173,7 +164,6 @@ export default class Dialog
       //Destruimos los cuadros de opciones
       this.graphics.destroy();
       this.graphics2.destroy();
-      this.graphics3.destroy();
 
       //Y permitimos al jugador moverse otra vez
       if (this.scene.player != null) {this.scene.player.canMove = true;}
@@ -241,11 +231,6 @@ export default class Dialog
     (this.scene, 200, 450, 1600, 50, 0xfffffff, 0xfffffff);
     this.graphics2.setInteractive();
     
-    //Tercer bloque
-    this.graphics3 = new Phaser.GameObjects.Rectangle
-    (this.scene, 200, 500, 1600, 50, 0xfffffff, 0xfffffff);
-    this.graphics3.setInteractive();
-    
     //Dependiendo del rectangulo que pulsemos, si es una respuesta 
     //conducira al siguiente bloque de dialogo y reseteara valores
 
@@ -256,11 +241,6 @@ export default class Dialog
     //Segundo bloque
     this.graphics2.on('pointerdown', () => 
     { this.interaccionDialogo(2); });
-
-    //Tercer bloque
-    this.graphics3.on('pointerdown', () => 
-    { this.interaccionDialogo(3); });
-
   }
 
   /** Cambia el retrato que aparece a la derecha del cuadro de dialogo

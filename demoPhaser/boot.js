@@ -61,13 +61,9 @@ export default class Boot extends Phaser.Scene {
     this.dmanager = new DialogManager();
 
     //this.clock = new Clock(this.scene.get('clasebaja'));
-    this.clock= new Clock(this)
-    this.npc = new Npc(this.scene.get('clasebaja'), 650, 230, 1,0);
-    this.dmanager.acoplarnpc(this.npc);
+    this.clock= new Clock(this);
 
     this.gomanager = new ObjectManager();
-    this.object = new GameObject(this.scene.get('clasebaja'), 600, 265, 'tetera', true, true);
-    this.gomanager.acoplarobj(this.object);
     
     //this.scene.start('clasebaja', 400);
     this.scene.start('mainmenu');

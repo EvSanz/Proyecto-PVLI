@@ -97,7 +97,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 2,
+          "opciones" : 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -417,7 +417,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 1,
+          "opciones" : 7,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -434,7 +434,7 @@
 
         {
           "id": "Scene2",
-          "opciones" : 2,
+          "opciones" : 3,
           "irritacion": 25,
           "clock": false,
           "lines": [
@@ -537,7 +537,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 4,
+          "opciones" : 5,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -903,41 +903,53 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 0,
+          "opciones" : 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "¿En que puedo ayudarlo, detective?",
+            "¿Porque ha decidido embarcarse en este tren?",
+            "¿Que estuvo haciendo ayer por la noche?"
           ]
         },
 
         {
           "id": "Scene1",
-          "opciones" : 4,
+          "opciones" : 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "Voy a ver a unos inversores para exponer unas ideas",
+            "Asumo que no salio de su cuarto entonces...",
+            "¿Que ideas?"
           ]
         }, 
 
         {
           "id": "Scene2",
-          "opciones" : 0,
-          "irritacion": 0,
+          "opciones" : 2,
+          "irritacion": 10,
           "clock": false,
           "lines": [
-            ""
+            "Estuve trabajando en un pequeño proyecto",
+            "Nada que relevante para usted",
+            "¿En que consiste el proyecto?",
+            "Entiendo. Muchas gracias por su ayuda"
           ]
         },
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones" : 5,
           "irritacion": 0,
           "clock": true,
           "lines": [
-            ""
+            "¿De verdad esta interesado?",
+            "Bueno, no sera terrible contarselo",
+            "Estoy trabajando en un nuevo sistema electrico",
+            "Tengo que trabajar con cables todo el dia",
+            "Aunque debo admitir que no dejan de desaparecer...",
+            "Eso ha sido de mucha ayuda. Gracias"
           ]
         },
 
@@ -947,7 +959,7 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            ""
+            "De nada"
           ]
         }
       ]
@@ -967,7 +979,8 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "Disculpa, pero tengo que buscar mis cables",
+            "Con suerte tan solo los habre perdido en el vagon"
           ]
         }
       ]
@@ -1053,51 +1066,54 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 0,
+          "opciones" : 3,
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "¿Quien- Quien es usted?",
+            "Espera, espera ¿El- El detective?",
+            "¿Que quieres de mi?",
+            "Un poco nervioso, ¿no?",
+            "¿Conoce a las hermanas Morton?"
           ]
         },
 
         {
           "id": "Scene1",
-          "opciones" : 4,
-          "irritacion": 0,
+          "opciones" : 3,
+          "irritacion": 30,
           "clock": false,
           "lines": [
-            ""
+            "¿Ner-Nervioso? ¿Yo-Yo-Yo?",
+            "¡Estupideces!",
+            "Es solo que... Bueno, no dormi bien",
+            "¿Acaso contactó con alguna de las hermanas Morton por la noche?",
+            "¿Porque no durmio bien?"
           ]
         }, 
 
         {
           "id": "Scene2",
-          "opciones" : 0,
-          "irritacion": 0,
+          "opciones" : -1,
+          "irritacion": 50,
           "clock": false,
           "lines": [
-            ""
+            "¿Co-Como?",
+            "No se de que estas hablando",
+            "No conozco a las Morton",
+            "Ahora si me disculpas..."
           ]
         },
 
         {
           "id": "Scene3",
           "opciones" : -1,
-          "irritacion": 0,
+          "irritacion": 20,
           "clock": true,
           "lines": [
-            ""
-          ]
-        },
-
-        {
-          "id": "Scene4",
-          "opciones" : -1,
-          "irritacion": 0,
-          "clock": true,
-          "lines": [
-            ""
+            "Estuve esperando a que mi abuela volviera...",
+            "Salio del vagon para ir al baño, pero...",
+            "Lo siento, creo que no deberia seguir hablando"
           ]
         }
       ]
@@ -1113,11 +1129,38 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones" : 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
-            ""
+            "Detective...",
+            "¿Porque esta investigando tanto?",
+            "No se preocupe por ello",
+            "Ha habido un asesinato y el culpable es un pasajero"
+          ]
+        },
+
+        {
+          "id": "Scene1",
+          "opciones" : -1,
+          "irritacion": 0,
+          "clock": true,
+          "lines": [
+            "Entiendo...",
+            "Tenga cuidado entonces"
+          ]
+        },
+
+        {
+          "id": "Scene2",
+          "opciones" : 2,
+          "irritacion": 100,
+          "clock": true,
+          "lines": [
+            "¿¡Como?!",
+            "No... ¿No habria sido capaz, verdad?",
+            "Solo fueron unos minutos, pero ¿y si...?",
+            "Disculpe, pero necesito pensar"
           ]
         }
       ]

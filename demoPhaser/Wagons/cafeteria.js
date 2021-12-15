@@ -12,8 +12,8 @@ export default class Cafeteria extends Wagon {
     //this.npc = new Npc (this, 650, 230, 1);
     //this.dmanager= new DialogManager();
     //this.dmanager.Acoplarnpc(this.npc);
-    this.npc=new Npc(this,160,238,0,this.scene.get('boot').dmanager.npcinfoholder[8].anger,27,8);
-    this.npc2=new Npc(this,360,238,0,this.scene.get('boot').dmanager.npcinfoholder[10].anger,31,10);
+    this.npc=new Npc(this,160,238,6,this.scene.get('boot').dmanager.npcinfoholder[8].anger,27,10);
+    this.npc2=new Npc(this,360,238,7,this.scene.get('boot').dmanager.npcinfoholder[10].anger,31,19);
     // this.scene.add(this.npc);
 
   }
