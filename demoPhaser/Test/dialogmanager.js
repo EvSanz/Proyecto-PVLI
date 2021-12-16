@@ -30,9 +30,18 @@ export default class DialogManager {
         //let npc=new Npc('clasebaja',100,100,1);
 
         //npcholder.push(npc);
-        this.npcinfoholder= [{id:0,anger:0},{id:1,anger:7},{id:2,anger:0},{id:3,anger:0},
-            {id:4,anger:0},{id:5,anger:0},{id:6,anger:0},{id:7,anger:0},{id:8,anger:0},
-            {id:9,anger:0},{id:10,anger:0},
+        this.npcinfoholder = [
+            {id:0, dialogo:1, anger:0}, //0
+            {id:1, dialogo:3, anger:0}, //1
+            {id:2, dialogo:22, anger:0}, //2
+            {id:3, dialogo:5, anger:0}, //3
+            {id:4, dialogo:8, anger:0}, //4
+            {id:5, dialogo:10, anger:0}, //5
+            {id:6, dialogo:19, anger:0}, //6
+            {id:7, dialogo:17, anger:0}, //7
+            {id:8, dialogo:13, anger:0}, //8
+            {id:9, dialogo:20, anger:0}, //9
+            {id:10, dialogo:15, anger:0}, //10
         ];
     }
 
@@ -51,12 +60,8 @@ export default class DialogManager {
      //  scena.scene.add.exsting(new Npc(scena.scene.get('clasebaja'),650, 230, 1))
        
     }
-    asignacabreo(id,cabreo)
-    {
 
-    this.npcinfoholder[id].anger=cabreo;
-
-    }
+    asignacabreo(id, cabreo) {this.npcinfoholder[id].anger = cabreo;}
 }
 
     

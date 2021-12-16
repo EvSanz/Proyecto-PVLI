@@ -355,7 +355,7 @@
           "clock": false,
           "lines": [
             "¡Graaciaz!",
-            "Tan majo conmo el Anthon, Anthony",
+            "Tan majo conmo la Anthon, Anthony",
             "Me pidioo que dejase unaa de estaz en su cuarto",
             "Piiro no habeia nadie",
             "Zzzzz..."
@@ -639,8 +639,8 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "No, con un pasajero...",
-            "Haines pidio mucha bebida y me ofrecio",
+            "No, con unos pasajeros...",
+            "Los señores Collins y Haines pidieron mucha bebida y me ofrecieron",
             "¿Cuanto bebio?"
           ]
         },
@@ -714,7 +714,7 @@
             "Señor detective, me hace sentir mas mayor de lo que soy",
             "¿Que porque estoy en este vagon?",
             "Oh, nada importante cariño",
-            "Solo necesitaba ayuda de Daniel con una bombilla",
+            "Solo necesitaba acompañar a mi nieto, Bruno",
             "Ya veo. Y digame ¿usted conoce usted a las hermanas Morton?"
           ]
         }, 
@@ -750,7 +750,7 @@
           "lines": [
             "Estuve esperando despierta a que volviera mi hijo",
             "Pero como no volvia, sali a buscarlo",
-            "Lo encontre borracho ¿Lo puedes creer?",
+            "Lo encontre deambulando borracho ¿Lo puedes creer?",
             "¿Vio por casualidad a alguien mas fuera del vagon?"
           ]
         },
@@ -762,7 +762,7 @@
           "clock": true,
           "lines": [
             "No estoy segura, pero-",
-            "Juraria que vi a ese tenista caminando a hurtadillas",
+            "Solo vi a ese tenista caminando a hurtadillas",
             "Y bueno, a Albert tambien",
             "No se muy bien porque tantas preguntas",
             "Pero espero que tenga suerte, detective"
@@ -1024,10 +1024,10 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "I drank with Alfie last night",
+            "I drank with Alfie y Vic last night",
             "Too many things to think about...",
             "¿Pensar en las Morton quizas",
-            "¿Alfie?"
+            "¿Alfie y Vic?"
           ]
         },
 
@@ -1048,8 +1048,8 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            "Yes, Alfred",
-            "He works here in the... Cafeteria?",
+            "Yes, Alfred. Y Victor",
+            "Alfred works here in the... Cafeteria?",
             "Pregunta around there"
           ]
         }

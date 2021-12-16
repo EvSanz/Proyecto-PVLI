@@ -31,7 +31,7 @@ export default class Wagon extends Phaser.Scene {
     this.spriteFondo3 = spriteFondo3;
     this.wagonIzq = wagonIzq;
     this.wagonDer = wagonDer;
-    this.wagonKey= wagonKey;
+    this.wagonKey = wagonKey;
     let a;
   }
 
@@ -185,11 +185,13 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
   spawnNPCs() {}
 
   spawnObjects() {} 
+
   playwhistle()
   {
     this.woo =  this.sound.add('choochoo', {volume: this.game.sound.volume * 0.5, loop: false});
     this.woo.play();
   }
+
   stopMusic() { this.musica.stop();}
  
   addSceneObjects()
@@ -208,6 +210,25 @@ this.a = this.add.sprite(833, 174, this.spriteFondo3);
     }
 
     console.log("Objetos en escena: ", this.objects);
+  }
+
+  addScenesNpc()
+  {
+    console.log("habitacion: ", this.scene.key);
+
+    this.pj = this.scene.get('boot').myCharacters;
+
+    this.characters = [];
+
+    let j = 0;
+
+    for (let i = 0; i < this.pj.Personajes.length; ++i) {
+      if (this.pj.Personajes[i].vagon == this.scene.key)
+        this.characters[j++] = new Npc (this, this.pj.Personajes[i].posX, this.pj.Personajes[i].posY, i + 1, 
+        this.scene.get('boot').dmanager.npcinfoholder[i].anger, i, this.pj.Personajes[i].dialogoIni);
+    }
+
+    console.log("Personajes en escena: ", this.objects);
   }
  
 }

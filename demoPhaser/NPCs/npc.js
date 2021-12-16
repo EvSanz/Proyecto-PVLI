@@ -118,9 +118,10 @@ export default class Npc extends Phaser.GameObjects.Sprite
 
     cambiarScene()
     {
-        console.log("Dialogo previo: " + this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].dialogoIni);
-        this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].dialogoIni++;
-        console.log("Dialogo posterior: " + this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].dialogoIni);
+        console.log("Dialogo previo: " + this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].dialogo);
+        this.dialogScene++;
+        this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].dialogo = this.dialogScene;
+        console.log("Dialogo posterior: " + this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].dialogo);
     }
 
     //Método para mostrar el tiempo en pantalla
