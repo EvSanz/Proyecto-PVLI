@@ -12,7 +12,7 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
    * @param {bool} presente estará a true si el objeto todavia no se ha recogido y debe aparecer en la escena
    */
 
-  constructor(scene, x, y, sprite, id, clickable) {
+  constructor(scene, x, y, sprite, id, clickable, dialogId) {
 
     super(scene, x, y, 'objects', [sprite]);
     //Si es un objeto clickeable, lo convertimos en interactivo
@@ -28,7 +28,7 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
     this.setDepth(1); 
 
     //Creamos el dialogo
-    this.dialog = new Dialog(this.scene, 24);
+    this.dialog = new Dialog(this.scene, dialogId);
 
     this.on('pointerdown', () => {
       if (this.scene.locked === false) {

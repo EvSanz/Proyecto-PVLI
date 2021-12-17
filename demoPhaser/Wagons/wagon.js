@@ -128,8 +128,6 @@ export default class Wagon extends Phaser.Scene {
         //reducir el tiempo
         this.scene.get('boot').consultClock().decreaseTime(this);
 
-        //console.log(this.clock);
-
         if (this.scene.get('boot').consultClock().getTime() > 0)
           this.scene.start(this.wagonIzq);
         else
@@ -189,7 +187,6 @@ export default class Wagon extends Phaser.Scene {
   }
 
   addSceneObjects() {
-    console.log("habitacion: ", this.scene.key);
 
     this.objs = this.scene.get('boot').myObjects;
 
@@ -199,14 +196,11 @@ export default class Wagon extends Phaser.Scene {
 
     for (let i = 0; i < this.objs.Objetos.length; ++i) {
       if (this.objs.Objetos[i].vagon == this.scene.key)
-        this.objects[j++] = new GameObject(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].sprite, i, true);
+        this.objects[j++] = new GameObject(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].sprite, i, true, this.objs.Objetos[i].dialogo);
     }
-
-    console.log("Objetos en escena: ", this.objects);
   }
 
   addScenesNpc() {
-    console.log("habitacion: ", this.scene.key);
 
     this.pj = this.scene.get('boot').myCharacters;
 
@@ -219,8 +213,5 @@ export default class Wagon extends Phaser.Scene {
         this.characters[j++] = new Npc(this, this.pj.Personajes[i].posX, this.pj.Personajes[i].posY, i + 1,
           this.scene.get('boot').dmanager.npcinfoholder[i].anger, i, this.pj.Personajes[i].dialogoIni);
     }
-
-    console.log("Personajes en escena: ", this.objects);
   }
-
 }
