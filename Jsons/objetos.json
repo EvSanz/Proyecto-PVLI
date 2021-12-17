@@ -6,23 +6,15 @@
       "posY": 262,
       "sprite": 5,
       "vagon": "habitacionanthony",
-      "desc": "El gemelo parejo al que se encontró en la escena del crímen. Tiene escrito una 'B'",
-      "characters": [
-        "Molly Morton",
-        "Bruno Anthony"
-      ]
+      "desc": "El gemelo parejo al que se encontró en la escena del crímen. Tiene escrito una 'B'"
     },
     {
-      "name": "Cable",
+      "name": "Cable roto",
       "posX": 60,
       "posY": 262,
       "sprite": 7,
       "vagon": "habitacionmorton",
-      "desc": "Encontrado en la escena del crimen. Parece que fue usado para ahorcar a la víctima",
-      "characters": [
-        "Molly Morton",
-        "Ayva Yan"
-      ]
+      "desc": "Encontrado en la escena del crimen. Parece que fue usado para ahorcar a la víctima"
     },
     {
       "name": "Botella de vino",
@@ -30,11 +22,7 @@
       "posY": 262,
       "sprite": 9,
       "vagon": "habitacionmorton",
-      "desc": "Pertenece a la marca Cono Norte, y está casi vacía. Estaba en la habitación de Morton",
-      "characters": [
-        "Molly Morton",
-        "Victor Collins"
-      ]
+      "desc": "Pertenece a la marca Cono Norte, y está casi vacía. Estaba en la habitación de Morton"
     },
     {
       "name": "Botella de vino",
@@ -42,11 +30,7 @@
       "posY": 262,
       "sprite": 9,
       "vagon": "habitacioncollins",
-      "desc": "Pertenece a la marca Cono Norte, y está casi vacía. Es la botella que te has encontrado en la habitación de Collins",
-      "characters": [
-        "Molly Morton",
-        "Victor Collins"
-      ]
+      "desc": "Pertenece a la marca Cono Norte, y está casi vacía. Es la botella que te has encontrado en la habitación de Collins"
     },
     {
       "name": "Bombilla impecable",
@@ -54,12 +38,7 @@
       "posY": 262,
       "sprite": 11,
       "vagon": "habitacionanthony",
-      "desc": "Una bombilla que destaca sobre las demás al ser nueva. Se encontró en la habitación de Norma",
-      "characters": [
-        "Norma Anthony",
-        "Bruno Anthony",
-        "Daniel Grooms"
-      ]
+      "desc": "Una bombilla que destaca sobre las demás al ser nueva. Se encontró en la habitación de Norma"
     },
     {
       "name": "Gemelo ensangrentado",
@@ -67,11 +46,7 @@
       "posY": 262,
       "sprite": 5,
       "vagon": "habitacionmorton",
-      "desc": "Se encontró en la habitación de las hermanas Morton. Tiene escrito una 'A'",
-      "characters": [
-        "Norma Anthony",
-        "Bruno Anthony"
-      ]
+      "desc": "Se encontró en la habitación de las hermanas Morton. Tiene escrito una 'A'"
     },
     {
       "name": "Caja de galletas",
@@ -79,11 +54,7 @@
       "posY": 262,
       "sprite": 13,
       "vagon": "habitacionanthony",
-      "desc": "Una caja de galletas hechas por Norma. Son de chocolate",
-      "characters": [
-        "Norma Anthony",
-        "Bruno Anthony"
-      ]
+      "desc": "Una caja de galletas hechas por Norma. Son de chocolate"
     },
     {
       "name": "Caja de galletas",
@@ -91,11 +62,7 @@
       "posY": 262,
       "sprite": 13,
       "vagon": "habitacionanthony",
-      "desc": "Una caja de galletas hechas por Norma. Son de vainilla",
-      "characters": [
-        "Norma Anthony",
-        "Bruno Anthony"
-      ]
+      "desc": "Una caja de galletas hechas por Norma. Son de vainilla"
     },
     {
       "name": "Caja de galletas",
@@ -103,11 +70,7 @@
       "posY": 262,
       "sprite": 13,
       "vagon": "habitacionanthony",
-      "desc": "Una caja de galletas. Contiene un kit de costura en su interior",
-      "characters": [
-        "Norma Anthony",
-        "Bruno Anthony"
-      ]
+      "desc": "Una caja de galletas. Ocultaba un trozo de cable raido"
     },
     {
       "name": "Raqueta de tenis",
@@ -115,10 +78,7 @@
       "posY": 262,
       "sprite": 15,
       "vagon": "habitacionhaines",
-      "desc": "Encontrada en la habitación de Mihael Haines",
-      "characters": [
-        "Mihael Haines"
-      ]
+      "desc": "Encontrada en la habitación de Mihael Haines"
     },
     {
       "name": "Maletín",
@@ -126,10 +86,7 @@
       "posY": 262,
       "sprite": 17,
       "vagon": "habitacionhaines",
-      "desc": "Encontrado en la habitación de Haines. Se necesita una contraseña para abrirlo",
-      "characters": [
-        "Mihael Haines"
-      ]
+      "desc": "Encontrado en la habitación de Haines. Se necesita una contraseña para abrirlo"
     },
     {
       "name": "Caja de cereales",
@@ -137,10 +94,7 @@
       "posY": 262,
       "sprite": 19,
       "vagon": "habitacionhaines",
-      "desc": "De la marca Jell'Os, se encontró en la habitación de Haines. Caduca el 2/6/17",
-      "characters": [
-        "Mihael Haines"
-      ]
+      "desc": "De la marca Jell'Os, se encontró en la habitación de Haines. Caduca el 2/6/17"
     },
     {
       "name": "Set de cables",
@@ -148,10 +102,7 @@
       "posY": 252,
       "sprite": 7,
       "vagon": "habitacionyan",
-      "desc": "Varios cables muy parecidos al encontrado en la habitación de las Morton. Éste set se encontró en la habitación de Ayva Yan",
-      "characters": [
-        "Ayva Yan"
-      ]
+      "desc": "Varios cables muy parecidos al encontrado en la habitación de las Morton. Éste set se encontró en la habitación de Ayva Yan"
     },
     {
       "name": "Aparato extraño",
@@ -159,10 +110,7 @@
       "posY": 242,
       "sprite": 21,
       "vagon": "habitacionyan",
-      "desc": "Una máquina encontrada en la habitación de Ayva Yan que parece tener una especie de bandeja en la parte superior. Pone 6v en la parte inferior",
-      "characters": [
-        "Ayva Yan"
-      ]
+      "desc": "Una máquina encontrada en la habitación de Ayva Yan que parece tener una especie de bandeja en la parte superior. Pone 6v en la parte inferior"
     },
     {
       "name": "Caja de galletas 2",
@@ -170,11 +118,7 @@
       "posY": 232,
       "sprite": 13,
       "vagon": "habitacionyan",
-      "desc": "Hechas por Norma Anthony y encontrada en la habitación de Ayva Yan. Son de avena",
-      "characters": [
-        "Ayva Yan",
-        "Norma Anthony"
-      ]
+      "desc": "Hechas por Norma Anthony y encontrada en la habitación de Ayva Yan. Son de avena"
     }
   ]
 }
