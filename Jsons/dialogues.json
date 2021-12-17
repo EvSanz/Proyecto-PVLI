@@ -1566,7 +1566,7 @@
 
     {
       "id": 34,
-      "char": "Caja de galletas vacia",
+      "char": "Caja de cereales vacia",
       "imageName": "",
       "isObject": true,
       "dialogo": 0,
@@ -1578,7 +1578,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Es un envase vacio de galletas"
+            "Es un envase vacio de cereales"
           ]
         }
       ]
