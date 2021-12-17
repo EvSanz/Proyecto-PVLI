@@ -6,47 +6,68 @@
       "posY": 262,
       "sprite": 5,
       "vagon": "habitacionanthony",
-      "desc": "El gemelo parejo al que se encontró en la escena del crímen. Tiene escrito una 'B'"
+      "desc": "El gemelo parejo al que se encontró en la escena del crímen. Tiene escrito una 'B'",
+      "dialogo": 25
     },
+
     {
       "name": "Cable roto",
       "posX": 60,
       "posY": 262,
       "sprite": 7,
       "vagon": "habitacionmorton",
-      "desc": "Encontrado en la escena del crimen. Parece que fue usado para ahorcar a la víctima"
+      "desc": "Encontrado en la escena del crimen. Parece que fue usado para ahorcar a la víctima",
+      "dialogo":26
     },
+
     {
       "name": "Botella de vino",
       "posX": 20,
       "posY": 262,
       "sprite": 9,
       "vagon": "habitacionmorton",
-      "desc": "Pertenece a la marca Cono Norte, y está casi vacía. Estaba en la habitación de Morton"
+      "desc": "Pertenece a la marca Cono Norte, y está casi vacía. Estaba en la habitación de Morton",
+      "dialogo": 27
     },
+
     {
       "name": "Botella de vino",
       "posX": 20,
       "posY": 262,
       "sprite": 9,
       "vagon": "habitacioncollins",
-      "desc": "Pertenece a la marca Cono Norte, y está casi vacía. Es la botella que te has encontrado en la habitación de Collins"
+      "desc": "Pertenece a la marca Cono Norte, y está casi vacía. Es la botella que te has encontrado en la habitación de Collins",
+     "dialogo": 27
     },
+
     {
       "name": "Bombilla impecable",
       "posX": 30,
       "posY": 262,
       "sprite": 11,
       "vagon": "habitacionanthony",
-      "desc": "Una bombilla que destaca sobre las demás al ser nueva. Se encontró en la habitación de Norma"
+      "desc": "Una bombilla que destaca sobre las demás al ser nueva. Se encontró en la habitación de Norma",
+      "dialogo": 28
     },
+
     {
       "name": "Gemelo ensangrentado",
       "posX": 20,
       "posY": 262,
       "sprite": 5,
       "vagon": "habitacionmorton",
-      "desc": "Se encontró en la habitación de las hermanas Morton. Tiene escrito una 'A'"
+      "desc": "Se encontró en la habitación de las hermanas Morton. Tiene escrito una 'A'",
+      "dialogo": 25
+    },
+
+    {
+      "name": "Caja de galletas",
+      "posX": 20,
+      "posY": 262,
+      "sprite": 13,
+      "vagon": "habitacionanthony",
+      "desc": "Una caja de galletas hechas por Norma. Son de chocolate",
+      "dialogo": 29
     },
     {
       "name": "Caja de galletas",
@@ -54,15 +75,8 @@
       "posY": 262,
       "sprite": 13,
       "vagon": "habitacionanthony",
-      "desc": "Una caja de galletas hechas por Norma. Son de chocolate"
-    },
-    {
-      "name": "Caja de galletas",
-      "posX": 20,
-      "posY": 262,
-      "sprite": 13,
-      "vagon": "habitacionanthony",
-      "desc": "Una caja de galletas hechas por Norma. Son de vainilla"
+      "desc": "Una caja de galletas hechas por Norma. Son de vainilla",
+      "dialogo": 29
     },
     {
       "name": "Caja de galletas",
@@ -70,55 +84,68 @@
       "posY": 262,
       "sprite": 13,
       "vagon": "habitacionanthony",
-      "desc": "Una caja de galletas. Ocultaba un trozo de cable raido"
+      "desc": "Una caja de galletas. Ocultaba un trozo de cable raido",
+      "dialogo": 29
     },
+
     {
       "name": "Raqueta de tenis",
       "posX": 20,
       "posY": 262,
       "sprite": 15,
       "vagon": "habitacionhaines",
-      "desc": "Encontrada en la habitación de Mihael Haines"
+      "desc": "Encontrada en la habitación de Mihael Haines",
+      "dialogo": 30
     },
+
     {
       "name": "Maletín",
       "posX": 70,
       "posY": 262,
       "sprite": 17,
       "vagon": "habitacionhaines",
-      "desc": "Encontrado en la habitación de Haines. Se necesita una contraseña para abrirlo"
+      "desc": "Encontrado en la habitación de Haines. Se necesita una contraseña para abrirlo",
+      "dialogo": 31
     },
+
     {
       "name": "Caja de cereales",
       "posX": 20,
       "posY": 262,
       "sprite": 19,
       "vagon": "habitacionhaines",
-      "desc": "De la marca Jell'Os, se encontró en la habitación de Haines. Caduca el 2/6/17"
+      "desc": "De la marca Jell'Os, se encontró en la habitación de Haines. Ha caducado",
+      "dialogo": 34
     },
+
     {
       "name": "Set de cables",
       "posX": 20,
       "posY": 252,
       "sprite": 7,
       "vagon": "habitacionyan",
-      "desc": "Varios cables muy parecidos al encontrado en la habitación de las Morton. Éste set se encontró en la habitación de Ayva Yan"
+      "desc": "Varios cables muy parecidos al encontrado en la habitación de las Morton. Éste set se encontró en la habitación de Ayva Yan",
+      "dialogo": 32
     },
+
     {
       "name": "Aparato extraño",
       "posX": 20,
       "posY": 242,
       "sprite": 21,
       "vagon": "habitacionyan",
-      "desc": "Una máquina encontrada en la habitación de Ayva Yan que parece tener una especie de bandeja en la parte superior. Pone 6v en la parte inferior"
+      "desc": "Una máquina encontrada en la habitación de Ayva Yan que parece tener una especie de bandeja en la parte superior. Pone 6v en la parte inferior",
+      "dialogo": 33
     },
+
     {
       "name": "Caja de galletas 2",
       "posX": 20,
       "posY": 232,
       "sprite": 13,
       "vagon": "habitacionyan",
-      "desc": "Hechas por Norma Anthony y encontrada en la habitación de Ayva Yan. Son de avena"
-    }
+      "desc": "Hechas por Norma Anthony y encontrada en la habitación de Ayva Yan. Son de avena",
+      "dialogo": 29
+  }
   ]
 }
