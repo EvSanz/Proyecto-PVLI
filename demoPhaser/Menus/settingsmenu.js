@@ -8,8 +8,6 @@ export default class Settings extends Phaser.Scene {
     create()
     {
 
-      console.log(this.game);
-
       let boxnum;
       if (this.game.sound.mute)
       {

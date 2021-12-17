@@ -32,11 +32,9 @@
          this.scenenow = scenenow;
          if (this.time > 0)
              this.time--;
-         console.log("TIME: ", this.time);
          this.showTime(scenenow);
 
          if (this.time <= 0) {
-             console.log("out of time");
              this.scenenow.scene.start('selectscene');
              this.outOfTime();
          }
@@ -68,7 +66,6 @@
      }
 
      outOfTime() {
-         console.log("select killer");
          this.selectKillerScene = new SelectKillerScene();
          this.scene.scene.start(this.selectKillerScene);
      }

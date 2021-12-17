@@ -138,10 +138,8 @@
        //el numero del dialogo actual
        if (this.myData.Dialogues[this.id].ultDialogo == false &&
          this.myData.Dialogues[this.id].isObject == false) {
-         console.log("id previo: " + this.id);
          this.id++;
          this.currentNpc.cambiarScene();
-         console.log("id posterior: " + this.id);
        } else {
          //Irritacion solo si existe un npc 
          if (this.myData.Dialogues[this.id].isObject == false) {
@@ -190,7 +188,6 @@
            this.chat = this.chat + n;
            //Modificar la irritacion del npc segun el dialogo
            this.currentNpc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
-           console.log("Irritacion: " + this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
 
            this.talk()
          } else {

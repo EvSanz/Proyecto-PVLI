@@ -15,9 +15,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
   constructor(scene, x, y, seMueve) {
     super(scene, x, y, 'player', seMueve);
 
-
-    console.log("building player");
-
     //Añadimos al jugador con fisicas a la escena
     this.scene.add.existing(this);
     this.scene.physics.add.existing(this);
