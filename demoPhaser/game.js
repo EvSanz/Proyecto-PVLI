@@ -40,7 +40,7 @@ let config = {
     pixelArt: true,
 
     //Establecemos todas las escenas del juego
-    scene: [Boot, Menu, Settings, Credits, Wagon,
+    scene: [Boot, Menu, Settings, Credits, 
         ClaseBaja, ClaseMedia, ClaseAlta, Cafeteria, Locomotora,
         HabitacionMorton, HabitacionCollins, HabitacionBold, HabitacionYan, HabitacionAnthony, HabitacionHaines,
         SelectScene, GoodEnd, BadEnd, Diary, End

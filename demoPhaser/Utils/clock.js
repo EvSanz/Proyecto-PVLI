@@ -7,76 +7,69 @@
   * @method showTime muestra el tiempo actual en pantalla
   */
 
-import SelectKillerScene from "../Test/selectkillerscene.js";
+ import SelectKillerScene from "../Test/selectkillerscene.js";
 
-  const Total_Time = 12;
+ const Total_Time = 12;
 
-export default class Clock 
-{
-    constructor(scene) {
-        this.scene = scene;
-        this.time = Total_Time;
-        this.selectKillerScene = null;
-      
-        
+ export default class Clock {
+     constructor(scene) {
+         this.scene = scene;
+         this.time = Total_Time;
+         this.selectKillerScene = null;
 
-        //Commented until sprite is added
-        // super(scene,x,y, 'clock',true,true)
-        // this.scene.add.existing(this);    
-    }
 
-    create() { }
 
-    //Método para disminuir el tiempo 
-    decreaseTime(scenenow) 
-    {
-        this.scene.scene.get(scenenow).playwhistle();
-        this.scenenow=scenenow;
-        if (this.time > 0)
-            this.time--;
-        console.log("TIME: ", this.time);
-        this.showTime(scenenow);
+         //Commented until sprite is added
+         // super(scene,x,y, 'clock',true,true)
+         // this.scene.add.existing(this);    
+     }
 
-        if (this.time <= 0)
-        {
-            console.log("out of time");
-           this.scenenow.scene.start('selectscene');
-            this.outOfTime();
-        }
-            
-    }
+     create() {}
 
-    //Método para resetear el tiempo
-    resetTime() 
-    { 
-        this.time = Total_Time;
-    }
+     //Método para disminuir el tiempo 
+     decreaseTime(scenenow) {
+         this.scene.scene.get(scenenow).playwhistle();
+         this.scenenow = scenenow;
+         if (this.time > 0)
+             this.time--;
+         console.log("TIME: ", this.time);
+         this.showTime(scenenow);
 
-    getTime() 
-    { 
-        return this.time;
-    }
-q
-    //Método para mostrar el tiempo en pantalla
-    showTime(scenenow) 
-    {   
-       // this.musica =  this.scenenow.scene.add.sound('choochoo', {volume: this.game.sound.volume * 0.5, loop: false});
-       // this.musica.play();
-       
-        this.scene.scene.get(scenenow).add.sprite(45,35,'clockanim',[this.time]);
-       /* this.label = null;
+         if (this.time <= 0) {
+             console.log("out of time");
+             this.scenenow.scene.start('selectscene');
+             this.outOfTime();
+         }
+
+     }
+
+     //Método para resetear el tiempo
+     resetTime() {
+         this.time = Total_Time;
+     }
+
+     getTime() {
+         return this.time;
+     }
+     q
+     //Método para mostrar el tiempo en pantalla
+     showTime(scenenow) {
+         // this.musica =  this.scenenow.scene.add.sound('choochoo', {volume: this.game.sound.volume * 0.5, loop: false});
+         // this.musica.play();
+
+         this.scene.scene.get(scenenow).add.sprite(45, 35, 'clockanim', [this.time]);
+         /* this.label = null;
         this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
         { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
         this.label.text = "        "; //Borra el tiempo anterior
         this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
     { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
         this.label.text = "Time: " + this.time;*/
-    }
+     }
 
-    outOfTime()
-    {
-        console.log("select killer");
-        this.selectKillerScene = new SelectKillerScene();
-        this.scene.scene.start(this.selectKillerScene);
-    }
-}
+     outOfTime() {
+         console.log("select killer");
+         this.selectKillerScene = new SelectKillerScene();
+         this.scene.scene.start(this.selectKillerScene);
+     }
+ }

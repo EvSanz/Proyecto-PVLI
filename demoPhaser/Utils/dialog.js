@@ -41,13 +41,13 @@
 
    initDialog() {
 
-    //Bloqueamos el movimiento del jugador
-    if (this.scene.player != null) {
-      this.scene.player.canMove = false;
-    }
+     //Bloqueamos el movimiento del jugador
+     if (this.scene.player != null) {
+       this.scene.player.canMove = false;
+     }
 
 
-    this.scene.locked = true;
+     this.scene.locked = true;
 
      this.myData = this.scene.scene.get('boot').myDialog;
 
@@ -175,7 +175,7 @@
      }
 
      this.scene.locked = true;
-     
+
      //renderizamos la imagen del npc
      this.changePortrait(this.currentNpc.image);
 

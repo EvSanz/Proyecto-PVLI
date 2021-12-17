@@ -44,15 +44,15 @@ export default class Diary extends Phaser.Scene {
       this.item.displayHeight = this.itemboxSize;
 
       //Mostramos la informacion del npc al pasar el puntero por encima..
-      this.name.on('pointerover', 
-      () => {
-        this.showInfoPanel(true, element.desc)
-      })
+      this.name.on('pointerover',
+        () => {
+          this.showInfoPanel(true, element.desc)
+        })
       //Y la eliminamos cuando el puntero ya no está encima
-      this.name.on('pointerout', 
-      () => {
-        this.showInfoPanel(false)
-      })
+      this.name.on('pointerout',
+        () => {
+          this.showInfoPanel(false)
+        })
 
     }, this);
 
@@ -79,15 +79,15 @@ export default class Diary extends Phaser.Scene {
       }).setInteractive();
 
       //Mostramos la informacion del npc al pasar el puntero por encima..
-      this.name.on('pointerover', 
-      () => {
-        this.showInfoPanel(true, element.desc)
-      })
+      this.name.on('pointerover',
+        () => {
+          this.showInfoPanel(true, element.desc)
+        })
       //Y la eliminamos cuando el puntero ya no está encima
-      this.name.on('pointerout', 
-      () => {
-        this.showInfoPanel(false)
-      })
+      this.name.on('pointerout',
+        () => {
+          this.showInfoPanel(false)
+        })
 
     }, this);
 

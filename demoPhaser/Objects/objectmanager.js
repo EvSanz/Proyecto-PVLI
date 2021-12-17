@@ -1,4 +1,4 @@
-//import Npc from '../NPCs/npc.js'
+
 import Dialog from '../Utils/dialog.js';
 import GameObject from './gameobject.js';
 
@@ -14,23 +14,7 @@ export default class ObjectManager {
     */
     constructor()
     { 
-        
         this.goholder=[];
-        /*for( let i=0;i<12;i++)
-        {
-            //leeremos los datos del np del json de personajes
-            let x=0;
-            let y=i;
-            let scene='clasebaja';
-            
-            //let dialog= new Dialog('clasebaja',1);
-            
-            npcholder.push(npc);
-        } */
-        //let npc=new Npc('clasebaja',100,100,1);
-
-        //npcholder.push(npc);
-
     }
 
     acoplarobj(go)

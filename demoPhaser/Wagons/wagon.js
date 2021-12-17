@@ -21,16 +21,16 @@ export default class Wagon extends Phaser.Scene {
    * @param {string} wagonDer Vagon que esté a la derecha de este
    */
 
-  constructor(wagonKey, isPointAndClick, spriteFondo1, spriteFondo2, spriteFondo3, wagonIzq, wagonDer) {
+  constructor(wagonKey, wagonConfig) {
     super({
       key: wagonKey
     });
-    this.isPT = isPointAndClick
-    this.spriteFondo1 = spriteFondo1;
-    this.spriteFondo2 = spriteFondo2;
-    this.spriteFondo3 = spriteFondo3;
-    this.wagonIzq = wagonIzq;
-    this.wagonDer = wagonDer;
+    this.isPT = wagonConfig.isPointAndClick
+    this.spriteFondo1 = wagonConfig.spriteFondo1;
+    this.spriteFondo2 = wagonConfig.spriteFondo2;
+    this.spriteFondo3 = wagonConfig.spriteFondo3;
+    this.wagonIzq = wagonConfig.wagonIzq;
+    this.wagonDer = wagonConfig.wagonDer;
     this.wagonKey = wagonKey;
   }
 
