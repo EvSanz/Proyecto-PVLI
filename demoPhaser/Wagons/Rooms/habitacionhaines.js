@@ -3,7 +3,7 @@ import GameObject from '../../Objects/gameobject.js';
 
 export default class HabitacionHaines extends Wagon {
     constructor() { 
-      super('habitacionhaines', true,32, 30, 31, 'clasealta', 'locomotora',);
+      super('habitacionhaines', true, 32, 30, 31, 'clasealta');
     }
 
     spawnObjects() 

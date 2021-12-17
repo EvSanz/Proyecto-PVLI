@@ -29,48 +29,99 @@ import BadEnd from './End/badend.js'
 
 let config = {
     type: Phaser.AUTO,
-    width:  1000,
+    width: 1000,
     height: 512,
-    parent:"gameholder",
+    parent: "gameholder",
     scale: {
         //mode: Phaser.Scale.FIT,  
-        autoCenter: Phaser.Scale.CENTER_HORIZONTALLY },
+        autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
+    },
 
     pixelArt: true,
 
     //Establecemos todas las escenas del juego
-    scene: [Boot, Menu, Settings, Credits, Wagon, ClaseBaja,ClaseMedia,ClaseAlta,Cafeteria,Locomotora,HabitacionMorton,HabitacionCollins,HabitacionBold,HabitacionYan,HabitacionAnthony,HabitacionHaines,SelectScene,GoodEnd,BadEnd, Diary, End],
+    scene: [Boot, Menu, Settings, Credits, Wagon,
+        ClaseBaja, ClaseMedia, ClaseAlta, Cafeteria, Locomotora,
+        HabitacionMorton, HabitacionCollins, HabitacionBold, HabitacionYan, HabitacionAnthony, HabitacionHaines,
+        SelectScene, GoodEnd, BadEnd, Diary, End
+    ],
 
     //Establecemos las fisicas del juego
-    physics: { 
-        default: 'arcade', 
+    physics: {
+        default: 'arcade',
         debug: true,
-        arcade: { 
-            gravity: { y: 400 }, 
-            debug: true } 
+        arcade: {
+            gravity: {
+                y: 400
+            },
+            debug: true
+        }
     },
 
-   
+
 };
-new Phaser.Game(config ,'gameholder');
+new Phaser.Game(config, 'gameholder');
 
 //let npcholder={x=0,y=0}; 
-let test=0;
-this.test=675;
+let test = 0;
+this.test = 675;
 //let npcholder;
 //UN ARRAY CON LA INFORMACION DE LOS 11 NPCS EN EL ORDEN ESTABLECIDO EN EL GDD
-let npcholder= [
-    {id:0, dialogo:1, anger:0}, //0
-    {id:1, dialogo:3, anger:0}, //1
-    {id:2, dialogo:22, anger:0}, //2
-    {id:3, dialogo:5, anger:0}, //3
-    {id:4, dialogo:8, anger:0}, //4
-    {id:5, dialogo:10, anger:0}, //5
-    {id:6, dialogo:19, anger:0}, //6
-    {id:7, dialogo:17, anger:0}, //7
-    {id:8, dialogo:13, anger:0}, //8
-    {id:9, dialogo:20, anger:0}, //9
-    {id:10, dialogo:15, anger:0}, //10
+let npcholder = [{
+        id: 0,
+        dialogo: 1,
+        anger: 0
+    }, //0
+    {
+        id: 1,
+        dialogo: 3,
+        anger: 0
+    }, //1
+    {
+        id: 2,
+        dialogo: 22,
+        anger: 0
+    }, //2
+    {
+        id: 3,
+        dialogo: 5,
+        anger: 0
+    }, //3
+    {
+        id: 4,
+        dialogo: 8,
+        anger: 0
+    }, //4
+    {
+        id: 5,
+        dialogo: 10,
+        anger: 0
+    }, //5
+    {
+        id: 6,
+        dialogo: 19,
+        anger: 0
+    }, //6
+    {
+        id: 7,
+        dialogo: 17,
+        anger: 0
+    }, //7
+    {
+        id: 8,
+        dialogo: 13,
+        anger: 0
+    }, //8
+    {
+        id: 9,
+        dialogo: 20,
+        anger: 0
+    }, //9
+    {
+        id: 10,
+        dialogo: 15,
+        anger: 0
+    }, //10
 ];
 //let prueba;
 //this.prueba=678;

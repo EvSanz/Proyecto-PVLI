@@ -5,8 +5,8 @@
       "posX": 40,
       "posY": 262,
       "sprite": 5,
-      "vagon": "habitacionmorton",
-      "desc": "Se encontró en la habitación de las Morton. Tiene escrito una 'B'",
+      "vagon": "habitacionanthony",
+      "desc": "El gemelo parejo al que se encontró en la escena del crímen. Tiene escrito una 'B'",
       "characters": [
         "Molly Morton",
         "Bruno Anthony"
@@ -66,15 +66,15 @@
       "posX": 20,
       "posY": 262,
       "sprite": 5,
-      "vagon": "habitacionanthony",
-      "desc": "El gemelo parejo al que se encontró en la escena del crímen. Tiene escrito una 'A'",
+      "vagon": "habitacionmorton",
+      "desc": "Se encontró en la habitación de las hermanas Morton. Tiene escrito una 'A'",
       "characters": [
         "Norma Anthony",
         "Bruno Anthony"
       ]
     },
     {
-      "name": "Caja de galletas 1",
+      "name": "Caja de galletas",
       "posX": 20,
       "posY": 262,
       "sprite": 13,
@@ -86,24 +86,24 @@
       ]
     },
     {
-      "name": "Caja de galletas 2",
+      "name": "Caja de galletas",
       "posX": 20,
       "posY": 262,
       "sprite": 13,
       "vagon": "habitacionanthony",
-      "desc": "Otra caja de galletas. Éstas son de vainilla",
+      "desc": "Una caja de galletas hechas por Norma. Son de vainilla",
       "characters": [
         "Norma Anthony",
         "Bruno Anthony"
       ]
     },
     {
-      "name": "Caja de galletas 3",
+      "name": "Caja de galletas",
       "posX": 35,
       "posY": 262,
       "sprite": 13,
       "vagon": "habitacionanthony",
-      "desc": "Otra caja más de galletas. Ésta contiene un kit de costura en su interior",
+      "desc": "Una caja de galletas. Contiene un kit de costura en su interior",
       "characters": [
         "Norma Anthony",
         "Bruno Anthony"
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "name": "Caja de galletas",
+      "name": "Caja de galletas 2",
       "posX": 20,
       "posY": 232,
       "sprite": 13,

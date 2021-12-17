@@ -4,7 +4,7 @@ import Dialog from '../Utils/dialog.js';
 export default class GameObject extends Phaser.GameObjects.Sprite {
   
   /**Constructor de GameObject
-   * @param {Sceme} scene Escena 
+   * @param {Scene} scene Escena 
    *@param {int} sprite Sprite
     * @param {number} x Coordenada X
     * @param {number} y Coordenada Y
@@ -31,12 +31,15 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
     //Creamos el dialogo
     this.dialog = new Dialog(this.scene, 24);
 
-    this.on('pointerdown', ()=>
+    this.on('pointerdown', () =>
     {
-      scene.scene.get('diary').addObject(this.info);
-      this.presente = false;
-      this.dialog.initDialog();
-      this.destroy();
+      if (this.scene.locked === false)
+      {
+        scene.scene.get('diary').addObject(this.info);
+        this.presente = false;
+        this.dialog.initDialog();
+        this.destroy();
+      }
     });
   }
 }
