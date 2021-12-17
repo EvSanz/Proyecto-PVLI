@@ -55,7 +55,7 @@
          // this.musica =  this.scenenow.scene.add.sound('choochoo', {volume: this.game.sound.volume * 0.5, loop: false});
          // this.musica.play();
 
-         this.scene.scene.get(scenenow).add.sprite(45, 35, 'clockanim', [this.time]);
+         this.scene.scene.get(scenenow).add.sprite(50, 40, 'clockanim', [this.time]);
          /* this.label = null;
         this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
         { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 

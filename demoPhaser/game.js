@@ -49,12 +49,12 @@ let config = {
     //Establecemos las fisicas del juego
     physics: {
         default: 'arcade',
-        debug: true,
+        debug: false,
         arcade: {
             gravity: {
                 y: 400
             },
-            debug: true
+            debug: false
         }
     },
 
