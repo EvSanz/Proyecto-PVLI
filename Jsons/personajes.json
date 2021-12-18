@@ -2,22 +2,32 @@
   "Personajes": [
     {
       "name": "Larry Shephard",
-      "posX": 650,
+      "posX": 200,
       "posY": 238,
       "culpable": false,
       "desc": "Un pastor de cabras que viaja en el vagon de clase baja. No parece saber del crimen",
-      "scene":  "clasebaja",
+      "scene": "clasebaja",
       "dialogoIni": 1
     },
 
     {
-      "name": "Daniel Grooms",
-      "posX": 200,
+      "name": "Victor Collins",
+      "posX": 400,
       "posY": 238,
       "culpable": false,
-      "desc": "Un electricista con malos modales, aunque parece más molesto de lo usual",
-      "scene": "clasebaja",
-      "dialogoIni": 3
+      "desc": "Un profesor que estuvo bebiendo hace pocas horas. Parece saber cosas, pero no consigue hablar con coherencia",
+      "scene": "clasemedia",
+      "dialogoIni": 5
+    },
+
+    {
+      "name": "Mery Morton",
+      "posX": 590,
+      "posY": 238,
+      "culpable": false,
+      "desc": "Una de las dos hermanas Morton. Ha sido asesinada en el tren",
+      "scene": "noscene",
+      "dialogoIni": 22
     },
 
     {
@@ -31,13 +41,43 @@
     },
 
     {
-      "name": "Victor Collins",
-      "posX": 400,
+      "name": "Bruno Anthony",
+      "posX": 660,
       "posY": 238,
       "culpable": false,
-      "desc": "Un profesor que estuvo bebiendo hace pocas horas. Parece saber cosas, pero no consigue hablar con coherencia",
-      "scene": "clasemedia",
-      "dialogoIni": 5
+      "desc": "El hijo de Norma, con una actitud muy nerviosa, asustada y preocupada. Parece saber algo, pero esta en aparente estado de shock",
+      "scene": "clasealta",
+      "dialogoIni": 20
+    },
+
+    {
+      "name": "Norma Anthony",
+      "posX": 460,
+      "posY": 238,
+      "culpable": true,
+      "desc": "Una anciana acaudalada, bastante dispuesta a responder preguntas. Parece interesada en los asuntos que ocurren alrededor suya",
+      "scene": "clasebaja",
+      "dialogoIni": 13
+    },
+
+    {
+      "name": "Ayva Yan",
+      "posX": 160,
+      "posY": 238,
+      "culpable": false,
+      "desc": "Una ingeniera arisca, que prefiere permanecer lejos del resto de pasajeros",
+      "scene": "clasealta",
+      "dialogoIni": 16
+    },
+
+    {
+      "name": "Daniel Grooms",
+      "posX": 650,
+      "posY": 238,
+      "culpable": false,
+      "desc": "Un electricista con malos modales, aunque parece más molesto de lo usual",
+      "scene": "clasebaja",
+      "dialogoIni": 3
     },
 
     {
@@ -61,46 +101,6 @@
     },
 
     {
-      "name": "Mihael Haines",
-      "posX": 490,
-      "posY": 238,
-      "culpable": false,
-      "desc": "Un tenista extrafalario, que prefiere hablar en su idioma natal. Parece cansado",
-      "scene": "cafeteria",
-      "dialogoIni": 19
-    },
-
-    {
-      "name": "Ayva Yan",
-      "posX": 160,
-      "posY": 238,
-      "culpable": false,
-      "desc": "Una ingeniera arisca, que prefiere permanecer lejos del resto de pasajeros",
-      "scene":  "clasealta",
-      "dialogoIni": 16
-    },
-
-    {
-      "name": "Norma Anthony",
-      "posX": 460,
-      "posY": 238,
-      "culpable": true,
-      "desc": "Una anciana acaudalada, bastante dispuesta a responder preguntas. Parece interesada en los asuntos que ocurren alrededor suya",
-      "scene": "clasebaja",
-      "dialogoIni": 13
-    },
-   
-    {
-      "name": "Bruno Anthony",
-      "posX": 660,
-      "posY": 238,
-      "culpable": false,
-      "desc": "El hijo de Norma, con una actitud muy nerviosa, asustada y preocupada. Parece saber algo, pero esta en aparente estado de shock",
-      "scene":  "clasealta",
-      "dialogoIni": 20
-    },
-
-    {
       "name": "Barry Railway",
       "posX": 240,
       "posY": 238,
@@ -108,6 +108,16 @@
       "desc": "El maquinista, que procura proporcionar toda la ayuda posible",
       "scene": "locomotora",
       "dialogoIni": 15
+    },
+
+    {
+      "name": "Mihael Haines",
+      "posX": 490,
+      "posY": 238,
+      "culpable": false,
+      "desc": "Un tenista extrafalario, que prefiere hablar en su idioma natal. Parece cansado",
+      "scene": "cafeteria",
+      "dialogoIni": 19
     }
   ]
 }

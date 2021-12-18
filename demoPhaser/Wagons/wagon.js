@@ -209,9 +209,13 @@ export default class Wagon extends Phaser.Scene {
     let j = 0;
 
     for (let i = 0; i < this.pj.Personajes.length; ++i) {
-      if (this.pj.Personajes[i].vagon == this.scene.key)
+      if (this.pj.Personajes[i].scene == this.scene.key)
+      {
         this.characters[j++] = new Npc(this, this.pj.Personajes[i].posX, this.pj.Personajes[i].posY, i + 1,
-          this.scene.get('boot').dmanager.npcinfoholder[i].anger, i, this.pj.Personajes[i].dialogoIni);
+          this.scene.get('boot').dmanager.npcinfoholder[i].anger, (i * 2) + 8, this.pj.Personajes[i].dialogoIni);
+
+          console.log("Personaje ", this.pj.Personajes[i].name, "frame: ", (i * 2) + 7);
+      }
     }
   }
 }

@@ -26,13 +26,15 @@ export default class ClaseBaja extends Wagon {
   //Sobreescribimos los métodos que estan en wagon
   spawnNPCs() {
 
-    this.data = this.scene.get('personajes');
+    // this.data = this.scene.get('personajes');
 
-    this.npc = new Npc(this, 160, 238, 1, this.scene.get('boot').dmanager.npcinfoholder[0].anger,
-      9, this.scene.get('boot').dmanager.npcinfoholder[0].dialogo);
+    // this.npc = new Npc(this, 160, 238, 1, this.scene.get('boot').dmanager.npcinfoholder[0].anger,
+    //   9, this.scene.get('boot').dmanager.npcinfoholder[0].dialogo);
 
-    this.npc2 = new Npc(this, 390, 238, 2, this.scene.get('boot').dmanager.npcinfoholder[1].anger,
-      22, this.scene.get('boot').dmanager.npcinfoholder[1].dialogo);
+    // this.npc2 = new Npc(this, 390, 238, 2, this.scene.get('boot').dmanager.npcinfoholder[1].anger,
+    //   22, this.scene.get('boot').dmanager.npcinfoholder[1].dialogo);
+
+    this.addScenesNpc();
   }
 
   spawnObjects() {
