@@ -3,6 +3,7 @@ import Player from '../player.js';
 import Door from '../Utils/door.js'
 import Npc from '../NPCs/npc.js';
 import GameObject from '../Objects/gameobject.js';
+import DialogManager from '../Test/dialogmanager.js';
 
 /**Escena principal del juego
  * @extends Phaser.Scene
@@ -165,7 +166,6 @@ export default class Wagon extends Phaser.Scene {
     this.spawnObjects();
 
     //Mostramos el reloj
-    //this.player.clock.showTime();
     this.scene.get('boot').consultClock().showTime(this.wagonKey);
 
   }
@@ -212,9 +212,8 @@ export default class Wagon extends Phaser.Scene {
       if (this.pj.Personajes[i].scene == this.scene.key)
       {
         this.characters[j++] = new Npc(this, this.pj.Personajes[i].posX, this.pj.Personajes[i].posY, i + 1,
-          this.scene.get('boot').dmanager.npcinfoholder[i].anger, (i * 2) + 8, this.pj.Personajes[i].dialogoIni);
-
-          //console.log("Personaje ", this.pj.Personajes[i].name, "frame: ", (i * 2) + 7);
+          this.scene.get('boot').dmanager.npcinfoholder[i].anger, (i * 2) + 8, 
+          this.scene.get('boot').dmanager.npcinfoholder[i].dialogo);
       }
     }
   }

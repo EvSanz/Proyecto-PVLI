@@ -4,8 +4,6 @@ import Menu from './Menus/mainmenu.js';
 import Settings from './Menus/settingsmenu.js';
 import Credits from './Menus/credits.js';
 import End from './end.js';
-//import Level from './Test/scene.js';
-//import Levelpt from './Test/scenept.js';
 import Diary from './Utils/diario.js';
 import Wagon from './Wagons/wagon.js';
 import ClaseBaja from './Wagons/clasebaja.js';
@@ -42,7 +40,8 @@ let config = {
     //Establecemos todas las escenas del juego
     scene: [Boot, Menu, Settings, Credits, 
         ClaseBaja, ClaseMedia, ClaseAlta, Cafeteria, Locomotora,
-        HabitacionMorton, HabitacionCollins, HabitacionBold, HabitacionYan, HabitacionAnthony, HabitacionHaines,
+        HabitacionMorton, HabitacionCollins, HabitacionBold, HabitacionYan, 
+        HabitacionAnthony, HabitacionHaines,
         SelectScene, GoodEnd, BadEnd, Diary, End
     ],
 
@@ -57,71 +56,71 @@ let config = {
             debug: false
         }
     },
-
-
 };
+
 new Phaser.Game(config, 'gameholder');
 
-//let npcholder={x=0,y=0}; 
 let test = 0;
 this.test = 675;
-//let npcholder;
-//UN ARRAY CON LA INFORMACION DE LOS 11 NPCS EN EL ORDEN ESTABLECIDO EN EL GDD
+
 let npcholder = [{
-        id: 0,
-        dialogo: 1,
-        anger: 0
-    }, //0
-    {
-        id: 1,
-        dialogo: 3,
-        anger: 0
-    }, //1
-    {
-        id: 2,
-        dialogo: 22,
-        anger: 0
-    }, //2
-    {
-        id: 3,
-        dialogo: 5,
-        anger: 0
-    }, //3
-    {
-        id: 4,
-        dialogo: 8,
-        anger: 0
-    }, //4
-    {
-        id: 5,
-        dialogo: 10,
-        anger: 0
-    }, //5
-    {
-        id: 6,
-        dialogo: 19,
-        anger: 0
-    }, //6
-    {
-        id: 7,
-        dialogo: 17,
-        anger: 0
-    }, //7
-    {
-        id: 8,
-        dialogo: 13,
-        anger: 0
-    }, //8
-    {
-        id: 9,
-        dialogo: 20,
-        anger: 0
-    }, //9
-    {
-        id: 10,
-        dialogo: 15,
-        anger: 0
-    }, //10
+    id: 0,
+    dialogo: 1,
+    anger: 0
+}, 
+{
+    id: 1,
+    dialogo: 3,
+    anger: 0
+}, 
+{
+    id: 2,
+    dialogo: 22,
+    anger: 0
+}, 
+{
+    id: 3,
+    dialogo: 0,
+    anger: 0
+},
+{
+    id: 4,
+    dialogo: 5,
+    anger: 0
+}, 
+{
+    id: 5,
+    dialogo: 8,
+    anger: 0
+}, 
+{
+    id: 6,
+    dialogo: 10,
+    anger: 0
+}, 
+{
+    id: 7,
+    dialogo: 19,
+    anger: 0
+}, 
+{
+    id: 8,
+    dialogo: 17,
+    anger: 0
+}, 
+{
+    id: 9,
+    dialogo: 13,
+    anger: 0
+}, 
+{
+    id: 10,
+    dialogo: 20,
+    anger: 0
+}, 
+{
+    id: 11,
+    dialogo: 15,
+    anger: 0
+}
 ];
-//let prueba;
-//this.prueba=678;

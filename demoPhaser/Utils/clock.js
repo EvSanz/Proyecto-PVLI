@@ -15,13 +15,7 @@
      constructor(scene) {
          this.scene = scene;
          this.time = Total_Time;
-         this.selectKillerScene = null;
-
-
-
-         //Commented until sprite is added
-         // super(scene,x,y, 'clock',true,true)
-         // this.scene.add.existing(this);    
+         this.selectKillerScene = null;   
      }
 
      create() {}
@@ -38,7 +32,6 @@
              this.scenenow.scene.start('selectscene');
              this.outOfTime();
          }
-
      }
 
      //Método para resetear el tiempo
@@ -49,20 +42,10 @@
      getTime() {
          return this.time;
      }
-     q
+     
      //Método para mostrar el tiempo en pantalla
      showTime(scenenow) {
-         // this.musica =  this.scenenow.scene.add.sound('choochoo', {volume: this.game.sound.volume * 0.5, loop: false});
-         // this.musica.play();
-
          this.scene.scene.get(scenenow).add.sprite(50, 40, 'clockanim', [this.time]);
-         /* this.label = null;
-        this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
-        { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
-        this.label.text = "        "; //Borra el tiempo anterior
-        this.label = this.scene.scene.get(scenenow).add.text(10, 2, "",
-    { fontFamily: 'Georgia, "Goudy Bookletter 1911", Times, serif' }).setDepth(1); 
-        this.label.text = "Time: " + this.time;*/
      }
 
      outOfTime() {

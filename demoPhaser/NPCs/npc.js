@@ -71,36 +71,15 @@ export default class Npc extends Phaser.GameObjects.Sprite {
         });
     }
 
-    preUpdate() {
-        super.preUpdate();
-
-        if (this.scene.physics.overlap(this.scene.player, this)) {
-
-            //Si esta colisionando con el jugador, mostramos la irritacion
-            this.showIrritacion();
-        }
-
-        //Si no esta colisionando, eliminamos el texto
-        else {
-            this.label.text = "";
-        }
-    }
-
     //Metodo para aumentar el nivel de irritacion del personaje
     aumentarIrritacion(cabreo) {
         this.irritacion = this.irritacion + cabreo;
         this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].anger = this.irritacion;
-        this.showIrritacion();
     }
 
     cambiarScene() {
         this.dialogScene++;
         this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].dialogo = this.dialogScene;
-    }
-
-    //Método para mostrar el tiempo en pantalla
-    showIrritacion() {
-        this.label.text = "Irritacion: " + this.irritacion;
     }
 
     //Metodo para devolver la irritacion

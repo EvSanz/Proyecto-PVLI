@@ -19,7 +19,6 @@
 
      this.id = id;
 
-     //this.readTextFile("Jsons/dialogues.json", this.onJsonRead, this); 
      //Linea de dialogo
      this.textNum = 0;
 

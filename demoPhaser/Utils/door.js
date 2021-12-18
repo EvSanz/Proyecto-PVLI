@@ -1,6 +1,3 @@
-//Js importados
-//import Clock from "./clock.js";
-
 //Clase encargada de gestionar la puerta
 export default class Door extends Phaser.GameObjects.Sprite {
 
@@ -9,7 +6,6 @@ export default class Door extends Phaser.GameObjects.Sprite {
   * @param {Scene} gotoscene Siguiente escena
   * @param {number} x Coordenada x
   * @param {number} y Coordenada y 
-  
   */
 
   constructor(scene, x, y, gotoscene, foto) {
@@ -37,8 +33,6 @@ export default class Door extends Phaser.GameObjects.Sprite {
       if (this.scene.physics.overlap(this.scene.player, this)) {
         this.scene.stopMusic();
         //Entra por la puerta
-        // this.scene.scene.get('boot').consultClock().decreaseTime(this.scene);
-        // console.log("decreaseTime");
         this.scene.scene.start(this.gotoscene);
       }
     });
@@ -48,12 +42,8 @@ export default class Door extends Phaser.GameObjects.Sprite {
     this.graphics.on('pointerdown', () => {
       //Y el jugador está dentro del rango, cargamos 
       //la siguiente escena
-
       if (this.scene.physics.overlap(this.scene.player, this)) {
         this.scene.stopMusic();
-        //this.scene.scene.get('boot').clock.decreaseTime(); 
-        // this.scene.scene.get('boot').consultClock().decreaseTime(this.scene);
-        // console.log("decreaseTime");
         this.scene.scene.start(this.gotoscene);
       }
     });

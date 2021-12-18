@@ -37,8 +37,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.a = this.scene.input.keyboard.addKey('A');
     this.d = this.scene.input.keyboard.addKey('D');
 
-    //Creamos el reloj
-    //this.clock = new Clock (this.scene);
     //Creamos el dialogo
     this.dialog = new Dialog(this.scene);
 
@@ -101,12 +99,12 @@ export default class Player extends Phaser.GameObjects.Sprite {
         this.body.setVelocityX(0);
       }
 
-      //NO HACEN FALTA BOOLS PARA LAS ANIMACIONES solo hay 2 opciones o se mueve o su speed es 0 y YA.
       if (this.body.speed > 0)
         this.play('playerwalk', true);
       else
         this.play('playerstand', true);
     }
+    
     //Nos aseguramos que el player está quieto si no se le permite mover
     else {
       this.body.setVelocityX(0);
@@ -114,9 +112,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
     }
   }
 
-  //Llamar mediante:
-  // this.clock.decreaseTime();
-  // this.outOfTime();
   outOfTime() {
     if (this.clock.getTime() <= 0) {
       //por ahora esto solo cambia la pantalla a negro

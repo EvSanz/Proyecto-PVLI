@@ -1,8 +1,6 @@
 import Npc from '../NPCs/npc.js'
 import Dialog from '../Utils/dialog.js';
 
-
-
 export default class DialogManager {
 
     /**Gestioamos todos los dialogos del juego desde aqui
@@ -64,7 +62,7 @@ export default class DialogManager {
                 id: 9,
                 dialogo: 13,
                 anger: 0
-            }, //8
+            }, 
             {
                 id: 10,
                 dialogo: 20,
@@ -74,23 +72,12 @@ export default class DialogManager {
                 id: 11,
                 dialogo: 15,
                 anger: 0
-            }, 
-
+            }
         ];
     }
 
     acoplarnpc(npc) {
         this.npcholder.push(npc);
-
-    }
-
-    consultarnpc(id, scena) {
-
-        // this.escena = this.npcholder[id].getscene();
-        //scene.add.existing(this.npcholder[id]);
-        // return this.npcholder[id];
-        //  scena.scene.add.exsting(new Npc(scena.scene.get('clasebaja'),650, 230, 1))
-
     }
 
     asignacabreo(id, cabreo) {

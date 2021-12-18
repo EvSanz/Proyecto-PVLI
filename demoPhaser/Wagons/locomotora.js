@@ -11,11 +11,9 @@ export default class Locomotora extends Wagon {
       wagonIzq: 'clasealta',
       wagonDer: 'locomotora'
     });
-
   }
 
   spawnNPCs() {
-
     this.addScenesNpc();
   }
 

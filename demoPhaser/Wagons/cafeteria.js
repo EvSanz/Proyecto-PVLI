@@ -15,13 +15,10 @@ export default class Cafeteria extends Wagon {
   }
   //Sobreescribimos los métodos que estan en wagon
   spawnNPCs() {
-
     this.addScenesNpc();
-
   }
 
   spawnObjects() {
-
     this.add.sprite(180, 262, 'objects', [3]);
     this.add.sprite(320, 262, 'objects', [2]);
     this.add.sprite(520, 262, 'objects', [2]);

@@ -25,7 +25,6 @@ export default class ClaseBaja extends Wagon {
 
   //Sobreescribimos los métodos que estan en wagon
   spawnNPCs() {
-
     this.addScenesNpc();
   }
 
@@ -35,9 +34,4 @@ export default class ClaseBaja extends Wagon {
     this.add.sprite(830, 262, 'objects', [2]);
     this.add.sprite(60, 290, 'objects', [24]);
   }
-
-  spawnNpcs() {
-    this.addScenesNpc();
-  }
-
 }
