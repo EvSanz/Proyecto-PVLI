@@ -57,6 +57,10 @@ export default class Boot extends Phaser.Scene {
       frameWidth: 110,
       frameHeight: 110
     });
+    this.load.spritesheet('irritacion', 'barrairritacion.png', {
+      frameWidth: 192,
+      frameHeight: 24
+    });
 
     this.load.setPath('sonidos/');
     this.load.audio('suspenseFondo', 'suspense.mp3');

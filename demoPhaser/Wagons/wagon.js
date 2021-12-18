@@ -36,7 +36,7 @@ export default class Wagon extends Phaser.Scene {
 
   //Creacion de los elementos del juego
 
-  create(playerX) { //Aqui le llegara la posicion en la que aparecerá el jugador
+  create(playerX = 500) { //Aqui le llegara la posicion en la que aparecerá el jugador
 
     //Creacion de la animacion del fondo
     this.dmanager = this.scene.get('boot').dmanager;
@@ -129,7 +129,7 @@ export default class Wagon extends Phaser.Scene {
         this.scene.get('boot').consultClock().decreaseTime(this);
 
         if (this.scene.get('boot').consultClock().getTime() > 0)
-          this.scene.start(this.wagonIzq);
+          this.scene.start(this.wagonIzq, 500);
         else
           // TODO create killer scene
         ;

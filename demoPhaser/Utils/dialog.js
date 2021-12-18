@@ -26,12 +26,12 @@
      //Bloque de dialogo
      this.chat = 0;
      //Textos
-     this.label = this.scene.add.text(275, 375, " ", {
+     this.label = this.scene.add.text(270, 380, " ", {
        wordWrap: {
          width: 400
        }
      });
-     this.label2 = this.scene.add.text(275, 425, " ", {
+     this.label2 = this.scene.add.text(270, 425, " ", {
        wordWrap: {
          width: 400
        }
@@ -45,7 +45,6 @@
      if (this.scene.player != null) {
        this.scene.player.canMove = false;
      }
-
 
      this.scene.locked = true;
 
@@ -70,13 +69,14 @@
      //Si lo que ha activado el dialogo es un npc...
      if (this.myData.Dialogues[this.id].isObject == false) {
        //renderizamos la imagen del npc
-       this.changePortrait(this.currentNpc.image);
+       this.cambiarRetrato(this.currentNpc.image);
+       this.actualizaIrritacion(this.currentNpc.getIrritacion());
      }
 
      //Si lo es...
      else {
        //renderizamos al inspector
-       this.changePortrait(0);
+       this.cambiarRetrato(0);
      }
 
      //Texto
@@ -90,13 +90,13 @@
        //Si lo que ha activado el dialogo es un npc...
        if (this.myData.Dialogues[this.id].isObject == false) {
          //renderizamos la imagen del npc
-         this.changePortrait(this.currentNpc.image);
+         this.cambiarRetrato(this.currentNpc.image);
        }
 
-       //Si lo es...
+       //Si no lo es...
        else {
          //renderizamos al inspector
-         this.changePortrait(0);
+         this.cambiarRetrato(0);
        }
 
        this.textNum++;
@@ -106,7 +106,7 @@
      //Si hemos llegado a unas opciones de dialogo...
      else {
        //renderizamos el retrato del inspector
-       this.changePortrait(0);
+       this.cambiarRetrato(0);
 
        //Escribimos las opciones de dialogo, separadas entre ellas
        this.textNum++;
@@ -144,13 +144,15 @@
          //Irritacion solo si existe un npc 
          if (this.myData.Dialogues[this.id].isObject == false) {
            this.currentNpc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+           this.actualizaIrritacion(this.currentNpc.getIrritacion());
          }
        }
 
        this.chat = 0;
 
        //Eliminamos el retrato
-       this.changePortrait();
+       this.cambiarRetrato();
+       this.actualizaIrritacion();
 
        //Destruimos los cuadros de opciones
        this.graphics.destroy();
@@ -175,7 +177,8 @@
      this.scene.locked = true;
 
      //renderizamos la imagen del npc
-     this.changePortrait(this.currentNpc.image);
+     this.cambiarRetrato(this.currentNpc.image);
+     this.actualizaIrritacion(this.currentNpc.getIrritacion());
 
      this.label.text = "No pienso seguir hablando";
    }
@@ -188,6 +191,7 @@
            this.chat = this.chat + n;
            //Modificar la irritacion del npc segun el dialogo
            this.currentNpc.aumentarIrritacion(this.myData.Dialogues[this.id].scenes[this.chat].irritacion);
+           this.actualizaIrritacion(this.currentNpc.getIrritacion());
 
            this.talk()
          } else {
@@ -206,6 +210,9 @@
          }
 
          this.scene.locked = false;
+
+         this.cambiarRetrato();
+         this.actualizaIrritacion();
        }
 
      } else {
@@ -242,7 +249,7 @@
    /** Cambia el retrato que aparece a la izquierda del cuadro de dialogo
     * @param {number} image Frame correspondiente al npc en la spritesheet de npcs (dejar en blanco o en valor negativo para borrar el retrato)
     */
-   changePortrait(image = -1) {
+   cambiarRetrato(image = -1) {
      //Borramos el retrato anterior
      if (this.portrait !== undefined) {
        this.portrait.destroy();
@@ -258,5 +265,24 @@
        //La imagen del inspector (0) esta dada la vuelta con respecto a los demas npcs
        this.portrait.flipX = image !== 0 ? true : false;
      }
+   }
+
+   /** Actualiza la barra de irritacion respecto del valor dado
+    * @param {number} newValue El nuevo valor de la irritacion dejar vacio para borrar
+    */
+   actualizaIrritacion(newValue = -1)
+   {
+    if (this.barra !== undefined)
+    {
+      this.barra.destroy();
+    }
+    if (newValue >= 0)
+    {
+      if (newValue > 100)
+      {
+        newValue = 100;
+      }
+      this.barra = this.scene.add.sprite(110, 493, 'irritacion', [newValue / 5])
+    }
    }
  }

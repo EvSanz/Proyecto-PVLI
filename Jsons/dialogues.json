@@ -714,7 +714,7 @@
             "Señor detective, me hace sentir más mayor de lo que soy",
             "¿Que por qué estoy en este vagon?",
             "Oh, nada importante cariño",
-            "Solo necesitaba acompañar a mi nieto, Bruno",
+            "Solo necesitaba acompañar a mi hijo, Bruno",
             "Ya veo. Y dígame, ¿usted conoce usted a las hermanas Morton?"
           ]
         }, 
@@ -1111,7 +1111,7 @@
           "irritacion": 20,
           "clock": true,
           "lines": [
-            "Estuve esperando a que mi abuela volviera...",
+            "Estuve esperando a que mi madre volviera...",
             "Salió del vagon para ir al baño, pero...",
             "Lo siento, creo que no debería seguir hablando"
           ]
@@ -1487,9 +1487,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Es un maletín cerrado con candado",
-            "Forzarlo",
-            "Dejarlo como esta"
+            "Es un maletín cerrado con candado"
           ]
         }
       ]
