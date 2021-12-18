@@ -1483,33 +1483,13 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones" : -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
             "Es un maletín cerrado con candado",
             "Forzarlo",
             "Dejarlo como esta"
-          ]
-        },
-
-        {
-          "id": "Scene1",
-          "opciones" : -1,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            "Dentro hay numerosos pasaportes falsos y una radio"
-          ]
-        },
-
-        {
-          "id": "Scene2",
-          "opciones" : -1,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            "Dejas el maletin donde está"
           ]
         }
       ]
