@@ -15,8 +15,8 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "¿Quien eres tu?",
-            "¿Que estas haciendo aqui?",
+            "¿Quién eres tú?",
+            "¿Qué estas haciendo aquí?",
             "¿Mery Morton?",
             "Vengo a traerte un mensaje"
           ]
@@ -28,10 +28,10 @@
           "irritacion": 20,
           "clock": false,
           "lines": [
-            "¿Si...?",
-            "¿Que... que quieres de mi?",
+            "¿Sí...?",
+            "¿Qué... qué quieres de mí?",
             "Darte un mensaje, de parte de un amigo",
-            "Creo que puedes imaginartelo"
+            "Creo que puedes imaginártelo"
           ]
         },
 
@@ -42,7 +42,7 @@
           "clock": false,
           "lines": [
             "¿Mensaje?...",
-            "Salga de aqui o... O...",
+            "Salga de aquí o... O...",
             "¿Nerviosa? Tranquila, todo acabara pronto",
             "Relajese. Todo acabara pronto"
           ]
@@ -90,7 +90,7 @@
           "clock": false,
           "lines": [
             "Buenos días, detective",
-            "¿Porqué un pastor viajaria en este tren?",
+            "¿Por qué un pastor viajaria en este tren?",
             "¿Conoce usted a las hermanas Morton?"
           ]
         },
@@ -102,7 +102,7 @@
           "clock": false,
           "lines": [
             "Voy a llevar mi cabra al veterinario",
-            "Entiendo. Por cierto ¿habló con las hermanas?"
+            "Entiendo. Por cierto, ¿habló con las hermanas?"
           ]
         }, 
 
@@ -126,7 +126,7 @@
           "irritacion": 25,
           "clock": true,
           "lines": [
-            "Anoche a Gorty tuvo fiebre",
+            "Anoche Goty tuvo fiebre",
             "Estuve toda la noche cuidando de ella",
             "Ahora si me disculpas, voy a ver que tal está."
           ]
@@ -138,7 +138,7 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            "No hay de que"
+            "No hay de qué"
           ]
         }
       ]
@@ -158,7 +158,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Perdon, pero no tengo tiempo ahora",
+            "Perdón, pero no tengo tiempo ahora",
             "Necesito seguir cuidando de mi cabra"
           ]
         }
@@ -180,7 +180,7 @@
           "clock": false,
           "lines": [
             "Agh, es usted",
-            "¿Porqué un electricista vendría a este tren?",
+            "¿Por qué un electricista vendría a este tren?",
             "¿Conoce usted a las hermanas Morton?"
           ]
         },
@@ -220,9 +220,9 @@
           "irritacion": 25,
           "clock": true,
           "lines": [
-            "¿A usted que le importa?",
-            "¿Se cree que tambien trabajo de noche?",
-            "Hagame un favor y dejeme en paz, picoleto"
+            "¿A usted qué le importa?",
+            "¿Se cree que también trabajo de noche?",
+            "Hágame un favor y dejeme en paz, picoleto"
           ]
         },
 
@@ -232,7 +232,7 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            "Si, si, lo que sea"
+            "Sí, sí, lo que sea"
           ]
         }
       ]
@@ -252,7 +252,7 @@
           "irritacion": 25,
           "clock": false,
           "lines": [
-            "Dejame en paz de una vez o si no..."
+            "Déjame en paz de una vez o si no..."
           ]
         }
       ]
@@ -284,7 +284,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Sip- Siolo bebi uun poquitito",
+            "Sip- Siolo bebí uun poquitito",
             "No creo que pueda decirme nada sobre Mery Morton asi"
           ]
         }, 
@@ -296,9 +296,9 @@
           "clock": false,
           "lines": [
             "¿Morton?",
-            "Nio, pe- pero ¿oio del pastor?",
-            "¿Que estaba haciendo usted ayer a medianoche",
-            "Algo he oido. Gracias por su ayuda"
+            "Nio, pe- pero ¿oió del pastor?",
+            "¿Qué estaba haciendo usted ayer a medianoche",
+            "Algo he oído. Gracias por su ayuda"
           ]
         },
 
@@ -310,7 +310,7 @@
           "lines": [
             "Un pocoo entriometido ¿eh?",
             "¡Puez tomando viino de Albie!",
-            "¿Albe? ¿Albert?",
+            "¿Alf? ¿Alfred?",
             "Vaia a priguntar al camareroo"
           ]
         },
@@ -368,7 +368,7 @@
           "irritacion": 25,
           "clock": false,
           "lines": [
-            "Egooista...",
+            "Egooísta...",
             "Zzzzz..."
           ]
         }
@@ -409,8 +409,8 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Buenos dias, amigo",
-            "¿Porqué ha decidido viajar a la gran ciudad?",
+            "Buenos días, amigo",
+            "¿Por qué ha decidido viajar a la gran ciudad?",
             "¿Conoce usted a las hermanas Morton?"
           ]
         },
@@ -422,12 +422,12 @@
           "clock": false,
           "lines": [
             "Digamos que mis compañeros de trabajo eran nefastos",
-            "No entendian que el futuro de la arquitectura...",
+            "No entendían que el futuro de la arquitectura...",
             "son los edificios rectos, con todas sus piezas simetricas...",
             "¡Eficientes y hermosas!",
             "Y eso no es todo, porque-",
             "Perdone, me he dejado llevar",
-            "No seria la primera persona que me comenta que hablo demasiado",
+            "No sería la primera persona que me comenta que hablo demasiado",
             "¿Alguna de esas personas eran las hermanas Morton?"
           ]
         }, 
@@ -439,8 +439,8 @@
           "clock": false,
           "lines": [
             "¿Las hermanas pintoras?",
-            "¿Porque lo pregunta?",
-            "Solo escuche que estaban pintando retratos a poco precio",
+            "¿Por qué lo pregunta?",
+            "Solo escuché que estaban pintando retratos a poco precio",
             "¿Y puede decirme que hizo ayer por la noche?",
             "Gracias por su ayuda"
           ]
@@ -454,7 +454,7 @@
           "lines": [
             "Dormir, como todo el mundo",
             "Bueno, todos menos los borrachos esos",
-            "No se quienes son, pero Albert quizas sepa algo",
+            "No sé quienes son, pero Alfred quizás sepa algo",
             "Ahora si me disculpas, estoy un poco ocupado"
           ]
         },
@@ -465,7 +465,7 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            "No hay de que"
+            "No hay de qué"
           ]
         }
       ]
@@ -487,7 +487,7 @@
           "lines": [
             "Resulta bastante extraño verlo merodear",
             "¿Necesita ayuda con algo?",
-            "Si",
+            "Sí",
             "No"
           ]
         },
@@ -546,7 +546,7 @@
             "Aunque sé que es mejor no decir nada acerca del asesinato",
             "Procure tenerlo en cuenta",
             "Pero si quiere preguntar, no se corte",
-            "¿Hablo con alguna de las hermanas Morton?"
+            "¿Habló con alguna de las hermanas Morton?"
           ]
         }, 
 
@@ -558,9 +558,9 @@
           "lines": [
             "No mucho",
             "No venían mucho por la cafeteria",
-            "Quizas el maquinista sepa algo sobre ellas",
-            "¿Puedo saber que hacia usted ayer a medianoche",
-            "Entiendo. Buscare al maquinista entonces"
+            "Quizás el maquinista sepa algo sobre ellas",
+            "¿Podría saber que hacía usted ayer a medianoche",
+            "Entiendo. Buscaré al maquinista entonces"
           ]
         },
 
@@ -571,7 +571,7 @@
           "clock": true,
           "lines": [
             "Estuve sirviendo un par de copas",
-            "Un dia ajetreado, pero nada fuera de lo normal",
+            "Un día ajetreado, pero nada fuera de lo normal",
             "Eso me recuerda que tengo que terminar de limpiar",
             "Mucha suerte, detective"
           ]
@@ -583,7 +583,7 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            "Perdon por no ser de mas ayuda",
+            "Perdón por no ser de mas ayuda",
             "Vuelva a preguntarme cuando sea"
           ]
         }
@@ -606,7 +606,7 @@
           "lines": [
             "Buenas, señor Case",
             "¿Seguro que no vio nada inusual?",
-            "¿No durmio bien anoche?"
+            "¿No durmió bien anoche?"
           ]
         },
 
@@ -629,7 +629,7 @@
             "No se lo diga al jefe, pero...",
             "Estuve bebiendo un par de copas",
             "¿Estuvo bebiendo a solas?",
-            "¿Cuanto bebio?"
+            "¿Cuánto bebió?"
           ]
         },
 
@@ -641,7 +641,7 @@
           "lines": [
             "No, con unos pasajeros...",
             "Los señores Collins y Haines pidieron mucha bebida y me ofrecieron",
-            "¿Cuanto bebio?"
+            "¿Cuánto bebió?"
           ]
         },
 
@@ -654,7 +654,7 @@
             "No mucho",
             "Una o dos copas...",
             "Quizas tres",
-            "Ains... Marchese por favor",
+            "Ains... Márchese por favor",
             "Tengo que terminar de limpiar esto"
           ]
         }
@@ -675,7 +675,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "No tengo mas que decir, señor Case"
+            "No tengo más que decir, señor Case"
           ]
         }
       ]
@@ -699,7 +699,7 @@
           "clock": false,
           "lines": [
             "Buenas, joven",
-            "¿Porqué una señora como usted viajaria en este vagon?",
+            "¿Por qué una señora como usted viajaría en este vagón?",
             "¿Conoce usted a las hermanas Morton?"
           ]
         },
@@ -711,11 +711,11 @@
           "clock": false,
           "lines": [
             "¿Señora?",
-            "Señor detective, me hace sentir mas mayor de lo que soy",
-            "¿Que porque estoy en este vagon?",
+            "Señor detective, me hace sentir más mayor de lo que soy",
+            "¿Que por qué estoy en este vagon?",
             "Oh, nada importante cariño",
             "Solo necesitaba acompañar a mi nieto, Bruno",
-            "Ya veo. Y digame ¿usted conoce usted a las hermanas Morton?"
+            "Ya veo. Y dígame, ¿usted conoce usted a las hermanas Morton?"
           ]
         }, 
 
@@ -726,9 +726,9 @@
           "clock": false,
           "lines": [
             "No me suena haber escuchado ese nombre antes",
-            "¿Quizas viajen en clase media?",
+            "¿Quizás viajen en clase media?",
             "Puede ser. Muchas gracias por tu ayuda",
-            "¿Y que estaba haciendo usted ayer a medianoche"
+            "¿Y qué estaba haciendo usted ayer a medianoche"
           ]
         },
 
@@ -749,9 +749,9 @@
           "clock": true,
           "lines": [
             "Estuve esperando despierta a que volviera mi hijo",
-            "Pero como no volvia, sali a buscarlo",
-            "Lo encontre deambulando borracho ¿Lo puedes creer?",
-            "¿Vio por casualidad a alguien mas fuera del vagon?"
+            "Pero como no volvía, salí a buscarlo",
+            "Lo encontré deambulando borracho. ¿Lo puedes creer?",
+            "¿Vio por casualidad a alguien más fuera del vagon?"
           ]
         },
 
@@ -763,8 +763,8 @@
           "lines": [
             "No estoy segura, pero-",
             "Solo vi a ese tenista caminando a hurtadillas",
-            "Y bueno, a Albert tambien",
-            "No se muy bien porque tantas preguntas",
+            "Y bueno, a Alfred también",
+            "No sé muy bien por qué tantas preguntas",
             "Pero espero que tenga suerte, detective"
           ]
         }
@@ -785,10 +785,10 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Deberias ir a dormir, hijo",
+            "Deberías ir a dormir, hijo",
             "Te noto muy cansado",
             "¡Y delgado!",
-            "Tal vez podria darte algunas galletas..."
+            "Tal vez podría darte algunas galletas..."
           ]
         }
       ]
@@ -809,8 +809,8 @@
           "clock": false,
           "lines": [
             "Buenos días, detective",
-            "¿Conoces bien a Albert?",
-            "¿Que sabe sobre las hermanas Morton?"
+            "¿Conoces bien a Alfred?",
+            "¿Qué sabe sobre las hermanas Morton?"
           ]
         },
 
@@ -824,9 +824,9 @@
             "Todo el día trabajando e intentando ayudar a todos",
             "Hasta pidió una pequeña habitacion cerca de la cocina",
             "Solo por si acaso necesitaba ayudar a alguien por la noche",
-            "¿Porque preguntas?",
+            "¿Por qué preguntas?",
             "¿Sospechas que pueda estar detras de lo de Morton?",
-            "Puede ser ¿Que sabes sobre las hermanas?"
+            "Puede ser. ¿Qué sabes sobre las hermanas?"
           ]
         }, 
 
@@ -836,10 +836,10 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Escuche que habia cierta tension entre ambas",
+            "Escuché que había cierta tensión entre ambas",
             "Al parecer Mery, descanse en paz,...",
-            "Habia conseguido una oferta de trabajo y Molly no",
-            "¿Que estaba haciendo usted ayer a medianoche",
+            "Había conseguido la oferta de trabajo que su hermana quería.",
+            "¿Qué estaba haciendo usted ayer a medianoche",
             "Entiendo. Muchas gracias por tu ayuda"
           ]
         },
@@ -853,7 +853,7 @@
             "Trabajar, toda la noche",
             "Mi compañero no pudo venir, asi que tengo turno doble",
             "Y no, por si se lo pregunta, no vi a nadie.",
-            "Podria ir a preguntar a Albert, quizas sepa algo mas"
+            "Podría ir a preguntar a Alfred, quizás sepa algo mas"
           ]
         },
 
@@ -863,7 +863,7 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            "No hay de que"
+            "No hay de qué"
           ]
         }
       ]
@@ -885,9 +885,9 @@
           "lines": [
             "Señor Case...",
             "No quiero presionar, pero-",
-            "Llamare a la policia al llegar a la estacion",
-            "Y los policias van a querer a su asesino",
-            "Asi que esfuercese en encontrarlo"
+            "Llamaré a la policia al llegar a la estacion",
+            "Y los policías van a querer a su asesino",
+            "Así que esfuercese en encontrarlo"
           ]
         }
       ]
@@ -895,7 +895,7 @@
 
     {
       "id": 17,
-      "char": "Aiva Yan",
+      "char": "Ayva Yan",
       "imageName": "",
       "isObject": false,
       "dialogo": 0,
@@ -907,9 +907,9 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "¿En que puedo ayudarlo, detective?",
-            "¿Porque ha decidido embarcarse en este tren?",
-            "¿Que estuvo haciendo ayer por la noche?"
+            "¿En qué puedo ayudarlo, detective?",
+            "¿Por qué ha decidido embarcarse en este tren?",
+            "¿Qué estuvo haciendo ayer por la noche?"
           ]
         },
 
@@ -920,8 +920,8 @@
           "clock": false,
           "lines": [
             "Voy a ver a unos inversores para exponer unas ideas",
-            "Asumo que no salio de su cuarto entonces...",
-            "¿Que ideas?"
+            "Asumo que no salió de su cuarto entonces...",
+            "¿Qué ideas?"
           ]
         }, 
 
@@ -932,8 +932,8 @@
           "clock": false,
           "lines": [
             "Estuve trabajando en un pequeño proyecto",
-            "Nada que relevante para usted",
-            "¿En que consiste el proyecto?",
+            "Nada que sea relevante para usted",
+            "¿En qué consiste el proyecto?",
             "Entiendo. Muchas gracias por su ayuda"
           ]
         },
@@ -944,10 +944,10 @@
           "irritacion": 0,
           "clock": true,
           "lines": [
-            "¿De verdad esta interesado?",
-            "Bueno, no sera terrible contarselo",
-            "Estoy trabajando en un nuevo sistema electrico",
-            "Tengo que trabajar con cables todo el dia",
+            "¿De verdad está interesado?",
+            "Bueno, no será terrible contárselo",
+            "Estoy trabajando en un nuevo sistema eléctrico",
+            "Tengo que trabajar con cables todo el día",
             "Aunque debo admitir que no dejan de desaparecer...",
             "Eso ha sido de mucha ayuda. Gracias"
           ]
@@ -967,7 +967,7 @@
 
     {
       "id": 18,
-      "char": "Aiva Yan",
+      "char": "Ayva Yan",
       "imageName": "",
       "isObject": false,
       "dialogo": 1,
@@ -1038,7 +1038,7 @@
           "clock": true,
           "lines": [
             "¿Morton?",
-            "I dont know who they are"
+            "I don't know who they are"
           ]
         },
 
@@ -1049,7 +1049,7 @@
           "clock": true,
           "lines": [
             "Yes, Alfred. Y Victor",
-            "Alfred works here in the... Cafeteria?",
+            "Alfred works here in the... Cafetería?",
             "Pregunta around there"
           ]
         }
@@ -1070,9 +1070,9 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "¿Quien- Quien es usted?",
+            "¿Quién- Quién es usted?",
             "Espera, espera ¿El- El detective?",
-            "¿Que quieres de mi?",
+            "¿Que quieres de mí?",
             "Un poco nervioso, ¿no?",
             "¿Conoce a las hermanas Morton?"
           ]
@@ -1086,9 +1086,9 @@
           "lines": [
             "¿Ner-Nervioso? ¿Yo-Yo-Yo?",
             "¡Estupideces!",
-            "Es solo que... Bueno, no dormi bien",
+            "Es solo que... Bueno, no dormí bien",
             "¿Acaso contactó con alguna de las hermanas Morton por la noche?",
-            "¿Porque no durmio bien?"
+            "¿Porque no durmió bien?"
           ]
         }, 
 
@@ -1098,10 +1098,10 @@
           "irritacion": 50,
           "clock": false,
           "lines": [
-            "¿Co-Como?",
-            "No se de que estas hablando",
+            "¿Có-Cómo?",
+            "No sé de que estás hablando",
             "No conozco a las Morton",
-            "Ahora si me disculpas..."
+            "Ahora, si me disculpas..."
           ]
         },
 
@@ -1112,8 +1112,8 @@
           "clock": true,
           "lines": [
             "Estuve esperando a que mi abuela volviera...",
-            "Salio del vagon para ir al baño, pero...",
-            "Lo siento, creo que no deberia seguir hablando"
+            "Salió del vagon para ir al baño, pero...",
+            "Lo siento, creo que no debería seguir hablando"
           ]
         }
       ]
@@ -1134,7 +1134,7 @@
           "clock": false,
           "lines": [
             "Detective...",
-            "¿Porque esta investigando tanto?",
+            "¿Por qué esta investigando tanto?",
             "No se preocupe por ello",
             "Ha habido un asesinato y el culpable es un pasajero"
           ]
@@ -1157,8 +1157,8 @@
           "irritacion": 100,
           "clock": true,
           "lines": [
-            "¿¡Como?!",
-            "No... ¿No habria sido capaz, verdad?",
+            "¿¡Cómo?!",
+            "No... ¿No habría sido capaz, verdad?",
             "Solo fueron unos minutos, pero ¿y si...?",
             "Disculpe, pero necesito pensar"
           ]
@@ -1181,9 +1181,9 @@
           "clock": false,
           "lines": [
             "Aun no me creo que... que...",
-            "Oh dios mio",
+            "Oh, dios mio",
             "Respire hondo",
-            "¿Donde estuvo ayer por la noche?"
+            "¿Dónde estuvo ayer por la noche?"
           ]
         },
 
@@ -1193,12 +1193,12 @@
           "irritacion": 20,
           "clock": false,
           "lines": [
-            "¿Como? ¿Que res-respire?",
+            "¿Cómo? ¿Que res-respire?",
             "¡Han asesinado a Mery!",
-            "¿Como espera que...?",
-            "Oh dios mio ¿Porque decidi dejarla?",
+            "¿Cómo espera que...?",
+            "Oh, dios mío. ¿Por qué decidí dejarla?",
             "¿Dejarla?",
-            "¿Mery tenia algun enemigo?"
+            "¿Mery tenía algun enemigo?"
           ]
         }, 
 
@@ -1210,8 +1210,8 @@
           "lines": [
             "Yo... Yo...",
             "Tuvimos una pelea y... y...",
-            "Me fui del vagon. Y cuando volvi...",
-            "Estaba ahi. Muerta",
+            "Me fui del vagon. Y cuando volví...",
+            "Estaba ahí. Muerta",
             "¿Vio a alguien?",
             "Interesante..."
           ]
@@ -1224,10 +1224,10 @@
           "clock": true,
           "lines": [
             "No, nadie",
-            "Nadie podria...",
-            "¿Acaso podria haber...?",
-            "Oh dios mio, Mery",
-            "¿Que te han hecho Mery?"
+            "Nadie podría...",
+            "¿Acaso podría haber...?",
+            "Oh dios mío, Mery",
+            "¿Qué te han hecho Mery?"
           ]
         },
 
@@ -1237,10 +1237,10 @@
           "irritacion": 10,
           "clock": true,
           "lines": [
-            "¿Cree que yo podria...?",
-            "No lo he hecho, creeme",
-            "Yo nunca podria... Oh dios mio, Mery",
-            "¿Que te han hecho Mery?"
+            "¿Cree que yo podría...?",
+            "No lo he hecho, créeme",
+            "Yo nunca podría... Oh dios mío, Mery",
+            "¿Qué te han hecho Mery?"
           ]
         }
       ]
@@ -1262,8 +1262,8 @@
           "lines": [
             "Oh Mery",
             "Lo siento mucho Mery",
-            "Nunca pense que esto pasaria...",
-            "¿Pasar el que?",
+            "Nunca pensé que esto pasaría...",
+            "¿Pasar el qué?",
             "No es su culpa"
           ]
         },
@@ -1276,8 +1276,8 @@
           "lines": [
             "Nada",
             "No pasa nada detective",
-            "Solo que Mery esta muerta y usted...",
-            "Usted solo hace preguntas estupidas"
+            "Solo que Mery está muerta y usted...",
+            "Usted solo hace preguntas estúpidas"
           ]
         },
 
@@ -1289,9 +1289,9 @@
           "lines": [
             "Gracias, pero creo que lo es",
             "Estaba celosa y dije cosas",
-            "Cosas que no deberia haber dicho",
-            "¿Hablo con alguien?",
-            "¿Como que?"      
+            "Cosas que no debería haber dicho",
+            "¿Habló con alguien?",
+            "¿Cómo qué?"      
           ]
         },
 
@@ -1301,9 +1301,9 @@
           "irritacion": 60,
           "clock": true,
           "lines": [
-            "No... No lo se",
-            "Estaba enfadada y el te...",
-            "No recuerdo que paso, solo bebi te y-",
+            "No... No lo sé",
+            "Estaba enfadada y el té...",
+            "No recuerdo que paso, solo bebí té y-",
             "Agh, mi cabeza"
           ]
         },
@@ -1315,23 +1315,16 @@
           "clock": true,
           "lines": [
             "Estaba enfadada",
-            "Sali del vagon y alguien...",
-            "Alguien me ofrecio beber un poco de te",
-            "Hable mal de Mery, dije que... que...",
-            "Que desearia que muriera",
+            "Salí del vagon y alguien...",
+            "Alguien me ofreció beber un poco de té",
+            "Hablé mal de Mery, dije que... que...",
+            "Que desearía que muriera",
             "Nunca quise esto",
             "Lo siento Mery, lo siento mucho"
           ]
         }
       ]
     },
-
-
-
-
-
-
-
 
     {
       "id": 24,
@@ -1390,7 +1383,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Un cable un poco raido",
+            "Un cable un poco raído",
             "Parece que alguien lo ha retorcido con las manos"
           ]
         }
@@ -1412,7 +1405,7 @@
           "clock": false,
           "lines": [
             "Una botella de vino de gran calidad",
-            "No parece que lo vendan en la cafeteria"
+            "No parece que lo vendan en la cafetería"
           ]
         }
       ]
@@ -1432,7 +1425,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Una lampara pequeña con marcas de golpe",
+            "Una lámpara pequeña con marcas de golpe",
             "La bombilla parece bastante nueva"
           ]
         }
@@ -1516,7 +1509,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Dejas el maletin donde esta"
+            "Dejas el maletin donde está"
           ]
         }
       ]
@@ -1537,7 +1530,7 @@
           "clock": false,
           "lines": [
             "Cables nuevos, sin usar",
-            "Son identicos al que habia en la escena del crimen"
+            "Son idénticos al que había en la escena del crimen"
           ]
         }
       ]
@@ -1557,8 +1550,8 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Una maqueta de una serie de prototipos cientificos",
-            "Parecen unos cuadrados electricos"
+            "Una maqueta de una serie de prototipos científicos",
+            "Parecen unos cuadrados eléctricos"
           ]
         }
       ]
@@ -1566,7 +1559,7 @@
 
     {
       "id": 34,
-      "char": "Caja de cereales vacia",
+      "char": "Caja de cereales vacía",
       "imageName": "",
       "isObject": true,
       "dialogo": 0,
@@ -1578,7 +1571,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Es un envase vacio de cereales"
+            "Es un envase vacío de cereales"
           ]
         }
       ]
