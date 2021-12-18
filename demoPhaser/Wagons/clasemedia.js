@@ -19,6 +19,11 @@ export default class ClaseMedia extends Wagon {
   labels()
   {
         //Textos
+        this.label0 = this.scene.scene.add.text(275, 375, " ", {
+          wordWrap: {
+            width: 400
+          }
+        });
         this.label = this.scene.scene.add.text(275, 435, " ", {
           wordWrap: {
             width: 400
@@ -52,14 +57,13 @@ export default class ClaseMedia extends Wagon {
     this.phone = this.add.sprite(560, 250, 'objects', [23]).setDepth(1);
     this.phone.setInteractive();
     this.phone.on('pointerdown', () => {
-      this.dialog = new Dialog(this, 35);
-      this.dialog.initDialog();
 
       this.createOptions()
     });
   }
 
   createOptions() {
+    this.label0.text = "Es el teléfono para llamar a la policía. Debes usarlo cuando sepas la identidad del asesino";
     this.label.text = "Llamar a la policía";
     this.label2.text = "Todavía no";
 
