@@ -32,44 +32,50 @@ export default class DialogManager {
             }, 
             {
                 id: 3,
+                dialogo: 0,
+                anger: 0
+            },
+            {
+                id: 4,
                 dialogo: 5,
                 anger: 0
             }, 
             {
-                id: 4,
+                id: 5,
                 dialogo: 8,
                 anger: 0
             }, 
             {
-                id: 5,
+                id: 6,
                 dialogo: 10,
                 anger: 0
             }, 
             {
-                id: 6,
+                id: 7,
                 dialogo: 19,
                 anger: 0
             }, 
             {
-                id: 7,
+                id: 8,
                 dialogo: 17,
                 anger: 0
             }, 
             {
-                id: 8,
+                id: 9,
                 dialogo: 13,
                 anger: 0
             }, //8
             {
-                id: 9,
+                id: 10,
                 dialogo: 20,
                 anger: 0
             }, 
             {
-                id: 10,
+                id: 11,
                 dialogo: 15,
                 anger: 0
             }, 
+
         ];
     }
 
