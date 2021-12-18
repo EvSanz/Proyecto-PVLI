@@ -32,6 +32,7 @@ export default class Npc extends Phaser.GameObjects.Sprite {
         });
 
         this.info = this.scene.scene.get('boot').cache.json.get('personajes').Personajes[this.id - 1];
+        this.name = this.info.name;
 
         //Creamos el dialogo
         this.dialog = new Dialog(this.scene, dialogoIni, this);

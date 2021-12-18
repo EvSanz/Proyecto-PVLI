@@ -70,6 +70,7 @@
      if (this.myData.Dialogues[this.id].isObject == false) {
        //renderizamos la imagen del npc
        this.cambiarRetrato(this.currentNpc.image);
+       this.mostrarNombre(this.currentNpc);
        this.actualizaIrritacion(this.currentNpc.getIrritacion());
      }
 
@@ -77,6 +78,7 @@
      else {
        //renderizamos al inspector
        this.cambiarRetrato(0);
+       this.mostrarNombre();
      }
 
      //Texto
@@ -91,12 +93,14 @@
        if (this.myData.Dialogues[this.id].isObject == false) {
          //renderizamos la imagen del npc
          this.cambiarRetrato(this.currentNpc.image);
+         this.mostrarNombre(this.currentNpc);
        }
 
        //Si no lo es...
        else {
          //renderizamos al inspector
          this.cambiarRetrato(0);
+         this.mostrarNombre();
        }
 
        this.textNum++;
@@ -107,6 +111,7 @@
      else {
        //renderizamos el retrato del inspector
        this.cambiarRetrato(0);
+       this.mostrarNombre();
 
        //Escribimos las opciones de dialogo, separadas entre ellas
        this.textNum++;
@@ -152,6 +157,7 @@
 
        //Eliminamos el retrato
        this.cambiarRetrato();
+       this.mostrarNombre();
        this.actualizaIrritacion();
 
        //Destruimos los cuadros de opciones
@@ -178,6 +184,7 @@
 
      //renderizamos la imagen del npc
      this.cambiarRetrato(this.currentNpc.image);
+     this.mostrarNombre(this.currentNpc);
      this.actualizaIrritacion(this.currentNpc.getIrritacion());
 
      this.label.text = "No pienso seguir hablando";
@@ -212,6 +219,7 @@
          this.scene.locked = false;
 
          this.cambiarRetrato();
+         this.mostrarNombre();
          this.actualizaIrritacion();
        }
 
@@ -251,7 +259,8 @@
     */
    cambiarRetrato(image = -1) {
      //Borramos el retrato anterior
-     if (this.portrait !== undefined) {
+     if (this.portrait !== undefined) 
+     {
        this.portrait.destroy();
      }
 
@@ -267,8 +276,28 @@
      }
    }
 
+   /** Muestra el nombre del npc enviado
+    * @param {Npc} npc El npc que cuyo nombre hay que mostrar
+    */
+   mostrarNombre(npc)
+   {
+    if (this.talkingTo !== undefined)
+    {
+      this.talkingTo.destroy();
+      this.frame.destroy();
+    }
+    if (npc !== undefined)
+    {
+      //Mucho magic number soy consciente :v
+      this.frame = this.scene.add.sprite(337, 367, 'infopanel');
+      this.frame.displayWidth = 170;
+      this.frame.displayHeight = 24;
+      this.talkingTo = this.scene.add.text(260, 360, npc.name, {fontStyle: 'bold'});
+    }
+   }
+
    /** Actualiza la barra de irritacion respecto del valor dado
-    * @param {number} newValue El nuevo valor de la irritacion dejar vacio para borrar
+    * @param {number} newValue El nuevo valor de la irritacion. Dejar vacio para borrar
     */
    actualizaIrritacion(newValue = -1)
    {
@@ -285,4 +314,5 @@
       this.barra = this.scene.add.sprite(110, 493, 'irritacion', [newValue / 5])
     }
    }
+
  }
