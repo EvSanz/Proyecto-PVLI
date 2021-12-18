@@ -1487,7 +1487,7 @@
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "Es un maletin cerrado con candado",
+            "Es un maletín cerrado con candado",
             "Forzarlo",
             "Dejarlo como esta"
           ]
@@ -1567,11 +1567,31 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
             "Es un envase vacío de cereales"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 35,
+      "char": "Teléfono",
+      "imageName": "",
+      "isObject": true,
+      "dialogo": 0,
+      "ultDialogo": true,
+      "scenes": [
+        {
+          "id": "Scene0",
+          "opciones": -1,
+          "irritacion": 0,
+          "clock": false,
+          "lines": [
+            "Es el teléfono para llamar a la policía. Debes usarlo cuando sepas la identidad del asesino"
           ]
         }
       ]
