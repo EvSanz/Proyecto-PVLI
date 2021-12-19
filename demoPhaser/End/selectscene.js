@@ -7,7 +7,7 @@ export default class SelectScene extends Wagon {
       spriteFondo1: 38,
       spriteFondo2: 39,
       spriteFondo3: 40,
-      wagonIzq: 'clasealta'
+      wagonIzq: 'goodend'
     });
   }
   spawnObjects() {

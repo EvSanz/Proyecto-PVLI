@@ -121,10 +121,10 @@ export default class Wagon extends Phaser.Scene {
     }
     //Si es point and click...
     if (this.isPT) {
-      let goback;
-
-      goback = this.add.sprite(960, 50, 'objects', [4]).setInteractive();
-
+     
+      if(this.wagonKey!="selectscene")
+     {  let goback;
+       goback = this.add.sprite(960, 50, 'objects', [4]).setInteractive();
       goback.on('pointerdown', () => {
         //reducir el tiempo
         this.scene.get('boot').consultClock().decreaseTime(this);
@@ -135,7 +135,7 @@ export default class Wagon extends Phaser.Scene {
           // TODO create killer scene
         ;
       });
-
+    }
     } else {
       if (this.wagonKey !== this.wagonIzq)
         new Door(this, 15, 222, this.wagonIzq, 'puertafunlat');
