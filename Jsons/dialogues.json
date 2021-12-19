@@ -11,7 +11,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -24,7 +24,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 20,
           "clock": false,
           "lines": [
@@ -37,7 +37,7 @@
 
         {
           "id": "Scene2",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -50,7 +50,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -61,7 +61,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -72,9 +72,9 @@
       ]
     },
 
-    
-    
-    
+
+
+
     {
       "id": 1,
       "char": "Larry Shephard",
@@ -85,7 +85,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -97,18 +97,18 @@
 
         {
           "id": "Scene1",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
             "Voy a llevar mi cabra al veterinario",
             "Entiendo. Por cierto, ¿habló con las hermanas?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 3,
+          "opciones": 3,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -122,7 +122,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 25,
           "clock": true,
           "lines": [
@@ -134,7 +134,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -142,7 +142,7 @@
           ]
         }
       ]
-    }, 
+    },
 
     {
       "id": 2,
@@ -154,7 +154,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -175,7 +175,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -187,7 +187,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 6,
+          "opciones": 6,
           "irritacion": 25,
           "clock": false,
           "lines": [
@@ -199,11 +199,11 @@
             "Igual que esa muchacha... Todos igual",
             "¿La chica por casualidad se apellidaba Morton?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -216,7 +216,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 25,
           "clock": true,
           "lines": [
@@ -228,7 +228,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -248,7 +248,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 25,
           "clock": false,
           "lines": [
@@ -257,7 +257,7 @@
         }
       ]
     },
-    
+
     {
       "id": 5,
       "char": "Profesor Collins",
@@ -268,7 +268,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -280,18 +280,18 @@
 
         {
           "id": "Scene1",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
             "Sip- Siolo bebí uun poquitito",
             "No creo que pueda decirme nada sobre Mery Morton asi"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -304,7 +304,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 25,
           "clock": true,
           "lines": [
@@ -317,7 +317,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -337,7 +337,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -350,7 +350,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -364,7 +364,7 @@
 
         {
           "id": "Scene2",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 25,
           "clock": false,
           "lines": [
@@ -385,7 +385,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -394,7 +394,7 @@
         }
       ]
     },
-    
+
     {
       "id": 8,
       "char": "Frederick Bold",
@@ -405,7 +405,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -417,7 +417,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 7,
+          "opciones": 7,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -430,11 +430,11 @@
             "No sería la primera persona que me comenta que hablo demasiado",
             "¿Alguna de esas personas eran las hermanas Morton?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 3,
+          "opciones": 3,
           "irritacion": 25,
           "clock": false,
           "lines": [
@@ -448,7 +448,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 25,
           "clock": true,
           "lines": [
@@ -461,7 +461,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -481,7 +481,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -494,7 +494,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -505,7 +505,7 @@
 
         {
           "id": "Scene2",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 25,
           "clock": false,
           "lines": [
@@ -525,7 +525,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -537,7 +537,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 5,
+          "opciones": 5,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -548,11 +548,11 @@
             "Pero si quiere preguntar, no se corte",
             "¿Habló con alguna de las hermanas Morton?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 3,
+          "opciones": 3,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -566,7 +566,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -579,7 +579,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -589,7 +589,7 @@
         }
       ]
     },
-    
+
     {
       "id": 11,
       "char": "Alfred Hirsch",
@@ -600,7 +600,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -612,7 +612,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -622,7 +622,7 @@
 
         {
           "id": "Scene2",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 20,
           "clock": false,
           "lines": [
@@ -635,7 +635,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -647,7 +647,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -671,7 +671,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -694,7 +694,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -706,7 +706,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 5,
+          "opciones": 5,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -717,11 +717,11 @@
             "Solo necesitaba acompañar a mi hijo, Bruno",
             "Ya veo. Y dígame, ¿usted conoce usted a las hermanas Morton?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -734,7 +734,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -744,7 +744,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : 3,
+          "opciones": 3,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -757,7 +757,7 @@
 
         {
           "id": "Scene5",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -769,7 +769,7 @@
           ]
         }
       ]
-    }, 
+    },
 
     {
       "id": 14,
@@ -781,7 +781,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -804,7 +804,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -816,7 +816,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 5,
+          "opciones": 5,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -828,11 +828,11 @@
             "¿Sospechas que pueda estar detras de lo de Morton?",
             "Puede ser. ¿Qué sabes sobre las hermanas?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 3,
+          "opciones": 3,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -846,7 +846,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 25,
           "clock": true,
           "lines": [
@@ -859,7 +859,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -879,7 +879,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -903,7 +903,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -915,7 +915,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -923,11 +923,11 @@
             "Asumo que no salió de su cuarto entonces...",
             "¿Qué ideas?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 10,
           "clock": false,
           "lines": [
@@ -940,7 +940,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : 5,
+          "opciones": 5,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -955,7 +955,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -975,7 +975,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -992,11 +992,11 @@
       "imageName": "",
       "isObject": false,
       "dialogo": 0,
-      "ultDialogo": true,
+      "ultDialogo": false,
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 1,
+          "opciones": 1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1008,32 +1008,32 @@
 
         {
           "id": "Scene1",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
             "Si, si",
             "I am just too tired to speak different",
-            "¿Porque esta tan cansado?"
+            "¿Por qué está tan cansado?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
             "I drank with Alfie y Vic last night",
             "Too many things to think about...",
-            "¿Pensar en las Morton quizas",
+            "¿Pensar en las Morton quizás?",
             "¿Alfie y Vic?"
           ]
         },
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 20,
           "clock": true,
           "lines": [
@@ -1044,11 +1044,11 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
-            "Yes, Alfred. Y Victor",
+            "Yes, Alfred. Y Víctor",
             "Alfred works here in the... Cafetería?",
             "Pregunta around there"
           ]
@@ -1066,7 +1066,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 3,
+          "opciones": 3,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1080,7 +1080,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 3,
+          "opciones": 3,
           "irritacion": 30,
           "clock": false,
           "lines": [
@@ -1090,11 +1090,11 @@
             "¿Acaso contactó con alguna de las hermanas Morton por la noche?",
             "¿Porque no durmió bien?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 50,
           "clock": false,
           "lines": [
@@ -1107,7 +1107,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 20,
           "clock": true,
           "lines": [
@@ -1129,7 +1129,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1142,7 +1142,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -1153,7 +1153,7 @@
 
         {
           "id": "Scene2",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 100,
           "clock": true,
           "lines": [
@@ -1176,7 +1176,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 2,
+          "opciones": 2,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1189,7 +1189,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : 4,
+          "opciones": 4,
           "irritacion": 20,
           "clock": false,
           "lines": [
@@ -1200,11 +1200,11 @@
             "¿Dejarla?",
             "¿Mery tenía algun enemigo?"
           ]
-        }, 
+        },
 
         {
           "id": "Scene2",
-          "opciones" : 4,
+          "opciones": 4,
           "irritacion": 20,
           "clock": false,
           "lines": [
@@ -1219,7 +1219,7 @@
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": true,
           "lines": [
@@ -1233,7 +1233,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 10,
           "clock": true,
           "lines": [
@@ -1256,7 +1256,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : 3,
+          "opciones": 3,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1270,7 +1270,7 @@
 
         {
           "id": "Scene1",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 60,
           "clock": true,
           "lines": [
@@ -1283,7 +1283,7 @@
 
         {
           "id": "Scene2",
-          "opciones" : 3,
+          "opciones": 3,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1291,13 +1291,13 @@
             "Estaba celosa y dije cosas",
             "Cosas que no debería haber dicho",
             "¿Habló con alguien?",
-            "¿Cómo qué?"      
+            "¿Cómo qué?"
           ]
         },
 
         {
           "id": "Scene3",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 60,
           "clock": true,
           "lines": [
@@ -1310,7 +1310,7 @@
 
         {
           "id": "Scene4",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 60,
           "clock": true,
           "lines": [
@@ -1336,7 +1336,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1358,7 +1358,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1379,7 +1379,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1400,7 +1400,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1421,7 +1421,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1442,7 +1442,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1463,7 +1463,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1483,7 +1483,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1503,7 +1503,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1524,7 +1524,7 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones" : -1,
+          "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
@@ -1554,6 +1554,115 @@
         }
       ]
     }
+
+    //{
+    //  "id": 20,
+    //  "char": "Mihael Haines",
+    //  "imageName": "",
+    //  "isObject": false,
+    //  "dialogo": 0,
+    //  "ultDialogo": false,
+    //  "scenes": [
+    //    {
+    //      "id": "Scene0",
+    //      "opciones": 0,
+    //      "irritacion": 20,
+    //      "clock": false,
+    //      "lines": [
+    //        "¿Por qué se ausentó anoche de la cafetería?",
+    //        "Buenas, señor Haines"
+    //      ]
+    //    },
+    //    {
+    //      "id": "Scene1",
+    //      "opciones": -1,
+    //      "irritacion": 20,
+    //      "clock": true,
+    //      "lines": [
+    //        "I was tired. Era muy... late."
+    //      ]
+    //    },
+    //    {
+    //      "id": "Scene2",
+    //      "opciones": -1,
+    //      "irritacion": 20,
+    //      "clock": false,
+    //      "lines": [
+    //        "Good morning, Mr Case, good luck en su investigación"
+    //      ]
+    //    }
+    //  ]
+    //},
+
+    //{
+    //  "id": 21,
+    //  "char": "Mihael Haines",
+    //  "imageName": "",
+    //  "isObject": false,
+    //  "dialogo": 0,
+    //  "ultDialogo": false,
+    //  "scenes": [
+    //    {
+    //      "id": "Scene0",
+    //      "opciones": 0,
+    //      "irritacion": 20,
+    //      "clock": false,
+    //      "lines": [
+    //        "Según Alfred, ¿usted no volvió después a la cafetería?",
+    //        "Tenga un buen día"
+    //      ]
+    //    },
+    //    {
+    //      "id": "Scene1",
+    //      "opciones": -1,
+    //      "irritacion": 20,
+    //      "clock": false,
+    //      "lines": [
+    //        "Ahhh, midnight? Tenía que ir al baño, of course."
+    //      ]
+    //    },
+    //    {
+    //      "id": "Scene2",
+    //      "opciones": -1,
+    //      "irritacion": 20,
+    //      "clock": false,
+    //      "lines": [
+    //        "You too, señor Case"
+    //      ]
+    //    }
+    //  ]
+    //},
+
+    //{
+    //  "id": 35,
+    //  "char": "Mihael Haines",
+    //  "imageName": "",
+    //  "isObject": false,
+    //  "dialogo": 0,
+    //  "ultDialogo": false,
+    //  "scenes": [
+    //    {
+    //      "id": "Scene0",
+    //      "opciones": 0,
+    //      "irritacion": 100,
+    //      "clock": false,
+    //      "lines": [
+    //        "¿Realmente se ausentó solo para eso? Ha habido un asesinato, podría haberlo cometido usted.",
+    //        "No me fío de usted, pero le creeré"
+    //      ]
+    //    },
+    //    {
+    //      "id": "Scene1",
+    //      "opciones": -1,
+    //      "irritacion": 100,
+    //      "clock": true,
+    //      "lines": [
+    //        "You! Me? An asesino?... Ok, te diré que hacía anoche",
+    //        "I'm not just a tenista. I am intelligence, de mi país, I had to call them.",
+    //        "No voy a hablar más con usted."
+    //      ]
+    //    }
+    //  ]
+    //},
   ]
-}
-    
+} 
