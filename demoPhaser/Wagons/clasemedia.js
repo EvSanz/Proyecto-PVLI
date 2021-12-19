@@ -22,7 +22,7 @@ export default class ClaseMedia extends Wagon {
         this.label0 = this.scene.scene.add.text(275, 375, " ", {
           wordWrap: {
             width: 400
-          }
+          },
         });
         this.label = this.scene.scene.add.text(275, 435, " ", {
           wordWrap: {
@@ -44,10 +44,15 @@ export default class ClaseMedia extends Wagon {
 
     this.labels();
 
-    let mortondoor;
-    this.mortondoor = new Door(this, 120, 222, 'habitacionmorton', 'puertafun');
-    this.mortondoor2 = new Door(this, 440, 222, 'habitacioncollins', 'puertafun');
-    this.mortondoor3 = new Door(this, 780, 222, 'habitacionbold', 'puertafun');
+    this.placas = [];
+    let i = 0;
+
+    this.door = new Door(this, 120, 222, 'habitacionmorton', 'puertafun');
+    this.placaPuerta(this.placas[i++], 120, 222, "Morton");
+    this.door2 = new Door(this, 440, 222, 'habitacioncollins', 'puertafun');
+    this.placaPuerta(this.placas[i++], 440, 222, "Collins");
+    this.door3 = new Door(this, 780, 222, 'habitacionbold', 'puertafun');
+    this.placaPuerta(this.placas[i++], 780, 222, "Bold");
 
     this.createPhone();
   }

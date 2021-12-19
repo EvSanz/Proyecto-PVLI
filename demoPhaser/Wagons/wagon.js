@@ -212,4 +212,11 @@ export default class Wagon extends Phaser.Scene {
       }
     }
   }
+
+  placaPuerta(placa, doorX, doorY, nombre)
+  {
+    placa = this.scene.scene.add.text(doorX + 105, doorY - 67, nombre, {fontStyle: 'bold', fontSize: 13, color: '#000000' });
+
+    placa.setDepth(1);
+  }
 }

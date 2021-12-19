@@ -20,8 +20,13 @@ export default class ClaseAlta extends Wagon {
   }
 
   spawnObjects() {
-    this.mortondoor = new Door(this, 120, 222, 'habitacionyan', 'puertafun');
-    this.mortondoor2 = new Door(this, 440, 222, 'habitacionanthony', 'puertafun');
-    this.mortondoor3 = new Door(this, 780, 222, 'habitacionhaines', 'puertafun');
+    this.placas = [];
+    let i = 0;
+    this.door = new Door(this, 120, 222, 'habitacionyan', 'puertafun');
+    this.placaPuerta(this.placas[i++], 120, 222, "Yan");
+    this.door2 = new Door(this, 440, 222, 'habitacionanthony', 'puertafun');
+    this.placaPuerta(this.placas[i++], 440, 222, "Anthony");
+    this.door3 = new Door(this, 780, 222, 'habitacionhaines', 'puertafun');
+    this.placaPuerta(this.placas[i++], 780, 222, "Haines");
   }
 }
