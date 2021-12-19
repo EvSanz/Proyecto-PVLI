@@ -7,7 +7,7 @@ export default class GoodEnd extends Wagon {
       spriteFondo1: 43,
       spriteFondo2: 42,
       spriteFondo3: 43,
-      wagonIzq: 'clasealta'
+      wagonIzq: 'boot'
     });
 
   }

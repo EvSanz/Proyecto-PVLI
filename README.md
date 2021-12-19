@@ -56,7 +56,6 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   + En la esquina inferior izquierda, al lado del cuadro del diálogo, habrá una imagen de la cara del personaje que está hablando.
   + Debajo de la imagen del personaje que está hablando aparece su barra de  incomodidad.
   + En la esquina superior izquierda, habrá un círculo con forma de reloj que indicará las acciones restantes de la partida.
-  + En la esquina superior derecha, estará el botón del menú de la partida con ajustes varios.
   + En la esquina inferior derecha estará la libreta de detective, que incuirá apuntes de algunas pruebas, objetos y datos que vaya consiguiendo el jugador.
   
   ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/interfaz_diagrama.png)
@@ -64,17 +63,17 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   
 - ### 3.2 Controles ###
   
-  + Movimiento: El personaje principal se moverá de izquierda a derecha con los teclas "A" y "D" o las flechas de dirección izquierda y derecha.
-  + Objetos e interacciones: Al aproximarte a un objeto o persona con el que puedas interactuar la interacción comienza al hacer click en él.
-  + Diario: En cualquier momento del juego se podrá acceder a la informacion contenida en el diario presionando la tecla "Q".
+  + Movimiento: El personaje principal se moverá de izquierda a derecha con los teclas 'A' y 'D' o las flechas de dirección izquierda y derecha.
+  + Objetos e interacciones: Al aproximarte a un objeto o persona con el que puedas interactuar, la interacción comienza al hacer click en él o al pulsar la tecla 'E'.
+  + Diario: En cualquier momento del juego se podrá acceder a la informacion contenida en el diario presionando la tecla 'Q' o haciendo click en el boton del diario de la interfaz.
   + Click izquierdo: Durante una inspección, podrás recoger objectos y añadirlos al diario haciendo click izquierdo sobre él. Durante un dialogo, podrás clickear directamente sobre la opción de dialogo que quieras elegir. 
   
 
 - ### 3.3. Menús ### 
 
-  + Menú principal: El menú que aparece al principio del juego contará con un botón "play" para iniciar la partida, un botón de ajustes y un botón que muestra los créditos.
+  + Menú principal: El menú que aparece al principio del juego contará con un botón "Jugar" para iniciar la partida, un botón de ajustes y un botón que muestra los créditos.
   + Menú de ajustes: Mostrará los ajustes del juego.
-  + Menú del diario: Al activar el diario se mostrará un libro abierto con una lista de objetos en la pagina derecha y una lista de la información recabada en los diálogos en la página izquierda.
+  + Menú del diario: Al activar el diario se mostrará un libro abierto con una lista de objetos en la pagina izquierda y una lista de los personajes en la página derecha. Al pasar el ratón por encima aparecerá un cuadro con más información.
 
 
 ## 4. Jugabilidad ##
@@ -83,31 +82,31 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 
   + _Movimiento_: El jugador podrá mover al protagonista de un lado a otro de cada vagón con 'A' y 'D' o las flechas de dirección a una velocidad constante para interactuar con personajes o abrir puertas que dan acceso a otro vagón o habitaciones.
 
-  + _Point and click:_ En ciertas salas, como las habitaciones de los demás personajes del juego, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales anotará en su diario.
+  + _Point and click_: En ciertas salas, como las habitaciones de los demás personajes del juego, el jugador no será capaz de moverse, sin embargo tendrá que hacer uso del movimiento del ratón para inspeccionar y/o recoger ciertos elementos de éstas habitaciones, los cuales anotará en su diario.
 
-  + _Diálogos_: Cuando el jugador se acerque a un NPC y clickee, en la parte inferior de la pantalla aparecerán una imagen del NPC elegido, el diálogo y, debajo del retrato, la barra de incomodidad del personaje con el que estamos interactuando, que el jugador podrá usar para determinar el estado de humor del NPC interrogado. 
-  Durante las conversaciones, el diario se actualizará automáticamente para añadir información clave sobre el personaje u otros pasajeros.
-  El jugador tendrá que responder o preguntar al NPC utilizando una lista de opciones de diálogo, y dependiendo cual elija se ofrecerá cierta cantidad de información y/o llene la barra de incomodidad del personaje interrogado.
+  + _Diálogos_: Cuando el jugador se acerque a un NPC y clickee, en la parte inferior de la pantalla aparecerán una imagen del NPC elegido, el diálogo y, debajo del retrato, la barra de irritación del personaje con el que estamos interactuando, que el jugador podrá usar para determinar el estado de humor del NPC interrogado. 
+  Durante las conversaciones, el diario se actualizará automáticamente para añadir información clave sobre el personaje.
+  El jugador tendrá que responder o preguntar al NPC utilizando una lista de opciones de diálogo, y dependiendo cual elija se ofrecerá cierta cantidad de información y/o llene la barra de irritación del personaje interrogado.
 
-  + _Barra de incomodidad_: Durante los diálogos con otros personajes, la opción de diálogo que se elija pueden incomodar al pasajero que está siendo interrogado, lo cual hará que ésta barra se llene. Si llega al máximo el NPC se negará a hablar con nosotros en un futuro.
+  + _Barra de irritación_: Durante los diálogos con otros personajes, la opción de diálogo que se elija pueden incomodar al pasajero que está siendo interrogado, lo cual hará que ésta barra se llene. Si llega al máximo el NPC se negará a hablar con nosotros en un futuro.
 
   + _Gasto de tiempo_: Cada interrogatorio e investigación consumen tiempo que se irá añadiendo al indicador de la esquina superior izquierda de la pantalla. Cuando el círculo se complete habremos gastado todo nuestro tiempo lo que indica que el tren ya ha llegado a la estación. En este momento, el juego nos forzará a la pantalla de desvelar asesino.
 
-  + _Desvelar asesino_: Consiste en una pantalla en la que se muestran a todos los pasajeros del tren, y el jugador podrá hacer click sobre uno de ellos para indicar quién cree que es el asesino. Después de hacer su elección el juego acabará a la vez que se mostrará un texto en el que diga si ha elegido o no al verdadero asesino. Ésta pantalla se mostrará cuando se llene el indicador de tiempo o si el jugador decide acceder a su habitación en cualquier momento del juego.
+  + _Desvelar asesino_: Consiste en una pantalla en la que se muestran a todos los pasajeros del tren, y el jugador podrá hacer click sobre uno de ellos para indicar quién cree que es el asesino. Después de hacer su elección el juego acabará a la vez que se mostrará un texto en el que diga si ha elegido o no al verdadero asesino. Ésta pantalla se mostrará cuando se llene el indicador de tiempo o si el jugador decide llamar a la policía en el vagón de clase media en cualquier momento del juego.
 
   + _Diario_: Durante las inspecciones de habitaciones se recogerán objetos que se apuntarán de forma automática y durante los diálogos obtendremos información clave que también quedará recogida en el diario de forma automática. Al pulsar la tecla 'Q' se mostrará una pantalla con toda la información recogida hasta el momento.
 
 
 - ### 4.2. Dinámica ###
 
-  + _Objetivo:_ El objetivo del juego consiste en descubrir quién es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el jugador) 
+  + _Objetivo_: El objetivo del juego consiste en descubrir quién es el asesino o asesina antes de alcanzar la última estación. Para ello, el jugador tendrá que buscar las pruebas que haya repartidas por los diferentes vagones de tren e interrogar a los numerosos pasajeros que viajan con el detective (Es decir, el jugador).
 
-  + _Dificultad:_ La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, teniendo en cuenta que el número de acciones que podremos tomar en una partida es limitado y que determinadas opciones de diálogo pueden incomodar a los pasajeros y hacer que no quieran volver a hablar con el detective bloqueando grandes cantidades de posible información crucial para el caso.   
+  + _Dificultad_: La dificultad del juego radica en asociar las diferentes pistas para poder desvelar la identidad del asesino, teniendo en cuenta que el número de acciones que podremos tomar en una partida es limitado y que determinadas opciones de diálogo pueden incomodar a los pasajeros y hacer que no quieran volver a hablar con el detective bloqueando grandes cantidades de posible información crucial para el caso.   
 
 
 - ### 4.3. Estética ###
 
-El juego estará compuesto de sprites realizados en pixelart con una resolución 32x32 y tomará inspiración de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises, exceptuando el fondo que usará una paleta con tintes azulados para distinguirse de los elementos que aparecen en el juego. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos (usando para ello diferentes estilos de ropa o cambios en la estatura, peso o rasgos físicos de los sprites) Los objetos con los que podremos interactuar tendrán una serie de píxeles animados que facilitarán su distinción de los objetos de decorado, los cuales serán acordes al rol del vagón o compartimento en el que se encuentren. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo verse a todos los personajes u objetos que haya en él nada más entrar en el vagón.
+El juego estará compuesto de sprites realizados en pixelart con una resolución 32x32 y tomará inspiración de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises, exceptuando el fondo que usará una paleta con tintes azulados para distinguirse de los elementos que aparecen en el juego. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos (usando para ello diferentes estilos de ropa o cambios en la estatura o rasgos físicos de los sprites). Los objetos con los que podremos interactuar tendrán una serie de píxeles con tonos más claros que facilitarán su distinción de los objetos de decorado, los cuales serán acordes al rol del vagón o compartimento en el que se encuentren. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo verse a todos los personajes u objetos que haya en él nada más entrar en el vagón.
 
 
 | Nombre     | Imagen |
@@ -174,22 +173,22 @@ Este es el árbol de decisiones de diálogo del jugador:
 
   - **Barry Railway:** Desde pequeño se dedicaba a montar maquetas de trenes, y aunque ahora que tiene el trabajo que siempre ha querido, solo desea tener más tiempo para sus maquetas. Aún así, se toma su trabajo en serio y no aguanta ningún tipo de distracción. Es poco hablador y prefiere evitar que haya problemas en el tren, motivo por el cual prohibe de forma explícita al detective Case informar a los pasajeros del asesinato.
 
-  - **Mihael Haines:** Su sueño siempre había sido ser tenista, pero las circunstancias lo llegaron a trabajar como un espía. A pesar de ello, decidió compaginar su pasión y su trabajo, utilizando su nueva vida como tenista para viajar de un objetivo a otro mientras participa en diferentes torneos. Puede permitirse viajar en clase alta y evita relacionarse con otros pasajeros.
+  - **Mihael Haines:** Su sueño siempre había sido ser tenista, y ahora está de camino a un torneo importante. Debido a ésto, se puede permitir viajar en el vagón de clase alta.
 
 
 - ### 5.3 Lugares ###
 
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/esquemita%20pal%20gdd.png)
 
-  - **Vagón de clase alta:** Un vagón  donde residen Ayva Yan, Mihael Haines, Norma Anthony y Bruno Anthony. Esta zona se desbloquea justo después de investigar el vagón comedor, pero solo se podrá examinar desde el exterior. Para entrar en los compartimentos y buscar pistas, habrá que realizar diferentes tipos de acciones que variarán según el personaje que resida en dichos cuartos.
+  - **Vagón de clase alta:** Un vagón  donde residen Ayva Yan, Mihael Haines, Norma Anthony y Bruno Anthony.
 
-  - **Vagón de clase media:** el cádaver estará en uno de los compartimentos de este. Los pasajeros que residen en él son las hermanas Morton, Victor Collins, Frederick Bold y el detective Case, el cual controlará el jugador. Al principio del juego, la mayoría de las habitaciones estarán cerradas y no se podrán investigar hasta que se desbloquee el vagón cafetería, momento en el cual los pasajeros abandonarán sus cuartos.
+  - **Vagón de clase media:** El cádaver estará en uno de los compartimentos de este. Los pasajeros que residen en él son las hermanas Morton, Victor Collins, Frederick Bold.
 
-  - **Vagón de clase baja:** Uno de los  vagones  donde el jugador podrá investigar libremente, debido a que no dispone de compartimentos y hay varios personajes deambulando por allí. En este vagón viajan Daniel Grooms y Larry Shephard, aunque es frecuente ver al resto del elenco en esta zona.
+  - **Vagón de clase baja:** Éste vagón no dispone de compartimentos y hay varios personajes deambulando por allí. En este vagón viajan Daniel Grooms y Larry Shephard, aunque es posible ver a otras personas en esta zona.
 
-  - **Vagón comedor:** Zona desbloqueable después de investigar los vagones de clase baja y media (Aunque este último será de forma más superficial), que hace de nexo con el vagón de clase alta y la locomotora, y donde podremos encontrar a Alfred Hirsch, el camarero. Gracias a él se desbloquea la exploración del resto de zonas.
+  - **Vagón comedor:** En éste vagón podremos encontrar a Alfred Hirsch, el camarero, y a Haines.
 
-  - **Locomotora:** El espacio más pequeño del juego, donde podremos encontrar al maquinista Barry Railway y algunas pistas de vital importancia. Se desbloquea al mismo tiempo que el vagón de clase alta.
+  - **Locomotora:** El espacio más pequeño del juego, donde podremos encontrar al maquinista Barry Railway.
 
 - ### 5.4 Objetos ###
 
@@ -207,21 +206,21 @@ Este es el árbol de decisiones de diálogo del jugador:
 
   - Uno de los gemelos de Bruno Anthony.
 
-  - Varias cajas de galletas pertenecientes a Norma Anthony, siendo una de ellas de costura.
+  - Varias cajas de galletas pertenecientes a Norma Anthony.
 
   **En la Habitación de Mihael Haines:**
 
   - Una raqueta de tenis.
 
-  - Un maletín cerrado con contraseña, que oculta un dispositivo de comunicación y varios pasaportes falsos.
+  - Un maletín cerrado con contraseña.
 
-  - Una caja de cereales que contiene la contraseña del maletín.
+  - Una caja de cereales.
 
   **En la habitación de Ayva Yan:**
 
   - Cables idénticos a los que aparecen en la escena del crimen.
 
-  - Varios prototipos de placas solares.
+  - Varios prototipos de placas solares (Llamados "Aparato extraño" durante gameplay).
 
   - Una caja de galletas, regalo de Norma Anthony tras ayudarla.
 
@@ -285,4 +284,4 @@ Asesinato en el Orient Express (Libro)
 
 
 
-###### DEVELOPED BY: Nimeton
+###### DEVELOPED BY: Nimeton Studios
