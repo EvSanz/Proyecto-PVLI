@@ -14,5 +14,6 @@ export default class HabitacionCollins extends Wagon {
 
   spawnObjects() {
     this.addSceneObjects();
+    
   }
 }

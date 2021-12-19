@@ -21,6 +21,15 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
     }
 
     this.info = this.scene.scene.get('boot').myObjects.Objetos[id];
+    this.anims.create({
+      key: 'anim',
+      frames: this.anims.generateFrameNumbers('objects', {
+        start: sprite,
+        end: sprite+1
+      }),
+      frameRate: 5,
+      repeat: -1
+    });
 
     this.scene.add.existing(this);
     this.presente = true;
@@ -39,4 +48,5 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
       }
     });
   }
+ 
 }
