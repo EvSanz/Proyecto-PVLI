@@ -32,6 +32,7 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
     });
 
     this.scene.add.existing(this);
+    this.play("anim",true);
     this.presente = true;
     
     //Establecemos sensacion de profundidad
