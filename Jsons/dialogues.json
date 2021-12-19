@@ -653,7 +653,7 @@
           "lines": [
             "No mucho",
             "Una o dos copas...",
-            "Quizas tres",
+            "Quizás tres",
             "Ains... Márchese por favor",
             "Tengo que terminar de limpiar esto"
           ]
@@ -992,7 +992,7 @@
       "imageName": "",
       "isObject": false,
       "dialogo": 0,
-      "ultDialogo": false,
+      "ultDialogo": true,
       "scenes": [
         {
           "id": "Scene0",
@@ -1554,5 +1554,7 @@
         }
       ]
     }
+
   ]
-} 
+}
+    
