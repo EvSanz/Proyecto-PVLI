@@ -16,7 +16,26 @@ export default class Menu extends Phaser.Scene {
         this.settings = this.add.sprite(500, 352, 'botones', [1]).setInteractive();
         this.credits = this.add.sprite(500, 448, 'botones', [2]).setInteractive();
 
-        this.play.on('pointerdown', () => this.scene.start('clasebaja', 400)); 
+        this.play.on('pointerdown', () => {
+          this.video = this.add.video(500, 256, 'Tutorial');
+          this.video.setScale(0.78);
+          this.video.play();
+
+          this.video.setPaused(false);
+
+        this.endingKey = this.input.keyboard.addKeys({
+            esc: Phaser.Input.Keyboard.KeyCodes.ESC
+        });
+
+        this.endingKey.esc.on('down', () => {
+          this.scene.start('clasebaja', 400)
+        });
+
+        this.video.on('complete', () => {
+          this.scene.start('clasebaja', 400)
+        })
+      }); 
+
         this.settings.on('pointerdown', () => this.scene.start('settingsmenu'));
         this.credits.on('pointerdown', () => this.scene.start('creditsmenu'));
     }
