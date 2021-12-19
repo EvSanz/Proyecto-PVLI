@@ -16,7 +16,6 @@ export default class ClaseAlta extends Wagon {
   }
 
   spawnNPCs() {
-
     this.addScenesNpc();
   }
 

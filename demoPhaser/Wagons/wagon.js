@@ -135,13 +135,7 @@ export default class Wagon extends Phaser.Scene {
           // TODO create killer scene
         ;
       });
-      /* //Añade el sprite del fondo y crea una puerta que 
-       //llevara al vagon declarado a la izquierda
-       this.add.sprite(500, 174, this.spriteFondo1);
-       this.door = new Door(this, 140, 225, this.wagonIzq);
 
-       //Creamos el jugador en una posicion fija
-       this.player = new Player(this, 160, 240, false);*/
     } else {
       if (this.wagonKey !== this.wagonIzq)
         new Door(this, 15, 222, this.wagonIzq, 'puertafunlat');
@@ -212,7 +206,7 @@ export default class Wagon extends Phaser.Scene {
       if (this.pj.Personajes[i].scene == this.scene.key)
       {
         this.characters[j++] = new Npc(this, this.pj.Personajes[i].posX, this.pj.Personajes[i].posY, i + 1,
-          this.scene.get('boot').dmanager.npcinfoholder[i].anger, (i * 2) + 8, 
+          this.scene.get('boot').dmanager.npcinfoholder[i].anger, this.pj.Personajes[i].frame, 
           this.scene.get('boot').dmanager.npcinfoholder[i].dialogo);
       }
     }

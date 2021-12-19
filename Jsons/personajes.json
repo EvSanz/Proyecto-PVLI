@@ -7,47 +7,8 @@
       "culpable": false,
       "desc": "Un pastor de cabras que viaja en el vagon de clase baja. No parece saber del crimen",
       "scene": "clasebaja",
-      "dialogoIni": 1
-    },
-
-    {
-      "name": "Victor Collins",
-      "posX": 650,
-      "posY": 238,
-      "culpable": false,
-      "desc": "Un profesor que estuvo bebiendo hace pocas horas. Parece saber cosas, pero no consigue hablar con coherencia",
-      "scene": "clasemedia",
-      "dialogoIni": 5
-    },
-
-    {
-      "name": "Mery Morton",
-      "posX": 590,
-      "posY": 238,
-      "culpable": false,
-      "desc": "Una de las dos hermanas Morton. Ha sido asesinada en el tren",
-      "scene": "noscene",
-      "dialogoIni": 0
-    },
-
-    {
-      "name": "Molly Morton",
-      "posX": 275,
-      "posY": 238,
-      "culpable": false,
-      "desc": "Una de las dos hermanas Morton. Se encuentra en estado de shock, aunque parece sentirse culpable por algo",
-      "scene": "clasemedia",
-      "dialogoIni": 22
-    },
-
-    {
-      "name": "Bruno Anthony",
-      "posX": 640,
-      "posY": 238,
-      "culpable": false,
-      "desc": "El hijo de Norma, con una actitud muy nerviosa, asustada y preocupada. Parece saber algo, pero esta en aparente estado de shock",
-      "scene": "clasealta",
-      "dialogoIni": 20
+      "dialogoIni": 1,
+      "frame": 8
     },
 
     {
@@ -57,17 +18,8 @@
       "culpable": true,
       "desc": "Una anciana acaudalada, bastante dispuesta a responder preguntas. Parece interesada en los asuntos que ocurren alrededor suya",
       "scene": "clasebaja",
-      "dialogoIni": 13
-    },
-
-    {
-      "name": "Ayva Yan",
-      "posX": 300,
-      "posY": 238,
-      "culpable": false,
-      "desc": "Una ingeniera arisca, que prefiere permanecer lejos del resto de pasajeros",
-      "scene": "clasealta",
-      "dialogoIni": 16
+      "dialogoIni": 13,
+      "frame": 18
     },
 
     {
@@ -77,7 +29,30 @@
       "culpable": false,
       "desc": "Un electricista con malos modales, aunque parece más molesto de lo usual",
       "scene": "clasebaja",
-      "dialogoIni": 3
+      "dialogoIni": 3,
+      "frame": 5
+    },
+
+    {
+      "name": "Molly Morton",
+      "posX": 275,
+      "posY": 238,
+      "culpable": false,
+      "desc": "Una de las dos hermanas Morton. Se encuentra en estado de shock, aunque parece sentirse culpable por algo",
+      "scene": "clasemedia",
+      "dialogoIni": 22,
+      "frame": 14
+    },
+
+    {
+      "name": "Victor Collins",
+      "posX": 650,
+      "posY": 238,
+      "culpable": false,
+      "desc": "Un profesor que estuvo bebiendo hace pocas horas. Parece saber cosas, pero no consigue hablar con coherencia",
+      "scene": "clasemedia",
+      "dialogoIni": 5,
+      "frame": 10
     },
 
     {
@@ -87,7 +62,8 @@
       "culpable": false,
       "desc": "Un arquitecto frustrado, que no parece saber mucho sobre los asesinatos",
       "scene": "clasemedia",
-      "dialogoIni": 8
+      "dialogoIni": 8,
+      "frame": 24
     },
 
     {
@@ -97,7 +73,41 @@
       "culpable": false,
       "desc": "El empleado del tren, que se muestra preocupado y dispuesto a responder a preguntas. No parece que durmiera bien ",
       "scene": "cafeteria",
-      "dialogoIni": 10
+      "dialogoIni": 10,
+      "frame": 26
+    },
+    
+    {
+      "name": "Mihael Haines",
+      "posX": 500,
+      "posY": 238,
+      "culpable": false,
+      "desc": "Un tenista extrafalario, que prefiere hablar en su idioma natal. Parece cansado",
+      "scene": "cafeteria",
+      "dialogoIni": 27,
+      "frame": 30
+    },
+
+    {
+      "name": "Bruno Anthony",
+      "posX": 640,
+      "posY": 238,
+      "culpable": false,
+      "desc": "El hijo de Norma, con una actitud muy nerviosa, asustada y preocupada. Parece saber algo, pero esta en aparente estado de shock",
+      "scene": "clasealta",
+      "dialogoIni": 20,
+      "frame": 16
+    },
+
+    {
+      "name": "Ayva Yan",
+      "posX": 300,
+      "posY": 238,
+      "culpable": false,
+      "desc": "Una ingeniera arisca, que prefiere permanecer lejos del resto de pasajeros",
+      "scene": "clasealta",
+      "dialogoIni": 16,
+      "frame": 20
     },
 
     {
@@ -107,17 +117,19 @@
       "culpable": false,
       "desc": "El maquinista, que procura proporcionar toda la ayuda posible",
       "scene": "locomotora",
-      "dialogoIni": 15
+      "dialogoIni": 15,
+      "frame": 28
     },
 
     {
-      "name": "Mihael Haines",
-      "posX": 500,
+      "name": "Mery Morton",
+      "posX": 590,
       "posY": 238,
       "culpable": false,
-      "desc": "Un tenista extrafalario, que prefiere hablar en su idioma natal. Parece cansado",
-      "scene": "cafeteria",
-      "dialogoIni": 19
+      "desc": "Una de las dos hermanas Morton. Ha sido asesinada en el tren",
+      "scene": "noscene",
+      "dialogoIni": 0,
+      "frame": 12
     }
   ]
 }
