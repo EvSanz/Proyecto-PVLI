@@ -5,7 +5,7 @@ export default class GoodEnd extends Wagon {
     super('goodend', {
       isPointAndClick: true,
       spriteFondo1: 43,
-      spriteFondo2: 42,
+      spriteFondo2: 41,
       spriteFondo3: 43,
       wagonIzq: 'boot'
     });

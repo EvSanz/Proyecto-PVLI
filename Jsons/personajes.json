@@ -30,7 +30,7 @@
       "desc": "Un electricista con malos modales, aunque parece más molesto de lo usual",
       "scene": "clasebaja",
       "dialogoIni": 3,
-      "frame": 5
+      "frame": 22
     },
 
     {
@@ -119,17 +119,6 @@
       "scene": "locomotora",
       "dialogoIni": 15,
       "frame": 28
-    },
-
-    {
-      "name": "Mery Morton",
-      "posX": 590,
-      "posY": 238,
-      "culpable": false,
-      "desc": "Una de las dos hermanas Morton. Ha sido asesinada en el tren",
-      "scene": "noscene",
-      "dialogoIni": 0,
-      "frame": 12
     }
   ]
 }
