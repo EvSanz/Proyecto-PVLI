@@ -86,6 +86,7 @@ export default class ClaseMedia extends Wagon {
     //Segundo bloque
     this.graphics2.on('pointerdown', () => {
       //Borrar las opciones
+      this.label0.text = "";
       this.label.text = "";
       this.label2.text = "";
     });
