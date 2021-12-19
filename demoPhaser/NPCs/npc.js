@@ -21,10 +21,19 @@ export default class Npc extends Phaser.GameObjects.Sprite {
 
         this.image = frame;
         this.id = idNpc;
-
+        this.anims.create({
+            key: 'anim',
+            frames: this.anims.generateFrameNumbers('npcs', {
+              start: frame,
+              end: frame+1
+            }),
+            frameRate: 3,
+            repeat: -1
+          });
         //Se crea el personaje con físicas 
         this.scene.add.existing(this);
         this.scene.physics.add.existing(this, true);
+        this.play("anim",true);
 
         //Texto donde aparecera la irritacion
         this.label = this.scene.add.text(120, 2, "", {
