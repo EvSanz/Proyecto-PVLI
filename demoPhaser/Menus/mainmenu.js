@@ -17,6 +17,8 @@ export default class Menu extends Phaser.Scene {
         this.credits = this.add.sprite(500, 448, 'botones', [2]).setInteractive();
 
         this.play.on('pointerdown', () => {
+          
+          this.game.sound.stopAll();
           this.video = this.add.video(500, 256, 'Tutorial');
           this.video.setScale(0.78);
           this.video.play();

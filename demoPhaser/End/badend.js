@@ -21,6 +21,8 @@ export default class BadEnd extends Wagon {
 
     this.backToMenu = new Phaser.GameObjects.Rectangle(this, 500, 256, 1000, 512, 0xfffffff, 0xfffffff).setInteractive();
     this.backToMenu.on('pointerdown', () => {
+      
+      this.game.sound.stopAll();
       this.scene.start('boot');
     })
   }
