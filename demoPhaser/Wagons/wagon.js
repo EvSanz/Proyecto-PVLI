@@ -121,21 +121,21 @@ export default class Wagon extends Phaser.Scene {
     }
     //Si es point and click...
     if (this.isPT) {
-     
-      if(this.wagonKey!="selectscene")
-     {  let goback;
-       goback = this.add.sprite(960, 50, 'objects', [4]).setInteractive();
-      goback.on('pointerdown', () => {
-        //reducir el tiempo
-        this.scene.get('boot').consultClock().decreaseTime(this);
 
-        if (this.scene.get('boot').consultClock().getTime() > 0)
-          this.scene.start(this.wagonIzq, 500);
-        else
-          // TODO create killer scene
-        ;
-      });
-    }
+      if (this.wagonKey != "selectscene" && this.wagonKey != "badend" && this.wagonKey != "goodend") {
+        let goback;
+        goback = this.add.sprite(960, 50, 'objects', [4]).setInteractive();
+        goback.on('pointerdown', () => {
+          //reducir el tiempo
+          this.scene.get('boot').consultClock().decreaseTime(this);
+
+          if (this.scene.get('boot').consultClock().getTime() > 0)
+            this.scene.start(this.wagonIzq, 500);
+          else
+            // TODO create killer scene
+          ;
+        });
+      }
     } else {
       if (this.wagonKey !== this.wagonIzq)
         new Door(this, 15, 222, this.wagonIzq, 'puertafunlat');
@@ -191,7 +191,7 @@ export default class Wagon extends Phaser.Scene {
     for (let i = 0; i < this.objs.Objetos.length; ++i) {
       if (this.objs.Objetos[i].vagon == this.scene.key)
         this.objects[j++] = new GameObject(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].sprite, i, true, this.objs.Objetos[i].dialogo);
-        
+
     }
   }
 
@@ -204,18 +204,20 @@ export default class Wagon extends Phaser.Scene {
     let j = 0;
 
     for (let i = 0; i < this.pj.Personajes.length; ++i) {
-      if (this.pj.Personajes[i].scene == this.scene.key)
-      {
+      if (this.pj.Personajes[i].scene == this.scene.key) {
         this.characters[j++] = new Npc(this, this.pj.Personajes[i].posX, this.pj.Personajes[i].posY, i + 1,
-          this.scene.get('boot').dmanager.npcinfoholder[i].anger, this.pj.Personajes[i].frame, 
+          this.scene.get('boot').dmanager.npcinfoholder[i].anger, this.pj.Personajes[i].frame,
           this.scene.get('boot').dmanager.npcinfoholder[i].dialogo);
       }
     }
   }
 
-  placaPuerta(placa, doorX, doorY, nombre)
-  {
-    placa = this.scene.scene.add.text(doorX + 105, doorY - 67, nombre, {fontStyle: 'bold', fontSize: 13, color: '#000000' });
+  placaPuerta(placa, doorX, doorY, nombre) {
+    placa = this.scene.scene.add.text(doorX + 105, doorY - 67, nombre, {
+      fontStyle: 'bold',
+      fontSize: 13,
+      color: '#000000'
+    });
 
     placa.setDepth(1);
   }

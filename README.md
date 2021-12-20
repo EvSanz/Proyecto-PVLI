@@ -108,14 +108,6 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 
 El juego estará compuesto de sprites realizados en pixelart con una resolución 32x32 y tomará inspiración de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises, exceptuando el fondo que usará una paleta con tintes azulados para distinguirse de los elementos que aparecen en el juego. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos (usando para ello diferentes estilos de ropa o cambios en la estatura o rasgos físicos de los sprites). Los objetos con los que podremos interactuar tendrán una serie de píxeles con tonos más claros que facilitarán su distinción de los objetos de decorado, los cuales serán acordes al rol del vagón o compartimento en el que se encuentren. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo verse a todos los personajes u objetos que haya en él nada más entrar en el vagón.
 
-
-| Nombre     | Imagen |
-| ---      | ---       |
-| Fondo | ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/BACKGROUND%20(1)-4.png.png) |
-| Personaje | ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(3).png) |
-| Objeto | ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(4).png) |
-
-
 ## 5. Contenido ##
 
 - ### 5.1. Historia ###
