@@ -44,7 +44,7 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
     this.on('pointerdown', () => {
       if (this.scene.locked === false) {
         scene.scene.get('diary').addObject(this.info);
-        this.presente = false;
+        this.scene.scene.get('boot').presente[id] = false;
         this.dialog.initDialog();
         this.destroy();
       }

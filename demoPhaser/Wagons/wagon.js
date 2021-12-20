@@ -195,7 +195,7 @@ export default class Wagon extends Phaser.Scene {
     let j = 0;
 
     for (let i = 0; i < this.objs.Objetos.length; ++i) {
-      if (this.objs.Objetos[i].vagon == this.scene.key)
+      if (this.objs.Objetos[i].vagon == this.scene.key && this.scene.get('boot').presente[i])
         this.objects[j++] = new GameObject(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].sprite, i, true, this.objs.Objetos[i].dialogo);
 
     }
