@@ -174,13 +174,15 @@
    }
 
    dialogoIrritacionMax() {
-     //Bloqueamos el movimiento del jugador
+    //Bloqueamos el movimiento del jugador
      if (this.scene.player != null) {
        this.scene.player.canMove = false;
      }
 
      this.scene.locked = true;
-
+   
+     this.createBox();
+  
      //renderizamos la imagen del npc
      this.cambiarRetrato(this.currentNpc.image);
      this.mostrarNombre(this.currentNpc);
@@ -203,13 +205,18 @@
          } else {
            this.nextText();
          }
-       } else {
+       }
+
+       else {
          if (this.chat == 0) {
-           this.label.text = "";
+           this.label.text = " ";
          } else {
            this.label.text = "Fuera de mi vista";
            this.chat = 0;
          }
+
+         this.graphics.destroy();
+         this.graphics2.destroy();
 
          if (this.scene.player != null) {
            this.scene.player.canMove = true;
