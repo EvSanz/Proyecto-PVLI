@@ -96,6 +96,13 @@ export default class Boot extends Phaser.Scene {
     this.myDialog = this.cache.json.get('dialogue');
     this.myObjects = this.cache.json.get('objects');
     this.myCharacters = this.cache.json.get('personajes');
+    //Bools de objetos
+    this.presente = [];
+
+    for (let i = 0; i < this.myObjects.Objetos.length; ++i)
+    {
+      this.presente[i] = true;
+    }
   }
 
   consultamanager() {
