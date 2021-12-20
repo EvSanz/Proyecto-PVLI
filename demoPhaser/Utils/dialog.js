@@ -169,7 +169,6 @@
        }
 
        this.scene.locked = false;
-
      }
    }
 
@@ -210,23 +209,25 @@
        else {
          if (this.chat == 0) {
            this.label.text = " ";
-         } else {
+
+           this.graphics.destroy();
+           this.graphics2.destroy();
+  
+           if (this.scene.player != null) {
+             this.scene.player.canMove = true;
+           }
+  
+           this.scene.locked = false;
+
+           this.cambiarRetrato();
+           this.mostrarNombre();
+           this.actualizaIrritacion();
+          } 
+          
+          else {
            this.label.text = "Fuera de mi vista";
            this.chat = 0;
          }
-
-         this.graphics.destroy();
-         this.graphics2.destroy();
-
-         if (this.scene.player != null) {
-           this.scene.player.canMove = true;
-         }
-
-         this.scene.locked = false;
-
-         this.cambiarRetrato();
-         this.mostrarNombre();
-         this.actualizaIrritacion();
        }
 
      } else {

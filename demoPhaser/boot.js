@@ -65,7 +65,6 @@ export default class Boot extends Phaser.Scene {
     this.load.setPath('sonidos/');
     this.load.audio('suspenseFondo', 'suspense.mp3');
     this.load.audio('reloj', 'clocks.wav');
-    this.load.audio('pies', 'footsteps.mp3');
     this.load.audio('musicafondo', 'musicafondoo.mp3');
     this.load.audio('musicafondopt', 'investigationmusic.mp3');
     this.load.audio('goodmusic', 'victorimusic.mp3')
