@@ -79,7 +79,8 @@ export default class Boot extends Phaser.Scene {
     this.load.json('personajes', 'personajes.json');
 
     this.load.setPath('rsc/');
-    this.load.video('Tutorial', 'Introduccion.mp4')
+    this.load.video('Tutorial', 'Introduccion.mp4');
+    this.load.video('Goodending','gending.mp4');
   }
 
   //Creación de los elementos fijos de la escena 
