@@ -43,7 +43,7 @@ export default class Diary extends Phaser.Scene {
       this.item.displayWidth = this.itemboxSize;
       this.item.displayHeight = this.itemboxSize;
 
-      //Mostramos la informacion del npc al pasar el puntero por encima..
+      //Mostramos la informacion del objeto al pasar el puntero por encima..
       this.item.on('pointerover',
         () => {
           this.showInfoPanel(true, element.desc)
@@ -93,7 +93,12 @@ export default class Diary extends Phaser.Scene {
 
     //Añadimos el comando para desactivar el diario 
     this.q = this.input.keyboard.addKey('Q');
+    this.esca = this.input.keyboard.addKey('Esc');
     this.q.on('down', () => {
+      this.scene.stop();
+      this.scene.resume(this.currentScene);
+    })
+    this.esca.on('down', () => {
       this.scene.stop();
       this.scene.resume(this.currentScene);
     })

@@ -15,10 +15,11 @@ export default class Locomotora extends Wagon {
 
   spawnNPCs() {
     this.addScenesNpc();
+    this.spawnPared();
   }
 
   spawnPared() {
-    this.pared = new Phaser.GameObjects.Rectangle(this, 850, 200, 200, 200, 0xfffffff, 0xfffffff);
+    this.pared = new Phaser.GameObjects.Rectangle(this, 850, 200, 200, 200, 0x0000000, 0x0000000);
 
     this.add.existing(this.pared);
     this.physics.add.existing(this.pared, true);

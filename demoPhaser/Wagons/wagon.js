@@ -79,6 +79,12 @@ export default class Wagon extends Phaser.Scene {
       this.scene.launch('diary', this);
       this.scene.pause();
     })
+    this.botonDiario = new Phaser.GameObjects.Rectangle(this, 890, 430, 130, 115, 0x0000000, 0x0000000).setInteractive();
+    
+    this.botonDiario.on('pointerdown', abreDiario => {
+      this.scene.launch('diary', this);
+      this.scene.pause();
+    })
 
     //Creamos el suelo
     let uisuelo;
