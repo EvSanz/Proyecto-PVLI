@@ -58,11 +58,6 @@ let config = {
     },
 };
 
-new Phaser.Game(config, 'gameholder');
-
-let test = 0;
-this.test = 675;
-
 let npcholder = [{
     id: 0,
     dialogo: 1,
@@ -124,3 +119,5 @@ let npcholder = [{
     anger: 0
 }
 ];
+
+new Phaser.Game(config, 'gameholder');

@@ -1,4 +1,5 @@
 //Clase encargada de gestionar el diario
+
 export default class Menu extends Phaser.Scene {
     constructor()
     { 
@@ -8,37 +9,44 @@ export default class Menu extends Phaser.Scene {
     create()
     {
       this.musica = this.sound.add('menumusic', {volume: this.game.sound.volume * 0.5, loop: true});
-      this.musica.play();
-        this.add.sprite(500, 256, 'fondo');
-        this.add.sprite(500, 256, 'menuprincipal');
+      
+      this.focusCheck = new Phaser.GameObjects.Rectangle(this, 500, 256, 1000, 512, 0xfffffff, 0xfffffff).setInteractive();
+      this.focusCheck.on('pointerdown', () => {
+        
+        if (!this.musica.isPlaying)
+          this.musica.play();
+      });
+    
+      this.add.sprite(500, 256, 'fondo');
+      this.add.sprite(500, 256, 'menuprincipal');
 
-        this.play = this.add.sprite(500, 256, 'botones', [0]).setInteractive();
-        this.settings = this.add.sprite(500, 352, 'botones', [1]).setInteractive();
-        this.credits = this.add.sprite(500, 448, 'botones', [2]).setInteractive();
+      this.play = this.add.sprite(500, 256, 'botones', [0]).setInteractive();
+      this.settings = this.add.sprite(500, 352, 'botones', [1]).setInteractive();
+      this.credits = this.add.sprite(500, 448, 'botones', [2]).setInteractive();
 
-        this.play.on('pointerdown', () => {
-          
-          this.game.sound.stopAll();
-          this.video = this.add.video(500, 256, 'Tutorial');
-          this.video.setScale(0.78);
-          this.video.play();
+      this.play.on('pointerdown', () => {
+        
+        this.game.sound.stopAll();
+        this.video = this.add.video(500, 256, 'Tutorial');
+        this.video.setScale(0.78);
+        this.video.play();
 
-          this.video.setPaused(false);
+        this.video.setPaused(false);
 
-        this.endingKey = this.input.keyboard.addKeys({
-            esc: Phaser.Input.Keyboard.KeyCodes.ESC
-        });
+      this.endingKey = this.input.keyboard.addKeys({
+          esc: Phaser.Input.Keyboard.KeyCodes.ESC
+      });
 
-        this.endingKey.esc.on('down', () => {
-          this.scene.start('clasebaja', 400)
-        });
+      this.endingKey.esc.on('down', () => {
+        this.scene.start('clasebaja', 400)
+      });
 
-        this.video.on('complete', () => {
-          this.scene.start('clasebaja', 400)
-        })
-      }); 
+      this.video.on('complete', () => {
+        this.scene.start('clasebaja', 400)
+      })
+    }); 
 
-        this.settings.on('pointerdown', () => this.scene.start('settingsmenu'));
-        this.credits.on('pointerdown', () => this.scene.start('creditsmenu'));
+      this.settings.on('pointerdown', () => this.scene.launch('settingsmenu'));
+      this.credits.on('pointerdown', () => this.scene.launch('creditsmenu'));
     }
 }

@@ -42,6 +42,6 @@ export default class GoodEnd extends Wagon {
       
       this.game.sound.stopAll();
       this.scene.start('boot');
-    })
+    });
   }
 }

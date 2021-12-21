@@ -12,25 +12,20 @@ export default class Player extends Phaser.GameObjects.Sprite {
    * @param {bool} seMueve ¿Puede moverse?
    */
 
-  constructor(scene, x, y, seMueve) {
-    super(scene, x, y, 'player', seMueve);
+  constructor(scene, x, y) {
+    super(scene, x, y, 'player');
 
     //Añadimos al jugador con fisicas a la escena
     this.scene.add.existing(this);
     this.scene.physics.add.existing(this);
 
-    this.canMove = seMueve;
+    this.canMove = true;
 
     //Establecemos que el jugador colisione 
     //con los limites del mundo
     this.body.setCollideWorldBounds();
 
-    //Indicamos la velocidad de movimiento (Si puede moverse)
-    if (seMueve) {
-      this.speed = 300;
-    } else {
-      this.speed = 0;
-    }
+    this.speed = 300;
 
     //Indicamos el input de teclado
     this.cursors = this.scene.input.keyboard.createCursorKeys();

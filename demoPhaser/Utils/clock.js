@@ -15,7 +15,7 @@
      constructor(scene) {
          this.scene = scene;
          this.time = Total_Time;
-         this.selectKillerScene = null;   
+         this.selectKillerScene = null;
      }
 
      create() {}
@@ -45,7 +45,15 @@
      
      //Método para mostrar el tiempo en pantalla
      showTime(scenenow) {
-         this.scene.scene.get(scenenow).add.sprite(50, 40, 'clockanim', [this.time]);
+        //Revisamos que el tiempo no sea mayor que el numero del ultimo frame del reloj (11)
+        if (this.time < 12)
+        {
+            this.scene.scene.get(scenenow).add.sprite(50, 40, 'clockanim', [this.time]);
+        }
+        else
+        {
+            this.scene.scene.get(scenenow).add.sprite(50, 40, 'clockanim', [11]).alpha = 0.5;
+        }
      }
 
      outOfTime() {
