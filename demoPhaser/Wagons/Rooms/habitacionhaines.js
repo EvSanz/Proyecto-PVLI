@@ -12,7 +12,8 @@ export default class HabitacionHaines extends Wagon {
     });
   }
 
-  spawnObjects() {
+  create() {
+    super.create();
     this.addSceneObjects();
   }
 }

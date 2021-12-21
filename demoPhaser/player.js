@@ -99,7 +99,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
       else
         this.play('playerstand', true);
     }
-    
+
     //Nos aseguramos que el player está quieto si no se le permite mover
     else {
       this.body.setVelocityX(0);

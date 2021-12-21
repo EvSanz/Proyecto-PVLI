@@ -12,7 +12,9 @@ export default class HabitacionYan extends Wagon {
     });
   }
 
-  spawnObjects() {
+  create() {
+    super.create();
+
     this.addSceneObjects();
   }
 }

@@ -23,12 +23,12 @@ export default class ClaseBaja extends Wagon {
     });
   }
 
-  //Sobreescribimos los métodos que estan en wagon
-  spawnNPCs() {
-    this.addScenesNpc();
-  }
+  create(playerX) {
+    super.create(playerX);
 
-  spawnObjects() {
+    //Extendemos el create() de la clase vagon con lo específico del vagón de clase baja
+    this.addScenesNpc();
+
     this.add.sprite(320, 262, 'objects', [2]);
     this.add.sprite(520, 262, 'objects', [2]);
     this.add.sprite(830, 262, 'objects', [2]);

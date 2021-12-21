@@ -16,31 +16,8 @@ export default class ClaseMedia extends Wagon {
     });
   }
 
-  labels()
-  {
-        //Textos
-        this.label0 = this.scene.scene.add.text(275, 375, " ", {
-          wordWrap: {
-            width: 400
-          },
-        });
-        this.label = this.scene.scene.add.text(275, 435, " ", {
-          wordWrap: {
-            width: 400
-          }
-        });
-        this.label2 = this.scene.scene.add.text(275, 470, " ", {
-          wordWrap: {
-            width: 400
-          }
-        });
-  }
-
-  spawnNPCs() {
-    this.addScenesNpc();
-  }
-
-  spawnObjects() {
+  create(playerX) {
+    super.create(playerX);
 
     this.labels();
 
@@ -55,10 +32,30 @@ export default class ClaseMedia extends Wagon {
     this.placaPuerta(this.placas[i++], 780, 222, "Bold");
 
     this.createPhone();
+
+    this.addScenesNpc();
   }
 
-  createPhone()
-  {
+  labels() {
+    //Textos
+    this.label0 = this.scene.scene.add.text(275, 375, " ", {
+      wordWrap: {
+        width: 400
+      },
+    });
+    this.label = this.scene.scene.add.text(275, 435, " ", {
+      wordWrap: {
+        width: 400
+      }
+    });
+    this.label2 = this.scene.scene.add.text(275, 470, " ", {
+      wordWrap: {
+        width: 400
+      }
+    });
+  }
+
+  createPhone() {
     this.phone = this.add.sprite(560, 250, 'objects', [23]).setDepth(1);
     this.phone.setInteractive();
     this.phone.on('pointerdown', () => {

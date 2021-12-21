@@ -80,7 +80,7 @@ export default class Boot extends Phaser.Scene {
 
     this.load.setPath('rsc/');
     this.load.video('Tutorial', 'Introduccion.mp4');
-    this.load.video('Goodending','gending.mp4');
+    this.load.video('Goodending', 'gending.mp4');
   }
 
   //Creación de los elementos fijos de la escena 
@@ -100,8 +100,7 @@ export default class Boot extends Phaser.Scene {
     //Bools de objetos
     this.presente = [];
 
-    for (let i = 0; i < this.myObjects.Objetos.length; ++i)
-    {
+    for (let i = 0; i < this.myObjects.Objetos.length; ++i) {
       this.presente[i] = true;
     }
   }

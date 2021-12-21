@@ -13,12 +13,12 @@ export default class Cafeteria extends Wagon {
       wagonDer: 'clasealta'
     });
   }
-  //Sobreescribimos los métodos que estan en wagon
-  spawnNPCs() {
-    this.addScenesNpc();
-  }
 
-  spawnObjects() {
+  create(playerX) {
+    super.create(playerX);
+
+    this.addScenesNpc();
+
     this.add.sprite(180, 262, 'objects', [3]);
     this.add.sprite(320, 262, 'objects', [2]);
     this.add.sprite(520, 262, 'objects', [2]);

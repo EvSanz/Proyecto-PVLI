@@ -80,7 +80,7 @@ export default class Wagon extends Phaser.Scene {
       this.scene.pause();
     })
     this.botonDiario = new Phaser.GameObjects.Rectangle(this, 890, 430, 130, 115, 0x0000000, 0x0000000).setInteractive();
-    
+
     this.botonDiario.on('pointerdown', abreDiario => {
       this.scene.launch('diary', this);
       this.scene.pause();
@@ -155,24 +155,9 @@ export default class Wagon extends Phaser.Scene {
       this.physics.add.collider(this.player, uisuelo);
     }
 
-    //Añade las puertas indicadas
-
-    //Si no lo es...
-
-    //Creamos los npc necesarios
-    this.spawnNPCs();
-
-    //Creamos los objetos necesarios
-    this.spawnObjects();
-
     //Mostramos el reloj
     this.scene.get('boot').consultClock().showTime(this.wagonKey);
-
   }
-
-  spawnNPCs() {}
-
-  spawnObjects() {}
 
   playwhistle() {
     this.woo = this.sound.add('choochoo', {
