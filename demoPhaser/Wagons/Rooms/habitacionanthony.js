@@ -12,7 +12,8 @@ export default class HabitacionAnthony extends Wagon {
     });
   }
 
-  spawnObjects() {
+  create() {
+    super.create();
     this.addSceneObjects();
   }
 }

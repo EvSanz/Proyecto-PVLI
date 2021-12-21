@@ -38,9 +38,9 @@ let config = {
     pixelArt: true,
 
     //Establecemos todas las escenas del juego
-    scene: [Boot, Menu, Settings, Credits, 
+    scene: [Boot, Menu, Settings, Credits,
         ClaseBaja, ClaseMedia, ClaseAlta, Cafeteria, Locomotora,
-        HabitacionMorton, HabitacionCollins, HabitacionBold, HabitacionYan, 
+        HabitacionMorton, HabitacionCollins, HabitacionBold, HabitacionYan,
         HabitacionAnthony, HabitacionHaines,
         SelectScene, GoodEnd, BadEnd, Diary, End
     ],
@@ -59,65 +59,65 @@ let config = {
 };
 
 let npcholder = [{
-    id: 0,
-    dialogo: 1,
-    anger: 0
-}, 
-{
-    id: 1,
-    dialogo: 3,
-    anger: 0
-}, 
-{
-    id: 2,
-    dialogo: 22,
-    anger: 0
-}, 
-{
-    id: 3,
-    dialogo: 0,
-    anger: 0
-},
-{
-    id: 4,
-    dialogo: 5,
-    anger: 0
-}, 
-{
-    id: 5,
-    dialogo: 8,
-    anger: 0
-}, 
-{
-    id: 6,
-    dialogo: 10,
-    anger: 0
-}, 
-{
-    id: 7,
-    dialogo: 19,
-    anger: 0
-}, 
-{
-    id: 8,
-    dialogo: 17,
-    anger: 0
-}, 
-{
-    id: 9,
-    dialogo: 13,
-    anger: 0
-}, 
-{
-    id: 10,
-    dialogo: 20,
-    anger: 0
-}, 
-{
-    id: 11,
-    dialogo: 15,
-    anger: 0
-}
+        id: 0,
+        dialogo: 1,
+        anger: 0
+    },
+    {
+        id: 1,
+        dialogo: 3,
+        anger: 0
+    },
+    {
+        id: 2,
+        dialogo: 22,
+        anger: 0
+    },
+    {
+        id: 3,
+        dialogo: 0,
+        anger: 0
+    },
+    {
+        id: 4,
+        dialogo: 5,
+        anger: 0
+    },
+    {
+        id: 5,
+        dialogo: 8,
+        anger: 0
+    },
+    {
+        id: 6,
+        dialogo: 10,
+        anger: 0
+    },
+    {
+        id: 7,
+        dialogo: 19,
+        anger: 0
+    },
+    {
+        id: 8,
+        dialogo: 17,
+        anger: 0
+    },
+    {
+        id: 9,
+        dialogo: 13,
+        anger: 0
+    },
+    {
+        id: 10,
+        dialogo: 20,
+        anger: 0
+    },
+    {
+        id: 11,
+        dialogo: 15,
+        anger: 0
+    }
 ];
 
 new Phaser.Game(config, 'gameholder');

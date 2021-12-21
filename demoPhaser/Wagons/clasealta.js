@@ -15,12 +15,13 @@ export default class ClaseAlta extends Wagon {
     });
   }
 
-  spawnNPCs() {
-    this.addScenesNpc();
-  }
+  create(playerX) {
+    super.create(playerX);
 
-  spawnObjects() {
+    this.addScenesNpc();
+
     this.placas = [];
+
     let i = 0;
     this.door = new Door(this, 120, 222, 'habitacionyan', 'puertafun');
     this.placaPuerta(this.placas[i++], 120, 222, "Yan");

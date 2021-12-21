@@ -11,7 +11,10 @@ export default class BadEnd extends Wagon {
     });
 
   }
-  spawnNPCs() {
+
+  create() {
+    super.create();
+
     this.game.sound.stopAll();
     this.musica = this.sound.add('badmusic', {
       volume: this.game.sound.volume * 0.5,
@@ -21,7 +24,7 @@ export default class BadEnd extends Wagon {
 
     this.backToMenu = new Phaser.GameObjects.Rectangle(this, 500, 256, 1000, 512, 0xfffffff, 0xfffffff).setInteractive();
     this.backToMenu.on('pointerdown', () => {
-      
+
       this.game.sound.stopAll();
       this.scene.start('boot');
     })

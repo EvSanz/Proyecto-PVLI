@@ -12,7 +12,8 @@ export default class SelectScene extends Wagon {
   }
 
 
-  spawnObjects() {
+  create() {
+    super.create();
 
     this.pj = this.scene.get('boot').myCharacters;
 
@@ -20,22 +21,21 @@ export default class SelectScene extends Wagon {
     this.frames = [];
     this.labels = [];
 
-    for (let j = 0; j < this.pj.Personajes.length; ++j)
-    {
-      this.labels[j] = this.scene.scene.add.text(10 + 90 * j, 350, " ", { wordWrap: { width: 50 }});
+    for (let j = 0; j < this.pj.Personajes.length; ++j) {
+      this.labels[j] = this.scene.scene.add.text(10 + 90 * j, 350, " ", {
+        wordWrap: {
+          width: 50
+        }
+      });
       this.labels[j].setDepth(1);
     }
 
     let posX = 50;
 
-    for (let i = 0; i < this.pj.Personajes.length; ++i) 
-    {
-      if (this.pj.Personajes[i].culpable)
-      {
+    for (let i = 0; i < this.pj.Personajes.length; ++i) {
+      if (this.pj.Personajes[i].culpable) {
         this.characters[i] = new Sus(this, 40 + 90 * i, this.pj.Personajes[i].posY, 'goodend', this.pj.Personajes[i].name, this.pj.Personajes[i].frame);
-      }
-      else
-      {
+      } else {
         this.characters[i] = new Sus(this, 40 + 90 * i, this.pj.Personajes[i].posY, 'badend', this.pj.Personajes[i].name, this.pj.Personajes[i].frame);
       }
       this.frames[i] = this.add.sprite(50 + 90 * i, 365, 'infopanel');

@@ -12,7 +12,8 @@ export default class HabitacionBold extends Wagon {
     });
   }
 
-  spawnObjects() {
+  create() {
+    super.create();
     this.addSceneObjects();
   }
 }

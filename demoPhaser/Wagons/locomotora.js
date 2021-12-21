@@ -13,7 +13,9 @@ export default class Locomotora extends Wagon {
     });
   }
 
-  spawnNPCs() {
+  create(playerX) {
+    super.create(playerX);
+
     this.addScenesNpc();
     this.spawnPared();
   }

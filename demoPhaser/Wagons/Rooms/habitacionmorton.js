@@ -12,7 +12,13 @@ export default class HabitacionMorton extends Wagon {
     });
   }
 
-  spawnObjects() {
+  create() {
+    super.create();
     this.addSceneObjects();
+
+    this.fiambre = this.add.sprite(300, 275, 'objects', [26]);
+
+    this.fiambre.displayWidth = 250;
+    this.fiambre.displayHeight = 250;
   }
 }
