@@ -11,6 +11,7 @@
     align-self: center;
     height:25%;
     width:25%;
+    
     overflow:hidden
 
 }
@@ -18,14 +19,15 @@
 .body{
     margin: 0;
 	padding: 0;
-   background-color: rgb(148, 148, 148)!important;
+    background-color: rgb(148, 148, 148)!important;
+    height:100%;
+    width:100%;
    overflow:hidden
 }
 .title{
 
-
-    
     background-color: rgb(116, 114, 114);
     height:100%;
     width:100%;
+    overflow:hidden
 }
