@@ -12,11 +12,11 @@ export default class Credits extends Phaser.Scene {
 
         this.back = this.add.sprite(960, 50, 'objects', [4]).setInteractive();
 
-        this.back.on('pointerdown', () => this.scene.start('mainmenu'));
+        this.back.on('pointerdown', () => this.scene.stop());
 
         this.exit = this.input.keyboard.addKey('Esc'); 
 
-        this.exit.on('down', () => this.scene.start('mainmenu'))
+        this.exit.on('down', () => this.scene.stop())
 
         this.add.text(247, 180, 'Hecho por Nimeton Studios:', { fontStyle: 'bold', fontSize: 22});
 
