@@ -1,7 +1,16 @@
-<style>
+
 .verticalhorizontal {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-</style>
+.headtext{
+    text-align: "center" ;
+    background-color: rgb(148, 148, 148);
+    text-shadow:rgb(148, 148, 148); 
+    background-position: center;
+    height:25%;
+    width:25%;
+
+
+}
