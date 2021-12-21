@@ -6,11 +6,11 @@
 }
 .headtext{
     text-align: "center" ;
-    background-color: rgb(148, 148, 148);
-    text-shadow:rgb(148, 148, 148); 
-    background-position: center;
+    background: rgb(148, 148, 148)!important;
+    
     height:25%;
     width:25%;
-
+   
 
 }
+
