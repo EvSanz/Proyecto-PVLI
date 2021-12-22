@@ -15,35 +15,39 @@ import GameObject from '../Objects/gameobject.js';
  * @param {string} wagonConfig.spriteFondo3 Sprite de la derecha del fondo
  * @param {string} wagonConfig.wagonIzq Vagon a la izquierda del actual
  * @param {string} wagonConfig.wagonDer Vagon a la derecha del actual
- * @description Escenas principales del juego
+ * @classdesc Escenas principales del juego
  */
 
-
   /**
+   * @public
    * @method playwhistle
    * @description Metodo para reproducir el silbato
    * @memberof Wagon
    */
 
   /**
+   * @public
    * @method stopMusic
    * @description Metodo para parar la musica
    * @memberof Wagon
    */
 
   /**
+   * @protected
    * @method addSceneObjects
    * @description Añade los objetos ubicados en el vagon actual
    * @memberof Wagon
    */
 
   /**
+   * @protected
    * @method addScenesNpc
    * @description Añade los npcs ubicados en el vagon actual
    * @memberof Wagon
    */
 
   /**
+   * @protected
    * @method placaPuerta
    * @description Metodo para escribir en pantalla el nombre de las habitaciones
    * @memberof Wagon

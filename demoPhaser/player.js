@@ -1,18 +1,17 @@
 //Js importados
 import Dialog from './Utils/dialog.js';
 
+/**
+ * @class Player
+ * @classdesc El objeto que el jugador va a controlar
+ * @param {Phaser.Scene} scene La escena en la que se encuentra
+ * @param {number} x Posición x en la que aparecerá el player
+ * @param {number} y Posición y en la que aparecerá el player
+ * @extends Phaser.GameObjects.Sprite
+ */
+
 //Clase para crear y gestionar el jugador
 export default class Player extends Phaser.GameObjects.Sprite {
-
-  /**Constructor:
-   * Variables:
-   * @param {Phaser.Scene} scene Escena 
-   * @param {number} x Coordenada X
-   * @param {number} y Coordenada Y
-   * @param {bool} seMueve ¿Puede moverse?
-   * Metodos:
-   * @method outOfTime Cambiar de escena si ha terminado el tiempo
-   */
 
   constructor(scene, x, y) {
     super(scene, x, y, 'player');

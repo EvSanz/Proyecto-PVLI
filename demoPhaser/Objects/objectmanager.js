@@ -1,19 +1,28 @@
-//Js importados
-import Dialog from '../Utils/dialog.js';
-import GameObject from './gameobject.js';
+
+/**
+ * @class ObjectManager
+ * @classdesc Guarda todos los objetos del juego a través de las escenas
+ */
+
+  /**
+   * @public
+   * @method acoplarObj
+   * @description Añade un objeto al array
+   * @memberof ObjectManager
+   * @param {Phaser.GameObject} go Objeto a añadir
+   */
+  
+  /**
+   * @public
+   * @method consultarObj
+   * @description Devuelve el objeto que está en la posición indicada
+   * @memberof ObjectManager
+   * @param {number} id Posición del objeto deseado en el array
+   * @returns {Phaser.GameObject} El objeto en la posición
+   */
 
 //Manager de los objetos
 export default class ObjectManager {
-
-    /** Constructor: 
-    * Variables:
-    * @param {GameObject} go Objeto
-    * @param {number} id Identificador
-    * @param {GameObject[]} goholder Array de objetos
-    * Metodos:
-    * @method acoplarObj Añadimos el objeto a goholder
-    * @method consultarObj Devolvemos un objeto del goholder 
-    */
    
     constructor()
     { 

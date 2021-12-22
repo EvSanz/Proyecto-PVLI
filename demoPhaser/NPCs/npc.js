@@ -4,8 +4,10 @@ import Dialog from '../Utils/dialog.js';
 //Clase encargada de crear y gestionar NPCs
 export default class Npc extends Phaser.GameObjects.Sprite {
     
-    /** Constructor de Npc:
-     * Variables:
+    /**
+     * @class Npc
+     * @extends {Phaser.GameObjects.Sprite}
+     * @classdesc Personajes
      * @param {Phaser.Scene} scene Escena 
      * @param {number} x Posición del personaje en x
      * @param {number} y Posición del personaje en y
@@ -13,15 +15,38 @@ export default class Npc extends Phaser.GameObjects.Sprite {
      * @param {number} anger Irritación
      * @param {number} frame La posición del personaje en la spritesheet
      * @param {number} dialogoIni Identificador del diálogo que le corresponde al personaje
-     * Métodos:
-     * @method llamarDialogo Carga un diálogo u otro dependiendo de la irritación
-     * @method aumentarIrritacion Aumenta el nivel de irritación
-     * @method getIrritacion Devuelve el valor actual de irritación
+     */
+    /**
+     * @private
+     * @method llamarDialogo 
+     * @description Carga un diálogo u otro dependiendo de la irritación
+     * @memberof Npc
+     */
+    /**
+     * @public
+     * @method aumentarIrritacion 
+     * @description Aumenta el nivel de irritación
+     * @param {int} cabreo El nivel de irritación que aumenta al personaje
+     * @memberof Npc
+     */
+    /**
+     * @public
+     * @method getIrritacion 
+     * @description Devuelve el valor actual de irritación
      * @returns {number} La irritación del personaje
-     * @method cambiarScene Aumentamos el valor de diálogo
-     * @method apuntarEnDiario Cargamos información en el diario
-     * 
-     * @extends {Phaser.GameObjects.Sprite}
+     * @memberof Npc
+     */
+    /**
+     * @public
+     * @method cambiarScene 
+     * @description Aumentamos el valor de diálogo
+     * @memberof Npc
+     */
+    /**
+     * @public
+     * @method apuntarEnDiario 
+     * @description Cargamos información en el diario
+     * @memberof Npc
      */
 
     constructor(scene, x, y, idNpc, anger, frame, dialogoIni) {

@@ -4,7 +4,10 @@ import Dialog from '../Utils/dialog.js';
 //Clase encargada de crear y gestionar GameObjects
 export default class GameObject extends Phaser.GameObjects.Sprite {
 
-  /**Constructor de GameObject:
+  /**
+   * @class GameObject
+   * @extends {Phaser.GameObjects.Sprite}
+   * @classdesc Objetos del juego
    * @param {Scene} scene Escena 
    * @param {number} x Posición del objeto en x
    * @param {number} y Posición del objeto en y
@@ -12,12 +15,6 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
    * @param {int} id Posición en el json del objeto
    * @param {bool} clickable ¿Podemos interactuar con el?
    * @param {number} dialogId Posición en el json de diálogos
-   * Variables
-   * @var {bool} presente ¿Está el objeto en la escena?
-   * @var {objeto} info Información del objeto obtenida del json
-   * @var {animacion} anims Animación idle del objeto
-   * 
-   * @extends {Phaser.GameObjects.Sprite}
    */
 
   constructor(scene, x, y, sprite, id, clickable, dialogId) {
