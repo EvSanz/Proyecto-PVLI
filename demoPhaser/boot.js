@@ -163,7 +163,7 @@ export default class Boot extends Phaser.Scene {
     this.gomanager = new ObjectManager();
 
     //Iniciamos el juego en la escena del menu principal
-    this.scene.start('mainmenu');
+    
 
     //Asignamos los json a variables
     this.myDialog = this.cache.json.get('dialogue');
@@ -172,6 +172,7 @@ export default class Boot extends Phaser.Scene {
 
     //Creamos un array de booleanos de objetos
     this.presente = new Array(this.myObjects.Objetos.length).fill(true);
+    this.scene.start('mainmenu');
   }
 
 

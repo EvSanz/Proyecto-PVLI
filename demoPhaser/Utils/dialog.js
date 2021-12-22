@@ -286,9 +286,9 @@
    createBox() {
 
     //Creamos bloques de interaccion 
-    this.graphics = new Phaser.GameObjects.Rectangle(this.scene, 200, 400, 1600, 50, 0xfffffff, 0xfffffff);
+    this.graphics = new Phaser.GameObjects.Rectangle(this.scene, 510, 400, 510, 50, 0xfffffff, 0xfffffff);
     this.graphics.setInteractive();
-    this.graphics2 = new Phaser.GameObjects.Rectangle(this.scene, 200, 450, 1600, 50, 0xfffffff, 0xfffffff);
+    this.graphics2 = new Phaser.GameObjects.Rectangle(this.scene, 510, 450, 510, 50, 0xfffffff, 0xfffffff);
     this.graphics2.setInteractive();
 
     //Si hacemos click en algun bloque de interaccion, llamaremos 

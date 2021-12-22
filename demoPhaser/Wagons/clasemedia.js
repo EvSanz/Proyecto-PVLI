@@ -74,9 +74,9 @@ export default class ClaseMedia extends Wagon {
     this.label2.text = "Todavía no";
 
     //Creamos los bloques de interaccion
-    this.graphics = new Phaser.GameObjects.Rectangle(this, 200, 425, 1600, 50, 0xfffffff, 0xfffffff);
+    this.graphics = new Phaser.GameObjects.Rectangle(this, 510, 425, 510, 50, 0xfffffff, 0xfffffff);
     this.graphics.setInteractive();
-    this.graphics2 = new Phaser.GameObjects.Rectangle(this, 200, 470, 1600, 50, 0xfffffff, 0xfffffff);
+    this.graphics2 = new Phaser.GameObjects.Rectangle(this, 510, 470, 510, 50, 0xfffffff, 0xfffffff);
     this.graphics2.setInteractive();
 
     //Si hacemos click en la primera opcion
