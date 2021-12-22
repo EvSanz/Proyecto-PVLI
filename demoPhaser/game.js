@@ -3,15 +3,12 @@ import Boot from './boot.js';
 import Menu from './Menus/mainmenu.js';
 import Settings from './Menus/settingsmenu.js';
 import Credits from './Menus/credits.js';
-import End from './end.js';
 import Diary from './Utils/diario.js';
-//import Wagon from './Wagons/wagon.js';
 import ClaseBaja from './Wagons/clasebaja.js';
 import ClaseMedia from './Wagons/clasemedia.js';
 import Cafeteria from './Wagons/cafeteria.js';
 import ClaseAlta from './Wagons/clasealta.js';
 import Locomotora from './Wagons/locomotora.js';
-//import GameObject from './Objects/gameobject.js'
 import HabitacionMorton from './Wagons/Rooms/habitacionmorton.js'
 import HabitacionCollins from './Wagons/Rooms/habitacioncollins.js'
 import HabitacionBold from './Wagons/Rooms/habitacionbold.js'
@@ -39,7 +36,7 @@ let config = {
         ClaseBaja, ClaseMedia, ClaseAlta, Cafeteria, Locomotora,
         HabitacionMorton, HabitacionCollins, HabitacionBold, HabitacionYan,
         HabitacionAnthony, HabitacionHaines,
-        SelectScene, GoodEnd, BadEnd, Diary, End
+        SelectScene, GoodEnd, BadEnd, Diary
     ],
 
     //Establecemos las fisicas del juego

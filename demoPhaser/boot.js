@@ -1,6 +1,5 @@
 //Js importados
 import Clock from './Utils/clock.js';
-import DialogManager from './Test/dialogmanager.js'
 import ObjectManager from './Objects/objectmanager.js'
 
 /** Constructor:
@@ -158,7 +157,6 @@ export default class Boot extends Phaser.Scene {
   create() {
 
     //Creamos un nuevo reloj, manager de dialogos y manager de objetos
-    //this.dmanager = new DialogManager();
     this.clock = new Clock(this);
     this.gomanager = new ObjectManager();
 
@@ -176,8 +174,8 @@ export default class Boot extends Phaser.Scene {
   }
 
 
-  //Metodo para devolver el manager de dialogos
-  consultamanager() {return this.dmanager; }
+  // //Metodo para devolver el manager de dialogos
+  // consultamanager() {return this.dmanager; }
 
 
   //Metodo para devolver el reloj
