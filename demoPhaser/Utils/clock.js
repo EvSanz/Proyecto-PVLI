@@ -65,12 +65,4 @@
         else {
             this.scene.scene.get(scenenow).add.sprite(50, 40, 'clockanim', [11]).alpha = 0.5; }
     }
-
-
-    //Metodo para iniciar la escena de seleccion de asesino 
-    // outOfTime() {
-
-    //     this.selectKillerScene = new SelectKillerScene();
-    //     this.scene.scene.start(this.selectKillerScene);
-    // }
  }
