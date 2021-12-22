@@ -1,6 +1,7 @@
+//js importados
 import Wagon from '../wagon.js';
-import GameObject from '../../Objects/gameobject.js';
 
+//Escena de la habitacion de Norma y Bruno Anthony
 export default class HabitacionAnthony extends Wagon {
   constructor() {
     super('habitacionanthony', {

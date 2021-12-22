@@ -1,15 +1,17 @@
 //Js importados
 import Dialog from './Utils/dialog.js';
-import Clock from './Utils/clock.js';
-import SelectKillerScene from './Test/selectkillerscene.js';
+
 //Clase para crear y gestionar el jugador
 export default class Player extends Phaser.GameObjects.Sprite {
 
-  /**Constructor del jugador
+  /**Constructor:
+   * Variables:
    * @param {Phaser.Scene} scene Escena 
    * @param {number} x Coordenada X
    * @param {number} y Coordenada Y
    * @param {bool} seMueve ¿Puede moverse?
+   * Metodos:
+   * @method outOfTime Cambiar de escena si ha terminado el tiempo
    */
 
   constructor(scene, x, y) {
@@ -19,13 +21,12 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.scene.add.existing(this);
     this.scene.physics.add.existing(this);
 
+    //Indicamos que puede moverse y su velocidad
     this.canMove = true;
-
-    //Establecemos que el jugador colisione 
-    //con los limites del mundo
-    this.body.setCollideWorldBounds();
-
     this.speed = 300;
+
+    //Establecemos que el jugador colisione con los limites del mundo
+    this.body.setCollideWorldBounds();
 
     //Indicamos el input de teclado
     this.cursors = this.scene.input.keyboard.createCursorKeys();
@@ -61,9 +62,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.play('playerstand');
   }
 
-  /**Metodo para establecer el movimiento del jugador
-   * @override
-   */
 
   preUpdate(t, dt) {
     super.preUpdate(t, dt);
@@ -71,33 +69,26 @@ export default class Player extends Phaser.GameObjects.Sprite {
     //Si puede moverse...
     if (this.canMove) {
 
-      //Si pulsamos la flecha de direccion izquierda
+      //Si pulsamos la flecha de direccion izquierda, establecemos 
+      //el movimiento en esa direccion y volteamos el sprite
       if (this.cursors.left.isDown || this.a.isDown) {
-        //Establecemos la velocidad de movimiento 
-        //hacia la izquierda
         this.body.setVelocityX(-this.speed);
-
-        //Cambiamos la direccion del sprite
-        this.flipX = true;
+        if (this.canMove) {this.flipX = true; }
       }
 
-      //Si pulsamos la flecha de direccion derecha
+      //Si pulsamos la flecha de direccion derecha, establecemos 
+      //el movimiento en esa direccion y volteamos el sprite
       else if (this.cursors.right.isDown || this.d.isDown) {
         this.body.setVelocityX(this.speed);
-
-        if (this.canMove)
-          this.flipX = false;
+        if (this.canMove) {this.flipX = false; }
       }
 
-      //Si no pulsamos ninguna flecha
-      else {
-        this.body.setVelocityX(0);
-      }
+      //Si no pulsamos ninguna flecha, no hay movimiento
+      else {this.body.setVelocityX(0); }
 
-      if (this.body.speed > 0)
-        this.play('playerwalk', true);
-      else
-        this.play('playerstand', true);
+      //Dependiendo de la velocidad, reproducimos una animacion u otra
+      if (this.body.speed > 0) {this.play('playerwalk', true); }
+      else {this.play('playerstand', true); }     
     }
 
     //Nos aseguramos que el player está quieto si no se le permite mover
@@ -107,6 +98,8 @@ export default class Player extends Phaser.GameObjects.Sprite {
     }
   }
 
+
+  //Metodo para iniciar la escena de seleccion de asesino si no hay tiempo
   outOfTime() {
     if (this.clock.getTime() <= 0) {
       this.scene.scene.start('selectKillerScene');

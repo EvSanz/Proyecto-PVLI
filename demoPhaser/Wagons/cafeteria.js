@@ -1,7 +1,7 @@
+//Js importados
 import Wagon from './wagon.js';
-import Npc from '../NPCs/npc.js';
-import GameObject from '../Objects/gameobject.js';
 
+//Escena de la cafeteria
 export default class Cafeteria extends Wagon {
   constructor() {
     super('cafeteria', {
@@ -15,10 +15,11 @@ export default class Cafeteria extends Wagon {
   }
 
   create(playerX) {
+
     super.create(playerX);
 
+    //Añadimos los npc y los objetos no interactuables a la escena 
     this.addScenesNpc();
-
     this.add.sprite(180, 262, 'objects', [3]);
     this.add.sprite(320, 262, 'objects', [2]);
     this.add.sprite(520, 262, 'objects', [2]);

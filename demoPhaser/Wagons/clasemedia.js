@@ -1,9 +1,8 @@
+//Js importados
 import Wagon from './wagon.js';
 import Door from '../Utils/door.js';
-import Npc from '../NPCs/npc.js';
-import GameObject from '../Objects/gameobject.js';
-import Dialog from '../Utils/dialog.js';
 
+//Escena de la clase media
 export default class ClaseMedia extends Wagon {
   constructor() {
     super('clasemedia', {
@@ -16,14 +15,17 @@ export default class ClaseMedia extends Wagon {
     });
   }
 
+
   create(playerX) {
     super.create(playerX);
 
+    //Creamos las opciones de texto
     this.labels();
 
     this.placas = [];
     let i = 0;
 
+    //Creamos las puertas de las habitaciones
     this.door = new Door(this, 120, 222, 'habitacionmorton', 'puertafun');
     this.placaPuerta(this.placas[i++], 120, 222, "Morton");
     this.door2 = new Door(this, 440, 222, 'habitacioncollins', 'puertafun');
@@ -31,66 +33,75 @@ export default class ClaseMedia extends Wagon {
     this.door3 = new Door(this, 780, 222, 'habitacionbold', 'puertafun');
     this.placaPuerta(this.placas[i++], 780, 222, "Bold");
 
+    //Creamos el telefono
     this.createPhone();
 
+    //Añadimos los npc
     this.addScenesNpc();
   }
 
+  //Metodo para escribir los textos
   labels() {
-    //Textos
     this.label0 = this.scene.scene.add.text(275, 375, " ", {
-      wordWrap: {
-        width: 400
-      },
-    });
+      wordWrap: {width: 400 }});
     this.label = this.scene.scene.add.text(275, 435, " ", {
-      wordWrap: {
-        width: 400
-      }
-    });
+      wordWrap: {width: 400 }});
     this.label2 = this.scene.scene.add.text(275, 470, " ", {
-      wordWrap: {
-        width: 400
-      }
-    });
+      wordWrap: {width: 400 }});
   }
 
+
+  //Metodo para crear el telefono
   createPhone() {
+
+    //Creamos un sprite interactivo, que llamara a createOptions si hacemos click
     this.phone = this.add.sprite(560, 250, 'objects', [23]).setDepth(1);
     this.phone.setInteractive();
     this.phone.on('pointerdown', () => {
-
-      this.createOptions()
+      this.createOptions(); 
     });
   }
 
+
+  //Metodo para crear opciones de telefono
   createOptions() {
+
     this.label0.text = "Es el teléfono para llamar a la policía. Debes usarlo cuando sepas la identidad del asesino";
     this.label.text = "Llamar a la policía";
     this.label2.text = "Todavía no";
 
-    //Primer bloque
+    //Creamos los bloques de interaccion
     this.graphics = new Phaser.GameObjects.Rectangle(this, 200, 425, 1600, 50, 0xfffffff, 0xfffffff);
     this.graphics.setInteractive();
-
-    //Segundo bloque
     this.graphics2 = new Phaser.GameObjects.Rectangle(this, 200, 470, 1600, 50, 0xfffffff, 0xfffffff);
     this.graphics2.setInteractive();
 
-    //Primer bloque
+    //Si hacemos click en la primera opcion
     this.graphics.on('pointerdown', () => {
+
+      //Escribimos texto
       this.label.text = "Selecciona al sospechoso";
       this.label2.text = "";
-      //escena sospechosos
+
+      //Destruimos las cajas de interaccion
+      this.graphics.destroy();
+      this.graphics2.destroy();
+
+      //Cambiamos de escena
       this.scene.start('selectscene');
     });
 
-    //Segundo bloque
+    //Si hacemos click en la segunda
     this.graphics2.on('pointerdown', () => {
-      //Borrar las opciones
+
+      //Eliminamos el texto
       this.label0.text = "";
       this.label.text = "";
       this.label2.text = "";
+
+      //Destruimos las cajas de interaccion
+      this.graphics.destroy();
+      this.graphics2.destroy();
     });
   }
 }

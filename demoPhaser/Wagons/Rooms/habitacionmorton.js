@@ -1,6 +1,6 @@
 import Wagon from '../wagon.js';
-import GameObject from '../../Objects/gameobject.js';
 
+//Escena de la habitacion de las hermanas Morton
 export default class HabitacionMorton extends Wagon {
   constructor() {
     super('habitacionmorton', {
@@ -16,8 +16,8 @@ export default class HabitacionMorton extends Wagon {
     super.create();
     this.addSceneObjects();
 
+    //Añadimos el sprite del cadaver 
     this.fiambre = this.add.sprite(300, 275, 'objects', [26]);
-
     this.fiambre.displayWidth = 250;
     this.fiambre.displayHeight = 250;
   }

@@ -1,8 +1,8 @@
+//Js importados
 import Wagon from './wagon.js';
 import Door from '../Utils/door.js';
-import Npc from '../NPCs/npc.js';
-import GameObject from '../Objects/gameobject.js';
 
+//Escena del vagon de clase alta
 export default class ClaseAlta extends Wagon {
   constructor() {
     super('clasealta', {
@@ -18,11 +18,14 @@ export default class ClaseAlta extends Wagon {
   create(playerX) {
     super.create(playerX);
 
+    //Añadimos los npc a la escena
     this.addScenesNpc();
 
     this.placas = [];
 
     let i = 0;
+
+    //Creamos las puertas de las habitaciones
     this.door = new Door(this, 120, 222, 'habitacionyan', 'puertafun');
     this.placaPuerta(this.placas[i++], 120, 222, "Yan");
     this.door2 = new Door(this, 440, 222, 'habitacionanthony', 'puertafun');

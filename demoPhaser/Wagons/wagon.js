@@ -3,7 +3,6 @@ import Player from '../player.js';
 import Door from '../Utils/door.js'
 import Npc from '../NPCs/npc.js';
 import GameObject from '../Objects/gameobject.js';
-import DialogManager from '../Test/dialogmanager.js';
 
 /**Escena principal del juego
  * @extends Phaser.Scene
@@ -12,14 +11,21 @@ import DialogManager from '../Test/dialogmanager.js';
 //Clase para crear y gestionar un nivel 
 export default class Wagon extends Phaser.Scene {
 
-  /**Constructor del vagon
+  /**Constructor:
+   * Variables:
    * @param {string} wagonKey key del vagon
-   * @param {boolean} isPointAndClick se entiende por su nombre (si se pone a true, solo importaran spritefondo1 y wagonizq)
-   * @param {string} spriteFondo1 Sprite que se renderizará al fondo a la izquierda (si es ventana se anima automáticamente)
-   * @param {string} spriteFondo2 Sprite que se renderizará al fondo en el centro
-   * @param {string} spriteFondo3 Sprite que se renderizará al fondo a la derecha
-   * @param {string} wagonIzq Vagon que esté a la izquierda de este.En caso de uan escena Point&Click , el vagon al que pertenece la habitacion
-   * @param {string} wagonDer Vagon que esté a la derecha de este
+   * @param {boolean} isPointAndClick ¿Es una escena PointAndClick?
+   * @param {string} spriteFondo1 Sprite de la izquierda del fondo
+   * @param {string} spriteFondo2 Sprite central del fondo
+   * @param {string} spriteFondo3 Sprite de la derecha del fondo
+   * @param {string} wagonIzq Vagon a la izquierda del actual
+   * @param {string} wagonDer Vagon a la derecha del actual
+   * Metodos:
+   * @method playwhistle Reproduce sonido de silbato
+   * @method stopMusic Para la musica
+   * @method addSceneObjects Añade objetos a la escena
+   * @method addScenesNpc Añade NPCs a la escena
+   * @method placaPuerta Escribe las placas de habitaciones
    */
 
   constructor(wagonKey, wagonConfig) {
@@ -35,123 +41,122 @@ export default class Wagon extends Phaser.Scene {
     this.wagonKey = wagonKey;
   }
 
-  //Creacion de los elementos del juego
+  create(playerX = 500) {
 
-  create(playerX = 500) { //Aqui le llegara la posicion en la que aparecerá el jugador
-
-    //Creacion de la animacion del fondo
+    //Asignamos los managers a variables
     this.dmanager = this.scene.get('boot').dmanager;
     this.gomanager = this.scene.get('boot').gomanager;
 
+    //Detenemos el sonido del juego 
     this.game.sound.stopAll();
-
     this.locked = false;
 
+    //Dependiendo de si es una escena PointAndClick o no, cambiamos
+    //la cancion que suena de fondo
     if (this.isPT) {
       this.musica = this.sound.add('musicafondopt', {
-        volume: this.game.sound.volume * 0.5,
-        loop: true
-      });
+        volume: this.game.sound.volume * 0.4, loop: true });
       this.musica.play();
-    } else {
+    } 
+    
+    else {
       this.musica = this.sound.add('musicafondo', {
-        volume: this.game.sound.volume * 0.5,
-        loop: true
-      });
+        volume: this.game.sound.volume * 0.4, loop: true });
       this.musica.play();
     }
+    
+    //Creamos la animacion del fondo
     this.anims.create({
       key: 'backgroundwindows',
-      frames: this.anims.generateFrameNumbers('background', {
-        start: 0,
-        end: 25
-      }),
+      frames: this.anims.generateFrameNumbers('background', {start: 0, end: 25 }),
       frameRate: 4,
       repeat: -1
     });
 
-    //Añadimos una variable para guardar un comando de teclado
+    //Establecemos un comando Q de teclado
     this.q = this.input.keyboard.addKey('Q');
 
-    //Si pulsamos el comando Q, abrimos la escena del 
-    //diario y pausamos la escena actual 
+    //Creamos un boton para interactuar con el diario
+    this.botonDiario = new Phaser.GameObjects.Rectangle(this, 890, 430, 130, 115, 
+      0x0000000, 0x0000000).setInteractive();
+
+    //Si pulsamos Q o hacemos click en el boton, abrimos la escena de diario
     this.q.on('down', abreDiario => {
       this.scene.launch('diary', this);
       this.scene.pause();
     })
-    this.botonDiario = new Phaser.GameObjects.Rectangle(this, 890, 430, 130, 115, 0x0000000, 0x0000000).setInteractive();
 
     this.botonDiario.on('pointerdown', abreDiario => {
       this.scene.launch('diary', this);
       this.scene.pause();
     })
 
-    //Creamos el suelo
+    //Creamos el suelo y añadimos sus fisicas
     let uisuelo;
     uisuelo = this.add.sprite(500, 450, 'ui').setDepth(-1);
-
-    //Añadimos la fisicas y los colliders al suelo
     this.physics.add.existing(uisuelo, true);
 
-    //EL FONDO , tenemos qeu comprobar si cada sprite del fondo es la animacion de las ventanas o un sprite solo 
-    //si es un sprite simple el parametro del constructor qeu nos han pasado es el numero del frame en la spritesheet
-    //Añade los sprites indicados en el create
+
+    //Comprobamos si los sprites del fondo deben animarse 
+    //o no, y los creamos con animaciones en el caso de que deban
     if (typeof (this.spriteFondo1) == 'number') {
       this.a = this.add.sprite(170, 174, 'background', [this.spriteFondo1]);
-    } else {
+    } 
+    else {
       this.a = this.add.sprite(170, 174, this.spriteFondo1);
-
-      //Si es una ventana la anima
-      if (this.spriteFondo1 === 'ventanas') {
-        this.a.play('backgroundwindows');
-      }
+      if (this.spriteFondo1 === 'ventanas') {this.a.play('backgroundwindows'); }
     }
+
     if (typeof (this.spriteFondo2) == 'number') {
       this.a = this.add.sprite(500, 174, 'background', [this.spriteFondo2]);
-    } else {
+    } 
+    else {
       this.a = this.add.sprite(500, 174, this.spriteFondo2);
-
-
-      if (this.spriteFondo2 === 'ventanas') {
-        this.a.play('backgroundwindows');
-      }
+      if (this.spriteFondo2 === 'ventanas') {this.a.play('backgroundwindows'); }
     }
+
     if (typeof (this.spriteFondo3) == 'number') {
       this.a = this.add.sprite(833, 174, 'background', [this.spriteFondo3]);
     } else {
       this.a = this.add.sprite(833, 174, this.spriteFondo3);
 
-      if (this.spriteFondo3 === 'ventanas') {
-        this.a.play('backgroundwindows');
-      }
+      if (this.spriteFondo3 === 'ventanas') {this.a.play('backgroundwindows'); }
     }
-    //Si es point and click...
+
+
+    //Si es una escena PointAndClick...
     if (this.isPT) {
 
-      if (this.wagonKey != "selectscene" && this.wagonKey != "badend" && this.wagonKey != "goodend") {
+      //Comprobamos que es un vagon de habitacion
+      if (this.wagonKey != "selectscene" && this.wagonKey != "badend" 
+        && this.wagonKey != "goodend") {
+
         let goback;
+
+        //Añadimos un boton para volver a la escena anterior
         goback = this.add.sprite(960, 50, 'objects', [4]).setInteractive();
+        
+        //Si lo pulsamos, hacemos disminuir el tiempo y comprobamos que 
+        //aun podemos seguir jugando
         goback.on('pointerdown', () => {
-          //reducir el tiempo
           this.scene.get('boot').consultClock().decreaseTime(this);
-
-          if (this.scene.get('boot').consultClock().getTime() > 0)
-            this.scene.start(this.wagonIzq, 500);
-          else
-            // TODO create killer scene
-          ;
-        });
+          if (this.scene.get('boot').consultClock().getTime() > 0) {
+            this.scene.start(this.wagonIzq, 500); }});
       }
-    } else {
-      if (this.wagonKey !== this.wagonIzq)
-        new Door(this, 15, 222, this.wagonIzq, 'puertafunlat');
+    } 
+    
+    //Si no es un vagon de habitacion, es un vagon
+    else {
 
-      if (this.wagonKey !== this.wagonDer)
-        new Door(this, 985, 222, this.wagonDer, 'puertafunlat2');
+      //Creamos las puertas laterales si existen
+      if (this.wagonKey !== this.wagonIzq) { 
+        new Door(this, 15, 222, this.wagonIzq, 'puertafunlat');}
+      if (this.wagonKey !== this.wagonDer) {
+        new Door(this, 985, 222, this.wagonDer, 'puertafunlat2'); }
+        
 
-      //Creamos el jugador donde nos indica
+      //Creamos el jugador con sus fisicas
       this.player = new Player(this, playerX, 240).setDepth(2);
-
       this.physics.add.collider(this.player, uisuelo);
     }
 
@@ -159,41 +164,53 @@ export default class Wagon extends Phaser.Scene {
     this.scene.get('boot').consultClock().showTime(this.wagonKey);
   }
 
+
+  //Metodo para reproducir el silbato
   playwhistle() {
+
     this.woo = this.sound.add('choochoo', {
       volume: this.game.sound.volume * 0.5,
       loop: false
     });
+
     this.woo.play();
   }
 
-  stopMusic() {
-    this.musica.stop();
-  }
 
+  //Metodo para parar la musica
+  stopMusic() {this.musica.stop(); }
+
+
+  //Metodo para añadir objetos a la escena
   addSceneObjects() {
 
+    //Variable para hacer referencia a los objetos cargados en el boot desde el json
     this.objs = this.scene.get('boot').myObjects;
 
     this.objects = [];
-
     let j = 0;
 
+    //Hacemos un recorrido de todos los objetos para colocarlos en
+    //las escenas segun sus caracteristicas
     for (let i = 0; i < this.objs.Objetos.length; ++i) {
       if (this.objs.Objetos[i].vagon == this.scene.key && this.scene.get('boot').presente[i])
-        this.objects[j++] = new GameObject(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, this.objs.Objetos[i].sprite, i, true, this.objs.Objetos[i].dialogo);
-
+        this.objects[j++] = new GameObject(this, this.objs.Objetos[i].posX, this.objs.Objetos[i].posY, 
+          this.objs.Objetos[i].sprite, i, true, this.objs.Objetos[i].dialogo);
     }
   }
 
+
+  //Metodo para añadir NPCs a la escenas
   addScenesNpc() {
 
+    //Variable para hacer referencia a los personajes cargados en el boot desde el json
     this.pj = this.scene.get('boot').myCharacters;
 
     this.characters = [];
-
     let j = 0;
 
+    //Hacemos un recorrido de todos los objetos para colocarlos en
+    //las escenas segun sus caracteristicas
     for (let i = 0; i < this.pj.Personajes.length; ++i) {
       if (this.pj.Personajes[i].scene == this.scene.key) {
         this.characters[j++] = new Npc(this, this.pj.Personajes[i].posX, this.pj.Personajes[i].posY, i + 1,
@@ -203,12 +220,11 @@ export default class Wagon extends Phaser.Scene {
     }
   }
 
+
+  //Metodo para escribir en pantalla el nombre de las habitaciones
   placaPuerta(placa, doorX, doorY, nombre) {
     placa = this.scene.scene.add.text(doorX + 105, doorY - 67, nombre, {
-      fontStyle: 'bold',
-      fontSize: 13,
-      color: '#000000'
-    });
+      fontStyle: 'bold', fontSize: 13, color: '#000000'});
 
     placa.setDepth(1);
   }

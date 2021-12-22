@@ -5,13 +5,13 @@ import Settings from './Menus/settingsmenu.js';
 import Credits from './Menus/credits.js';
 import End from './end.js';
 import Diary from './Utils/diario.js';
-import Wagon from './Wagons/wagon.js';
+//import Wagon from './Wagons/wagon.js';
 import ClaseBaja from './Wagons/clasebaja.js';
 import ClaseMedia from './Wagons/clasemedia.js';
 import Cafeteria from './Wagons/cafeteria.js';
 import ClaseAlta from './Wagons/clasealta.js';
 import Locomotora from './Wagons/locomotora.js';
-import GameObject from './Objects/gameobject.js'
+//import GameObject from './Objects/gameobject.js'
 import HabitacionMorton from './Wagons/Rooms/habitacionmorton.js'
 import HabitacionCollins from './Wagons/Rooms/habitacioncollins.js'
 import HabitacionBold from './Wagons/Rooms/habitacionbold.js'
@@ -21,9 +21,6 @@ import HabitacionHaines from './Wagons/Rooms/habitacionhaines.js'
 import SelectScene from './End/selectscene.js'
 import GoodEnd from './End/goodend.js'
 import BadEnd from './End/badend.js'
-//Inicio del juego en Phaser, creando para ello el archivo 
-//de configuración del juego y la clase Game, encargada de 
-//crear e iniciar el juego 
 
 let config = {
     type: Phaser.AUTO,

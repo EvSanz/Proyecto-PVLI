@@ -1,10 +1,15 @@
-//Escena encargada de cargar los assets del juego
+//Js importados
 import Clock from './Utils/clock.js';
-import Npc from './NPCs/npc.js';
 import DialogManager from './Test/dialogmanager.js'
 import ObjectManager from './Objects/objectmanager.js'
-import GameObject from './Objects/gameobject.js'
-import Dialog from './Utils/dialog.js';
+
+/** Constructor:
+* Metodos:
+* @method consultamanager Devuelve el manager de dialogo
+* @method consultClock Devuelve el reloj
+*/
+
+//Escena encargada de cargar e inicializar recursos
 export default class Boot extends Phaser.Scene {
   constructor() {
     super({
@@ -14,6 +19,7 @@ export default class Boot extends Phaser.Scene {
 
   preload() {
 
+    //Cargamos los sprites sueltos
     this.load.setPath('Imagenes/');
     this.load.image('tetera', 'tetera.png');
     this.load.image('player', 'inspector.png');
@@ -32,7 +38,7 @@ export default class Boot extends Phaser.Scene {
     this.load.image('menuopciones', 'menuopciones.png');
     this.load.image('creditos', 'creditos.png');
 
-
+    //Cargamos las hojas de sprites
     this.load.spritesheet('checkbox', 'checkbox.png', {
       frameWidth: 48,
       frameHeight: 48
@@ -62,6 +68,7 @@ export default class Boot extends Phaser.Scene {
       frameHeight: 24
     });
 
+    //Cargamos el audio
     this.load.setPath('sonidos/');
     this.load.audio('suspenseFondo', 'suspense.mp3');
     this.load.audio('reloj', 'clocks.wav');
@@ -73,43 +80,48 @@ export default class Boot extends Phaser.Scene {
     this.load.audio('menumusic', 'menumusic.mp3');
     this.load.audio('pies', 'footsteps.wav');
 
+    //Cargamos los json 
     this.load.setPath('Jsons/');
     this.load.json('dialogue', 'dialogues.json');
     this.load.json('objects', 'objetos.json');
     this.load.json('personajes', 'personajes.json');
 
+    //Cargamos los videos
     this.load.setPath('rsc/');
     this.load.video('Tutorial', 'Introduccion.mp4');
     this.load.video('Goodending', 'gending.mp4');
   }
 
-  //Creación de los elementos fijos de la escena 
+
   create() {
 
+    //Creamos un nuevo reloj, manager de dialogos y manager de objetos
     this.dmanager = new DialogManager();
-
     this.clock = new Clock(this);
-
     this.gomanager = new ObjectManager();
 
+    //Iniciamos el juego en la escena del menu principal
     this.scene.start('mainmenu');
 
+    //Asignamos los json a variables
     this.myDialog = this.cache.json.get('dialogue');
     this.myObjects = this.cache.json.get('objects');
     this.myCharacters = this.cache.json.get('personajes');
-    //Bools de objetos
+    
     this.presente = [];
 
+    //Hacemos un recorrido para introducir todos los objetos 
+    //del json en un array de booleanos (Comprobacion de que aun existen)
     for (let i = 0; i < this.myObjects.Objetos.length; ++i) {
       this.presente[i] = true;
     }
   }
 
-  consultamanager() {
-    return this.dmanager;
-  }
 
-  consultClock() {
-    return this.clock;
-  }
+  //Metodo para devolver el manager de dialogos
+  consultamanager() {return this.dmanager; }
+
+
+  //Metodo para devolver el reloj
+  consultClock() {return this.clock; }
 }

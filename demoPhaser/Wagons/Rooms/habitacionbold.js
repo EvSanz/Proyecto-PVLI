@@ -1,6 +1,7 @@
+//Js importados 
 import Wagon from '../wagon.js';
-import GameObject from '../../Objects/gameobject.js';
 
+//Escena de la habitacion de Bold
 export default class HabitacionBold extends Wagon {
   constructor() {
     super('habitacionbold', {

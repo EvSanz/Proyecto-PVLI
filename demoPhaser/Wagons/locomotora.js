@@ -1,6 +1,7 @@
+//Js importados
 import Wagon from './wagon.js';
-import Npc from '../NPCs/npc.js';
 
+//Escena de la locomotora
 export default class Locomotora extends Wagon {
   constructor() {
     super('locomotora', {
@@ -16,16 +17,14 @@ export default class Locomotora extends Wagon {
   create(playerX) {
     super.create(playerX);
 
+    //Añadimos los npc
     this.addScenesNpc();
-    this.spawnPared();
-  }
 
-  spawnPared() {
+    //Creamos una pared invisible que impida al jugador 
+    //llegar al extremo de la pantalla
     this.pared = new Phaser.GameObjects.Rectangle(this, 850, 200, 200, 200, 0x0000000, 0x0000000);
-
     this.add.existing(this.pared);
     this.physics.add.existing(this.pared, true);
-
     this.physics.add.collider(this.player, this.pared);
   }
 }

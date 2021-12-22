@@ -1,6 +1,7 @@
+//Js importados
 import Wagon from '../wagon.js';
-import GameObject from '../../Objects/gameobject.js';
 
+//Escena de la habitacion de Haines
 export default class HabitacionHaines extends Wagon {
   constructor() {
     super('habitacionhaines', {

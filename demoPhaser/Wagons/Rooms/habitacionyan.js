@@ -1,6 +1,7 @@
+//Js importados
 import Wagon from '../wagon.js';
-import GameObject from '../../Objects/gameobject.js';
 
+//Escena de la habitacion de Yan
 export default class HabitacionYan extends Wagon {
   constructor() {
     super('habitacionyan', {
@@ -14,7 +15,6 @@ export default class HabitacionYan extends Wagon {
 
   create() {
     super.create();
-
     this.addSceneObjects();
   }
 }
