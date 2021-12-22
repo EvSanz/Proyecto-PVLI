@@ -1,6 +1,8 @@
 # Derailed Trade
 > ###### Documento de diseño de videojuego - Versión 15/09/2021 (Hito 0)
 > ###### Documento de diseño de videojuego - Versión 29/10/2021 (Hito 1)
+> ###### Documento de diseño de videojuego - Versión 28/11/2021 (Hito 2)
+> ###### Documento de diseño de videojuego - Versión 21/12/2021 (Hito 3)
 [Esquematren]:/Proyecto-PVLI/blob/main/Imagenes/esquemita%20pal%20gdd.png "IMG - esquema"
 [fondo]:/Proyecto-PVLI/blob/main/Imagenes/BACKGROUND%20(1)-4.png.png "IMG - fondo"
 [Personaje]:/Proyecto-PVLI/blob/main/Imagenes/New%20Piskel-1.png%20(3).png "IMG - senior"
@@ -8,6 +10,13 @@
 [Diagrama]:/Proyecto-PVLI/blob/main/Imagenes/diagrama.png "IMG - diagramaestados"
 [BocetoUI]:/Proyecto-PVLI/blob/main/Imagenes/interfaz_diagrama.png "IMG - bocetoUi"
 [UML]:/Proyecto-PVLI/blob/main/imagenes/UML.drawio.png "IMG - uml"
+[MenuPrincipal]:/Proyecto-PVLI/blob/main/Imagenes/main_menu.jpg "IMG - menuPrincipal"
+[MenuAjustes]:/Proyecto-PVLI/blob/main/Imagenes/settings_menu.jpg "IMG - settings"
+[PT]:/Proyecto-PVLI/blob/main/Imagenes/scene_point_click.jpg "IMG - pt"
+[Game]:/Proyecto-PVLI/blob/main/Imagenes/game.jpg "IMG - game"
+[Diario]:/Proyecto-PVLI/blob/main/Imagenes/diario.jpg "IMG - diario"
+[Sus]:/Proyecto-PVLI/blob/main/Imagenes/seleccion_asesino.jpg "IMG - diario"
+
 
 [Web]: https://evsanz.github.io/Proyecto-PVLI/
 [Repositorio]: https://github.com/EvSanz/Proyecto-PVLI
@@ -18,7 +27,6 @@
 ## 1. Resumen ##
 
 - **Géneros**: Misterio, novela gráfica.
-
 - **Modos**: 1 Jugador.
 - **Público objetivo**: Jugadores casuales mayores de 12 años.
 - **Plataformas**: PC Windows.
@@ -45,6 +53,7 @@ Derailed Trade es una aventura gráfica de misterio en la que el jugador debe av
 
 La partida comenzará con el jugador familiarizándose con el entorno, los controles y algunos personajes antes de que se revele el suceso que desencadenará toda la historia: un asesinato. El jugador podrá  recorrer el tren investigando algunas habitaciones e interrogando a los pasajeros pera recabar informacion.Para esta aventura el jugador cuenta con un diario donde se irán anotando de forma automática datos recogidos en los interrogatorios e informacion sobre los objetos que encontramos en las investigaciones.Cuando el jugador crea que tiene us sospechosos potencial podrá regresar a su cuarto para desvelar al asesino.Tambien es posible que no tengas ninguna sospecha clara hasta el final del trayecto o hasta quedarse sin acciones disponibles en cuyo caso el juego te obligará a elegir un asesino al llegar a la siguiente parada.   Si el jugador consigue identificar al asesino, este será detenido por la policia.En caso de ser el sospechoso incorrecto se mostrará un periodico detallando otro asesinato similar en el tren que da a entender al jugador que se ha equivocado. 
 
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/game.jpg)
 
 ## 3. Menús y modos de juego ##
 
@@ -67,14 +76,22 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   + Objetos e interacciones: Al aproximarte a un objeto o persona con el que puedas interactuar, la interacción comienza al hacer click en él o al pulsar la tecla 'E'.
   + Diario: En cualquier momento del juego se podrá acceder a la informacion contenida en el diario presionando la tecla 'Q' o haciendo click en el boton del diario de la interfaz.
   + Click izquierdo: Durante una inspección, podrás recoger objectos y añadirlos al diario haciendo click izquierdo sobre él. Durante un dialogo, podrás clickear directamente sobre la opción de dialogo que quieras elegir. 
+  + Saltar cinemáticas: Durante una cinemática, se puede pulsar Escape para saltarlas e ir a la siguiente pantalla de juego. 
   
 
 - ### 3.3. Menús ### 
 
   + Menú principal: El menú que aparece al principio del juego contará con un botón "Jugar" para iniciar la partida, un botón de ajustes y un botón que muestra los créditos.
+
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/main_menu.jpg)
+
   + Menú de ajustes: Mostrará los ajustes del juego.
+
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/settings_menu.jpg)
+
   + Menú del diario: Al activar el diario se mostrará un libro abierto con una lista de objetos en la pagina izquierda y una lista de los personajes en la página derecha. Al pasar el ratón por encima aparecerá un cuadro con más información.
 
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/diario.jpg)
 
 ## 4. Jugabilidad ##
 
@@ -96,6 +113,9 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 
   + _Diario_: Durante las inspecciones de habitaciones se recogerán objetos que se apuntarán de forma automática y durante los diálogos obtendremos información clave que también quedará recogida en el diario de forma automática. Al pulsar la tecla 'Q' se mostrará una pantalla con toda la información recogida hasta el momento.
 
++ _Teléfono_: Durante la investigación, el jugador podrá finalizar la partida antes de que termine el tiempo de investigación, yendo hacia el teléfono de la clase media y haciendo click en él. Tras ello, empezará la escena de selección de asesino. 
+
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/seleccion_asesino.jpg)
 
 - ### 4.2. Dinámica ###
 
@@ -108,27 +128,17 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 
 El juego estará compuesto de sprites realizados en pixelart con una resolución 32x32 y tomará inspiración de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises, exceptuando el fondo que usará una paleta con tintes azulados para distinguirse de los elementos que aparecen en el juego. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos (usando para ello diferentes estilos de ropa o cambios en la estatura o rasgos físicos de los sprites). Los objetos con los que podremos interactuar tendrán una serie de píxeles con tonos más claros que facilitarán su distinción de los objetos de decorado, los cuales serán acordes al rol del vagón o compartimento en el que se encuentren. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo verse a todos los personajes u objetos que haya en él nada más entrar en el vagón.
 
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/scene_point_click.jpg)
+
 ## 5. Contenido ##
 
 - ### 5.1. Historia ###
 
 Norma Anthony y Molly Morton conversan a solas durante el primer día de viaje y Norma, aparentemente de broma, menciona que quiere matar a Larry Shepard por estar en una relación con su hijo y Molly, creyendo que no iba en serio, menciona que querría deshacerse de su hermana Mery porque fue admitida en una prestigiosa escuela de arte y ella no. Ese mismo día deciden hacer un trato, en el cual Norma mataría a Mery y Molly a Larry. Al día siguiente, Mery aparece estrangulada en su habitación.
 
-Asustada, Molly decide pedir ayuda al detective Ted Case, quien ha subido al tren con intención de visitar a un familiar. Nada más subirse, Molly acude asustada y llorando al investigador, y entre balbuceos se entiende que quiere que vayas a su habitación, donde encuentra el cadáver de su hermana, y entiende que quiere que averigüe quién fue.
+Tras descubirse el cadáver, Barry Railway, el maquinista, decide pedir ayuda al detective Ted Case, quien ha subido al tren con intención de visitar a un familiar, para resolver el caso antes de llegar a la estación, sin alerta al asesino o asustar a los pasajeros.
 
-Aquí el jugador podrá sacar todas las pistas que pueda descubrir de la habitación. El vagón comedor estará cerrado dado que es bastante temprano, por lo que el jugador deberá hacer sus primeras interrogaciones en el vagón de clase baja ya que todos los de media están dormidos y encerrados en su habitación. 
-
-Al interrogar a unos pocos pasajeros se anunciará que el comedor está abierto, y se podrá acceder al resto de vagones y la mayoría estarán desayunando. Si se habla con el camarero y se eligen las opciones correctas, se podrá acceder al vagón locomotora, donde el maquinista confirma la coartada del camarero y avisa a la policía para que estén esperando en la próxima estación, y que les dirás ahí quien es el asesino para que no escape.
-
-En éste punto, todos los demás pasajeros estarán disponibles para que hables con ellos. Puedes decidir presionar a ciertos personajes para averiguar algo que oculten, además de poder conseguir en algunos casos acceso a sus habitaciones. Éstas historias son:
-
-- Haines es un espía extranjero que utiliza una falsa identidad como tenista para viajar. 
-
-- Ayva Yan está trabajando en un proyecto que involucra paneles solares, y por ello busca inversores que pueda financiar dicho proyecto, el cual quiere mantener en secreto por el momento. Después de descubrir esto, dará acceso a su habitación.
-
-- Bruno Anthony confiesa tener una relación romántica con Larry Shephard que su madre Norma no acepta.
-
-Tras esta última fase, el tren parará y el detective dará su veredicto final. Si acierta y culpa a Norma, se revelará la conversación que tuvo con Molly el día anterior; por otro lado, si culpa a la persona equivocada, se descubre que no es el asesino y por ende, que el jugador ha perdido el juego.
+Una vez finalizada esta conversación, el inspector interrogará a varios pasajeros, recorriendo los vagones e investigando las habitaciones en busca de pistas para resolver el caso. Con cada conversación e investigación de cuarto, el tiempo disponible se disminuirá hasta finalizar por completo, llegando el tren a la estación. Una vez allí, el inspector dará su veredicto, que terminará con la resolución de su mejor caso o su muerte por culpa de la depresión, tras dejar escapar al asesino y encarcelar a un inocente. 
 
 A continuación un diagrama con los puntos clave de la historia principal.
 
@@ -147,38 +157,38 @@ Este es el árbol de decisiones de diálogo del jugador:
 
   - **Larry Shepard:** Un humilde pastor de cabras que viaja en el vagón de clase baja acompañado de una de sus cabras a la que esta llevando al veterinario.
 
-  - **Victor Collins:** Un profesor de matemáticas con un carácter estrafalario y una severa adicción a la bebida. Viaja en el vagón de clase media, aunque suele pasar su tiempo libre en el vagón de clase baja charlando con Larry Shepard. 
+  - **Victor Collins:** Un profesor de matemáticas con un carácter estrafalario y una severa adicción a la bebida. Viaja en el vagón de clase media, aunque suele pasar su tiempo libre en el resto de vagones hablando con otros pasajeros.
 
-  - **Mery y Molly Morton:** Dos hermanas que intentaron triunfar en el mundo del arte pero acabaron arruinadas en el proceso. Viajan en el vagón de clase baja, con intención de regresar a la gran ciudad con sus padres y buscar un trabajo estable.
+  - **Mery y Molly Morton:** Dos hermanas que intentaron triunfar en el mundo del arte pero acabaron arruinadas en el proceso. Viajan en el vagón de clase media, con intención de regresar a la gran ciudad con sus padres y buscar un trabajo estable.
 
-  - **Bruno Anthony:** El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante conflictiva y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso. Malgasta la fortuna de su familia en vicios, como por ejemplo el alcohol. 
+  - **Bruno Anthony:** El único hijo de la acaudalada viuda Norma Anthony. Posee una personalidad bastante nerviosa y presenta conductas sospechosas, como por ejemplo ocultar información importante para resolver el caso o divagar.
 
-  - **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Bruno Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y olvidadiza, aunque demuestra poseer un carácter estricto y sobreprotector en lo referente a Bruno. 
+  - **Norma Anthony:** La esposa del fallecido empresario Patrick, de quien heredó su inmensa fortuna. Su único hijo es Bruno Antony, con quien comparte habitación en el vagón de lujo del tren. Su personalidad es afable y cariñosa, aunque demuestra poseer un carácter un tanto estricto.
 
-  - **Ayva Yan:** Una extranjera que tiene dificultades para hablar el idioma, comunicándose sobre todo a través de gestos. Posee una personalidad extrovertida y abnegada, aunque tiene dificultades para cambiar de opinión sobre determinados temas. Viaja en el vagón de clase media, aunque suele merodear por todo el tren.   
+  - **Ayva Yan:** Una inventora bastante seria, con poco interés en hablar con el resto de pasajeros. Viaja con intención de buscar inversores para sus nuevos proyectos, en los cuales invierte la mayoria de su tiempo. 
 
-  - **Daniel Laddie Grooms:** Daniel Grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Su personalidad es generalmente tranquila, y está constantemente pensando en conseguir dinero. Viaja en el vagón de clase baja y no suele moverse mucho.
+  - **Daniel Laddie Grooms:** Daniel Grooms es un electricista que se gana la vida haciendo trabajos de vez en cuando en su pueblo, y está en el tren dado que le ofrecen un trabajo más rentable en el pueblo destino. Es bastante arisco y amargado, con pocas ganas de interactuar con el resto de pasajeros. Viaja en el vagón de clase baja. 
 
-  - **Frederick Bold:** Es un arquitecto que fue recientemente despedido tras realizar sugerencias de diseño controversiales. Está buscando trabajo en las ciudades cercanas al ferrocarril, siendo su último intento el pueblo donde finalizaremos el juego. Suele ser serio e irritable, además de poseer una memoria excelente. Viaja en el vagón de clase media, lugar que solo abandona para ir al vagón cafetería a desayunar.
+  - **Frederick Bold:** Es un arquitecto que fue recientemente despedido tras realizar sugerencias de diseño controversiales. Está buscando trabajo en las ciudades cercanas al ferrocarril, siendo su último intento el pueblo donde finalizaremos el juego. Suele ser tranquilo y enérgico, además de poseer una memoria excelente. Viaja en el vagón de clase media, lugar que solo abandona para ir al vagón cafetería a desayunar.
 
   - **Alfred Hirsch:** Es un empleado que se encarga de vigilar y atender el vagón cafetería, en el cual trabaja como camarero y cocinero. Es muy servicial y aunque parezca muy serio, siempre está dispuesto a ayudar. Duerme en un compartimento especial que hay en susodicho vagón.
 
-  - **Barry Railway:** Desde pequeño se dedicaba a montar maquetas de trenes, y aunque ahora que tiene el trabajo que siempre ha querido, solo desea tener más tiempo para sus maquetas. Aún así, se toma su trabajo en serio y no aguanta ningún tipo de distracción. Es poco hablador y prefiere evitar que haya problemas en el tren, motivo por el cual prohibe de forma explícita al detective Case informar a los pasajeros del asesinato.
+  - **Barry Railway:** Desde pequeño se dedicaba a montar maquetas de trenes, y aunque ahora que tiene el trabajo que siempre ha querido, solo desea tener más tiempo para sus maquetas. Aún así, se toma su trabajo en serio y no aguanta ningún tipo de distracción. Es bastante servicial y quiere evitar que haya problemas en el tren, motivo por el cual prohibe de forma explícita al detective Case informar a los pasajeros del asesinato.
 
-  - **Mihael Haines:** Su sueño siempre había sido ser tenista, y ahora está de camino a un torneo importante. Debido a ésto, se puede permitir viajar en el vagón de clase alta.
+  - **Mihael Haines:** Un extranjero cuyo sueño fue siempre convertirse en tenista, y ahora está de camino a un torneo importante. Debido a ésto, se puede permitir viajar en el vagón de clase alta.
 
 
 - ### 5.3 Lugares ###
 
 ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/esquemita%20pal%20gdd.png)
 
-  - **Vagón de clase alta:** Un vagón  donde residen Ayva Yan, Mihael Haines, Norma Anthony y Bruno Anthony.
+  - **Vagón de clase alta:** Un vagón donde residen Ayva Yan, Mihael Haines y los Anthony, pero solo podremos interactuar con Ayva Yan y Bruno Anthony.
 
-  - **Vagón de clase media:** El cádaver estará en uno de los compartimentos de este. Los pasajeros que residen en él son las hermanas Morton, Victor Collins, Frederick Bold.
+  - **Vagón de clase media:** El cádaver estará en uno de los compartimentos de este. Los pasajeros que residen en él son las hermanas Morton, Victor Collins y Frederick Bold, pero solo podremos interactuar con Molly Morton y Victor Collins. En este vagón es donde encontraremos también el teléfono para finalizar antes el caso.
 
   - **Vagón de clase baja:** Éste vagón no dispone de compartimentos y hay varios personajes deambulando por allí. En este vagón viajan Daniel Grooms y Larry Shephard, aunque es posible ver a otras personas en esta zona.
 
-  - **Vagón comedor:** En éste vagón podremos encontrar a Alfred Hirsch, el camarero, y a Haines.
+  - **Cafeteria:** En éste vagón podremos encontrar a Frederick Bold, Alfred Hirsch y Mihael Haines.
 
   - **Locomotora:** El espacio más pequeño del juego, donde podremos encontrar al maquinista Barry Railway.
 
@@ -188,9 +198,9 @@ Este es el árbol de decisiones de diálogo del jugador:
 
   - Uno de los gemelos de Bruno Anthony, que se había quedado enganchado en la ropa de Norma.
 
-  - Un cable perteneciente a Ayva Yan.
+  - Un cable raído perteneciente a Ayva Yan, que ha sido usado como arma homicida.
 
-  - Una botella de alcohol propiedad de Victor Collins.
+  - Una botella de alcohol propiedad de Victor Collins, vacía y con un leve olor a químicos.
 
   **En la habitación de Norma y Bruno Anthony:** 
 
@@ -198,7 +208,7 @@ Este es el árbol de decisiones de diálogo del jugador:
 
   - Uno de los gemelos de Bruno Anthony.
 
-  - Varias cajas de galletas pertenecientes a Norma Anthony.
+  - Varias cajas de galletas pertenecientes a Norma Anthony, escondiendo una de ellas un trozo del cable que se usó en la escena del crimen.
 
   **En la Habitación de Mihael Haines:**
 
@@ -212,7 +222,7 @@ Este es el árbol de decisiones de diálogo del jugador:
 
   - Cables idénticos a los que aparecen en la escena del crimen.
 
-  - Varios prototipos de placas solares (Llamados "Aparato extraño" durante gameplay).
+  - Varios prototipos de placas solares (Llamados "Aparato extraño" durante el gameplay).
 
   - Una caja de galletas, regalo de Norma Anthony tras ayudarla.
 

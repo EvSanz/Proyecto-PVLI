@@ -46,7 +46,8 @@ export default class Door extends Phaser.GameObjects.Sprite {
     if (this.foto === 'puertafunlat' || this.foto === 'puertafunlat2') {
 
       //Y el jugador esta en colision con ellas, paramos la musica...
-      if (this.scene.physics.overlap(this.scene.player, this)) {
+      if (this.scene.physics.overlap(this.scene.player, this)
+      && this.scene.player.canMove) {
         this.scene.stopMusic();
 
         //E posicionamos al jugador en diferentes posiciones
@@ -63,7 +64,8 @@ export default class Door extends Phaser.GameObjects.Sprite {
   {
     //Si el jugador esta colisionando con la puerta, paramos
     //la musica y cargamos la nueva escena
-    if (this.scene.physics.overlap(this.scene.player, this)) {
+    if (this.scene.physics.overlap(this.scene.player, this)
+    && this.scene.player.canMove) {
       this.scene.stopMusic();
       this.scene.scene.start(this.gotoscene);
     }
