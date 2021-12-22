@@ -17,6 +17,8 @@ export default class SelectScene extends Wagon {
   create() {
     super.create();
 
+    this.game.sound.stopAll();
+
     //Accedemos a los personajes previamente cargados en el boot
     this.pj = this.scene.get('boot').myCharacters;
 

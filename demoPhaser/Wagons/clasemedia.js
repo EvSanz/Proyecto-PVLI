@@ -66,6 +66,9 @@ export default class ClaseMedia extends Wagon {
   //Metodo para crear opciones de telefono
   createOptions() {
 
+    //Bloqueamos el movimiento del player
+    this.player.canMove = false;
+
     this.label0.text = "Es el teléfono para llamar a la policía. Debes usarlo cuando sepas la identidad del asesino";
     this.label.text = "Llamar a la policía";
     this.label2.text = "Todavía no";
@@ -102,6 +105,9 @@ export default class ClaseMedia extends Wagon {
       //Destruimos las cajas de interaccion
       this.graphics.destroy();
       this.graphics2.destroy();
+      
+      //Desbloqueamos el movimiento del player
+      this.player.canMove = true;
     });
   }
 }

@@ -47,8 +47,6 @@ export default class Wagon extends Phaser.Scene {
     this.dmanager = this.scene.get('boot').dmanager;
     this.gomanager = this.scene.get('boot').gomanager;
 
-    //Detenemos el sonido del juego 
-    this.game.sound.stopAll();
     this.locked = false;
 
     //Dependiendo de si es una escena PointAndClick o no, cambiamos

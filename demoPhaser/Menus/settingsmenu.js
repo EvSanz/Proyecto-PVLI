@@ -40,7 +40,7 @@ export default class Settings extends Phaser.Scene {
       this.audioBool.on('pointerdown', () => {
 
         //Llamamos al metodo activateAudio
-        this.activateAudio(this.game.sound.mute);
+        this.changeAudio();
 
         //Cambiamos el estado de boxnum al estado opuesto
         if (boxnum === 0) {boxnum = 1; }
@@ -54,5 +54,5 @@ export default class Settings extends Phaser.Scene {
 
     //Método para activar el audio si esta desactivado
     //o viceversa
-    activateAudio(bool) {this.game.sound.mute = !bool; }
+    changeAudio() {this.game.sound.mute = !this.game.sound.mute; }
 }
