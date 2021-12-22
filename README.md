@@ -15,6 +15,7 @@
 [PT]:/Proyecto-PVLI/blob/main/Imagenes/scene_point_click.jpg "IMG - pt"
 [Game]:/Proyecto-PVLI/blob/main/Imagenes/game.jpg "IMG - game"
 [Diario]:/Proyecto-PVLI/blob/main/Imagenes/diario.jpg "IMG - diario"
+[Sus]:/Proyecto-PVLI/blob/main/Imagenes/seleccion_asesino.jpg "IMG - diario"
 
 
 [Web]: https://evsanz.github.io/Proyecto-PVLI/
@@ -113,6 +114,8 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
   + _Diario_: Durante las inspecciones de habitaciones se recogerán objetos que se apuntarán de forma automática y durante los diálogos obtendremos información clave que también quedará recogida en el diario de forma automática. Al pulsar la tecla 'Q' se mostrará una pantalla con toda la información recogida hasta el momento.
 
 + _Teléfono_: Durante la investigación, el jugador podrá finalizar la partida antes de que termine el tiempo de investigación, yendo hacia el teléfono de la clase media y haciendo click en él. Tras ello, empezará la escena de selección de asesino. 
+
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/seleccion_asesino.jpg)
 
 - ### 4.2. Dinámica ###
 
