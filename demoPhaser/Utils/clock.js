@@ -7,7 +7,7 @@
 * Metodos:
 * @method decreaseTime disminuye el tiempo que queda
 * @method resetTime el tiempo actual vuelve a ser el maximo original
-* @method getTime delvuelve el tiempo que queda
+* @method getTime devuelve el tiempo que queda
 * @method showTime muestra el tiempo actual en pantalla
 */
 

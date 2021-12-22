@@ -27,7 +27,7 @@ export default class ClaseMedia extends Wagon {
 
     //Creamos las puertas de las habitaciones
     this.door = new Door(this, 120, 222, 'habitacionmorton', 'puertafun');
-    this.placaPuerta(this.placas[i++], 120, 222, "Morton");
+    this.placaPuerta(this.placas[i++], 115, 222, "Morton");
     this.door2 = new Door(this, 440, 222, 'habitacioncollins', 'puertafun');
     this.placaPuerta(this.placas[i++], 440, 222, "Collins");
     this.door3 = new Door(this, 780, 222, 'habitacionbold', 'puertafun');

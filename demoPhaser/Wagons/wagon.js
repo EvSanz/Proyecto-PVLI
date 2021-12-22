@@ -44,7 +44,7 @@ export default class Wagon extends Phaser.Scene {
   create(playerX = 500) {
 
     //Asignamos los managers a variables
-    this.dmanager = this.scene.get('boot').dmanager;
+    // this.dmanager = this.scene.get('boot').dmanager;
     this.gomanager = this.scene.get('boot').gomanager;
 
     this.locked = false;
