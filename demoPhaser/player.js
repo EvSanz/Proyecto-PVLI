@@ -9,7 +9,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
    * @param {Phaser.Scene} scene Escena 
    * @param {number} x Coordenada X
    * @param {number} y Coordenada Y
-   * @param {bool} seMueve ¿Puede moverse?
    */
 
   constructor(scene, x, y) {

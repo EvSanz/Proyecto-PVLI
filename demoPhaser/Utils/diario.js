@@ -57,7 +57,7 @@ export default class Diary extends Phaser.Scene {
     }, this);
 
 
-    //Por cada personaje interrogado sale un poco de informacion de ellos
+    //Por cada personaje interrogado sale su nombre
     this.characterList.forEach(function showSuspects(element, index) {
 
       let xPos;
@@ -91,7 +91,7 @@ export default class Diary extends Phaser.Scene {
 
     }, this);
 
-    //Añadimos el comando para desactivar el diario 
+    //Añadimos los comandos para desactivar el diario 
     this.q = this.input.keyboard.addKey('Q');
     this.esca = this.input.keyboard.addKey('Esc');
     this.q.on('down', () => {
@@ -142,19 +142,19 @@ export default class Diary extends Phaser.Scene {
   }
 
   /** Agrega un personaje al array de personajes, pero primero se asegura que tiene los parametros necesarios
-   * @param {Struct} char Struct que contiene el nombre (name) y la coartada (desc)
+   * @param {Struct} character Struct que contiene el nombre (name) y la coartada (desc)
    */
-  addCharacter(char) {
+  addCharacter(character) {
     let valido = true;
 
-    if (char.name != null && char.desc != null)
+    if (character.name != null && character.desc != null)
 
       this.characterList.forEach(element => {
-        if (valido && element.name === char.name)
+        if (valido && element.name === character.name)
           valido = false;
       });
 
     if (valido)
-      this.characterList.push(char);
+      this.characterList.push(character);
   }
 }

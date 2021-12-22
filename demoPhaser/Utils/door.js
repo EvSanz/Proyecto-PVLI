@@ -30,7 +30,7 @@ export default class Door extends Phaser.GameObjects.Sprite {
     //Si pulsamos la e mientras tocamos la puerta
     this.e = this.scene.input.keyboard.addKey('E');
     this.e.on('down', () => {
-      if (this.scene.physics.overlap(this.scene.player, this)) {
+      if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove) {
         this.scene.stopMusic();
         //Entra por la puerta
         this.scene.scene.start(this.gotoscene);
@@ -42,7 +42,7 @@ export default class Door extends Phaser.GameObjects.Sprite {
     this.graphics.on('pointerdown', () => {
       //Y el jugador está dentro del rango, cargamos 
       //la siguiente escena
-      if (this.scene.physics.overlap(this.scene.player, this)) {
+      if (this.scene.physics.overlap(this.scene.player, this) && this.scene.player.canMove) {
         this.scene.stopMusic();
         this.scene.scene.start(this.gotoscene);
       }
