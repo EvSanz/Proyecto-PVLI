@@ -52,7 +52,7 @@ export default class Boot extends Phaser.Scene {
       frameHeight: 352
     });
     this.load.spritesheet('npcs', 'npcspritesheet.png', {
-      frameWidth: 115,
+      frameWidth: 90,
       frameHeight: 224
     });
     this.load.spritesheet('objects', 'objectsspritesheet.png', {
