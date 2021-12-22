@@ -1,5 +1,4 @@
-//Js importados
-import SelectKillerScene from "../Test/selectkillerscene.js";
+
 
 /** Constructor:
 * Variables:
@@ -69,9 +68,9 @@ import SelectKillerScene from "../Test/selectkillerscene.js";
 
 
     //Metodo para iniciar la escena de seleccion de asesino 
-    outOfTime() {
+    // outOfTime() {
 
-        this.selectKillerScene = new SelectKillerScene();
-        this.scene.scene.start(this.selectKillerScene);
-    }
+    //     this.selectKillerScene = new SelectKillerScene();
+    //     this.scene.scene.start(this.selectKillerScene);
+    // }
  }

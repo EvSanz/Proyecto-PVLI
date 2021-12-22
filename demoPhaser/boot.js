@@ -107,14 +107,9 @@ export default class Boot extends Phaser.Scene {
     this.myDialog = this.cache.json.get('dialogue');
     this.myObjects = this.cache.json.get('objects');
     this.myCharacters = this.cache.json.get('personajes');
-    
-    this.presente = [];
 
-    //Hacemos un recorrido para introducir todos los objetos 
-    //del json en un array de booleanos (Comprobacion de que aun existen)
-    for (let i = 0; i < this.myObjects.Objetos.length; ++i) {
-      this.presente[i] = true;
-    }
+    //Creamos un array de booleanos de objetos
+    this.presente = new Array(this.myObjects.Objetos.length).fill(true);
   }
 
 

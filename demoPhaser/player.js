@@ -1,5 +1,6 @@
 //Js importados
 import Dialog from './Utils/dialog.js';
+import Clock from './Utils/clock.js';
 
 //Clase para crear y gestionar el jugador
 export default class Player extends Phaser.GameObjects.Sprite {
@@ -95,14 +96,6 @@ export default class Player extends Phaser.GameObjects.Sprite {
     else {
       this.body.setVelocityX(0);
       this.play('playerstand', true);
-    }
-  }
-
-
-  //Metodo para iniciar la escena de seleccion de asesino si no hay tiempo
-  outOfTime() {
-    if (this.clock.getTime() <= 0) {
-      this.scene.scene.start('selectKillerScene');
     }
   }
 }
