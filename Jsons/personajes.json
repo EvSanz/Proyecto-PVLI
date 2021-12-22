@@ -46,7 +46,7 @@
 
     {
       "name": "Victor Collins",
-      "posX": 650,
+      "posX": 880,
       "posY": 238,
       "culpable": false,
       "desc": "Un profesor que estuvo bebiendo hace pocas horas. Parece saber cosas, pero no consigue hablar con coherencia",
@@ -57,11 +57,11 @@
 
     {
       "name": "Frederick Bold",
-      "posX": 885,
+      "posX": 200,
       "posY": 238,
       "culpable": false,
       "desc": "Un arquitecto frustrado, que no parece saber mucho sobre los asesinatos",
-      "scene": "clasemedia",
+      "scene": "cafeteria",
       "dialogoIni": 8,
       "frame": 24
     },

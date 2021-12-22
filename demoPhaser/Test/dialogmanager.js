@@ -63,7 +63,7 @@ export default class DialogManager {
             }, 
             {
                 id: 9,
-                dialogo: 16,
+                dialogo: 17,
                 anger: 0
             }, 
             {

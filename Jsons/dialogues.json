@@ -11,62 +11,12 @@
       "scenes": [
         {
           "id": "Scene0",
-          "opciones": 2,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            "¿Quién eres tú?",
-            "¿Qué estas haciendo aquí?",
-            "¿Mery Morton?",
-            "Vengo a traerte un mensaje"
-          ]
-        },
-
-        {
-          "id": "Scene1",
-          "opciones": 2,
-          "irritacion": 20,
-          "clock": false,
-          "lines": [
-            "¿Sí...?",
-            "¿Qué... qué quieres de mí?",
-            "Darte un mensaje, de parte de un amigo",
-            "Creo que puedes imaginártelo"
-          ]
-        },
-
-        {
-          "id": "Scene2",
-          "opciones": 2,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            "¿Mensaje?...",
-            "Salga de aquí o... O...",
-            "¿Nerviosa? Tranquila, todo acabara pronto",
-            "Relajese. Todo acabara pronto"
-          ]
-        },
-
-        {
-          "id": "Scene3",
           "opciones": -1,
           "irritacion": 0,
           "clock": false,
           "lines": [
-            "No, no, no, no",
-            "Noooooooooo"
-          ]
-        },
-
-        {
-          "id": "Scene4",
-          "opciones": -1,
-          "irritacion": 0,
-          "clock": false,
-          "lines": [
-            "No, no, no, no",
-            "Noooooooooo"
+            "Dialogo de prueba",
+            "Respuesta de prueba"
           ]
         }
       ]
@@ -728,7 +678,7 @@
             "No me suena haber escuchado ese nombre antes",
             "¿Quizás viajen en clase media?",
             "Puede ser. Muchas gracias por tu ayuda",
-            "¿Y qué estaba haciendo usted ayer a medianoche"
+            "¿Y qué estaba haciendo usted ayer a medianoche?"
           ]
         },
 

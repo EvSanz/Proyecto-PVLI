@@ -1,6 +1,5 @@
 //Js importados
 import Dialog from './Utils/dialog.js';
-import Clock from './Utils/clock.js';
 
 //Clase para crear y gestionar el jugador
 export default class Player extends Phaser.GameObjects.Sprite {
