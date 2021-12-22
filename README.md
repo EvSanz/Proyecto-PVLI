@@ -10,6 +10,12 @@
 [Diagrama]:/Proyecto-PVLI/blob/main/Imagenes/diagrama.png "IMG - diagramaestados"
 [BocetoUI]:/Proyecto-PVLI/blob/main/Imagenes/interfaz_diagrama.png "IMG - bocetoUi"
 [UML]:/Proyecto-PVLI/blob/main/imagenes/UML.drawio.png "IMG - uml"
+[MenuPrincipal]:/Proyecto-PVLI/blob/main/Imagenes/main_menu.jpg "IMG - menuPrincipal"
+[MenuAjustes]:/Proyecto-PVLI/blob/main/Imagenes/settings_menu.jpg "IMG - settings"
+[PT]:/Proyecto-PVLI/blob/main/Imagenes/scene_point_click.jpg "IMG - pt"
+[Game]:/Proyecto-PVLI/blob/main/Imagenes/game.jpg "IMG - game"
+[Diario]:/Proyecto-PVLI/blob/main/Imagenes/diario.jpg "IMG - diario"
+
 
 [Web]: https://evsanz.github.io/Proyecto-PVLI/
 [Repositorio]: https://github.com/EvSanz/Proyecto-PVLI
@@ -46,6 +52,7 @@ Derailed Trade es una aventura gráfica de misterio en la que el jugador debe av
 
 La partida comenzará con el jugador familiarizándose con el entorno, los controles y algunos personajes antes de que se revele el suceso que desencadenará toda la historia: un asesinato. El jugador podrá  recorrer el tren investigando algunas habitaciones e interrogando a los pasajeros pera recabar informacion.Para esta aventura el jugador cuenta con un diario donde se irán anotando de forma automática datos recogidos en los interrogatorios e informacion sobre los objetos que encontramos en las investigaciones.Cuando el jugador crea que tiene us sospechosos potencial podrá regresar a su cuarto para desvelar al asesino.Tambien es posible que no tengas ninguna sospecha clara hasta el final del trayecto o hasta quedarse sin acciones disponibles en cuyo caso el juego te obligará a elegir un asesino al llegar a la siguiente parada.   Si el jugador consigue identificar al asesino, este será detenido por la policia.En caso de ser el sospechoso incorrecto se mostrará un periodico detallando otro asesinato similar en el tren que da a entender al jugador que se ha equivocado. 
 
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/game.jpg)
 
 ## 3. Menús y modos de juego ##
 
@@ -74,9 +81,16 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 - ### 3.3. Menús ### 
 
   + Menú principal: El menú que aparece al principio del juego contará con un botón "Jugar" para iniciar la partida, un botón de ajustes y un botón que muestra los créditos.
+
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/main_menu.jpg)
+
   + Menú de ajustes: Mostrará los ajustes del juego.
+
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/settings_menu.jpg)
+
   + Menú del diario: Al activar el diario se mostrará un libro abierto con una lista de objetos en la pagina izquierda y una lista de los personajes en la página derecha. Al pasar el ratón por encima aparecerá un cuadro con más información.
 
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/diario.jpg)
 
 ## 4. Jugabilidad ##
 
@@ -110,6 +124,8 @@ La partida comenzará con el jugador familiarizándose con el entorno, los contr
 - ### 4.3. Estética ###
 
 El juego estará compuesto de sprites realizados en pixelart con una resolución 32x32 y tomará inspiración de las películas de la primera mitad del siglo XX, replicando el aspecto del cine en blanco y negro con sprites dibujados en una escala de grises, exceptuando el fondo que usará una paleta con tintes azulados para distinguirse de los elementos que aparecen en el juego. Al tratarse de un juego de misterio, los NPCs serán fáciles de identificar entre ellos (usando para ello diferentes estilos de ropa o cambios en la estatura o rasgos físicos de los sprites). Los objetos con los que podremos interactuar tendrán una serie de píxeles con tonos más claros que facilitarán su distinción de los objetos de decorado, los cuales serán acordes al rol del vagón o compartimento en el que se encuentren. Cada sala se mostrará por completo en la pantalla de juego, permaneciendo la cámara estática y pudiendo verse a todos los personajes u objetos que haya en él nada más entrar en el vagón.
+
+![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/scene_point_click.jpg)
 
 ## 5. Contenido ##
 
