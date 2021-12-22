@@ -13,13 +13,29 @@ export default class Npc extends Phaser.GameObjects.Sprite {
      * @param {number} anger Irritación
      * @param {number} frame La posición del personaje en la spritesheet
      * @param {number} dialogoIni Identificador del diálogo que le corresponde al personaje
+     * 
      * Métodos:
+     * @private
      * @method llamarDialogo Carga un diálogo u otro dependiendo de la irritación
+     * @memberof Npc
+     * 
+     * @public
      * @method aumentarIrritacion Aumenta el nivel de irritación
+     * @param {int} cabreo El nivel de irritación que aumenta al personaje
+     * @memberof Npc
+     * 
+     * @public
      * @method getIrritacion Devuelve el valor actual de irritación
      * @returns {number} La irritación del personaje
+     * @memberof Npc
+     * 
+     * @public
      * @method cambiarScene Aumentamos el valor de diálogo
+     * @memberof Npc
+     * 
+     * @public
      * @method apuntarEnDiario Cargamos información en el diario
+     * @memberof Npc
      * 
      * @extends {Phaser.GameObjects.Sprite}
      */
