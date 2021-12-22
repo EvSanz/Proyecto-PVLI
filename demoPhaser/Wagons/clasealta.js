@@ -31,6 +31,6 @@ export default class ClaseAlta extends Wagon {
     this.door2 = new Door(this, 440, 222, 'habitacionanthony', 'puertafun');
     this.placaPuerta(this.placas[i++], 440, 222, "Anthony");
     this.door3 = new Door(this, 780, 222, 'habitacionhaines', 'puertafun');
-    this.placaPuerta(this.placas[i++], 780, 222, "Haines");
+    this.placaPuerta(this.placas[i++], 775, 222, "Haines");
   }
 }
