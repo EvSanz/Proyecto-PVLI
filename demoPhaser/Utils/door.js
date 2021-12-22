@@ -1,16 +1,17 @@
 //Clase encargada de gestionar la puerta
 export default class Door extends Phaser.GameObjects.Sprite {
 
-  /**Constructor:
-  * Variables:
-  * @param {Phaser.Scene} scene Escena inicial
-  * @param {Scene} gotoscene Siguiente escena
-  * @param {number} x Coordenada x
-  * @param {number} y Coordenada y 
-  * @param {image} foto Sprite de puerta
-  * Metodos:
-  * @method openDoor Abrir puerta
-  */
+  
+/**
+ * @extends Phaser.GameObjects.Sprite
+ * @class Door
+ * @param {Wagon} scene Vagon en el que se encuentra la puerta
+ * @param {number} x Posición x de la puerta
+ * @param {number} y Posición y de la puerta
+ * @param {Phaser.scene} gotoscene Escena a la que lleva esta puerta
+ * @param {string} foto Sprite del gameobject
+ * @description Objetos para cambiar de un vagón a otro
+ */
 
   constructor(scene, x, y, gotoscene, foto) {
     super(scene, x, y, foto);
@@ -59,7 +60,11 @@ export default class Door extends Phaser.GameObjects.Sprite {
   }
 
 
-  //Metodo para abrir la puerta
+  /**
+   * @method openDoor
+   * @description Pasa a la siguiente escena si el player la está tocando
+   * @memberof Door
+   */
   openDoor()
   {
     //Si el jugador esta colisionando con la puerta, paramos

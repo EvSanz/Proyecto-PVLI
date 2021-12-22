@@ -4,29 +4,57 @@ import Door from '../Utils/door.js'
 import Npc from '../NPCs/npc.js';
 import GameObject from '../Objects/gameobject.js';
 
-/**Escena principal del juego
+/**
  * @extends Phaser.Scene
+ * @class Wagon
+ * @param {string} wagonKey key del vagon
+ * @param {object} wagonConfig Datos para generar el vagón
+ * @param {boolean} wagonConfig.isPointAndClick ¿Es una escena PointAndClick?
+ * @param {string} wagonConfig.spriteFondo1 Sprite de la izquierda del fondo
+ * @param {string} wagonConfig.spriteFondo2 Sprite central del fondo
+ * @param {string} wagonConfig.spriteFondo3 Sprite de la derecha del fondo
+ * @param {string} wagonConfig.wagonIzq Vagon a la izquierda del actual
+ * @param {string} wagonConfig.wagonDer Vagon a la derecha del actual
+ * @description Escenas principales del juego
  */
+
+
+  /**
+   * @method playwhistle
+   * @description Metodo para reproducir el silbato
+   * @memberof Wagon
+   */
+
+  /**
+   * @method stopMusic
+   * @description Metodo para parar la musica
+   * @memberof Wagon
+   */
+
+  /**
+   * @method addSceneObjects
+   * @description Añade los objetos ubicados en el vagon actual
+   * @memberof Wagon
+   */
+
+  /**
+   * @method addScenesNpc
+   * @description Añade los npcs ubicados en el vagon actual
+   * @memberof Wagon
+   */
+
+  /**
+   * @method placaPuerta
+   * @description Metodo para escribir en pantalla el nombre de las habitaciones
+   * @memberof Wagon
+   * @param {number} doorX Posicion x de la puerta correspondiente
+   * @param {number} doorY Posicion y de la puerta correspondiente
+   * @param {string} nombre Nombre del npc que aparecera en la placa
+   */
+
 
 //Clase para crear y gestionar un nivel 
 export default class Wagon extends Phaser.Scene {
-
-  /**Constructor:
-   * Variables:
-   * @param {string} wagonKey key del vagon
-   * @param {boolean} isPointAndClick ¿Es una escena PointAndClick?
-   * @param {string} spriteFondo1 Sprite de la izquierda del fondo
-   * @param {string} spriteFondo2 Sprite central del fondo
-   * @param {string} spriteFondo3 Sprite de la derecha del fondo
-   * @param {string} wagonIzq Vagon a la izquierda del actual
-   * @param {string} wagonDer Vagon a la derecha del actual
-   * Metodos:
-   * @method playwhistle Reproduce sonido de silbato
-   * @method stopMusic Para la musica
-   * @method addSceneObjects Añade objetos a la escena
-   * @method addScenesNpc Añade NPCs a la escena
-   * @method placaPuerta Escribe las placas de habitaciones
-   */
 
   constructor(wagonKey, wagonConfig) {
     super({
@@ -162,7 +190,6 @@ export default class Wagon extends Phaser.Scene {
     this.scene.get('boot').consultClock().showTime(this.wagonKey);
   }
 
-
   //Metodo para reproducir el silbato
   playwhistle() {
 
@@ -174,12 +201,10 @@ export default class Wagon extends Phaser.Scene {
     this.woo.play();
   }
 
-
   //Metodo para parar la musica
   stopMusic() {this.musica.stop(); }
 
-
-  //Metodo para añadir objetos a la escena
+  //Añade los objetos ubicados en el vagon actual
   addSceneObjects() {
 
     //Variable para hacer referencia a los objetos cargados en el boot desde el json
@@ -197,8 +222,7 @@ export default class Wagon extends Phaser.Scene {
     }
   }
 
-
-  //Metodo para añadir NPCs a la escenas
+  //Añade los npcs ubicados en el vagon actual
   addScenesNpc() {
 
     //Variable para hacer referencia a los personajes cargados en el boot desde el json
@@ -217,7 +241,6 @@ export default class Wagon extends Phaser.Scene {
       }
     }
   }
-
 
   //Metodo para escribir en pantalla el nombre de las habitaciones
   placaPuerta(placa, doorX, doorY, nombre) {

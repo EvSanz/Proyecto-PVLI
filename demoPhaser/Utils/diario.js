@@ -1,4 +1,40 @@
 //Clase encargada de gestionar el diario
+
+/**
+ * @extends Phaser.Scene
+ * @class Diary
+ * @description La escena donde se muestra los nombres de los personajes interrogados y los objetos recogidos. 
+ * Al pasar el ratón por encima se muestra más información de éstos
+ */
+
+  /**
+   * @private
+   * @method showInfoPanel
+   * @description Muestra el panel de descripcion 
+   * @memberof Diary
+   */
+  
+  /**
+   * @public
+   * @method addObject
+   * @description Añade un objeto al diario
+   * @param {object} obj Variable con info del objeto a añadir
+   * @param {string} obj.sprite Nombre del sprite del objeto
+   * @param {string} obj.name Nombre del objeto
+   * @param {string} obj.desc Descripción del objeto
+   * @memberof Diary
+   */
+  
+  /**
+   * @public
+   * @method addCharacter
+   * @description Añade un npc al diario
+   * @param {object} char Variable con info del objeto a añadir
+   * @param {string} char.name Nombre del npc
+   * @param {string} char.desc Descripción del npc
+   * @memberof Diary
+   */
+
 export default class Diary extends Phaser.Scene {
   constructor() {
     super({
@@ -12,20 +48,6 @@ export default class Diary extends Phaser.Scene {
     this.letterSize = 20;
     this.itemboxSize = 80;
   }
-
-
-  /** 
-  * Variables: 
-  * @param {bool} active ¿Mostramos el cuadro de texto?
-  * @param {string} text Texto que mostramos
-  * @param {GameObject} obj Objeto que agregamos
-  * @param {Struct} char Nombre e informacion del npc que agregamos
-  * Metodos
-  * @method showInfoPanel Mostrar descripcion en pantalla
-  * @method addObject Añadir obj al array 
-  * @method addCharacter Añadir char al array
-  */
-
 
   //Cargamos la escena
   init(actualScene) {this.currentScene = actualScene; }
