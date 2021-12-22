@@ -28,6 +28,8 @@ export default class GoodEnd extends Wagon {
     this.video.play();
     this.video.setPaused(false);
 
+    this.blockDiary(); 
+
     this.endingKey = this.input.keyboard.addKeys({
       esc: Phaser.Input.Keyboard.KeyCodes.ESC
     });

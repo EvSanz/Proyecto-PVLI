@@ -249,4 +249,10 @@ export default class Wagon extends Phaser.Scene {
 
     placa.setDepth(1);
   }
+
+  blockDiary()
+  {
+    if (this.q !== undefined) {this.q.destroy(); }
+    if (this.botonDiario !== undefined) {this.botonDiario.destroy(); }  
+  }
 }
