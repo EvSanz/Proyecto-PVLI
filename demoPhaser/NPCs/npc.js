@@ -95,7 +95,7 @@ export default class Npc extends Phaser.GameObjects.Sprite {
 
         this.irritacion = this.irritacion + cabreo;
         //Actualizamos el valor almacenado de irritacion
-        this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].anger = this.irritacion;
+        this.scene.game.npcholder[this.id - 1].anger = this.irritacion;
     }
 
 
@@ -104,7 +104,7 @@ export default class Npc extends Phaser.GameObjects.Sprite {
 
         this.dialogScene++;
         //Actualizamos el valor almacenado de dialogo
-        this.scene.scene.get('boot').dmanager.npcinfoholder[this.id - 1].dialogo = this.dialogScene;
+        this.scene.game.npcholder[this.id - 1].dialogo = this.dialogScene;
     }
 
 

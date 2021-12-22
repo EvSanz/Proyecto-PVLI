@@ -42,7 +42,7 @@
 
             //Cambiamos a la escena de seleccion de asesino 
             this.scenenow.scene.start('selectscene');
-            this.outOfTime();
+           
         }
     }
 

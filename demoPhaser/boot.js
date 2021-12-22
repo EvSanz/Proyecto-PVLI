@@ -92,11 +92,73 @@ export default class Boot extends Phaser.Scene {
     this.load.video('Goodending', 'gending.mp4');
   }
 
-
+  init() {
+    this.game.npcholder= [{
+      id: 0,
+      dialogo: 1,
+      anger: 0
+  }, 
+  {
+      id: 1,
+      dialogo: 13,
+      anger: 0
+  }, 
+  {
+      id: 2,
+      dialogo: 3,
+      anger: 0
+  }, 
+  {
+      id: 3,
+      dialogo: 22,
+      anger: 0
+  }, 
+  {
+      id: 4,
+      dialogo: 5,
+      anger: 0
+  }, 
+  {
+      id: 5,
+      dialogo: 8,
+      anger: 0
+  }, 
+  {
+      id: 6,
+      dialogo: 10,
+      anger: 0
+  }, 
+  {
+      id: 7,
+      dialogo: 19,
+      anger: 0
+  }, 
+  {
+      id: 8,
+      dialogo: 20,
+      anger: 0
+  }, 
+  {
+      id: 9,
+      dialogo: 17,
+      anger: 0
+  }, 
+  {
+      id: 10,
+      dialogo: 15,
+      anger: 0
+  },
+  {
+      id: 11,
+      dialogo: 0,
+      anger: 0
+  }
+];
+  }
   create() {
 
     //Creamos un nuevo reloj, manager de dialogos y manager de objetos
-    this.dmanager = new DialogManager();
+    //this.dmanager = new DialogManager();
     this.clock = new Clock(this);
     this.gomanager = new ObjectManager();
 
