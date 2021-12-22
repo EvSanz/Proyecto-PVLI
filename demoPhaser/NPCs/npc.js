@@ -4,8 +4,10 @@ import Dialog from '../Utils/dialog.js';
 //Clase encargada de crear y gestionar NPCs
 export default class Npc extends Phaser.GameObjects.Sprite {
     
-    /** Constructor de Npc:
-     * Variables:
+    /**
+     * @class Npc
+     * @extends Phaser.GameObjects.Sprite
+     * @classdesc Personajes
      * @param {Phaser.Scene} scene Escena 
      * @param {number} x Posición del personaje en x
      * @param {number} y Posición del personaje en y
