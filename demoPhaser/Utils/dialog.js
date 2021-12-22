@@ -5,7 +5,6 @@
  export default class Dialog {
 
   /**
-  * @extends {Phaser.Scene} 
   * @class Dialog
   * @param {Phaser.Scene} scene Escena 
   * @param {number} id Identificador 

@@ -102,3 +102,227 @@
    * @param {string} char.desc Descripción del npc
    * @memberof Diary
    */
+  
+//---------------------------------------------------------------------------------------
+
+/**
+ * @class Player
+ * @classdesc El objeto que el jugador va a controlar
+ * @param {Phaser.Scene} scene La escena en la que se encuentra
+ * @param {number} x Posición x en la que aparecerá el player
+ * @param {number} y Posición y en la que aparecerá el player
+ * @extends Phaser.GameObjects.Sprite
+ */
+  
+//---------------------------------------------------------------------------------------
+
+  /**
+  * @class Dialog
+  * @param {Phaser.Scene} scene Escena 
+  * @param {number} id Identificador 
+  * @param {Npc} npc Npc con el que interactuamos
+  * @classdesc Gestión de diálogos
+  * /
+
+  /**
+  * @method initDialog 
+  * @description Método para iniciar el dialogo
+  * @memberof Dialog
+  */
+  
+  /**
+  * @method talk 
+  * @description Método para iniciar el bloque de dialogo
+  * @memberof Dialog
+  */
+
+  /**
+  * @method nextText 
+  * @description Método para pasar a la siguiente linea de dialogo
+  * @memberof Dialog
+  */
+
+  /**
+  * @method finishText 
+  * @description Método para finalizar el dialogo
+  * @memberof Dialog
+  */
+
+  /**
+  * @method dialogoIrritacionMax
+  * @description Método para escribir el dialogo que sucede cuando la irritacion está al maximo
+  * @memberof Dialog
+  */
+
+  /**
+  * @method interaccionDialogo
+  * @description Método para cambiar el dialogo dependiendo de la opcion escogida
+  * @param {number} n Opcion de dialogo escogida
+  * @memberof Dialog
+  */
+
+  /**
+  * @method createBox
+  * @description Método para interactuar con las opciones
+  * @memberof Dialog
+  */
+
+  /**
+  * @method showDetails 
+  * @description Método para mostrar los aspectos visuales del dialogo
+  * @param {number} image Numero del sprite en el spritesheet
+  * @param {NPC} npc Personaje con el que conversamos 
+  * @param {number} newValue Valor auxiliar de irritacion 
+  * @memberof Dialog
+  */
+
+  /**
+  * @method cambiarRetrato 
+  * @description Método para cambiar el frame del personaje que habla
+  * @param {number} image Numero del sprite en el spritesheet
+  * @memberof Dialog
+  */
+
+  /**
+  * @method mostrarNombre 
+  * @description Método para escribir el nombre del npc
+  * @param {NPC} npc Personaje con el que conversamos 
+  * @memberof Dialog
+  */
+
+  /**
+  * @method actualizaIrritacion 
+  * @description Método para mostrar la irritacion del npc
+  * @param {number} newValue Valor auxiliar de irritacion 
+  * @memberof Dialog
+  */
+  
+//---------------------------------------------------------------------------------------
+
+/**
+ * @class Clock
+ * @classdesc Se encarga de contar 12 acciones determinadas, dar información sobre las acciones restantes y saltar a la escena de selección de asesino cuando llegan a 0
+ * @param {Phaser.Scene} scene La escena en la que se crea el reloj (Hará falta un referencia constante)
+ */
+
+  /**
+   * @public
+   * @method decreaseTime
+   * @description Decrementa el número de acciones restantes y llama a la escena de selección de asesino cuando no quedan
+   * @param {Wagon} scenenow Vagón desde la que se llama a éste método
+   * @memberof Clock
+   */
+  
+  /**
+   * @public
+   * @method resetTime
+   * @description Reinicia el número de acciones a su valor inicial
+   * @memberof Clock
+   */
+  
+  /**
+   * @public
+   * @method getTime
+   * @description Devuelve el número de acciones restantes
+   * @returns {number} El número de acciones restantes
+   * @memberof Clock
+   */
+  
+  /**
+   * @public
+   * @method showTime
+   * @description Muestra el sprite del reloj correspondiente al número de acciones restantes
+   * @param {Phaser.Scene} scenenow Escena en la que mostrar el reloj
+   * @memberof Clock
+   */
+  
+//---------------------------------------------------------------------------------------
+
+/**
+ * @class ObjectManager
+ * @classdesc Guarda todos los objetos del juego a través de las escenas
+ */
+
+  /**
+   * @public
+   * @method acoplarObj
+   * @description Añade un objeto al array
+   * @memberof ObjectManager
+   * @param {Phaser.GameObject} go Objeto a añadir
+   */
+  
+  /**
+   * @public
+   * @method consultarObj
+   * @description Devuelve el objeto que está en la posición indicada
+   * @memberof ObjectManager
+   * @param {number} id Posición del objeto deseado en el array
+   * @returns {Phaser.GameObject} El objeto en la posición
+   */
+  
+//---------------------------------------------------------------------------------------
+
+  /**
+   * @class GameObject
+   * @extends {Phaser.GameObjects.Sprite}
+   * @classdesc Objetos del juego
+   * @param {Scene} scene Escena 
+   * @param {number} x Posición del objeto en x
+   * @param {number} y Posición del objeto en y
+   * @param {int} sprite Posición del sprite del objeto en la spritesheet
+   * @param {int} id Posición en el json del objeto
+   * @param {bool} clickable ¿Podemos interactuar con el?
+   * @param {number} dialogId Posición en el json de diálogos
+   */
+  
+//---------------------------------------------------------------------------------------
+
+  /**
+     * @class Npc
+     * @extends {Phaser.GameObjects.Sprite}
+     * @classdesc Personajes
+     * @param {Phaser.Scene} scene Escena 
+     * @param {number} x Posición del personaje en x
+     * @param {number} y Posición del personaje en y
+     * @param {number} idNpc Identificador
+     * @param {number} anger Irritación
+     * @param {number} frame La posición del personaje en la spritesheet
+     * @param {number} dialogoIni Identificador del diálogo que le corresponde al personaje
+     */
+
+    /**
+     * @private
+     * @method llamarDialogo 
+     * @description Carga un diálogo u otro dependiendo de la irritación
+     * @memberof Npc
+     */
+
+    /**
+     * @public
+     * @method aumentarIrritacion 
+     * @description Aumenta el nivel de irritación
+     * @param {int} cabreo El nivel de irritación que aumenta al personaje
+     * @memberof Npc
+     */
+
+    /**
+     * @public
+     * @method getIrritacion 
+     * @description Devuelve el valor actual de irritación
+     * @returns {number} La irritación del personaje
+     * @memberof Npc
+     */
+
+    /**
+     * @public
+     * @method cambiarScene 
+     * @description Aumentamos el valor de diálogo
+     * @memberof Npc
+     */
+    
+    /**
+     * @public
+     * @method apuntarEnDiario 
+     * @description Cargamos información en el diario
+     * @memberof Npc
+     */
