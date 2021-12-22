@@ -1,31 +1,32 @@
-
+//Js importados
 import Dialog from '../Utils/dialog.js';
 import GameObject from './gameobject.js';
 
-
+//Manager de los objetos
 export default class ObjectManager {
 
-    /**Gestioamos todos los dialogos del juego desde aqui
-    * @param {GameObject} go aqui se crean los objetos y se les asignan sus respectivos dialogos
-    * @param {Dialog} dialog cada objeto creara su dialogo en la clase npc pero los gestionaremos todos desde aqui
-    * @param {GameObject[]} goholder aqui se almacenan todos los npcs del juego con su dialogo asociado;
-    * @method acoplarobj mete el objeto que se le pasa como parametro en el goholder
-    * @method consultarobj dado el identificador de un objeto , devuelve ese objeto
+    /** Constructor: 
+    * Variables:
+    * @param {GameObject} go Objeto
+    * @param {number} id Identificador
+    * @param {GameObject[]} goholder Array de objetos
+    * Metodos:
+    * @method acoplarObj Añadimos el objeto a goholder
+    * @method consultarObj Devolvemos un objeto del goholder 
     */
+   
     constructor()
     { 
         this.goholder=[];
     }
 
-    acoplarobj(go)
-    {
-        this.goholder.push(go);
-    }
 
-    consultarobj(id)
-    {
-        return this.goholder[id];
-    }
+    //Metodo para añadir un objeto al array
+    acoplarObj(go) {this.goholder.push(go); }
+
+    
+    //Método para obtener el objeto según su identificador
+    consultarObj(id) {return this.goholder[id]; }
 }
 
     

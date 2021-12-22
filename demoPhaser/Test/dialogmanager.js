@@ -1,18 +1,21 @@
-import Npc from '../NPCs/npc.js'
-import Dialog from '../Utils/dialog.js';
-
+//Manager de Npcs
 export default class DialogManager {
 
-    /**Gestioamos todos los dialogos del juego desde aqui
-     * @param {NPC} npc aqui se crean los npcs y se les asignan sus respectivos dialogos
-     * @param {Dialog}dialog cada npc creara su dialogo en la clase npc pero los gestionaremos todos desde aqui
-     * @param {NPC[]} npcholder aqui se almacenan todos los npcs del juego con su dialogo asociado;
-     * @method acoplarnpc mete en npc que se le pasa como parametro en el npc holder
-     * @method consultarnpc dado el identificador de un npc , devuelve ese npc 
+    /** Constructor:
+     * Variables:
+     * @param {NPC} npc NPC
+     * @param {NPC[]} npcholder array de NPCs
+     * @param {number} id Identificador
+     * Metodos: 
+     * @method acoplarNpc Añadimos el personaje al npcholder
+     * @method asignarCabreo Establecemos el nuevo valor de irritacion 
      */
+
     constructor() {
 
         this.npcholder = [];
+
+        //Establecemos los valores iniciales de los personajes
         this.npcinfoholder = [{
                 id: 0,
                 dialogo: 1,
@@ -76,11 +79,12 @@ export default class DialogManager {
         ];
     }
 
-    acoplarnpc(npc) {
-        this.npcholder.push(npc);
-    }
 
-    asignacabreo(id, cabreo) {
-        this.npcinfoholder[id].anger = cabreo;
-    }
+    //Metodo para añadir el npc al array
+    acoplarNpc(npc) {this.npcholder.push(npc); }
+
+
+    //Metodo para cambiar el valor de irritacion del
+    //array de informacion de los npc
+    asignaCabreo(id, cabreo) {this.npcinfoholder[id].anger = cabreo; }
 }

@@ -13,5 +13,4 @@ export default class SelectKillerScene extends Phaser.Scene {
     
     let uisuelo = this.add.sprite(500, 450, 'ui');
   }
-
 }
