@@ -6,11 +6,18 @@ export default class GameObject extends Phaser.GameObjects.Sprite {
 
   /**Constructor de GameObject:
    * @param {Scene} scene Escena 
-   * @param {int} sprite Sprite
-   * @param {number} x Coordenada X
-   * @param {number} y Coordenada Y
+   * @param {number} x Posición del objeto en x
+   * @param {number} y Posición del objeto en y
+   * @param {int} sprite Posición del sprite del objeto en la spritesheet
+   * @param {int} id Posición en el json del objeto
    * @param {bool} clickable ¿Podemos interactuar con el?
-   * @param {bool} presente Estado del objeto
+   * @param {number} dialogId Posición en el json de diálogos
+   * Variables
+   * @var {bool} presente ¿Está el objeto en la escena?
+   * @var {objeto} info Información del objeto obtenida del json
+   * @var {animacion} anims Animación idle del objeto
+   * 
+   * @extends {Phaser.GameObjects.Sprite}
    */
 
   constructor(scene, x, y, sprite, id, clickable, dialogId) {

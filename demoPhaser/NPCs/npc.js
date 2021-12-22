@@ -7,16 +7,21 @@ export default class Npc extends Phaser.GameObjects.Sprite {
     /** Constructor de Npc:
      * Variables:
      * @param {Phaser.Scene} scene Escena 
-     * @param {number} x Coordenada X
-     * @param {number} y Coordenada Y
+     * @param {number} x Posición del personaje en x
+     * @param {number} y Posición del personaje en y
      * @param {number} idNpc Identificador
-     * @param {number} anger Irritacion
-     * Metodos:
-     * @method llamarDialogo Carga un dialogo u otro dependiendo de la irritacion
-     * @method aumentarIrritacion Aumenta el nivel de irritacion
-     * @method getIrritacion Devuelve el valor actual de irritacion
-     * @method cambiarScene Aumentamos el valor de dialogo
-     * @method apuntarEnDiario Cargamos informacion en el diario
+     * @param {number} anger Irritación
+     * @param {number} frame La posición del personaje en la spritesheet
+     * @param {number} dialogoIni Identificador del diálogo que le corresponde al personaje
+     * Métodos:
+     * @method llamarDialogo Carga un diálogo u otro dependiendo de la irritación
+     * @method aumentarIrritacion Aumenta el nivel de irritación
+     * @method getIrritacion Devuelve el valor actual de irritación
+     * @returns {number} La irritación del personaje
+     * @method cambiarScene Aumentamos el valor de diálogo
+     * @method apuntarEnDiario Cargamos información en el diario
+     * 
+     * @extends {Phaser.GameObjects.Sprite}
      */
 
     constructor(scene, x, y, idNpc, anger, frame, dialogoIni) {
@@ -26,7 +31,7 @@ export default class Npc extends Phaser.GameObjects.Sprite {
         this.setDepth(1);
 
         //Asignamos el sprite, el identificador, el valor  
-        //de irritacion y el dialogo actual a varias variables 
+        //de irritación y el diálogo actual a varias variables 
         this.image = frame;
         this.id = idNpc;
         this.irritacion = anger;
