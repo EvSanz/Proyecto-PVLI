@@ -228,7 +228,7 @@ Este es el árbol de decisiones de diálogo del jugador:
 
 ## 6. UML ##
 
-  ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/imagenes/UML.drawio.png)
+  ![](https://github.com/EvSanz/Proyecto-PVLI/blob/main/Imagenes/UML.drawio.png)
 
 ## 7. Plataformas de gestión ##
 
