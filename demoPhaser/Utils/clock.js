@@ -1,15 +1,41 @@
 
+/**
+ * @class Clock
+ * @classdesc Se encarga de contar 12 acciones determinadas, dar información sobre las acciones restantes y saltar a la escena de selección de asesino cuando llegan a 0
+ * @param {Phaser.Scene} scene La escena en la que se crea el reloj (Hará falta un referencia constante)
+ */
 
-/** Constructor:
-* Variables:
-* @param {Time} time Tiempo  
-* @param {Total_Time} Total_Time Tiempo máximo 
-* Metodos:
-* @method decreaseTime disminuye el tiempo que queda
-* @method resetTime el tiempo actual vuelve a ser el maximo original
-* @method getTime devuelve el tiempo que queda
-* @method showTime muestra el tiempo actual en pantalla
-*/
+  /**
+   * @public
+   * @method decreaseTime
+   * @description Decrementa el número de acciones restantes y llama a la escena de selección de asesino cuando no quedan
+   * @param {Wagon} scenenow Vagón desde la que se llama a éste método
+   * @memberof Clock
+   */
+  
+  /**
+   * @public
+   * @method resetTime
+   * @description Reinicia el número de acciones a su valor inicial
+   * @memberof Clock
+   */
+  
+  /**
+   * @public
+   * @method getTime
+   * @description Devuelve el número de acciones restantes
+   * @returns {number} El número de acciones restantes
+   * @memberof Clock
+   */
+  
+  /**
+   * @public
+   * @method showTime
+   * @description Muestra el sprite del reloj correspondiente al número de acciones restantes
+   * @param {Phaser.Scene} scenenow Escena en la que mostrar el reloj
+   * @memberof Clock
+   */
+
 
 //Asignamos el valor maximo de reloj
  const Total_Time = 12;

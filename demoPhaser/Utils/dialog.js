@@ -10,43 +10,50 @@
   * @param {Phaser.Scene} scene Escena 
   * @param {number} id Identificador 
   * @param {Npc} npc Npc con el que interactuamos
-  * @description Gestión de diálogos
+  * @classdesc Gestión de diálogos
   * /
 
   /**
   * @method initDialog 
   * @description Método para iniciar el dialogo
+  * @memberof Dialog
   */
   
   /**
   * @method talk 
   * @description Método para iniciar el bloque de dialogo
+  * @memberof Dialog
   */
 
   /**
   * @method nextText 
   * @description Método para pasar a la siguiente linea de dialogo
+  * @memberof Dialog
   */
 
   /**
   * @method finishText 
   * @description Método para finalizar el dialogo
+  * @memberof Dialog
   */
 
   /**
   * @method dialogoIrritacionMax
   * @description Método para escribir el dialogo que sucede cuando la irritacion está al maximo
+  * @memberof Dialog
   */
 
   /**
   * @method interaccionDialogo
   * @description Método para cambiar el dialogo dependiendo de la opcion escogida
   * @param {number} n Opcion de dialogo escogida
+  * @memberof Dialog
   */
 
   /**
   * @method createBox
   * @description Método para interactuar con las opciones
+  * @memberof Dialog
   */
 
   /**
@@ -55,24 +62,28 @@
   * @param {number} image Numero del sprite en el spritesheet
   * @param {NPC} npc Personaje con el que conversamos 
   * @param {number} newValue Valor auxiliar de irritacion 
+  * @memberof Dialog
   */
 
   /**
   * @method cambiarRetrato 
   * @description Método para cambiar el frame del personaje que habla
   * @param {number} image Numero del sprite en el spritesheet
+  * @memberof Dialog
   */
 
   /**
   * @method mostrarNombre 
   * @description Método para escribir el nombre del npc
   * @param {NPC} npc Personaje con el que conversamos 
+  * @memberof Dialog
   */
 
   /**
   * @method actualizaIrritacion 
   * @description Método para mostrar la irritacion del npc
   * @param {number} newValue Valor auxiliar de irritacion 
+  * @memberof Dialog
   */
 
   constructor(scene, id, npc) {
