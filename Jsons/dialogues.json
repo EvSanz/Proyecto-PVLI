@@ -657,7 +657,7 @@
         {
           "id": "Scene1",
           "opciones": 5,
-          "irritacion": 0,
+          "irritacion": 20,
           "clock": false,
           "lines": [
             "¿Señora?",
