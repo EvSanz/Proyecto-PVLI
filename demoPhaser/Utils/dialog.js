@@ -4,75 +4,25 @@
  //Clase para gestionar los dialogos
  export default class Dialog {
 
-  /**
-  * @extends {Phaser.Scene} 
-  * @class Dialog
+  /** Constructor:
+  * Variables:
   * @param {Phaser.Scene} scene Escena 
   * @param {number} id Identificador 
   * @param {Npc} npc Npc con el que interactuamos
-  * @description Gestión de diálogos
-  * /
-
-  /**
-  * @method initDialog 
-  * @description Método para iniciar el dialogo
-  */
-  
-  /**
-  * @method talk 
-  * @description Método para iniciar el bloque de dialogo
-  */
-
-  /**
-  * @method nextText 
-  * @description Método para pasar a la siguiente linea de dialogo
-  */
-
-  /**
-  * @method finishText 
-  * @description Método para finalizar el dialogo
-  */
-
-  /**
-  * @method dialogoIrritacionMax
-  * @description Método para escribir el dialogo que sucede cuando la irritacion está al maximo
-  */
-
-  /**
-  * @method interaccionDialogo
-  * @description Método para cambiar el dialogo dependiendo de la opcion escogida
-  * @param {number} n Opcion de dialogo escogida
-  */
-
-  /**
-  * @method createBox
-  * @description Método para interactuar con las opciones
-  */
-
-  /**
-  * @method showDetails 
-  * @description Método para mostrar los aspectos visuales del dialogo
-  * @param {number} image Numero del sprite en el spritesheet
-  * @param {NPC} npc Personaje con el que conversamos 
-  * @param {number} newValue Valor auxiliar de irritacion 
-  */
-
-  /**
-  * @method cambiarRetrato 
-  * @description Método para cambiar el frame del personaje que habla
-  * @param {number} image Numero del sprite en el spritesheet
-  */
-
-  /**
-  * @method mostrarNombre 
-  * @description Método para escribir el nombre del npc
-  * @param {NPC} npc Personaje con el que conversamos 
-  */
-
-  /**
-  * @method actualizaIrritacion 
-  * @description Método para mostrar la irritacion del npc
-  * @param {number} newValue Valor auxiliar de irritacion 
+  * @param {number} image Frame del personaje
+  * @param {number} newValue Valor auxiliar 
+  * Metodos: 
+  * @method initDialog Inicia el dialogo
+  * @method talk Inicia el bloque de dialogo
+  * @method nextText Pasa a la siguiente linea de dialogo
+  * @method finishText Finaliza el dialogo
+  * @method dialogoIrritacionMax Dialogo que sucede con irritacion al maximo
+  * @method interaccionDialogo Cambia el dialogo dependiendo de la opcion escogida
+  * @method createBox Permite interactuar con las opciones
+  * @method showDetails Muestra los aspectos visuales del dialogo 
+  * @method cambiarRetrato Cambia el frame del personaje que habla
+  * @method mostrarNombre Escribe el nombre del npc 
+  * @method actualizaIrritacion Muestra la irritacion del npc
   */
 
   constructor(scene, id, npc) {
