@@ -98,11 +98,8 @@ export default class Boot extends Phaser.Scene {
     this.myObjects = this.cache.json.get('objects');
     this.myCharacters = this.cache.json.get('personajes');
     //Bools de objetos
-    this.presente = [];
+    this.presente = new Array(this.myObjects.Objetos.length).fill(true);
 
-    for (let i = 0; i < this.myObjects.Objetos.length; ++i) {
-      this.presente[i] = true;
-    }
   }
 
   consultamanager() {
